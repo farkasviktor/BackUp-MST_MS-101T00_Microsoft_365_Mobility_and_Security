@@ -30,6 +30,29 @@
 
 ## Notes
 
+It was brought to are attention that a change was made during the provisioning of the Microsoft 365 tenants. Some features may not enable from the tenant UI when the student selects a button to enable a feature. This issue is being addressed with great haste. However, if the issue isn't resolved by August 9, 2021. Please have your students run the following commands before you start your lecture. 
+
+1. Type **Powershell** into the **search bar** located on the taskbar. 
+2. Right click on the powershell app and **Run as Administrator**.
+3. when the Powershell app opens enter the following commands. 
+       
+       Set-ExcutionPolicy RemoteSigned
+       
+4. Type the letter **A** and press enter to agree to all 
+       
+       Install-Module -Name ExchangeOnlineManagement
+       
+5. Type the letter **A** and press enter to agree to all 
+       
+       Connect-ExchangeOnline
+       
+6. a Sign page will open, Enter in the **Microsoft 365 global administrator account** and **Password**.
+       
+       Enable-OrganizationCustomization
+ 
+ You may need to have your students run the previous command multiple times (up to 3) in order for the Commandlet to fully provision.
+
+
 ### Classroom Materials
 
 It is strongly recommended that MCTs and Partners access these materials and in turn, provide them separately to students.  Pointing students directly to GitHub to access Lab steps as part of an ongoing class will require them to access yet another UI as part of the course, contributing to a confusing experience for the student. An explanation to the student regarding why they are receiving separate Lab instructions can highlight the nature of an always-changing cloud-based interface and platform. Microsoft Learning support for accessing files on GitHub and support for navigation of the GitHub site is limited to MCTs teaching this course only.
