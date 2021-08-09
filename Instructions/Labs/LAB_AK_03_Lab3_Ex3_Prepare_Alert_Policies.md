@@ -12,7 +12,7 @@ There are two requirements to viewing alerts in the Security and Compliance Cent
 
 ### Task 1 – Assign RBAC Permissions for Alert Notification Testing
 
-The alerts a user can see on the **View alerts** page is dependent on the assigned RBAC roles, which determine the depth of insight and control a user has. How is this accomplished? The management roles assigned to users (based on their membership in role groups in the Security and Compliance Center) determine which alert categories a user can see on the **View alerts** page (this was covered in the topic on Alerts in the previous module). 
+The alerts a user can see on the **View alerts** page are dependent on the assigned RBAC roles, which determine the depth of insight and control a user has. How is this accomplished? The management roles assigned to users (based on their membership in role groups in the Security and Compliance Center) determine which alert categories a user can see on the **View alerts** page (this was covered in the topic on Alerts in the previous module). 
 
 For Adatum’s pilot project, Lynne Robbins has been selected to test the alert notification system. For Lynne to be able to view alerts and receive alert notifications, she must first be assigned appropriate RBAC permissions in the Security and Compliance Center.
 
