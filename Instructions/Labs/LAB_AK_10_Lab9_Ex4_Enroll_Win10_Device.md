@@ -10,7 +10,7 @@ Holly must begin by verifying that the device she wants to enroll into Intune (L
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
 
-2. In your **Edge** browser, the **Microsoft Endpoint Manger admin center** should still be open in the **Devices - Microsoft Endpoint Manager admin center** tab. Select this tab.
+2. In your **Edge** browser, the **Microsoft Endpoint Manager admin center** should still be open in the **Devices - Microsoft Endpoint Manager admin center** tab. Select this tab.
 
 3. In the **Microsoft Endpoint Manger admin center**, in the left-hand navigation pane, select **Devices**.
 
