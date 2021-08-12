@@ -12,7 +12,7 @@ Holly must begin by verifying that the device she wants to enroll into Intune (L
 
 2. In your **Edge** browser, the **Microsoft Endpoint Manager admin center** should still be open in the **Devices - Microsoft Endpoint Manager admin center** tab. Select this tab.
 
-3. In the **Microsoft Endpoint Manger admin center**, in the left-hand navigation pane, select **Devices**.
+3. In the **Microsoft Endpoint Manager admin center**, in the left-hand navigation pane, select **Devices**.
 
 4. In the **Devices | Overview** window, in the middle pane, select **All devices**.
 
