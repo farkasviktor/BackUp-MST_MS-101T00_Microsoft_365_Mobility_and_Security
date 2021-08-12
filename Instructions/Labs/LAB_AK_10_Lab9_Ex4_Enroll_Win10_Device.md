@@ -52,7 +52,7 @@ In this task, you want to enroll LON-CL1 to Azure AD and Intune.
 
 9. In your Edge browser, in your **Microsoft Endpoint Manager admin center**, the **Devices | All devices** page should still be displayed. Currently it displays only LON-CL2. Select **Refresh** on the menu bar at the top of the detail pane. Verify that **LON-CL1** appears in the list of devices along with **LON-CL2**. <br/>
 
-   You should also note that in the list of devices, LON-CL1 was identified as Corporate-owned device, whereas LON-CL2 was identified as a Personal device. Since LON-CL1 was enrolled by Holly, an administrator, LON-CL1 is classified as a Corporate device. Conversely, since Joni Sherman, a non-administrator, enrolled LON-CL2, device ownership is classified as a Personal device. <br/>D
+   You should also note that in the list of devices, LON-CL1 was identified as Corporate-owned device, whereas LON-CL2 was identified as a Personal device. Since LON-CL1 was enrolled by Holly, an administrator, LON-CL1 is classified as a Corporate device. Conversely, since Joni Sherman, a non-administrator, enrolled LON-CL2, device ownership is classified as a Personal device. <br/>
 
 10. Leave all browser tabs open for the next task.
 
