@@ -20,21 +20,21 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
 
 3. In the **Office 365 Security &amp; Compliance** center, in the left-hand navigation pane, select **Data loss prevention** and then select **Policy**.
 
-4. In the **Policy** window, select **+Create a policy** to start the wizard for creating a new data loss prevention policy.
+4. In the **Policy** window, select **+Create policy** on the menu bar to start the wizard for creating a new data loss prevention policy.
 
 5. On the **Start with a template or create a custom policy** page, there are four types of policies listed in the left-hand pane - Financial, Medical and health, Privacy, and Custom. The first three (Financial, Medical and health, and Privacy) provide templates that can be used to create a policy. The **Custom** type is not based on a template. The column in the left-hand pane displays the policy type, while the middle pane displays the available templates to choose from for that policy type. When you select a template in the middle pane, the right-hand pane displays the type of information that is protected in that template. <br/> 
 
     For example, select **Financial** in the left-hand pane and then scroll through the various templates that you can choose from in the middle pane. Select one or two of the templates to see what type of information it protects. Do the same for the **Medical and health** and **Privacy** policy types.  <br/>
   
-    Select **Custom** in the left-hand pane, which automatically selects **Custom policy** in the middle pane (since there are no templates to choose from for this policy type). Select **Next**.
+    Select **Custom** in the left-hand pane, select **Custom policy** in the middle pane, and then select **Next**.
 
-6. In the **Name your policy** page, enter **IP Address DLP Policy** in the **Name** field and **Protect IP addresses from being shared** in the **Description** field. Select **Next**.
+6. In the **Name your DLP policy** page, enter **IP Address DLP Policy** in the **Name** field and **Protect IP addresses from being shared** in the **Description** field. Select **Next**.
 
-7. On the **Choose locations** page, select the **Protect content in Exchange email, Teams chats, and channel messages and OneDrive and SharePoint documents** option (if it isn't already selected by default) and then select **Next**.
+7. On the **Choose locations to apply the policy** page, verify the **Status** toggle is set to **On** for the following options (if an option is not set to **On** by default, then set it to **On** now): **Exchange email, SharePoint sites, OneDrive accounts, Teams chats and channel messages**. Select **Next**.
 
 8. On the **Define Policy settings** page, select the **Create or customize advanced DLP rules** option, (if it isn't already selected by default) then select **Next**. 
 
-9. On the **Customize advanced DLP rules** page, select the **Create rule** button.
+9. On the **Customize advanced DLP rules** page, select the **Create rule** option on the menu bar.
 
 10. On the **Create rule** page, enter the following information then select **Save**.
     
