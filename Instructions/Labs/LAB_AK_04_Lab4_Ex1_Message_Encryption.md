@@ -63,9 +63,9 @@ In this task you will use Windows PowerShell to access Exchange Online and then,
 
 	**Set-IRMconfiguration -azureRMSLIcensingEnabled $true**
 
-17. Now that Azure RMS is enabled, you should run the **Test-IRMConfiguration** cmdlet to test Information Rights Management (IRM) configuration and functionality, including availability of an Active Directory RMS server, pre-licensing, and journal report decryption. To perform this test, run the following command to test the IRM configuration for messages sent from Holly Dickson:<br/>
+17. Now that Azure RMS is enabled, you should run the **Test-IRMConfiguration** cmdlet to test Information Rights Management (IRM) configuration and functionality, including availability of an Active Directory RMS server, pre-licensing, and journal report decryption. To perform this test, run the following command to test the IRM configuration for messages sent from Holly Dickson (the command requires the -Recipient parameter, otherwise the Overall Result at the end will Fail; therefore, you will enter Holly as both the sender and recipient):<br/>
 
-	**Test-IRMConfiguration -Sender Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) 
+	**Test-IRMConfiguration -Sender Holly@xxxxxZZZZZZ.onmicrosoft.com -Recipient Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) 
 
 	**Note:** The results should appear as follows:  
 	
