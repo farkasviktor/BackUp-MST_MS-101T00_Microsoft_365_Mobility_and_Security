@@ -40,9 +40,9 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
 
 10. On the **Create rule** page, enter the following information:
     
-      - Name: **Single IP Address rule**.
+      - Name: **Single IP Address rule**
     
-     - Description: **Email contains an IP address**.
+     - Description: **Email contains an IP address**
     
       - In the **Conditions** section, select **+Add condtion** and then select **Content contains**. Then enter the following condition settings:
     
@@ -64,9 +64,9 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
 
 12. On the **Create rule** page, enter the following information:
     
-      - Name: **Multiple IP Address rule**.
+      - Name: **Multiple IP Address rule**
     
-     - Description: **Email contains two or more IP addresses**.
+     - Description: **Email contains two or more IP addresses**
     
       - In the **Conditions** section, select **+Add condtion** and then select **Content contains**. Then enter the following condition settings:
     
