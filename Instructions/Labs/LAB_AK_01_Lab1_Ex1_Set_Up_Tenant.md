@@ -108,7 +108,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
 
 ### Task 3 - Create a Microsoft 365 Global Admin account
 
-Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user account has not been set up for her, she initially signed into Microsoft 365 as the MOD Administrator account (the default Global admin) in the previous lab (you did this when you began your role as Holly and signed in using the tenant admin account). In this task, you will continue in your role as Holly Dickson where you should still be logged into Microsoft 365 as the MOD Administrator. In this lab, Holly will create a personal Microsoft 365 user account for herself, and she will assign her user account the Microsoft 365 Global Administrator role, which gives her the ability to perform all administrative functions within Microsoft 365. Following this task, you will perform all remaining labs using Holly's persona. 
+Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user account has not been set up for her, she initially signed into Microsoft 365 as the MOD Administrator account (the default Global admin) in the previous lab (you did this when you began your role as Holly and signed in using the tenant admin account). In this task, you will continue in your role as the MOD Administrator, during which you will create a Microsoft 365 user account for Holly. One of Adatum's existing users, Isaiah Langer, is moving to a reduced capacity role. You will reassign Isaiah's Microsoft 365 E5 license to Holly's new account, and you will assign her user account the Microsoft 365 Global Administrator role, which gives her the ability to perform all administrative functions within Microsoft 365. Following this task, you will perform all remaining labs using Holly's persona. 
 
 **Important:** As a best practice in your real-world deployment, you should always write down the first Global admin account’s credentials (in this lab, the MOD Administrator account, whose username is admin@xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider) and store it away for security reasons. **This account should be a non-personalized identity** that owns the highest privileges possible in a tenant. It should **not** be MFA activated (because it is not personalized). Because the username and password for this account are typically shared among several users, this first Global admin is a perfect target for attacks; therefore, it is always recommended that organizations create personalized service admin accounts and keep as few Global admins as possible. For those Global admins that you do create in your real-world deployment, they should each be mapped to a single identity (such as Holly Dickson), and they should each have Multi-Factor Authentication (MFA) enforced. That being said, you will not turn on MFA for Holly's account because time is limited in this training course and we do not want to take up lab time by making you log in using a second authentication method every time Holly logs in.
 
@@ -132,9 +132,19 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 5. In the **Active users** list, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are taking on the role of the MOD Administrator, and as such, you must create a user account for Holly Dickson, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft online services. 
 
-6. In the **Active Users** window, select **Add a user** that appears on the menu bar above the list of active users.
+6. Since all of Adatum's Microsoft 365 E5 licenses have been assigned, you must begin by removing the license from Isaiah Langer's account. Isaiah has taken on a reduced role in the company, so he no longer needs access to Microsoft 365. You will then assign his license to Holly. In the **Active Users** window, select **Isaiah Langer** from the list of active users.
 
-7. In the **Set up the basics** window, enter the following information:
+7. The **Isaiah Langer** profile pane will open. Select the **Licenses and apps** tab.
+
+8. In the **Licenses and apps** tab, unselect the check boxes next to the **Enterpise Mobilitiy + Security E5** and **Microsoft 365 E5** licenses. This will make these licenses available for Holly's new account.
+
+9. Select the **Save changes** button at the bottom of the **Isaiah Langer** profile pane.
+
+10. Select the **X** to close the **Isaiah Langer** profile pane.
+
+11. You are now ready to create a user account for Holly Dickson. In the **Active Users** window, select **Add a user** that appears on the menu bar above the list of active users.
+
+12. In the **Set up the basics** window, enter the following information:
 
 	- First name: **Holly**
 
@@ -156,62 +166,56 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	- Clear (uncheck) the **Require this user to change their password when they first sign in** check box 
 
-8. Select **Next**.
+13. Select **Next**.
 
-9. In the **Assign product licenses** window, enter the following information:
+14. In the **Assign product licenses** window, enter the following information:
 
 	- Select location: **United States**
 
 	- Licenses: The **Assign user a product license** option should be selected by default; under this option, select **Office 365 E5** 
 
-10. Select **Next.**
+15. Select **Next.**
 
-11. In the **Optional settings** window, select the drop-down arrow to the right of **Roles.** 
+16. In the **Optional settings** window, select the drop-down arrow to the right of **Roles.** 
 
-12. In the **Roles** section, the **User (no admin center access)** option is selected by default. Select the **Admin center access** option instead. By doing so, the most commonly used Microsoft 365 administrator roles are displayed below this option. 
+17. In the **Roles** section, the **User (no admin center access)** option is selected by default. Select the **Admin center access** option instead. By doing so, the most commonly used Microsoft 365 administrator roles are displayed below this option. 
 
 	**Note:** If you scroll down past this list of the most commonly used admin roles and select **Show all by category**, the complete list of admin roles will be displayed (sorted by category). For Holly, you do not need to view all the admin roles by category, since Holly will be assigned the Global admin role that appears in the list of most commonly used roles.
 
-13. Select the **Global admin**, **Security admin**, and **Attack Simulation Administrator** check box and then select **Next**.
+18. Select the **Global admin**, **Security admin**, and **Attack Simulation Administrator** check box and then select **Next**.
 
-14. On the **Review and finish** window, review your selections. If anything needs to be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
+19. On the **Review and finish** window, review your selections. If anything needs to be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
 
-15. On the **Holly Dickson added to active users** page, under the **User details** section, select **Show** next to the password to verify Holly's password is **Pa55w.rd** and then select **Close.** 
+20. On the **Holly Dickson added to active users** page, under the **User details** section, select **Show** next to the password to verify Holly's password is **Pa55w.rd** and then select **Close.** 
 
 	**Note:** If you accidentally entered a different password, then once you return to the **Active Users** page, you will need to select the **Reset a password** icon (the key icon that appears when you hover over Holly's account) to change her password to the correct value.
 
-16. Remain logged into LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
+21. Remain logged into LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
 
 ### Task 4 - Assign RBAC to a Microsoft 365 user account in the Security and Compliance center
 
 In the prior task, you successfully added the Global administrator role to Holly Dickson's account. The global administrator role will give you the majoriety of privileges needed to manage your Microsoft 365 tenant. however, there are some additional privileges that you will need to manage certain services. In the security and compliance center Holly will need to be added to the Organization Management role. By adding Holly to the Organization Management role, Holly's account will have all the nessisary privileges to complete all of the future exercises during this course.
 
-1. In your **Edge** browser, you should still have a tab open for the
-    **Microsoft 365 admin center**. If so, then select this tab and proceed to
-    the next step; otherwise, navigate to the **Office 365 home** page, log in
-    as your tenant admin account, navigate to the **Microsoft 365 admin
-    center**, and then in the left-hand navigation pane, select **Show all**.
+1. In your **Edge** browser, you should still have a tab open for the **Microsoft 365 admin center**. If so, then select this tab and proceed to the next step; otherwise, navigate to the **Office 365 home** page, log in as your tenant admin account, navigate to the **Microsoft 365 admin center**, and then in the left-hand navigation pane, select **Show all**. 
 
-2. In the **Microsoft 365 admin center**, in the left-hand navigation pane
-    under **Admin centers**, select **Security**.
-3. In the **Office 365 Security & Compliance center**, select **Threat Management** in the left-hand
-    navigation pane, and then in the expanded group select **Permissions**.
+2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Security**.
+3. In the **Microsoft 365 Defender** window, select **Permissions & roles** in the left-hand navigation pane.
     
-4. In the **Home \> Permissions** page in the **Search** field, type **Org** then select the search glass.
+4. In the **Permissions & roles** page, the roles are displayed under two groups - **Azure AD** and **Email & collaboration roles**. Under the **Email & collaboration roles** group, select **Roles**.
     
-5. On the **Home \> Permissions** page list, select the **Organization Management** role.
+5. On the **Permissions & roles > Permissions** page, select the **Organization Management** role.
 
-6. On the **Organization Management**page under the **Members**section, select the **Edit** icon.
+6. On the **Organization Management** pane that appears, scroll down to the **Members**section and select **Edit**.
 
-7. On the **Editing choose members** page, select **Choose Members**.
+7. On the **Editing Choose members** page, it displays a message indicating **The list is currently empty.** Select **Choose members** that appears below this message.
 
-8. On the **Choose Members** page, select the **Add** icon.
+8. On the **Choose members** page, select the **+Add** button.
 
-9. On the **Choose Members** list, select the **Holly Dickson** account.Then select the **Add** icon.
+9. On the **Choose members** list, select the **Holly Dickson** account and then select the **Add** button.
 
-10. On the **Choose Members** page, select the**Done** icon.
+10. On the **Choose members** page, select the **Done** button.
 
-11. On the **Editing choose members** page, select the **Save** icon.
+11. On the **Editing Choose members** page, select the **Save** button.
 
 12. Remain logged into LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
 
