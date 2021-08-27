@@ -76,7 +76,7 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
         
         - Select the **IP Address** check box and then select **Add**.
 
-        - Under the **Sensitive Info types** section, the **IP Address** info type is displayed. On the right side of the IP Address row, the **Instance count** setting is set from **1** to **Any**. Change the value of the first field from 1 to **2**. In this way, this rule applies if 2 or more IP address appear in the email. 
+        - Under the **Sensitive Info types** section, the **IP Address** info type is displayed. On the right side of the IP Address row, the **Instance count** setting is set from **1** to **Any**. Change the value of the first field from 1 to **2**. By making this change, this rule will apply if 2 or more IP address appear in the email. 
     
      - In the **Actions** section, select **+ Add an action**. In the drop-down menu that appears, select **Restrict access or encrypt the content in Microsoft 365 locations**. Then enter the following condition settings:
 
