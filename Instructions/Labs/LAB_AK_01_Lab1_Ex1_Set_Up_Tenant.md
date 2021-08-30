@@ -331,15 +331,15 @@ In Lab 3, you will create Alert Policies using the Security and Compliance Cente
 
 	Select the **Microsoft 365 admin center** tab in your Edge browser. 
 
-2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **Security**. This will open the Office 365 Security and Compliance center.
+2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **Security**. This will open **Microsoft 365 Defender**.
 
-3. In the **Office 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Search**, and then under it, select **Audit log search**.
+3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Audit**.
 
-4. In the **Audit log search** window, a warning message is displayed at the top of the page. Select the **Turn on auditing** button that appears on the right-side of this message, and then in the **Security &amp; Compliance** dialog box that appears, select **Yes** to confirm that your organization settings need to be updated. <br/>
+4. In the **Audit** window, if auditing is not turned on for your organization, a banner is displayed that says: **Start recording user and admin activity**. This banner is your prompt to turn on audit logging. <br/>
 
-	**Note:** It may take several minutes for the setting to be updated, at which time the **Security &amp; Compliance** dialog box will disappear.
-
-5. Leave the Client 1 VM and the Security and Compliance Center open and proceed to the next lab.
+	Select this banner now to turn on audit logging. 
+ 
+5. Leave the Client 1 VM and all the browser tab in Edge open and proceed to the next lab.
 
 
 ### Task 8 – Prepare Users for Content Searches
@@ -348,24 +348,26 @@ In Module 8, you will perform a Content Search lab that requires that Joni Sherm
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In your **Microsoft Edge** browser, you should still have the **Office 365 Security and Compliance Center** open in a tab from the prior task. If you closed that tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Security**.
+2. In your **Microsoft Edge** browser, you should still have **Microsoft 365 Defender** open in a tab from the prior task. If you closed that tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Security**.
 
-3. In the **Office 365 Security and Compliance Center**, in the left-hand navigation pane, select **Permissions.**
+3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Permissions & roles**.
 
-4. In the **Home &gt; Permissions** page, select the **eDiscovery Manager** check box.
+4. In the **Permissions & roles** page, under the **Email & collaboration roles** section, select **Roles**.
 
-5. In the **eDiscovery Manager** pane that appears, scroll down to the **eDiscovery Manager** section and select **Edit**.
+5. On the **Permissions & roles > Permissions** page, you want to select the **eDiscovery Manager** role. To quickly locate the role, enter **edisc** in the **Search** field on the menu bar and then select the **Search** icon. When the **eDiscovery Manager** role appears, select its check box.
 
-6. The **Editing Choose eDiscovery Manager** wizard opens. The list of users who are assigned this role should be empty. Select **Choose eDiscovery Manager**.
+6. In the **eDiscovery Manager** pane that appears, scroll down to the **eDiscovery Manager** section and select **Edit**.
 
-7. In the **Choose eDiscovery Manager window**, select **(+) Add**.
+7. The **Editing Choose eDiscovery Manager** wizard opens. The list of users who are assigned this role should be empty. Select **Choose eDiscovery Manager**.
 
-8. In the list of users that’s displayed, select **Joni Sherman** and **Holly Dickson**, select **Add**, and then select **Done**. 
+8. In the **Choose eDiscovery Manager window**, select **(+) Add**.
 
-9. In the **Editing Choose eDiscovery Manager** window, select **Save**.
+9. In the list of users that’s displayed, select **Joni Sherman** and **Holly Dickson**, select **Add**, and then select **Done**. 
 
-10. In the **eDiscovery Manager** window, select **Close**.
+10. In the **Editing Choose eDiscovery Manager** window, select **Save**.
 
-11. Leave your browser open and do not close any of the tabs.
+11. In the **eDiscovery Manager** window, select **Close**.
+
+12. Leave your browser open and do not close any of the tabs.
 
 # End of Lab 1
