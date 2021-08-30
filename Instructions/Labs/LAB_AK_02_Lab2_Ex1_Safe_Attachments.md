@@ -29,7 +29,7 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
 
 9. On the **Name your policy** page, enter **AttachmentPolicy1** in the **Name** field and then select **Next**.
 
-10. On the **Users and domains** page, in the **Domians** field type **onmicrosoft.com**. In the menu that appears, select Adatum's **onmicrosoft.com** domain. Select **Next**.
+10. On the **Users and domains** page, in the **Domians** field type **onmicrosoft.com**. In the menu that appears, select Adatum's **onmicrosoft.com** domain. Adatum's domain will now appear below the **Dommains** field. Select **Next**.
 
 11. On the **Settings** page, select the **Dynamic Delivery** option. This option will still send the email but will hold the attachment until it has been scanned and marked acceptable.
 
