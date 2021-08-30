@@ -99,9 +99,9 @@ In this task, you will create an encryption rule for messages inside your Exchan
 
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then under **Admin centers**, select **Exchange**. This will open the Exchange Online admin center.
 
-3. In the **Exchange admin center**, in the left-hand navigation pane select **mail flow.**
+3. In the **Exchange admin center**, in the left-hand navigation pane select **Mail flow** to expand this group, and then select **Rules**.
 
-4. At the top of the **mail flow** page, the **Rules** tab is displayed by default. In the **Rules** tab, select the **plus sign** (**+**) icon to create a new rule. This displays a drop-down menu of actions. Select **Create a new rule.**
+4. On the **Rules** page, select the **plus sign** (**+**) icon on the menu bar to create a new rule. This displays a drop-down menu of actions. Select **Create a new rule.**
 
 5. In the **new rule** window, in the **Name** box, enter **Encrypt mail for guest@adatum.com** as the name of this rule.
 
