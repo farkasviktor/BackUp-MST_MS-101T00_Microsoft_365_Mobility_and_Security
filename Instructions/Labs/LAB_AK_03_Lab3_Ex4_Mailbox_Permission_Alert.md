@@ -41,13 +41,13 @@ In this exercise you will configure and test an alert that will notify Lynne Rob
 
 10. Select **Next.**
 
-11. Review your settings. When everything is correct, scroll to the bottom of the window and verify the **Yes, turn it on right away** option is selected (select it if necessary) and then select **Finish**.
+11. On the **Review your settings** page, review the settings and if anything needs to be corrected, select its corresponding **Edit** option and make the necessary corrections. When everything is correct, verify the **Yes, turn it on right away** option is selected (select it if necessary) and then select **Finish**.
 
 12. Verify your new alert policy appears in the list on the **Alert policy** page and its **Status** in **On**.
 
 13. Leave the Client 1 VM and the Alert policy tab in your Edge browser open for the next task.
 
-You have now created an activity alert in the Security & Compliance Center that is triggered when FullAccess permissions are granted to any mailboxes.
+You have now created an activity alert in Microsoft 365 Defender that is triggered when FullAccess permissions are granted to any mailboxes.
 
 
 ### Task 2 – Validate the Mailbox Permission Alert
@@ -58,21 +58,23 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 2. In your Edge browser, select the **Microsoft 365 admin center** tab, and then in the left-hand navigation pane, under the **Admin centers** group, select **Exchange**. This opens the Exchange admin center for Exchange Online.
 
-3. In the **Exchange admin center**, in the left-hand navigation pane, under the **Recipients** group, select **Mailboxes**. 
+3. In the **Exchange admin center**, the **Mailboxes** window appears by default (if it doesn't, then in the left-hand navigation pane, under the **Recipients** group, select **Mailboxes**). 
 
-4. In the **Mailboxes** window, select **Alex Wilber** from the list of mailboxes.
+4. In the **Mailboxes** window, select **Alex Wilber** from the list of mailboxes (select Alex's name; do not select the check mark to the left of his name).
 
 5. In the **Alex Wilber** pane that appears, the **Mailbox** tab is displayed by default. Under the **Mailbox permissions** section, select **Manage mailbox delegation**.
 
-6. On the **Manage mailbox delegation** pane, there are three permissions - Read and manage, Send as, and Send on behalf. You want to add **Joni Sherman** to each permission. For each permission, select its **Edit** button, then perform the following steps to add Joni to that permission: <br/>
+6. On the **Manage mailbox delegation** pane, there are three mailbox permissions that can be updated: **Read and manage**, **Send as**, and **Send on behalf**. You want to add each of these permissions for Alex's mailbox to **Joni Sherman**. For each permission, perform the following steps to add Joni to that permission: <br/>
 
+	- Select the **Edit** button for the permission. 
 	- Select the **+Add permissions** button at the top of the pane.
 	- In the list of users that appears, select the check box for **Joni Sherman** and then select **Save**.
-	- Once the mailbox permission is added, select the back arrow at the top of the pane. This displays Joni as having the permission that you just edited.
-	- At the top of the pane, select the back arrow to return to the **Manage mailbox delegation** pane, which displays the three permissions. Repeat these steps for each of the three permissions. 
-	- Once you have assigned Joni to each of the three permissions on the **Manage mailbox delegation** pane, select the **X** in the upper right-hand corner to close the pane. 
+	- Once the mailbox permission is added, select the back arrow at the top of the pane. 
+	- This displays Joni as having the permission that you just edited. At the top of the pane, select the back arrow to return to the **Manage mailbox delegation** pane, which displays the three permissions. Repeat these steps for each of the three permissions. 
 
-7. In the Alex Wilber pane, select the **X** in the upper right-hand corner to close the pane. 
+7. Once you have assigned Joni to each of the three permissions on the **Manage mailbox delegation** pane, select the **X** in the upper right-hand corner to close the pane. 
+
+8. In the **Alex Wilber** pane, select the **X** in the upper right-hand corner to close the pane. 
 
 9. Since **Holly Dickson** has changed the mailbox permissions for Alex Wilbur by giving Joni Sherman full access permissions to his mailbox, an alert email should automatically be sent to Lynne Robbins’ Inbox that notifies her of this event.
 
