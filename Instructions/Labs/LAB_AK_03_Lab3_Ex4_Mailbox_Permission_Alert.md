@@ -7,11 +7,13 @@ In this exercise you will configure and test an alert that will notify Lynne Rob
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account and into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
 
-2. In the **Office 365 Security &amp; Compliance** center, in the left-hand navigation pane, select **Alerts,** and then under it, select **Alert policies**.
+2. **Microsoft 365 Defender** should still be open in your Edge browser from the prior task. In the left-hand navigation pane, under the **Email & collaboration** section, select **Policies & rules**. 
 
-3. In the **Alert policies** window, select **+New alert policy**.
+3. On the **Policies & rules** window, select **Alert policy**.
 
-4. In the **New alert policy** window, enter the following information:
+4. In the **Alert policy** window, select **+New alert policy** on the menu bar.
+
+5. In the **New alert policy** window, enter the following information:
 
 	- Name: **Mailbox permission change**
 
@@ -21,29 +23,29 @@ In this exercise you will configure and test an alert that will notify Lynne Rob
 
 	- Category: **Permissions**
 
-5. Select **Next.**
+6. Select **Next.**
 
-6. On the **Choose an activity, conditions and when to trigger the alert** window, enter the following information:
+7. On the **Choose an activity, conditions and when to trigger the alert** window, enter the following information:
 
 	- Activity is: select the drop-down arrow in the field, enter **mail** in the search box, and select **Granted mailbox permission**
 
 	- How do you want the alert to be triggered? **Every time an activity matches the rule**
 
-7. Select **Next.**
+8. Select **Next.**
 
-8. On the **Decide if you want to notify people when this alert is triggered** window, enter the following information:
+9. On the **Decide if you want to notify people when this alert is triggered** window, enter the following information:
 
 	- Email recipients: Select the "X" to the right of **Holly Dickson's** account to remove her, enter **Lynne**, and then select **Lynne Robbins** from the user list
 
 	- Daily notification limit: **No limit**
 
-9. Select **Next.**
+10. Select **Next.**
 
-10. Review your settings. When everything is correct, scroll to the bottom of the window and verify the **Yes, turn it on right away** option is selected (select it if necessary) and then select **Finish**.
+11. Review your settings. When everything is correct, scroll to the bottom of the window and verify the **Yes, turn it on right away** option is selected (select it if necessary) and then select **Finish**.
 
-11. Verify your new alert policy appears in the list on the **Alert policies** page and its **Status** in **On**.
+12. Verify your new alert policy appears in the list on the **Alert policy** page and its **Status** in **On**.
 
-11. Leave the Client 1 VM and the Microsoft 365 admin center and Security and Compliance Center tabs open for the next task.
+13. Leave the Client 1 VM and the Alert policy tab in your Edge browser open for the next task.
 
 You have now created an activity alert in the Security & Compliance Center that is triggered when FullAccess permissions are granted to any mailboxes.
 
@@ -56,19 +58,23 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 2. In your Edge browser, select the **Microsoft 365 admin center** tab, and then in the left-hand navigation pane, under the **Admin centers** group, select **Exchange**. This opens the Exchange admin center for Exchange Online.
 
-3. In the **Exchange admin center**, in the left-hand navigation pane, select **recipients**. 
+3. In the **Exchange admin center**, in the left-hand navigation pane, under the **Recipients** group, select **Mailboxes**. 
 
-4. In the **recipients** window, the **mailboxes** tab is displayed by default. Select **Alex Wilber** from the list of mailboxes and then select the **pencil (Edit)** icon from the menu bar to edit his mailbox settings.
+4. In the **Mailboxes** window, select **Alex Wilber** from the list of mailboxes.
 
-5. In the **Edit User Mailbox** window, select **mailbox delegation** in the left-hand navigation pane.
+5. In the **Alex Wilber** pane that appears, the **Mailbox** tab is displayed by default. Under the **Mailbox permissions** section, select **Manage mailbox delegation**.
 
-6. Scroll down through the **mailbox delegation** page to the **Full Access** section and select the **(+) plus sign** icon.
+6. On the **Manage mailbox delegation** pane, there are three permissions - Read and manage, Send as, and Send on behalf. You want to add **Joni Sherman** to each permission. For each permission, select its **Edit** button, then perform the following steps to add Joni to that permission: <br/>
 
-7. In the **Select Full Access** window, select **Joni Sherman**, select the **add -&gt;** button, and then select **OK**.
+	- Select the **+Add permissions** button at the top of the pane.
+	- In the list of users that appears, select the check box for **Joni Sherman** and then select **Save**.
+	- Once the mailbox permission is added, select the back arrow at the top of the pane. This displays Joni as having the permission that you just edited.
+	- At the top of the pane, select the back arrow to return to the **Manage mailbox delegation** pane, which displays the three permissions. Repeat these steps for each of the three permissions. 
+	- Once you have assigned Joni to each of the three permissions on the **Manage mailbox delegation** pane, select the **X** in the upper right-hand corner to close the pane. 
 
-8. In the **Edit User Mailbox** window, select **Save**, and then select **OK** once the information is saved.
+7. In the Alex Wilber pane, select the **X** in the upper right-hand corner to close the pane. 
 
-9. Since **Holly Dickson** has changed the mailbox permissions for Alex Wilbur by giving Joni Sherman FullAccess permissions to his mailbox, an alert email should automatically be sent to Lynne Robbins’ Inbox that notifies her of this event.
+9. Since **Holly Dickson** has changed the mailbox permissions for Alex Wilbur by giving Joni Sherman full access permissions to his mailbox, an alert email should automatically be sent to Lynne Robbins’ Inbox that notifies her of this event.
 
 	‎Switch to LON-CL2. 
 
