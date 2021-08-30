@@ -58,7 +58,7 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 7. In the **Locations** page, the **Specific locations** option is selected by default. There are three groups of locations, each of which can be turned On or Off through its respective toggle switch. Turn the toggle switch **On** for **Exchange mailboxes**, but leave the toggle switches **Off** for the other two locations. Select **Next**. <br/>
 
-	**Note:** Note under the **Included** column that all mailboxes will be included in the search, although you can optionally choose specific mailboxes if you wish. For the purpose of this lab, leave the default value as is to search all mailaboxes.
+	**Note:** The **Included** column indicates that all mailboxes will be included in the search, but it also provides the option to optionally choose specific mailboxes if you wish. For this lab, leave the default value as is to search all mailboxes.
 
 	**Warning:** At least one location must be set to **On**; otherwise, you will receive an error.  
 
@@ -86,7 +86,7 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 	**Note:** In the list of search results, note how the **User** for the prior alerts is listed as Holly, while the user for the eDiscovery alert is listed as **Service Account**. This is because the eDiscovery alert is a default system alert rather than a custom alert created by an individual user.
 
-14. In your browser, leave the Outlook tab (**Mail-Holly Dickson - Outlook**) open as you will use it shortly in another lab exercise. Leave all your other browser tabs open as well.
+17. In your browser, leave the Outlook tab (**Mail-Holly Dickson - Outlook**) open as you will use it shortly in another lab exercise. Leave all your other browser tabs open as well.
 
 You have now successfully tested the Microsoft 365 eDiscovery system alert that monitors the creation of an eDiscovery search or the export of data from a completed search.
 
