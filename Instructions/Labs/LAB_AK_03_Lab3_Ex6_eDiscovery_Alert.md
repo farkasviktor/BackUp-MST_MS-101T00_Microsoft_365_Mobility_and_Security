@@ -10,13 +10,17 @@ In this task, you will verify whether a default Microsoft 365 alert is triggered
 
 1. You should still be logged into the Client 1 VM (LON-CL1) as the **Admin,** and you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In your **Microsoft Edge** browser, select the **Office 365 Security &amp; Compliance** center tab.
+2. In your **Microsoft Edge** browser, select the **Alerts** tab that displays **Microsoft 365 Defender**.
 
-3. In the **Office 365 Security &amp; Compliance** center, the **Alert policies** window should still be open from the prior task; if not, select **Alerts** and then **Alert Policies** from the left-hand navigation bar. <br/>
+3. In **Microsoft 365 Defender**, under the **Email & collaboration** group, select **Policies & rules**. 
 
-4. You want to search through the default system policies for a policy named **eDiscovery search started or exported**. Since there are so many pre-existing system policies, the easiest way to locate the policy is to search for it. In the **Search** field at the top of the screen, enter **eDiscovery**. In the policy list, you should see **eDiscovery search started or exported**. Select the check box next to this policy.
+4. On the **Policies & rules** page, select **Alert policy**. 
 
-5. An **eDiscovery search started or exported** pane should appear. Scroll down through **eDiscovery search started or exported** pane and verify the settings are configured as follows:
+5. On the **Alert policy** page, You want to search through the default system policies for a policy named **eDiscovery search started or exported**. Since there are so many pre-existing system policies, the easiest way to locate the policy is to search for it. In the **Search** field at the top of the screen, enter **eDiscovery**. 
+
+6. In the policy list, the **eDiscovery search started or exported** policy should appear. Select the check box next to this policy.
+
+7. An **eDiscovery search started or exported** pane should appear. Scroll down through **eDiscovery search started or exported** pane and verify the settings are configured as follows:
 
 	- Status: **On**
 	
@@ -28,11 +32,11 @@ In this task, you will verify whether a default Microsoft 365 alert is triggered
 
 	- Email recipients: **TenantAdmins**
 
-6. If all settings are correct, select the **Close** button to close the **eDiscovery search started or exported** pane.
+8. If all settings are correct, select the **Close** button to close the **eDiscovery search started or exported** pane.
 
-7. In the **Alert policies** list, select the **ellipsis** icon that appears on the far right side of **eDiscovery search started or exported** row, and then in the menu that appears, select **Edit**.
+9. In the **Alert policies** list, select the **ellipsis** icon that appears on the far right side of the **eDiscovery search started or exported** row, and then in the menu that appears, select **Edit**.
 
-8. An **Edit recipients** pane appears. This window enables you to edit the email recipients who are notified when this policy is triggered. You will not change the value here; instead, the purpose of this step is to show you how to change the recipient list in your real-world implementations for any of the default system policies. Select **Close**.
+10. An **Edit recipients** pane appears. This window enables you to edit the email recipients who are notified when this policy is triggered. You will not change the value here; instead, the purpose of this step is to show you how to change the recipient list in your real-world implementations for any of the default system policies. Select **Close**.
 
 You have now reviewed the default Microsoft 365 eDiscovery alert that notifies tenant admins when an eDiscovery search is created or exported.
 
@@ -42,37 +46,43 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 1. You should still be logged into the Client 1 VM (LON-CL1) as the **Admin,** and you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In your **Microsoft Edge** browser, select the **Office 365 Security &amp; Compliance** center tab. 
+2. In your **Microsoft Edge** browser, select the **Microsoft 365 admin center** tab. 
 
-3. In the **Office 365 Security &amp; Compliance** center, in the left-hand navigation pane, select **Search**, and then under it, select **Content search**.
+3. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin centers** group, select **Compliance**.
 
-4. The **Content search** window has two tabs - a **Searches** tab and an **Exports** tab. The **Searches** tab is displayed by default. Select the **+New search** button.
+4. In the **Microsoft 365 compliance** portal, in the left-hand navigation pane, under the **Solutions** group, select **Content search**.
 
-5. In the **Search query** pane that appears, enter **Confidential** in the **Enter keywords** field.
+5. The **Content search** window has two tabs - a **Search** tab and an **Export** tab. The **Search** tab is displayed by default. Select **+New search** that appears on the menu bar. This initiates the **New search** wizard.
 
-6. In the **Locations** section, select the **Specific locations** option and then select **Modify**. This opens the **Modify locations** window. There are three groups of locations, each of which can be turned On or Off through its respective toggle switch. Turn the toggle switch **On** (if necessary) for the first group, but leave the toggle switches **Off** for the other two. At least one group must be set to **On**; otherwise, you will receive an error. Select **Save**. <br/>
+6. In the **New search** wizard, in the **Name and description** page, enter **Confidential search** in the **Name** field and then select **Next**.
 
-	**Note:** While you could have simply selected the **All locations** option, you were asked to select a specific set of locations just so that you could see all the various locations that can possibly be searched in an eDiscovery search.
+7. In the **Locations** page, the **Specific locations** option is selected by default. There are three groups of locations, each of which can be turned On or Off through its respective toggle switch. Turn the toggle switch **On** for **Exchange mailboxes**, but leave the toggle switches **Off** for the other two locations. Select **Next**. <br/>
 
-7. Select **Save & run**. In the **Save search** pane that appears, enter **Confidential search** in the **Name** field and then select **Save**.  <br/>
+	**Note:** Note under the **Included** column that all mailboxes will be included in the search, although you can optionally choose specific mailboxes if you wish. For the purpose of this lab, leave the default value as is to search all mailaboxes.
 
-	**Important:** When you save a new search, the system saves the search and then immediately runs it. By saving this eDiscovery search, the eDiscovery alert should be triggered, thereby creating an email notification that should be sent to the Inbox of all users with tenant admin permissions. You do NOT have to wait for the Search to finish before testing whether the alert sent the email notification. The alert notification system will process the email at the time the search is saved. <br/>
+	**Warning:** At least one location must be set to **On**; otherwise, you will receive an error.  
+
+8. In the **Define your search conditions** page, enter **Confidential** in the **Keywords** field and then select **Next**.
+
+9. In the **Review your search and create it** page, review the settings and edit any (if necessary) to make any corrections. Once everything appears OK, select **Submit**. 
+
+10. On the **Content search** page, note that the **Status** of the search is **Starting**. <br/>
+
+	**Important:** When you submit a new search, the system saves the search and then immediately runs it. By saving this eDiscovery search, the eDiscovery alert should be triggered, thereby creating an email notification that should be sent to the Inbox of all users with tenant admin permissions. You do NOT have to wait for the Search to finish before testing whether the alert sent the email notification. The alert notification system will process the email at the time the search is saved. 
 	
-	Do NOT wait for the search to finish. Proceed to the next step.
+11. The search that you created should only take a couple of minutes to complete. You can either proceed to the next step while the search is running, or if you wish, you can select the **Refresh** icon on the menu bar every minute or so until the **Status** changes to **Completed**.
 	
-8. For the purpose of this lab, you should cancel the search to remove the overhead from your limited system resources. The screen should currently indicate that it is **Searching**. Select the **Cancel** button to stop the search, and then select **Yes** to confirm the cancellation. Canceling the search takes a minute or so to complete. 
-	
-9. To test this alert, open a new tab in your browser and go to **Outlook on the web** by entering the following URL in the address pane: **https://outlook.office365.com**
+12. To test this alert, open a new tab in your browser and go to **Outlook on the web** by entering the following URL in the address pane: **https://outlook.office365.com**
 
-10. When Outlook opens, if the language and time zone window appears, select your Language and Time zone and select **Save**. 
+13. When Outlook opens, if the language and time zone window appears, select your Language and Time zone and select **Save**. 
 
-11. Monitor Holly's Inbox for the email that was automatically sent by the Alerts notification system to inform her that an eDiscovery search was created or exported. Once the email is received, open it and review the contents, then close the message. <br/>
+14. Monitor Holly's Inbox for the email that was automatically sent by the Alerts notification system to inform her that an eDiscovery search was created or exported. Once the email is received, open it and review the contents, then close the message. <br/>
 
 	**Note:** It may take up to 10 minutes or so before the email arrives in Holly's Inbox.
 
-12. In your **Edge** browser, switch back to the **Office 365 Security &amp; Compliance** center tab and under the **Search** group in the left-hand navigation pane, select **Audit Log Search**. 
+15. In your **Edge** browser, switch back to the **Microsoft 365 Compliance** portal (the **Content search** tab) and under the **Solutions** group in the left-hand navigation pane, select **Audit**. 
 
-13. At the bottom of the page, select the **Search** button to display all recent activity. This will display the activity that created this alert. <br/>
+16. At the bottom of the page, select the **Search** button to display all recent activity. This will display the activity that created this alert. <br/>
 
 	**Note:** In the list of search results, note how the **User** for the prior alerts is listed as Holly, while the user for the eDiscovery alert is listed as **Service Account**. This is because the eDiscovery alert is a default system alert rather than a custom alert created by an individual user.
 
