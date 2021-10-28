@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 4 - Exercise 2 - Validate Information Rights Management 
+# Module 4 - Lab 4 - Exercise 2 - Validate Information Rights Management 
 
 In this exercise, you will learn how to validate Information Rights Management for both Exchange Online and SharePoint Online.
  
@@ -21,6 +21,8 @@ In the prior exercise, you set up Information Rights Management in Exchange Onli
 7. This displays a message below it that indicates the message is encrypted. In this message box, select **Change permissions**, which opens a **Change permissions** dialog box.
 
 8. In the **Change permissions** dialog box, in the **Choose how recipients can interact with this message** field, select the drop-down arrow, select **Do not forward**, and then select **OK**. 
+
+**Note**If **Change permissions** option is not available then click on the horizontal ellipsis on the top menu of the new message, select **Encrypt** and then select **Do Not Forward**
 
 9. Select **Send** to send the email to Alex. 
 
@@ -113,7 +115,7 @@ You will begin by having Holly create a new SharePoint site collection. You will
 
 22. In the **Permissions** pane that appears, select **Site members** and note that only the **Marketing Members** have permission to access the Documents site.
 
-23. To share this Documents site with Alex Wilber, in the **Permissions** pane select the **Invite people** button. In the drop-down menu that appears, select **Share site only**.
+23. To share this Documents site with Alex Wilber, in the **Permissions** pane select the **Add Members** button. In the drop-down menu that appears, select **Share site only**.
 
 24. On the **Share site** pane, enter **Alex** in the field, then select **Alex Wilber** from the user list, verify the **Send email** check box is selected (if not, select it now), and then select **Add**.
 
@@ -162,4 +164,4 @@ You will begin by having Holly create a new SharePoint site collection. You will
 43. Leave your browser open for the next lab; do not close any of the tabs. 
 
 
-# End of Lab 4
+# Proceed to Lab 4 - Exercise 3
