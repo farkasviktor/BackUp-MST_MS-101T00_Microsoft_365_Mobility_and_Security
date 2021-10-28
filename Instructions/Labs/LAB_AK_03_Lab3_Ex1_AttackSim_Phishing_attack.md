@@ -1,4 +1,4 @@
-# Learning Path 3 - Lab 3 - Exercise 1 - Conduct a Spear Phishing attack using Attack Simulation training
+# Module 3 - Lab 3 - Exercise 1 - Conduct a Spear Phishing attack using Attack Simulation training
 
 Holly Dickson is concerned that some users at Adatum may require education about phishing attacks. As part of her pilot project, Holly has decided to use the Microsoft 365 Attack simulation training feature to determine her users' susceptibility to phishing attacks.
 
@@ -56,9 +56,9 @@ To use Microsoft's Attack simulation training feature to simulate a phishing att
 
 23. If you take too long to complete this process, the **Enter password** window will appear with a message indicating you took too long to complete the sign in process, so you will be timed out. If this occurs, you must sign in again with Holly's password of **Pa55w.rd**. Another verification code will be texted to your phone, so enter it in the **Enter code** screen that appears and select **Verify**.
 
-24. In the **Sign in** dialog box, copy and paste in the **Tenant Username** provided by your lab hosting provider (**admin@xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider) and then select **Next**.
+24.  In the **Sign in** window, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**.
 
-25. In the **Enter password** dialog box, copy and paste in the unique **Tenant Password** provided by your lab hosting provider and then select **Sign in**.
+25. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
 
 26. On the **Stay signed in?** dialog box, select the **Don’t show this again** check box and then select **Yes.** 
 
@@ -77,7 +77,7 @@ Now that Holly has turned on MFA, she is ready to run Microsoft 365's Attack sim
 
 1. You should still be on **LON-CL1**, and you should still be logged in as the **Admin** account. If necessary, log in as the **Admin** with a password of **Pa55w.rd**.
 
-2. You should still have the **Microsoft 365 Defender** portal open in in your **Edge** browser from the prior task. If not, enter **https://security.microsoft.com** in the address bar, and then if you receive the dialog box asking for a second form of authentication, proceed through the verification process. 
+2. You should still have the **Microsoft 365 Defender** portal open in in your **Edge** browser from the prior task. If not, enter **https://security.microsoft.com** in the address bar, and then if you receive the dialog box asking for a second form of authentication, proceed through the verification process. If not signin using Holly user id and password.
 
 3. In the **Microsoft 365 Defender** portal, under **Email & collaboration** in the left-hand navigation pane, select **Attack simulation training**. 
 
@@ -109,7 +109,7 @@ Now that Holly has turned on MFA, she is ready to run Microsoft 365's Attack sim
 
 13. The **Microsoft landing page** appears in the pane on the right. This provides an example of what the landing page will look like when someone experiences a phishing attack. Review the features of this landing page, and then close **Microsoft landing page** pane.
 
-14. On the On the **Training landing page**, note the text that appears in the **Header** and **Body** fields. This is the text that you saw when you previewed the Microsoft landing page. Change the values of these fields to something different, and then select the **Preview page** button again. In the **Microsoft landing page** that appears in the pane on the right, you should see the changes that you made to the header and body text fields. Close the **Microsoft landing page** pane when you're done reviewing.
+14. On the **Training landing page**, note the text that appears in the **Header** and **Body** fields. This is the text that you saw when you previewed the Microsoft landing page. Change the values of these fields to something different, and then select the **Preview page** button again. In the **Microsoft landing page** that appears in the pane on the right, you should see the changes that you made to the header and body text fields. Close the **Microsoft landing page** pane when you're done reviewing.
 
 15. Select **Next**.
 
