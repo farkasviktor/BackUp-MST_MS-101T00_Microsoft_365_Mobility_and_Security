@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 4 - Exercise 1 - Configure Microsoft 365 Message Encryption
+# Module 4 - Lab 4 - Exercise 1 - Configure Microsoft 365 Message Encryption
 
 
 In this lab, you will take on the persona of Holly Dickson, Adatum’s Enterprise Administrator. You have been tasked with piloting the use of Microsoft 365 message encryption in Adatum’s Microsoft 365 deployment. Since message encryption rules can be created using both Exchange Online and Windows PowerShell, you have decided to test each method to determine which you prefer to use once you go live.
@@ -138,11 +138,11 @@ In a prior task, you configured a mail flow encryption rule using the Exchange a
 
 	To create this rule, run the following command:<br/>
 
-	**New-TransportRule -Name "Encrypt rule for Guest Services" -SentTo "Gservices@contoso.com" -SentToScope "NotinOrganization" -ApplyOME $true**  <br/>
+	**New-TransportRule -Name "Encrypt rule for Guest Services" -SentTo "Gservices@adatum.com" -SentToScope "NotinOrganization" -ApplyOME $true**  <br/>
 	
 	**Note:** This command will take several seconds to complete.
 
-3. To verify the rule exists, minimize your PowerShell window. In your Internet Explorer browser session, you should still be in the **mail flow** window of the **Exchange admin center**, and the **rules** tab should be displayed. The list of rules should only display the **Encrypt mail for guest@adatum.com** rule that you created in the prior task.<br/>
+3. To verify the rule exists, minimize your PowerShell window. In your Microsoft Edge browser session, you should still be in the **mail flow** window of the **Exchange admin center**, and the **rules** tab should be displayed. The list of rules should only display the **Encrypt mail for guest@adatum.com** rule that you created in the prior task.<br/>
 
 	‎On the menu bar that appears above the list of rules, select the **Refresh** icon. In the refreshed list, the rule that you just created using PowerShell should appear as well.
 	
