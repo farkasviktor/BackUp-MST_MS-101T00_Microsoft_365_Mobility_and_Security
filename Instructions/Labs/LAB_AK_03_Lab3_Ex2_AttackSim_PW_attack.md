@@ -1,4 +1,4 @@
-# Learning Path 3 - Lab 3 - Exercise 2 - Conduct a Drive-by URL attack using Attack Simulation training
+# Module 3 - Lab 3 - Exercise 2 - Conduct a Drive-by URL attack using Attack Simulation training
 
 Holly Dickson is concerned that some users at Adatum may require education about selecting URL links to familiar websites that are either fake or have been hacked. This type of attack is known as a Drive-by URL attack. With this type of attack, a target receives an email containing a URL link, and when the target selects the link, they are taken to a website that runs background code whose sole purpose is to gather information about the target or deploy arbitrary code to their device. As part of her pilot project, Holly has decided to use the Microsoft 365 Attack simulation training feature to determine her users' susceptibility to Drive-by URL attacks.
 
@@ -43,6 +43,7 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 	- Theme: **Personalized Offer**
 	- Industry: **Retail**
 	- Current Event: **Yes**
+	- Under Language, Select the language for payload : **English** 
 	- Email message: Enter the following text that will be displayed in the body of the email message: **Tailspin Toys is offering you a FREE, one-time only giveaway of a toy of your choice as part of our 25th anniversary celebration! Please click on the following link to select the toy of your choice:** 
 	- After entering the prior message, select the **Phishing link** option at the top of the text form (to the right of **Dynamic tag**). In the **Name Phishing Url** dialog box that appears, enter **Free25thAnniversaryGift@tailspintoys.com** in the **Name** field and then select **Confirm**.
 
@@ -56,8 +57,8 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 13. On the **Add Indicator** pane that appears on the right, enter the following information: <br/>
 
-	- Indicator Name: **Too good to be true offers**
-	- Indicator Location: **From the Body of the email**
+	- Select an indicatory you would like to use: **Too good to be true offers**
+	- Where do you want to place this indicator on payload: **From the Body of the email**
 
 14. A **Select Text** button will appear. Select this button.
 
@@ -100,7 +101,7 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 32. The **Microsoft landing page** appears in the pane on the right. This provides an example of what the landing page will look like when someone experiences a phishing attack. Review the features of this landing page, and then close **Microsoft landing page** pane.
 
-33. On the On the **Training landing page**, note the text that appears in the **Header** and **Body** fields. This is the text that you saw when you previewed the Microsoft landing page. Change the values of these fields to something different, and then select the **Preview page** button again. In the **Microsoft landing page** that appears in the pane on the right, you should see the changes that you made to the header and body text fields. Close the **Microsoft landing page** pane when you're done reviewing.
+33. On the **Training landing page**, note the text that appears in the **Header** and **Body** fields. This is the text that you saw when you previewed the Microsoft landing page. Change the values of these fields to something different, and then select the **Preview page** button again. In the **Microsoft landing page** that appears in the pane on the right, you should see the changes that you made to the header and body text fields. Close the **Microsoft landing page** pane when you're done reviewing.
 
 34. Select **Next**.
 
