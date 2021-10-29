@@ -62,4 +62,4 @@ Devices must be managed before you can give users access to company resources or
 You have now verified that Intune is the default MDM solution for your tenant.
 
 
-# Proceed to Lab 10 - Exercise 2
+# Proceed to Lab 9 - Exercise 2
