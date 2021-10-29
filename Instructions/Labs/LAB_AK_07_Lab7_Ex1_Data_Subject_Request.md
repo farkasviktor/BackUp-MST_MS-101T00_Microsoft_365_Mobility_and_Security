@@ -1,4 +1,4 @@
-# Learning Path 7 - Lab 7 - Exercise 1 - Conduct a data search
+# Module 7 - Lab 7 - Exercise 1 - Conduct a data search
 
 Data subject requests (DSRs) are used to search for and extract all known information on a person of interest. A data search can come from the person in question or from an authorized source. In this exercise you will configure and export content search from the Microsoft 365 Compliance center.
 
@@ -89,4 +89,4 @@ When someone opens a case to search for content, you typically export the result
 You have successfully exported a case report to your local computer. Note: Because the report contains only a report and not the message or document content, you could not process this report to fulfill the data subject request's legal requirements.
 
 
-# Proceed to Lab 8 - Exercise 2
+# Proceed to Lab 7 - Exercise 2
