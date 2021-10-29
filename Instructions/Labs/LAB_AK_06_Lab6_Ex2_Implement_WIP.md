@@ -1,4 +1,4 @@
-# Learning Path 6 - Lab 6 - Exercise 2 - Implement Windows Information Protection  
+# Module 6 - Lab 6 - Exercise 2 - Implement Windows Information Protection  
 
 Now that Holly Dickson has implemented Sensitivity labels as part of her pilot project at Adatum, she is ready to implement Windows Information Protection (WIP). In your role as Holly Dickson, you will use this exercise to create a WIP policy that will be applied to any member of the WIP Users group who has an MDM-enrolled device in Intune.
 
@@ -108,4 +108,4 @@ In this exercise you will enroll your LON-CL2 device to Azure AD. You will then 
 You have just enrolled the Client 2 VM to your tenant, so the Client app protection policy **WIP Client Protection** that you configured in the last task could be applied to protect the content of a Word document.
 
 
-# End of Lab 7
+# End of Lab 6
