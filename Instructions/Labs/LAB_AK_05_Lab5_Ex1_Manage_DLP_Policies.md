@@ -1,4 +1,4 @@
-# Learning Path 5 - Lab 5 - Exercise 1 - Manage DLP Policies  
+# Module 5 - Lab 5 - Exercise 1 - Manage DLP Policies  
 
 In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Microsoft 365 deployed in a virtualized lab environment. As you proceed with your Microsoft 365 pilot project, your next steps are to implement Data Loss Prevention (DLP) policies at Adatum. You will begin by creating a custom DLP policy in this exercise, and then you’ll test DLP policies related to email message archiving and emails with sensitive data. 
 
@@ -100,4 +100,4 @@ Given that, you will still configure a policy tip for the DLP policy that you cr
 You have now created a DLP policy that scans for IP addresses in emails and documents that are sent or shared in your organization.
 
 
-# Proceed to Lab 6 - Exercise 2 
+# Proceed to Lab 5 - Exercise 2 
