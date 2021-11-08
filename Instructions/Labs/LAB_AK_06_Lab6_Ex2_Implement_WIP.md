@@ -26,7 +26,7 @@ In this lesson you will create a WIP policy and assign to it the **WIP Users** g
 
 9. In the **Apps | Overview** page, in the middle pane under the **Policy** group, select **App protection policies**.
 
-10. On the **Apps | App protection policies** page, select **+Create Policy** on the menu bar, and then in the drop-down menu that appears, select **Windows 10**.
+10. On the **Apps | App protection policies** page, select **+Create Policy** on the menu bar, and then in the drop-down menu that appears, select **Windows 10 and later**.
 
 11. In the **Create policy** window, the steps to create a policy are displayed at the top of the page. You are currently in step **1 - Basics**. Enter the following information and then select **Next**:
 
