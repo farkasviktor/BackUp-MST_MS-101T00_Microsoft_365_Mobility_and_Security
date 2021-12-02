@@ -124,5 +124,5 @@ Now that Holly has created a retention policy through the Exchange Admin Center,
 
 You have now created a new retention policy in the Compliance Center that retains all Exchange emails from all mailboxes for 7 years after the last modification.
 
- # End of Lab 5
+ # End of Lab 4
  
