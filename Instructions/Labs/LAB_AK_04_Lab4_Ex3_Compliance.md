@@ -88,4 +88,4 @@ In this task you will activate MDM auto-enrollment for new devices in your Adatu
 You have configured automatic enrollment in Intune for devices of users in the WIP Users group, and you have verified the MDM authority for Adatum's tenant is set to Microsoft Intune.
 
 
-# Proceed to Lab 5 - Exercise 2
+# Proceed to Lab 4 - Exercise 4
