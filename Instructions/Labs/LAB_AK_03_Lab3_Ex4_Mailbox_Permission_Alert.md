@@ -1,4 +1,4 @@
-# Learning Path 3 - Lab 3 - Exercise 4 - Implement Mailbox Permission Alert
+# Module 3 - Lab 3 - Exercise 4 - Implement Mailbox Permission Alert
 
 
 In this exercise you will configure and test an alert that will notify Lynne Robbins when FullAccess permissions are granted to any mailbox within Adatum.
@@ -90,7 +90,7 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 12. Switch back to the LON-CL1.
 
-13. In the **Microsoft 365 Security &amp; Compliance center**, in the left-hand navigation pane, select **Alerts,** and then under it, select **View Alerts**. The notification that was just created based on the **Mailbox permission change** alert should appear in the list.
+13. In the **Microsoft 365 Security &amp; Compliance center** left-hand navigation pane, select **Incidents & alerts** to expand the group select **Alerts,** and then under it, select **View Alerts**. The notification that was just created based on the **Mailbox permission change** alert should appear in the list.
 
 14. In your browser, close the Exchange admin center tab (**mailboxes - Microsoft Exchange**), but leave the other browser tabs open.
 
