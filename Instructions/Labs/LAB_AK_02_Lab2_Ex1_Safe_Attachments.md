@@ -1,4 +1,4 @@
-# Learning Path 2 - Lab 2 - Exercise 1 - Implement a Safe Attachments policy 
+# Module 2 - Lab 2 - Exercise 1 - Implement a Safe Attachments policy 
 
 You now have a Global admin account set up for Holly Dickson, and you're signed into Microsoft 365 as Holly. In this first phase of your pilot project for Adatum, you want to create a Safe Attachments policy and turn on Microsoft Defender for Office 365, which provides advanced threat protection for SharePoint, OneDrive, and Microsoft Teams.
 
@@ -33,7 +33,7 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
 
 11. On the **Settings** page, select the **Dynamic Delivery** option. This option will still send the email but will hold the attachment until it has been scanned and marked acceptable.
 
-12. Under the **Redirect messages with detected attachments** section, select the **Enable redirect** check box. 
+12. Scroll down and under the **Redirect messages with detected attachments** section, select the **Enable redirect** check box. 
 
 13. In the **Send messages that contain blocked, monitored, or replaced attachments to the specified email address** field, enter **JoniS@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider), and then select **Next**.
 
