@@ -1,4 +1,4 @@
-# Learning Path 6 - Lab 6 - Exercise 1 - Implement Sensitivity labels with Azure Information Protection Unified Labels client
+# Module 6 - Lab 6 - Exercise 1 - Implement Sensitivity labels with Azure Information Protection Unified Labels client
 
 In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Microsoft 365 deployed in a virtualized lab environment. As you proceed with your Microsoft 365 pilot project, your next steps are to implement Sensitivity Labels with Azure Information Protection (AIP) and Windows Information Protection (WIP) at Adatum. 
 
@@ -322,4 +322,4 @@ In the prior task, you created a Word document and protected it with a Sensitivi
 31. Remain signed into LON-CL2 and signed into Outlook on the Web as Joni. Do not close your browser.
 
 
-# Proceed to Lab 7 - Exercise 2
+# Proceed to Lab 6 - Exercise 2
