@@ -1,4 +1,4 @@
-# Learning Path 2 - Lab 2 - Exercise 2 - Implement a Safe Links Policy
+# Module 2 - Lab 2 - Exercise 2 - Implement a Safe Links Policy
 
 Now that you have created a Safe Attachments policy for Adatum, you want to create a Safe Links policy and then validate the policy to ensure that it works properly.
 
@@ -22,7 +22,7 @@ In this task, you will create a Safe Links policy that applies to all users in y
 
 6. On the **Name your policy** page, enter **LinkPolicy1** in the **Name** field and then select **Next**.
 
-7. On the **Users and domains** page, in the **Domians** field type **onmicrosoft.com**. In the menu that appears, select Adatum's **onmicrosoft.com** domain. Adatum's domain will now appear below the **Dommains** field. Select **Next**.
+7. On the **Users and domains** page, in the **Domians** field type **onmicrosoft.com**. In the menu that appears, select Adatum's **onmicrosoft.com** domain. Adatum's domain will now appear below the **Domains** field. Select **Next**.
 
 8. On the **Protection settings** page, enter the following settings and then select **Next**: 
 
@@ -33,7 +33,7 @@ In this task, you will create a Safe Links policy that applies to all users in y
         - Wait for URL scanning to complete before delivering the message
         - Apply safe links to email messages sent within the organization
         - Do not track user clicks
-        - Do not allow users to click through to original URL
+        - Do not let users click through to the original URL
    
 9. On the **Notification** page, leave the default option selected (**Use the default notification text**) and select **Next**.
 
@@ -43,7 +43,7 @@ In this task, you will create a Safe Links policy that applies to all users in y
 
 12. On the **Safe links** page, select **Global settings** on the menu bar.
 
-13. In the **Safe Links settings for your organization** pane that appears, enter **http://tailspintoys.com** in the **Block the following URLs** field. Do **NOT** change the default settings for any of the other options, and then select **Save**.
+13. In the **Safe Links settings for your organization** pane that appears, enter **http://tailspintoys.com** in the **Block the following URLs** field. Do **NOT** change the default settings for any of the other options, scroll down and then select **Save**.
 
 14. Leave the Safe Links tab open in your browser for the next task.
 
