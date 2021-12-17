@@ -65,7 +65,7 @@ In this task, you will create an eDiscovery case, add an In-Place Hold to the ca
 
 12. On the **Exchange email** page, enter **Lynne** into the search field and then select the **Search** icon to the right of the field. 
 
-13. Scroll down on the page to see the search results. Under **Users, groups, or teams**, select the check box next to **Lynne Robbins**, and then select the **Choose** button at the bottom of the page.
+13. Scroll down on the page to see the search results. Under **Users, groups, or teams**, select the check box next to **Lynne Robbins**, and then select the **Done** button at the bottom of the page.
 
 14. On the **Edit locations** window, verify that one user, group, or team was added, which was Lynne Robbins. Select **Done**.
 
@@ -75,19 +75,19 @@ In this task, you will create an eDiscovery case, add an In-Place Hold to the ca
 
 17. On the **Review your settings** page, review the values and select **Edit** next to any that need to be modified. When you are satisfied with the settings, select the **Create this hold** button.
 
-18. On the **IP address violation - Content** window, select **Close**.
+18. On the **IP address violation - Content** window, select **Done**.
 
 19. This returns you to the **Holds** tab on the **IP Address violation &gt; Core ED** page. Select the **Searches** tab from the top menu.
 
-20. On the **Searches** tab, select the **+New search** button. 
+20. On the **Searches** tab, select the **+New search** button. Enter **IP Address Violation - Search** in the **Name and description** field. Click **Next**.
 
-21. In the **New search** window, in the **Search query** pane on the left, enter **IP Address** in the **Keywords** field.
+21. Under **Locations**, scroll down and select the **Locations on hold** option. Click **Next**.
 
-22. Under **Locations**, select the **Locations on hold** option.
+22. In the **Define your Search conditions** page, enter **IP Address** in the **Keywords** field. Click **Next**.
 
-23. Select **Save &amp; run**.
+23. On the **Review your search and create it** page, review the values and select **Edit** next to any that need to be modified. When you are satisfied with the settings, select the **Submit** button. In the **New Search Created** page select **Done**.
 
-24. In the **Save search** window, enter **IP Address Violation - Search** in the **Name** field and then select **Save**.
+24. In the **New Search Created** page select **Done**.
 
 25. This will initiate a search query that looks for the keywords **IP Address**. In the detail pane on the left, scroll to the bottom, where the **Status** of the query is displayed. Wait for the status to show **Completed**. <br/>
 
@@ -101,4 +101,4 @@ In this task, you will create an eDiscovery case, add an In-Place Hold to the ca
 You have now created an eDiscovery case, added an In-Place Hold to preserve mailbox content, and created a search to discover data from the hold.
 
 
-# End of Lab 8
+# End of Lab 7
