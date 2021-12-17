@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 4 - Exercise 4 - Configure Retention Tags and Policies  
+# Module 4 - Lab 4 - Exercise 4 - Configure Retention Tags and Policies  
 
 In this exercise, you will implement archiving with MRM retention tags. You will then configure retention tags and policies through two different ways - first, through the Exchange Admin Center, and second, through the Microsoft 365 Compliance Center. 
 
@@ -96,9 +96,9 @@ Now that Holly has created a retention policy through the Exchange Admin Center,
 
 1. In **Microsoft Edge**, select the **Microsoft 365 Compliance** center tab if it's still open; otherwise, in the **Microsoft 365 admin center**, under **Admin centers**, select **Compliance**.
 
-2. In the **Microsoft 365 Compliance** center, in the left-hand navigation pane, select **Information governance** and then select **Retention**.
+2. In the **Microsoft 365 Compliance** center, in the left-hand navigation pane, select **Information governance** and then select **Retention Policy**.
 
-3. In the **Retention** window, select the **+ New Retention Policy** button to start the wizard that’s used to create a new retention policy.
+3. In the **Retention Policy** window, select the **+ New Retention Policy** button to start the wizard that’s used to create a new retention policy.
 
 4. On the **Name your retention policy** page, enter **Exchange preservation** in the **Name** field and select **Next**.
 
