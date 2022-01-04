@@ -45,7 +45,7 @@ In this task, you will create an eDiscovery case, add an In-Place Hold to the ca
 
 2. The **Office 365 Security and Compliance Center** should still be open in a tab in Microsoft Edge. If so, select that tab now. If not, then enter the following URL in the address bar: **https://protection.office.com.** 
 
-3. In the **Security and Compliance Center**, in the left-hand navigation pane, select **eDiscovery**, and then under it, select **eDiscovery**.
+3. In the **Security and Compliance Center**, in the left-hand navigation pane, select **eDiscovery**, and then under it, select **Core**.
 
 4. On the **eDiscovery** window, select the **(+) Create a case** button that appears above the list of cases.
 
