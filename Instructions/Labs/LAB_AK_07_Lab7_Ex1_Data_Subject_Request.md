@@ -14,7 +14,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. In her role as the company
 
 2. In your **Microsoft Edge** browser, select the **Microsoft 365 admin center** tab, and then in the left-hand navigation pane under the **Admin centers** group, select **Compliance**.
 
-3. In the **Microsoft 365 Compliance** center, in the left-hand navigation pane select **Content search**. This initiates the **New search** wizard.
+3. In the **Microsoft 365 Compliance** center, in the left-hand navigation pane select **Content search**. Then click **+New Search**. This initiates the **New search** wizard.
 
 4. In the **Name and description** page, enter the following information and then select **Next**:
 
