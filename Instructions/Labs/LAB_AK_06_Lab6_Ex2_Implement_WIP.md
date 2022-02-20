@@ -52,7 +52,7 @@ In this lesson you will create a WIP policy and assign to it the **WIP Users** g
 
 15. In the **Create policy** window, you are now in step **5 - Assignments**. Enter the following information and then select **Next**:
 
-	- Selected groups: select **+Select groups to include**. In the **Select groups to include** pane that appears on the right, select the **WIP Users** group and then select the **Select** button at bottom of the pane.
+	- Included groups: select **+Add groups**. In the **Select groups to include** pane that appears on the right, select the **WIP Users** group and then select the **Select** button at bottom of the pane.
 
 16. In the **Create policy** window, you are now in step **6 - Review + create**. Review the settings and if anything is incorrect, select the **Previous** button to return back to the appropriate step to make your correction. If all the settings are correct, then select the **Create** button.
 
