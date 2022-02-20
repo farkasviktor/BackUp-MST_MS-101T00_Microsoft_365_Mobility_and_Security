@@ -20,7 +20,7 @@ To test archiving and retention in your Adatum pilot project, you will create a 
 
 5. In the **Add a group** window, adding a group is a multi-step process, as depicted in the flow diagram on the left-hand side of the window. As you progress through the steps, enter the following information to create a new group:
 
-	- Type: **Mail-enabled security**
+	- Select Type: **Mail-enabled security**
 
 	- Name: **WIP Users** (tab into the **Description** field to enable the **Next** button)
 
