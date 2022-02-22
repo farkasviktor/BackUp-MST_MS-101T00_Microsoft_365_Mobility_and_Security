@@ -172,7 +172,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	- Select location: **United States**
 
-	- Licenses: The **Assign user a product license** option should be selected by default; under this option, select **Microsoft 365 E5** 
+	- Licenses: The **Assign user a product license** option should be selected by default; under this option, select **Microsoft 365 E5** and **Enterprise Mobilitiy + Security E5**
 
 15. Select **Next.**
 
