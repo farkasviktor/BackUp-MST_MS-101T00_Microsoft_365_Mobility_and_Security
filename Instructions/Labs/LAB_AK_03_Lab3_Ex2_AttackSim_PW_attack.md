@@ -105,9 +105,11 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 34. Select **Next**.
 
-35. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
+35. On the **Select end user notification**, choose the end user notification preference for this simulation of your choice and then select **Next**.
 
-36. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. A few moments will pass and you will receive a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
+36. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
+
+37. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. A few moments will pass and you will receive a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
 
 
 ### Task 2: Review the Drive-by URL attack results
