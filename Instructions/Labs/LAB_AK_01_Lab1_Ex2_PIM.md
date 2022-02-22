@@ -94,7 +94,7 @@ Now that Patti Fernandez has been made an eligible user for the Global administr
 
 4. In the **Welcome to Microsoft Azure** dialog box that appears, select **Maybe later** to skip the tour.
 
-5. In the **Microsoft Azure** portal, scroll down to the **Azure services** section, and then on the right side of the section, select **More services**.
+5. In the **Microsoft Azure** portal, scroll down to the **Azure services** section, and then on the right side of the section, select **All services**.
 
 6. In the **All services** window, enter **priv** in the **Search** box at the top of the page. In the list of search results, select **Azure AD Privileged Identity Management**.
 
