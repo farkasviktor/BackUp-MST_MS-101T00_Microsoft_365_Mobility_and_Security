@@ -1,4 +1,4 @@
-# MS-101: Microsoft 365 Mobility and Security
+# MS-101T00: Microsoft 365 Mobility and Security
 
 - **[Download Latest Student Handbook and AllFiles Content](../../releases/latest)**
 - **Are you a MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
