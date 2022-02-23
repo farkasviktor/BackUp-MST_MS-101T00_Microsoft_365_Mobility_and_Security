@@ -22,7 +22,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send a
 
 7. On the **Create notification** page, note the three steps that appear at the top of the page. You are currently on the step **1 - Basics** page. In the **Name** field, enter **Noncompliant OS version**. Leave all the other options set to their default settings and select **Next**.
 
-8. On the step **2 - Notification message templates** page, select your appropriate **locale**, and then enter **WARNING: Noncompliant device** in the **Subject** field. Then enter message **Your Windows 10 or later device is not running a compliant version of the OS. The device has been marked as noncompliant and is now locked.**, select the check box for **IsDefault**. Select **Next**.
+8. On the step **2 - Notification message templates** page, select your appropriate **locale**, and then enter **WARNING: Noncompliant device** in the **Subject** field. Then enter the message **Your Windows 10 or later device is not running a compliant version of the OS. The device has been marked as noncompliant and is now locked.**, select the check box for **IsDefault**. Select **Next**.
 
 9. On the step **3 - Review + create** page, review your template settings. If any need to be corrected, select **Previous** to return to the appropriate page and make the necessary edits. If everything looks correct, select **Create**.
 
