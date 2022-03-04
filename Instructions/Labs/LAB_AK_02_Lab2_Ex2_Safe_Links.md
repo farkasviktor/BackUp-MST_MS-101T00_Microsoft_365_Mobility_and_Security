@@ -22,7 +22,7 @@ In this task, you will create a Safe Links policy that applies to all users in y
 
 6. On the **Name your policy** page, enter **LinkPolicy1** in the **Name** field and then select **Next**.
 
-7. On the **Users and domains** page, in the **Domians** field type **onmicrosoft.com**. In the menu that appears, select Adatum's **onmicrosoft.com** domain. Adatum's domain will now appear below the **Domains** field. Select **Next**.
+7. On the **Users and domains** page, in the **Domains** field type **onmicrosoft.com**. In the menu that appears, select Adatum's **onmicrosoft.com** domain. Adatum's domain will now appear below the **Domains** field. Select **Next**.
 
 8. On the **Protection settings** page, enter the following settings and then select **Next**: 
 
