@@ -105,7 +105,7 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 34. Select **Next**.
 
-35. On the **Select end user notification**, choose the end user notification preference for this simulation of your choice and then select **Next**.
+35. On the **Select end user notification**, choose how you want the end user to be notified. For the purpose of this lab, select **Microsoft default notification** and then select **Next**.
 
 36. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
 
