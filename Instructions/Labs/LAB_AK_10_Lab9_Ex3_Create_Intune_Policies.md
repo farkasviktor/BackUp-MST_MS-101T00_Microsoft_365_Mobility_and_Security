@@ -352,7 +352,7 @@ When enrolling devices to Microsoft Intune, you have the option to Allow or Bloc
 
 3. In the **Devices| Overview** window, the **Device enrollment** section appears in the middle of the page's navigation pane. Under this section, select **Enroll devices.**
 
-4. In the **Enroll devices | Windows enrollment** window, in the navigation pane for this page, select **Enrollment restrictions**.
+4. In the **Enroll devices | Windows enrollment** window, in the navigation pane for this page, select **Enrollment device platform restrictions**.
 
 5. In the **Enroll devices | Enrollment restrictions** window, in the **Device type restrictions** section, on the **Default** restriction type, select **All users**.
 
