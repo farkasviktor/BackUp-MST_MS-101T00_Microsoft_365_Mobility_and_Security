@@ -136,7 +136,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 7. The **Christie Cline** profile pane will open. Select the **Licenses and apps** tab.
 
-8. In the **Licenses and apps** tab, unselect the check boxes next to the **Enterpise Mobilitiy + Security E5** and **Microsoft 365 E5** licenses. This will make these licenses available for Holly's new account.
+8. In the **Licenses and apps** tab, unselect the check boxes next to the **Enterprise Mobilitiy + Security E5** and **Microsoft 365 E5** licenses. This will make these licenses available for Holly's new account.
 
 9. Select the **Save changes** button at the bottom of the **Christie Cline** profile pane.
 
