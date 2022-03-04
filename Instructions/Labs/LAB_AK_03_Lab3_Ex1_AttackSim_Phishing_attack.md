@@ -113,9 +113,11 @@ Now that Holly has turned on MFA, she is ready to run Microsoft 365's Attack sim
 
 15. Select **Next**.
 
-16. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
+16. On the **Select end user notification**, choose the end user notification preference for this simulation of your choice and then select **Next**.
 
-17. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. After a few minutes you will receive a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
+17. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
+
+18. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. After a few minutes you will receive a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
 
 
 ### Task 3: Review the attack simulation results
