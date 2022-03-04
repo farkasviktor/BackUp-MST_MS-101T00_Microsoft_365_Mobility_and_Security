@@ -113,7 +113,7 @@ Now that Holly has turned on MFA, she is ready to run Microsoft 365's Attack sim
 
 15. Select **Next**.
 
-16. On the **Select end user notification**, choose the end user notification preference for this simulation of your choice and then select **Next**.
+16. On the **Select end user notification**, choose how you want the end user to be notified. For the purpose of this lab, select **Microsoft default notification** and then select **Next**.
 
 17. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
 
