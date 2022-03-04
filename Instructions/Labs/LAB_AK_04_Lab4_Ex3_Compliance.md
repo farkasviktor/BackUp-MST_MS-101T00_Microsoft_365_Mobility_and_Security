@@ -42,7 +42,7 @@ To test archiving and retention in your Adatum pilot project, you will create a 
 
 12. In the **View members** window, select the **+Add members** button; this displays the list of users.
 
-13. In the list of users, select **Joni Sherman** and **Lynne Robbins**, select **Add(2), and then select **Close**.  <br/>
+13. In the list of users, select **Joni Sherman** and **Lynne Robbins**, select **Add(2)**, and then select **Close**.  <br/>
 
 	‎**Note:** It may take a few minutes for both Joni and Lynne to display in the list of users. Simply refresh the list until both users appear.
 
