@@ -84,6 +84,8 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 
 16. At the bottom of the page, select the **Search** button to display all recent activity. This will display the activity that created this alert. <br/>
 
+	**Note:** It may take up to 24 hours for the search results to be displayed. If search results do not appear immediately, check again later in the day. If there are still no results, wait until the following day before checking again.
+
 	**Note:** In the list of search results, note how the **User** for the prior alerts is listed as Holly, while the user for the eDiscovery alert is listed as **Service Account**. This is because the eDiscovery alert is a default system alert rather than a custom alert created by an individual user.
 
 17. In your browser, leave the Outlook tab (**Mail-Holly Dickson - Outlook**) open as you will use it shortly in another lab exercise. Leave all your other browser tabs open as well.
