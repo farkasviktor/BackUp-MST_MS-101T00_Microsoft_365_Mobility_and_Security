@@ -364,7 +364,7 @@ When enrolling devices to Microsoft Intune, you have the option to Allow or Bloc
 
 9. In the navigation thread at the top of the page (**Home > Devices > Enroll devices > All users**), select **Enroll devices**. 
 
-10. In the **Enroll devices | Enrollment restrictions** window, in the **Device limit restrictions** section, on the **Default** row, select **All users**.
+10. In the **Enroll devices | Enrollment device limit restrictions** window, in the **Device limit restrictions** section, on the **Default** row, select **All users**.
 
 11. In the **All Users** window, in the middle pane under the **Manage** section, select **Properties.**
 
