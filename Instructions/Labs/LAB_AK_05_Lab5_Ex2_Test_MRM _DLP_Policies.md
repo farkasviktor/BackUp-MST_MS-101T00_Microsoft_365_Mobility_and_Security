@@ -65,7 +65,7 @@ In this exercise, you will send an email from Holly Dickson to one of your pilot
 
 In the previous exercise, you created a custom DLP policy that searches emails for sensitive information related to IP addresses in your Adatum tenant. In this exercise, you will send two emails from Holly Dickson to Lynne Robbins; the first will include one IP address, and the second email will include two IP addresses. You will verify how each email is handled as a result of the DLP policy.
 
-If you will recall, in the DLP policy that you created, if one IP address is discovered in an email, an email policy tip is displayed in sender's Outlook mailbox that informs the sender the email contained sensitive data. The sender will also receive an email notification, and the email with the sensitive data (in this case, the IP address) will still be sent to the recipient.
+If you will recall, in the DLP policy that you created, if one IP address is discovered in an email, an email policy tip is displayed in the sender's Outlook mailbox that informs the sender the email contained sensitive data. The sender will also receive an email notification, and the email with the sensitive data (in this case, the IP address) will still be sent to the recipient.
 
 However, the email will be blocked if two or more IP addresses are discovered in the mail. An email policy tip is displayed in Outlook for the sender just as before, but in this case, the DLP policy was set up to allow the sender to override the blocked email and allow it to be sent.  
 
