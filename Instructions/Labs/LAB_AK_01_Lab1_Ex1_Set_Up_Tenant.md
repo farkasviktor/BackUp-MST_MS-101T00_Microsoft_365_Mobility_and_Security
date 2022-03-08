@@ -192,7 +192,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 In the prior task, you successfully added the Global administrator role to Holly Dickson's account. This role will provide Holly with the majority of privileges needed to manage Adatum's Microsoft 365 tenant. It's important to note that not every Microsoft 365 role is available for selection when adding a user account. For example, to assign permissions for archiving, auditing, and retention policies, you must do so in the Exchange admin center. 
 
-Another example is the Organization Management role, which can only be assigned in the Microsoft 365 Defender portal. This role group provides permissions to manage Exchange objects and their properties in the Exchange organization. Members of this role can also delegate role groups and management roles in the organization. Holly will require this role to complete the remaining lab exercises in this course.
+Another example is the Organization Management role group, which can only be assigned in the Microsoft 365 Defender portal. This role group provides permissions to manage Exchange objects and their properties in the Exchange organization. Members of this role group can also delegate role groups and management roles in the organization. Holly will require this role to complete the remaining lab exercises in this course.
 
 1. In your **Edge** browser, you should still have a tab open for the **Microsoft 365 admin center**. If so, then select this tab and proceed to the next step; otherwise, navigate to the **Office 365 home** page, log in as your tenant admin account, navigate to the **Microsoft 365 admin center**, and then in the left-hand navigation pane, select **Show all**. 
 
