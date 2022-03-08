@@ -102,9 +102,9 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
 
 	**Tip:** Some color patterns aesthetically distract users. If you do change any of the colors, it's recommended that you avoid using high contrasting colors together, such as neon colors and high-resolution colors like bright pink and white.
 
-27. Select **Save** when you are done and then close the **Custom themes** pane.
+28. Select **Save** when you are done and then close the **Custom themes** pane.
 
-28. Remain logged into LON-DC1 with Microsoft Edge open to the **Microsoft 365 admin center** for the next task.
+29. Remain logged into LON-DC1 with Microsoft Edge open to the **Microsoft 365 admin center** for the next task.
 
 
 
