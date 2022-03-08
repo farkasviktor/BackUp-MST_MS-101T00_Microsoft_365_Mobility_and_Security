@@ -134,7 +134,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 5. In the **Active users** list, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are taking on the role of the MOD Administrator, and as such, you must create a user account for Holly Dickson, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft's online services. 
 
-	In the **Active Users** window, select **Add a user** that appears on the menu bar above the list of active users.
+	In the **Active Users** window, select the **Add a user** option that appears on the menu bar above the list of active users.
 
 6. In the **Set up the basics** window, enter the following information:
 
