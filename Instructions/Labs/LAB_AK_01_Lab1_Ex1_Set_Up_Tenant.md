@@ -67,19 +67,19 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
 
 16. Select **Save**.
 
-17. Scroll to the top of the **Organization information** pane. Note the message indicating the changes have been saved. Select the **X** in the upper right-hand corner to close the pane.
+17. At the top of the **Organization information** pane, note the message indicating the changes have been saved. Select the **X** in the upper right-hand corner to close the pane.
 
 18. Back on the **Organization profile** tab, in the list of organization profile data, select **Release preferences**.
 
 19. In the **Release preferences** pane that appears, select the **Targeted release for select users** option and then select **Save**.<br/>
 
-    **Note:** One of the benefits of Microsoft 365 is the ability to have the latest features and updates automatically applied to your environment, which can reduce maintenance costs and overhead for an organization and allow early-adopter users to test new features. By setting up your Release preferences, you can control how and when your Microsoft 365 tenant receives these updates. <br/>
+    **Note:** One of the benefits of Microsoft 365 is its ability to have the latest features and updates automatically applied to your environment. This process can reduce maintenance costs and overhead for an organization and allow early-adopter users to test new features. By setting up your **Release preferences**, you can control how and when your Microsoft 365 tenant receives these updates. <br/>
 
-    **Note:** This **Targeted release for select users** option enables you to create a control group of users who will preview updates so that you can prepare the updates for your entire organization. The **Targeted release for everyone** option is more commonly used in development environments, where you can get updates early for your entire organization. In non-development environments, such as Adatum, targeted release to a select group of users is the more typical preference as it enables an organization to control when it wants to make updates available to everyone once they've been reviewed by the control group.
+    **Note:** The **Targeted release for select users** option enables you to create a control group of users who will preview updates so that you can prepare the updates for your entire organization. The **Targeted release for everyone** option is more commonly used in development environments, where you can get updates early for your entire organization. In non-development environments, such as Adatum, targeted release to a select group of users is the more typical preference as it enables an organization to control when it wants to make updates available to everyone once they've been reviewed by the control group.
 
-20. In the **Release preferences** pane, below the list of release options, select **Select users**.
+20. In the **Release preferences** pane, below the list of release options, select the **Select users** option.
 
-21. In the **Choose users for targeted release** pane that appears, select inside the **Who should receive targeted releases?** field. This displays the list of active users (these are the ten Microsoft 365 user accounts created for your tenant by your lab hosting provider). In this list, select each of the following users (Note: You have to select each user, one at a time; after selecting a user, you will have to select inside the field again to re-display the list so that you can display the next user): 
+21. In the **Choose users for targeted release** pane that appears, select inside the **Who should receive targeted releases?** field. This displays the list of active users (these are the ten Microsoft 365 user accounts created for your tenant by your lab hosting provider). In this list, select each of the following users (Note: You must select each user, one at a time. After selecting a user, you must select inside the field again to re-display the list so that you can select the next user): 
 
 	- **Alex Wilber**
 	- **Joni Sherman**
@@ -90,19 +90,21 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
     
 22. Select **Save**.
 
-23. After selecting the users, scroll to the bottom of the **Release preferences** pane to verify you selected the required users. Close the **Release preferences** pane once you verified these four users were selected. 
+23. At the top of the **Release preferences** pane, note the message indicating the 4 users were added to the targeted release. Select the **X** in the upper right-hand corner to close the pane. 
 
 24. In the list of organization profile data, select **Custom themes**.
 
-25. In the **Customize theme** pane, you can choose **Default theme** or click **+ Add Theme** to create your customized theme. Clicking the **+Add theme** will take you to the **New group theme** pane, enter the **Name** and the **Groups or users** to apply this theme and scroll to the bottom of the pane and select the **Show the user's display name** check box. <br/>
+25. In the **Customize theme** pane, you can customize the default theme users see when signed into Microsoft 365, and you can add additional, custom themes. Select the **+Add theme** option.
+
+26. In the **Default theme** pane, the **General** tab is displayed by default. Select the **Show the user's display name** check box. 
  
-	As you scroll through the pane, review the various theme and branding options that are available for you to update. For the purpose of this lab, you can change any of the options or leave the default values as is. For example, you can add the logo of your company and set the background image as the default for all your users. Along with these options you can change the colors for your navigation pane, text color, icon color, and accent color. Go ahead and explore the different options for your tenant and make any changes that you wish. <br/>
+27. Take some time and review the **Logos** and **Colors** tabs. Note the various theme and branding options that are available for you to update. For the purpose of this lab, you can change any of the options or leave the default values as is. For example, in your real-world environment, you can add the logo of your company and set the background image as the default for all your users. For the purpose of this lab, you can change the colors for your navigation pane, text color, icon color, and accent color. Go ahead and explore the different options for your tenant and make any changes that you wish. <br/>
 
-	**Tip:** Some color patterns aesthetically distract users. If you do change any of the colors, it is recommended that you avoid using high contrasting colors together, such as neon colors and high-resolution colors like bright pink and white.
+	**Tip:** Some color patterns aesthetically distract users. If you do change any of the colors, it's recommended that you avoid using high contrasting colors together, such as neon colors and high-resolution colors like bright pink and white.
 
-26. Select **Save** when you are done and then close the **Custom themes** pane.
+27. Select **Save** when you are done and then close the **Custom themes** pane.
 
-27. Remain logged into LON-DC1 with Microsoft Edge open to the **Microsoft 365 admin center** for the next task.
+28. Remain logged into LON-DC1 with Microsoft Edge open to the **Microsoft 365 admin center** for the next task.
 
 
 
@@ -110,9 +112,9 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
 
 Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user account has not been set up for her, she initially signed into Microsoft 365 as the MOD Administrator account (the default Global admin) in the previous lab (you did this when you began your role as Holly and signed in using the tenant admin account). In this task, you will continue in your role as the MOD Administrator, during which you will create a Microsoft 365 user account for Holly. You will also assign the Microsoft 365 Global Administrator role to Holly's account. This role will give Holly permissions to perform all administrative functions within Microsoft 365. Following this task, you will perform all remaining labs using Holly's persona. 
 
-**Important:** As a best practice in your real-world deployment, you should always write down the first Global admin account’s credentials (in this lab, the MOD Administrator account, whose username is admin@xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider) and store it away for security reasons. **This account should be a non-personalized identity** that owns the highest privileges possible in a tenant. It should **not** be MFA activated (because it is not personalized). Because the username and password for this account are typically shared among several users, this first Global admin is a perfect target for attacks; therefore, it is always recommended that organizations create personalized service admin accounts and keep as few Global admins as possible. For those Global admins that you do create in your real-world deployment, they should each be mapped to a single identity (such as Holly Dickson), and they should each have Multi-Factor Authentication (MFA) enforced. That being said, you will not turn on MFA for Holly's account because time is limited in this training course and we do not want to take up lab time by making you log in using a second authentication method every time Holly logs in.
+**Important:** As a best practice in your real-world deployment, you should always write down the first Global admin account’s credentials (in this lab, it's the MOD Administrator account, whose username is admin@xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider) and store it away for security reasons. **This account should be a non-personalized identity** that owns the highest privileges possible in a tenant. It should **not** be MFA activated because it is not personalized. Because the username and password for this first Global admin account are typically shared among several users, this account is a perfect target for attacks; therefore, it's always recommended that organizations create personalized service admin accounts and keep as few personal Global admins as possible. For those personal Global admins that you do create in your real-world deployment, they should each be mapped to a single identity (such as Holly Dickson), and they should each have Multi-Factor Authentication (MFA) enforced. That being said, you will not turn on MFA for Holly's account because time is limited in this training course and we do not want to take up lab time by forcing you to log in using a second authentication method every time Holly logs in.
 
-**Note:** While your lab hosting provider has created a custom domain for Adatum (xxxUPNxxx.xxxCustomDomainxxx.xxx), they did not finish the setup process for the domain; in a later lab exercise, you will finish provisioning the new domain. That being said, your lab hosting provider should have left your Microsoft 365 tenant's **xxxxxZZZZZ.onmicrosoft.com** domain as the default domain for Adatum. In this task, you will begin by verifying whether this domain is listed as the default domain. If your lab hosting provider set the new custom domain as the default, you will change it to the xxxxxZZZZZZ.onmicrosoft.com domain. This has implications in that when you add a new user account (such as the one for Holly Dickson that you will add in this task) or email addresses for new groups (later in this exercise), you want the xxxxxZZZZZZ.onmicrosoft.com domain to show as the default domain for the user and groups.
+**Note:** While your lab hosting provider has created a custom domain for Adatum (xxxUPNxxx.xxxCustomDomainxxx.xxx), they did not finish the setup process for the domain. In a later lab exercise, you will finish provisioning the new domain. That being said, your lab hosting provider should have left your Microsoft 365 tenant's **xxxxxZZZZZ.onmicrosoft.com** domain as the default domain for Adatum. In this task, you will begin by verifying whether this domain is listed as the default domain. If your lab hosting provider set the new custom domain as the default, you will change it to the xxxxxZZZZZZ.onmicrosoft.com domain. Why is this important? Because when you add a new user account (such as the one for Holly Dickson that you will add in this task) or email addresses for new groups (later in this exercise), you want the xxxxxZZZZZZ.onmicrosoft.com domain to show as the default domain for the user and groups.
 
 1. On the LON-CL1 VM, the **Microsoft 365 admin center** should still be open in your Microsoft Edge browser from the prior lab, and you should be signed into Microsoft 365 as the **MOD Administrator**. 
 
@@ -122,15 +124,15 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	If the **xxxxxZZZZZZ.onmicrosoft.com*** domain displays **(Default)** next to the domain name, then skip to the next step as no change is needed. <br/>
 
-	However, if the **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain displays **(Default)** next to the domain name, then select the circle with the check mark to the left of the **xxxxxZZZZZZ.onmicrosoft.com** domain and then select **Set as default** on the menu bar. <br/>
+	However, if the **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain displays **(Default)** next to the domain name, then select the check box to the left of the **xxxxxZZZZZZ.onmicrosoft.com** domain and then select **Set as default** on the menu bar. <br/>
 	
 	In the **Set this domain as default?** dialog box that appears, select **Set as default**. In the list of domains, the **xxxxxZZZZZZ.onmicrosoft.com** domain should now display **(Default)** next to the domain name.
 	
-	**Note:** If there is no **xxxUPNxxx.xxxCustomDomainxxx.xxx**, do not worry.  It is not needed for any of the labs in this course.
+	**Note:** If there is no **xxxUPNxxx.xxxCustomDomainxxx.xxx**, or if it appears but its status says **Incomplete setup**, do not worry.  It's not needed for any of the labs in this course.
 
 4. You will now create a Microsoft 365 user account for Holly Dickson. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users** and then select **Active users**. 
 
-5. In the **Active users** list, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are taking on the role of the MOD Administrator, and as such, you must create a user account for Holly Dickson, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft online services. 
+5. In the **Active users** list, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are taking on the role of the MOD Administrator, and as such, you must create a user account for Holly Dickson, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft's online services. 
 
 	In the **Active Users** window, select **Add a user** that appears on the menu bar above the list of active users.
 
@@ -144,15 +146,15 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	- Username: **Holly** <br/>
 	
-		‎**IMPORTANT:** To the right of the **Username** field is the domain field. It should be prefilled with the **xxxxxZZZZZZ.onmicrosoft.com** cloud domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). However, if your lab hosting provider set the custom **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain as Adatum's default domain and you did not change the default domain to the **xxxxxZZZZZZ.onmicrosoft.com** domain earlier in this task, then the custom domain will appear here instead. If that happens, select the drop-down arrow in this domain field and select **xxxxxZZZZZZ.onmicrosoft.com**. You should also perform steps 2-3 to change **xxxxxZZZZZZ.onmicrosoft.com** to the default domain as this is needed in the next task. <br/>
+		‎**IMPORTANT:** To the right of the **Username** field is the domain field. It should be prefilled with the **xxxxxZZZZZZ.onmicrosoft.com** cloud domain (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). However, if your lab hosting provider set the custom **xxxUPNxxx.xxxCustomDomainxxx.xxx** domain as Adatum's default domain and you did not change the default domain to the **xxxxxZZZZZZ.onmicrosoft.com** domain earlier in this task, then the custom domain will appear here instead. If that happens, select the drop-down arrow in this domain field and select **xxxxxZZZZZZ.onmicrosoft.com**. You should also perform steps 2-3 in this task to change **xxxxxZZZZZZ.onmicrosoft.com** to the default domain as this is needed in the next task. <br/>
 	
 		After configuring this field, Holly’s username should appear as:<br/>
 
 		**Holly@xxxxxZZZZZZ.onmicrosoft.com**  
 	
-	- Clear (uncheck) the **Automatically create a password** checkbox which will enable a new box for entering an administrator defined password.
+	- Clear (uncheck) the **Automatically create a password** check box, which will display a new field for entering an administrator defined password.
 
-	- In the new Password box that appears, enter: **Pa55w.rd** (Hint: Select the eye icon at the right side of the field to verify the password that you entered)
+	- In the new **Password** field that appears, enter: **Pa55w.rd** (**Hint**: Select the eye icon at the right side of the field to verify the password that you entered)
 
 	- Clear (uncheck) the **Require this user to change their password when they first sign in** check box 
 
@@ -168,27 +170,34 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 10. In the **Optional settings** window, select the drop-down arrow to the right of **Roles.** 
 
-11. In the **Roles** section, the **User (no admin center access)** option is selected by default. Select the **Admin center access** option instead. By doing so, the most commonly used Microsoft 365 administrator roles are displayed below this option. 
+11. In the **Roles** section, the **User (no admin center access)** option is selected by default. Select the **Admin center access** option instead. By doing so, the most commonly used Microsoft 365 administrator roles are enabled below this option. 
 
-	**Note:** If you scroll down past this list of the most commonly used admin roles and select **Show all by category**, the complete list of admin roles will be displayed (sorted by category). For Holly, you do not need to view all the admin roles by category, since Holly will be assigned the Global admin role that appears in the list of most commonly used roles.
+	Select the **Global administrator** check box.
 
-12. Select the **Global administrator**, **Security admin**, and **Attack Simulation Administrator** check box and then select **Next**.
+12. Select the **Show all by category** option that appears after the list of the most commonly used roles. This display the complete list of administrator roles sorted by category. 
 
-13. On the **Review and finish** window, review your selections. If anything needs to be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
+13. Scroll through the list of roles. In the **Global** category, the **Global Administrator** role should be selected (if you didn't select it in the prior step, then select it now). Continue scrolling down to the **Security & Compliance** category, and then select the **Attack Simulation Administrator** and **Security Administrator** roles. 
 
-14. On the **Holly Dickson added to active users** page, under the **User details** section, select **Show** next to the password to verify Holly's password is **Pa55w.rd** and then select **Close.** 
+14. Select **Next**.
+
+15. On the **Review and finish** window, review your selections. If anything needs to be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
+
+16. On the **Holly Dickson added to active users** page, under the **User details** section, select **Show** next to the password to verify Holly's password is **Pa55w.rd** and then select **Close.** 
 
 	**Note:** If you accidentally entered a different password, then once you return to the **Active Users** page, you will need to select the **Reset a password** icon (the key icon that appears when you hover over Holly's account) to change her password to the correct value.
 
-15. Remain logged into LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
+17. Remain logged into LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
 
-### Task 4 - Assign RBAC to a Microsoft 365 user account in the Security and Compliance center
+### Task 4 - Assign RBAC to a Microsoft 365 user account in the Microsoft 365 Defender portal
 
-In the prior task, you successfully added the Global administrator role to Holly Dickson's account. The global administrator role will give you the majoriety of privileges needed to manage your Microsoft 365 tenant. however, there are some additional privileges that you will need to manage certain services. In the security and compliance center Holly will need to be added to the Organization Management role. By adding Holly to the Organization Management role, Holly's account will have all the nessisary privileges to complete all of the future exercises during this course.
+In the prior task, you successfully added the Global administrator role to Holly Dickson's account. This role will provide Holly with the majority of privileges needed to manage Adatum's Microsoft 365 tenant. It's important to note that not every Microsoft 365 role is available for selection when adding a user account. For example, to assign permissions for archiving, auditing, and retention policies, you must do so in the Exchange admin center. 
+
+Another example is the Organization Management role, which can only be assigned in the Microsoft 365 Defender portal. This role group provides permissions to manage Exchange objects and their properties in the Exchange organization. Members of this role can also delegate role groups and management roles in the organization. Holly will require this role to complete the remaining lab exercises in this course.
 
 1. In your **Edge** browser, you should still have a tab open for the **Microsoft 365 admin center**. If so, then select this tab and proceed to the next step; otherwise, navigate to the **Office 365 home** page, log in as your tenant admin account, navigate to the **Microsoft 365 admin center**, and then in the left-hand navigation pane, select **Show all**. 
 
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Security**.
+
 3. In the **Microsoft 365 Defender** window, select **Permissions & roles** in the left-hand navigation pane.
     
 4. In the **Permissions & roles** page, the roles are displayed under two groups - **Azure AD** and **Email & collaboration roles**. Under the **Email & collaboration roles** group, select **Roles**.
@@ -203,11 +212,11 @@ In the prior task, you successfully added the Global administrator role to Holly
 
 9. On the **Choose members** list, select the **Holly Dickson** account and then select the **Add** button.
 
-**Note:** Refresh the screen if you're not able to view the user Holly under the choose members. It might take few minutes to fetch the user. 
+**Note:** Refresh the screen if you're not able to view the user Holly under the choose members. It may take few minutes to display Holly's account. 
 
 10. On the **Choose members** page, select the **Done** button.
 
-11. On the **Editing Choose members** page, select the **Save** button. Click **Close**.
+11. On the **Editing Choose members** page, select the **Save** button, and then select **Close**.
 
 12. Remain logged into LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
 
