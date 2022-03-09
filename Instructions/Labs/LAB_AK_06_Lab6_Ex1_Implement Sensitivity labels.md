@@ -18,7 +18,7 @@ To implement Sensitivity labels as part of your pilot project at Adatum, you mus
 
 3. In the Microsoft download center tab, on the notification bar at the bottom of the page, you will see the **AzInfoProtection_UI.exe** file being downloaded. Once the file has finished downloading, select the **Open file** link that appears below the file name.
 
-4. The Microsoft Azure Information Protection wizard will open. If the wizard does not display on the desktop, select the icon for the wizard on the taskbar to display the wizard.
+4. The **Microsoft Azure Information Protection** wizard will open. If the wizard does not display on the desktop, select the icon for the wizard on the taskbar to display the wizard.
 
 5. In the wizard, on the **Install the Azure Information Protection client** page, clear (uncheck) the **Help improve Azure Information Protection by send usage statistics to Microsoft** check box and then select the **I agree** button.
 
@@ -28,12 +28,12 @@ To implement Sensitivity labels as part of your pilot project at Adatum, you mus
 
 8. In your Edge browser, close the **Download** tab that you opened in this task to download the Azure Information Protection client.
 
-You have successfully installed the AIP Unified Label client on Client 1 VM.
+You have successfully installed the AIP Unified Label client on the Client 1 VM.
 
 
 ### Task 2 – Create a Sensitivity Label
 
-In this exercise you will create an Sensitivity Label and add it to the default policy so that it’s valid for all users of the Adatum tenant.
+In this exercise you will create a Sensitivity Label and add it to the default policy so that it’s valid for all users of the Adatum tenant.
 
 1. On LON-CL1, you should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 
@@ -41,7 +41,7 @@ In this exercise you will create an Sensitivity Label and add it to the default 
 
 3.  On the **Microsoft 365 admin center**, if necessary, select **... Show all**. Select **Compliance** under the **Admin centers** group.
 
-4. On the **Microsoft 365 compliance** window, in the left-hand navigation pane, select **Information protection** under the **Solutions** group. 
+4. On the **Microsoft 365 compliance** center, in the left-hand navigation pane, select **Information protection** under the **Solutions** group. 
 
 5. On the **Information protection** page, a warning message is displayed in the middle of the screen indicating: **Your organization has not turned on the ability to process content in Office online files that have encrypted sensitivity labels applied and are stored in OneDrive and SharePoint.** 
 
@@ -49,7 +49,7 @@ In this exercise you will create an Sensitivity Label and add it to the default 
 
     Note how the message has now changed to indicate: **You can now create sensitivity labels with privacy and access control settings for Teams, SharePoint sites, and Microsoft 365 Groups.**	
 
-6. On the **Information protection** page, select **+Create a label** that appears on the menu bar in the middle of the screen. This initiates the **New sensitivity label** wizard.
+6. On the **Information protection** page, select the **+Create a label** option that appears on the menu bar in the middle of the screen. This initiates the **New sensitivity label** wizard.
 
 7. In the **New sensitivity label** wizard, on the **Name and create a tooltip for your label** page, enter the following information:
 
@@ -69,7 +69,9 @@ In this exercise you will create an Sensitivity Label and add it to the default 
 
 11. On the **Encryption** page, select the **Remove encryption if the file is encrypted** option and then select **Next**.
 
-12. On the **Content Marking** page, set the **Content Marking** toggle switch to **On**. This displays three options that enable you to customize how you want mark files and emails. Select all three check boxes. Under each setting, select **Customize text**. This opens a pane to customize that setting. Enter the following information in the **Customize** pane for each option (select **Save** after entering the settings for each option): <br/>
+12. On the **Content Marking** page, set the **Content Marking** toggle switch to **On**. This displays three options that enable you to customize how you want to mark files and emails. 
+
+	Select all three check boxes. Under each setting, select **Customize text**. This opens a pane to customize that particular setting. Enter the following information in the **Customize** pane for each option (select **Save** after entering the settings for each option): <br/>
 
 	- **Add a watermark** 
 		- Watermark text: **Sensitive - Do Not Share** (Hint: after entering this value, copy it so that you can paste it in the other two text settings)
@@ -113,11 +115,13 @@ In this exercise you will create an Sensitivity Label and add it to the default 
 
 22. On the **Review your settings and finish** page, review the information you entered. If any settings need to be corrected, select the corresponding **Edit** option and make any necessary changes. When all information appears correct, select **Create label**.
 
-23. An **Error** dialog box should appear that states the generated rule blob for the label you are attempting to create is too long. The maximum size of sensitive information type selections you can make at one time per rule is **49152**. By selecting all the sensitive information types like you did in the **Sensitive info types** window a few steps back, you have exceeded this limit. **We purposely had you select all the sensitive information types so that you would receive this error.** We wanted you to experience this error so that if it happens in your production environments, you will know why you received the error and how you can correct it.  <br/>
+23. An **Error** dialog box should appear that states the generated rule blob for the label you are attempting to create is too long. The maximum size of sensitive information type selections you can make at one time per rule is **49152**. By selecting all the sensitive information types like you did in the **Sensitive info types** window a few steps back, you have exceeded this limit. 
 
-	To correct this issue, select **OK** in the **Error** dialog box, and then on the **Review your settings and finish** page, scroll down to the **Auto-labeling** section and select **Edit**.
+	**NOTE: We purposely had you select all the sensitive information types so that you would receive this error.** We wanted you to experience this error so that if it happens in your production environments, you will know why you received the error and how you can correct it.  <br/>
+
+	To correct this issue, select **OK** in the **Error** dialog box, and then on the **Review your settings and finish** page, scroll down to the **Auto-labeling for files and emails** section and select **Edit**.
 	
-24. On the **Choose protection settings for files and emails** section of the wizard, select **Next** on the **Encryption** page, and then select **Next** on the **Content Marking** page. This will take you to the **Auto-labeling for files and emails** page. 
+24. This will return you to the **Choose protection settings for files and emails** section of the wizard. Select **Next** on this page, select **Next** on the **Encryption** page, and then select **Next** on the **Content Marking** page. This will take you to the **Auto-labeling for files and emails** page. 
 
 25. On the **Auto-labeling for files and emails** page, to the right of the **Content contains** condition, select the **trash can icon**. This will remove the existing **Content contains** condition for the **PII** label that you created. <br/>
 
@@ -135,11 +139,11 @@ In this exercise you will create an Sensitivity Label and add it to the default 
 
 31. On the **Review your settings and finish** page, select **Create label**.
 
-32. On the **Your label was created** page, select **Done**.
+32. On the **Your sensitivity label was created** page, select **Done**.
 
 33. Now it's time to publish the **PII** label. On the **Information protection** window, the **Labels** tab is displayed by default. In the list of labels, hover your mouse over the **PII** label that you just created, and then select the radio button that appears to the left of the **PII** label. 
 
-34. Select **Publish label**, which appears in the menu bar above the list of labels. This initiates a **Create policy** wizard.
+34. Select the **Publish label** option that appears in the menu bar above the list of labels. This initiates a **Create policy** wizard.
 
 35. In the **Create policy** wizard, on the **Choose sensitivity labels to publish** page, the **PII** label is already listed, so select **Next**.
 
