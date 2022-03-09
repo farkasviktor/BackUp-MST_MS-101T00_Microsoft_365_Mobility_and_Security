@@ -32,9 +32,9 @@ In this lab, you will still configure a policy tip for the DLP policy that you c
 
 7. In the **Name your DLP policy** page, enter the following information and then select **Next**:
 
-        - Name: **IP Address DLP policy**
+      - Name: **IP Address DLP policy**
 
-        -Description: **This policy detects the presence of IP addresses in emails. Emails with 2 or more IP addresses are blocked from being sent. **
+      - Description: **This policy detects the presence of IP addresses in emails. End users are notified of the detection and admins receive a notification. Emails with 2 or more IP addresses are blocked from being sent.**
 
 8. On the **Choose locations to apply the policy** page, verify the **Status** toggle is set to **On** for the following options (if an option is not set to **On** by default, then set it to **On** now): **Exchange email, SharePoint sites, OneDrive accounts, Teams chats and channel messages**. Select **Next**.
 
@@ -46,7 +46,7 @@ In this lab, you will still configure a policy tip for the DLP policy that you c
     
       - Name: **Single IP Address rule**
     
-     - Description: **Email contains an IP address**
+      - Description: **Email contains an IP address**
     
       - In the **Conditions** section, select **+Add condtion** and then select **Content contains** from the menu that appears. Then enter the following condition settings:
     
