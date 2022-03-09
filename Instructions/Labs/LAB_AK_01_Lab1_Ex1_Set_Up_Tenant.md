@@ -84,9 +84,10 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
 	- **Alex Wilber**
 	- **Joni Sherman**
 	- **Lynne Robbins**
+	- **Patti Fernandez**
 	- **MOD Administrator** <br/>
 
-    **Note:** Alex, Joni, and Lynne are administrators who are part of Holly's pilot team. Their accounts will be used throughout the labs for this course.
+    **Note:** Alex, Joni, Lynne, and Patti are part of Holly's pilot team. Their accounts will be used throughout the labs for this course.
     
 22. Select **Save**.
 
@@ -244,7 +245,7 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 6. If a **Get your work done with Office 365** window appears, select the **X** to close it. 
 
-7. On the **Microsoft Office Home** tab, in the column of Microsoft 365 app icons that appear on the left side of the screen, scroll down and select the **Admin** icon; this opens the **Microsoft 365 admin center** in a new browser tab.
+7. On the **Microsoft Office Home** tab, in the column of Microsoft 365 app icons that appears on the left side of the screen, scroll down and select the **Admin** icon; this opens the **Microsoft 365 admin center** in a new browser tab.
 
 8. If a survey window appears, select **Cancel**.
 
@@ -254,49 +255,59 @@ Each user is a key member of your pilot project team. While their user accounts 
 
     Select the key icon for **Alex Wilber**.
 
-11. In the **Reset password** pane for Alex, uncheck the **Automatically create password**, enter **Pa55w.rd** in the **Password** field, select and copy this value so that you can paste it in for Joni and Lynne's accounts, and then unselect the **Require this user to change their password when they first sign in** check box.
+11. In the **Reset password** pane for Alex, clear (uncheck) the **Automatically create password** check box, enter **Pa55w.rd** in the **Password** field that appears, select and copy this value so that you can paste it in for Joni, Lynne, and Patti's accounts, and then clear (unselect) the **Require this user to change their password when they first sign in** check box.
 
-12. Select **Reset Password** and then select **Close**.
+12. Select **Reset Password** and then select **Close** on the **Password has been reset** pane.
 
-13. Repeat steps 10-12 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, paste in the **Pa55w.rd** password that you copied for Alex. You do not need to change the password for the **MOD Administrator** because you must continue using the default password provided by your lab hosting provider for this tenant admin account.
+13. If the check box to the left of **Alex Wilber** is selected, select the check box to clear it.
 
-14. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Teams & groups**, and then under it, select **Active teams & groups**.
+14. Repeat steps 10-13 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, paste in the **Pa55w.rd** password that you copied for Alex. 
+ 
+	**Note:** You don't need to change the password for the **MOD Administrator** because you must continue using the default password provided by your lab hosting provider for this tenant admin account.
 
-15. In the **Active teams & groups** window, select **Add a group** that appears on the menu bar.
+15. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Teams & groups**, and then under it, select **Active teams & groups**.
 
-16. In the **Choose a group type** pane, select **Microsoft 365 (recommended)** and then select **Next**.
+16. In the **Active teams & groups** window, select the **Add a group** option that appears on the menu bar.
 
-17. In the **Set up the basics** pane, enter **Sales Group** in the **Name** field. You must select the **Description** field to enable the **Next** button. Leave the **Description** field blank and select **Next**. 
+17. In the **Choose a group type** pane, select **Microsoft 365 (recommended)** and then select **Next**.
 
-18. In the **Assign owners** pane, enter **Joni** in the **Owners** field. A list of users whose name starts with Joni will appear; select **Joni Sherman** and then select **Add**. Select **Next** and no change needed at **Add members** page and select **Next**.
+18. In the **Set up the basics** pane, enter **Sales Group** in the **Name** field. You must select the **Description** field to enable the **Next** button. Leave the **Description** field blank and select **Next**. 
 
-19. In the **Edit settings** pane, enter **salesgroup** in the **Group email address** field (Note: the domain should be the xxxxxZZZZZZ.onmicrosoft.com domain, which you should have verified in a prior task is the default domain for Adatum). <br/>
+19. In the **Assign owners** pane, select **+Assign owners**. 
 
-	Under the **Privacy** section, select the **Public – Anyone can see group content** option (even if this option is selected by default, select it again to enable the **Next** button), and leave the **Create a team for this group** check box selected. Select **Next**.
+20. In the **Assign owners** pane that appears, select **Joni Sherman** in the list of active users that's displayed, and then select **Add(1)**. Select **Next**.
 
-20. In the **Review and finish adding group** pane, review your selections. If anything needs to be corrected, select the corresponding **Edit** option. When everything is correct, select **Create group**.
+21. In the **Add members** window, select **Next**.
 
-21. Once the group is created, select the **Close** button on the **New group created** window.
+	**Note:** You can add members to a group at the time you create the group (at this step in the process), as well as after you create a group. For the purpose of this lab, you will add members after you've created the group in a later step. This way you can see the two methods of adding group members. So for now, you will skip through this step and not add members at this time.
 
-22. This will return you to the **Teams & groups** window. You may need to select the **Refresh** option on the menu bar for the **Sales Group** to appear in the list of groups. In fact, you may have to wait a few minutes for the Sales Group to appear, so you may need to select the **Refresh** option on the menu bar once or twice.
+22. In the **Edit settings** pane, enter **salesgroup** in the **Group email address** field (Note: the domain should be the xxxxxZZZZZZ.onmicrosoft.com domain, which you should have verified in a prior task is the default domain for Adatum). <br/>
 
-23. Once the **Sales Group** appears in the list of groups, select it.
+	In the **Privacy** field, select the drop-down arrow and then select the **Public** option (even if this option is selected by default, select it again to enable the **Next** button), and leave the **Create a team for this group** check box selected. Select **Next**.
 
-24. In the **Sales Group** pane that appears, the **General** tab is displayed by default. Select the **Members** tab.
+23. In the **Review and finish adding group** window, review your selections. If anything needs to be corrected, select the corresponding **Edit** option. When everything is correct, select **Create group**.
 
-25. In the **Members** tab, under the **Owners** section, Joni Sherman should appear as the only group owner. Under the **Members** section, select **View all and manage members**.
+24. Once the group is created, select the **Close** button in the **New group created** window.
 
-26. In the **View members** window for the Sales Group, select the **+Add members** button.
+25. This will return you to the **Active teams & groups** window. You may need to select the **Refresh** option on the menu bar for the **Sales Group** to appear in the list of groups. In fact, you may have to wait a few minutes for the Sales Group to appear, so you may need to select the **Refresh** option on the menu bar once or twice.
 
-27. In the list of users that appears, select **Alex Wilber, Joni Sherman**, and **Lynne Robbins**, select the **ADD(3)** button, and then select the **Close** button to finish the add process. <br/>
+26. Once the **Sales Group** appears in the list of groups, select the **Sales Group** name.
+
+27. In the **Sales Group** pane that appears, the **General** tab is displayed by default. Select the **Members** tab.
+
+	**Note:** While you could have added members to this group at the time you created it, you will instead add members after the group has been created. This will give you experience in how to add members to an existing group. 
+
+28. In the **Members** tab, under the **Owners** section, Joni Sherman should appear as the only group owner. Under the **Members** section, select **View all and manage members**.
+
+29. In the **Members** pane for the Sales Group, select the **+Add members** button.
+
+30. In the list of users that appears, select **Alex Wilber, Joni Sherman**, and **Lynne Robbins**, and then select the **ADD(3)** button.
+
+31. Once the three new members have been saved in the group, select the **X** in the upper right-hand corner of the **Members** pane to close it.  <br/>
 
 	**Note:** You will not add Patti Fernandez to this group. Patti's key role in the pilot project is to test the Privileged Identity Management functionality in the next lab exercise. 
 
-28. The **Sales Group** window now displays the three members of the group. Select **Close**.
-
-29. Close the **Sales Group** pane by selecting the **X** in the upper right-hand corner.
-
-30. Leave the **Microsoft 365 admin center** tab open in your browser and proceed to the next task.
+32. Leave the **Microsoft 365 admin center** tab open in your browser and proceed to the next task.
 
 
 ### ‎Task 6 - Enable IRM for SharePoint Online 
@@ -313,39 +324,41 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 4. At the bottom of the **Settings** page is a sentence that says **Can’t find the setting you’re looking for? Go to the classic settings page.** In this sentence, select the hyperlinked text: **classic settings page**.
 
-5. On the classic **Settings** page, scroll down to the **Information Rights Management (IRM)** section, select the **Use the IRM service specified in your configuration** option, and then select the **Refresh IRM Settings** button.
+5. On the classic **Settings** page, scroll down to the **Information Rights Management (IRM)** section, select the **Use the IRM service specified in your configuration** option that appears to the right of it, and then select the **Refresh IRM Settings** button.
 
-6. This will return you to the top of the **Settings** page. You must scroll to the bottom of the page to select the **OK** button. In doing so, when you get to the **Information Rights Management (IRM)** section, verify the **Use the IRM service specified in your configuration** option is selected and a **We successfully refreshed your settings** message appears below the **Refresh IRM Settings** button. Continue scrolling to the bottom of the page and select **OK**. 
+6. This will return you to the top of the **Settings** page. Scroll down to the **Information Rights Management (IRM)** section and verify the **Use the IRM service specified in your configuration** option is selected and a **We successfully refreshed your settings** message appears below the **Refresh IRM Settings** button. Continue scrolling to the bottom of the page and select the **OK** button. 
 
-7. This will return you to the top of the **Settings** page. In your browser, close the current tab (the **xxxxxZZZZZZ-admin.sharepoint.com** tab).
+7. This will return you to the top of the **Settings** page. In your browser, close the current tab (the **https://xxxxxZZZZZZ-admin.sharepoint.com** tab).
 
-8. Do **NOT** close the **SharePoint admin center** tab in your Edge browser. Leave your browser open for the next task.
+8. Do **NOT** close the **SharePoint admin center** tab in your Edge browser. Leave this tab and your browser open for the next task.
 
 
 ### Task 7 – Turn on Audit Logging to enable Alert Policies
 
-In Lab 3, you will create Alert Policies using the Security and Compliance Center. However, before you can implement alerts, an admin must first turn on Audit Logging for the organization. Since it can take a couple of hours for audit logging to become fully enabled once you turn it on, you will turn it on in this lab so that it's fully enabled by the time you get to Lab 3.
+In Lab 3, you will create Alert Policies using the Microsoft 365 Defender portal. However, before you can implement alerts, an admin must first turn on Audit Logging for the organization. Since it can take a couple of hours for audit logging to become fully enabled once you turn it on, you will turn it on in this lab so that it's fully enabled by the time you get to Lab 3.
 
-**Note:** If you see an error message, "Fail to opt in, please refresh", Audit Logging is being enabled in the background and the message can safely be ignored.
+**Important:** If you see an error message, "Fail to opt in, please refresh", Audit Logging is being enabled in the background and the message can safely be ignored.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. <br/>
 
 	Select the **Microsoft 365 admin center** tab in your Edge browser. 
 
-2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **Security**. This will open **Microsoft 365 Defender**.
+2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **Security**. This will open the **Microsoft 365 Defender** portal.
 
 3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Audit**.
 
-4. In the **Audit** window, if auditing is not turned on for your organization, a banner is displayed that says: **Start recording user and admin activity**. This banner is your prompt to turn on audit logging. <br/>
+4. In the **Audit** window, a banner is displayed that says: **Start recording user and admin activity** if auditing is not turned on for your organization. This banner is your prompt to turn on audit logging. <br/>
 
 	Select this banner now to turn on audit logging. 
+
+5. In the **security** dialog box that appears, select **Yes** for the system to update your organization settings. 
  
-5. Leave the Client 1 VM and all the browser tab in Edge open and proceed to the next lab.
+6. A message box will appear at the top of the portal that asks you to **Please wait a moment while we update your organization settings...** It usually takes a couple of minutes for this message to disappear. You should leave the Client 1 VM and all the browser tabs in Edge open and proceed to the next lab. 
 
 
 ### Task 8 – Prepare Users for Content Searches
 
-In Module 8, you will perform a Content Search lab that requires that Joni Sherman and Holly Dickson be members of the eDiscovery Manager role. In this exercise, you will add Joni and Holly to this role. The reason you are doing this now is that it can sometimes take up to an hour or more for newly assigned permissions to successfully propagate. If you waited and assigned Holly and Joni to this role group at the time you performed the Content Search lab in Module 8, you would receive error messages involving parameter fields because their permissions would not have finished propagating. By adding them to this role group now, enough time will elapse for the propagation to complete by the time you get to the Module 8 lab. 
+In Module 8, you will perform a Content Search lab that requires that Joni Sherman and Holly Dickson be members of the eDiscovery Manager role. In this exercise, you will add Joni and Holly to this role. The reason you are doing this now is that it can sometimes take up to an hour or more for newly assigned permissions to successfully propagate through the system. If you waited and assigned Holly and Joni to this role group at the time you performed the Content Search lab in Module 8, you would receive error messages involving parameter fields because their permissions would not have finished propagating. By adding them to this role group now, enough time will elapse for the propagation to complete by the time you get to the Module 8 lab. 
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
@@ -353,7 +366,7 @@ In Module 8, you will perform a Content Search lab that requires that Joni Sherm
 
 3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Permissions & roles**.
 
-4. In the **Permissions & roles** page, under the **Email & collaboration roles** section, select **Roles**.
+4. In the **Permissions & roles** page, under the **Email & collaboration roles (1)** section, select **Roles**.
 
 5. On the **Permissions & roles > Permissions** page, you want to select the **eDiscovery Manager** role. To quickly locate the role, enter **edisc** in the **Search** field on the menu bar and then select the **Search** icon. When the **eDiscovery Manager** role appears, select its check box.
 
@@ -361,13 +374,13 @@ In Module 8, you will perform a Content Search lab that requires that Joni Sherm
 
 7. The **Editing Choose eDiscovery Manager** wizard opens. The list of users who are assigned this role should be empty. Select **Choose eDiscovery Manager**.
 
-8. In the **Choose eDiscovery Manager window**, select **(+) Add**.
+8. In the **Choose eDiscovery Manager** pane, select the **+Add** button.
 
 9. In the list of users that’s displayed, select **Joni Sherman** and **Holly Dickson**, select **Add**, and then select **Done**. 
 
-10. In the **Editing Choose eDiscovery Manager** window, select **Save**.
+10. In the **Editing Choose eDiscovery Manager** pane, select **Save**.
 
-11. In the **eDiscovery Manager** window, select **Close**.
+11. In the **eDiscovery Manager** pane, select **Close**.
 
 12. Leave your browser open and do not close any of the tabs.
 
