@@ -20,7 +20,7 @@ In this exercise, you will send an email from Holly Dickson to one of your pilot
 
 	- Add a subject: **Archive Test**
 
-	- Message area: type **Use this email to test archiving.**
+	- Message area: **Hey Lynne - I want to use this email to test archiving.**
 
 5. Select **Send**.
 
