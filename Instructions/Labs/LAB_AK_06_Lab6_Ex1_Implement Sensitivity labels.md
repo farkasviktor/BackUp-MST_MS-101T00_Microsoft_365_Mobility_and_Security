@@ -174,7 +174,7 @@ In this exercise you will create an Sensitivity Label and add it to the default 
 
 In this exercise you will use the Sensitivity label that you created in the previous task to classify a document. For this task, you will sign into Microsoft 365 as Alex Wilber, who is a regular user without any elevated privileges.
 
-**IMPORTANT:** You should not perform this task until you have waited 24 since you completed the prior task. After creating the sensitivity label and label policy in task 2, it takes 24 hours for the label and label policy to propagate through the Microsoft 365 system. 
+**IMPORTANT:** You should not perform this task until you have waited 24 hours since you completed the prior task. After creating the sensitivity label and label policy in task 2, it takes 24 hours for the label and label policy to propagate through the Microsoft 365 system. 
 
 **You will know when the propagation is complete and that you can continue with this task when you get to step 14 and you see the Sensitivity label group in the Word ribbon.** If this group does not appear, then the label provisioning process has not finished. If this occurs, then wait until your next break time in class and check this again.
 
