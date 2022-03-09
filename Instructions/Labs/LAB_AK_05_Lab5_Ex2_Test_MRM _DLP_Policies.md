@@ -85,7 +85,7 @@ Therefore, when you send an email with two IP addresses in this task, all you ca
 
 	- Add a subject: **DLP Policy Test**
 
-	- Message area: type **I will configure this IP address: 192.168.0.1.**
+	- Message area: **Hey Lynne - I will configure this IP address: 192.168.0.1.**
 
 	**Note:** When drafting this email with sensitive data (in this case, an IP address) that triggers the DLP policy, a policy tip should be displayed indicating the email violated a DLP policy. Unfortunately, the policy tip will not be displayed as previously mentioned. 
 
@@ -97,7 +97,7 @@ Therefore, when you send an email with two IP addresses in this task, all you ca
 
 	- Add a subject: **Second DLP Policy Test**
 
-	- Message area: **Test IP address 192.168.0.1 and then IP address 172.16.0.1.**
+	- Message area: **Hey Lynne - I will test IP address 192.168.0.1 and then IP address 172.16.0.1.**
 
 	**Note:** When drafting this email with sensitive data (in this case, two IP addresses) that triggers the DLP policy, a policy tip should be displayed indicating the email violated a DLP policy. Because there are two IP addresses, the policy tip would indicate that the email will be blocked, but it would give you the option to override the blockage by entering a business justification for sending this sensitive data. Unfortunately, the policy tip will not be displayed as previously mentioned. 
 
