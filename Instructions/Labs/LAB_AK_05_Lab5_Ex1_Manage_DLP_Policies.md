@@ -30,7 +30,11 @@ In this lab, you will still configure a policy tip for the DLP policy that you c
   
 6. For the purpose of this lab, you will create a custom DLP policy. Select **Custom** in the left-hand **Categories** pane, select the **Custom policy** template in the middle pane, and then select **Next**.
 
-7. In the **Name your DLP policy** page, enter **IP Address DLP policy** in the **Name** field and **Protect IP addresses from being shared** in the **Description** field. Select **Next**.
+7. In the **Name your DLP policy** page, enter the following information and then select **Next**:
+
+        - Name: **IP Address DLP policy**
+
+        -Description: **This policy detects the presence of IP addresses in emails. Emails with 2 or more IP addresses are blocked from being sent. **
 
 8. On the **Choose locations to apply the policy** page, verify the **Status** toggle is set to **On** for the following options (if an option is not set to **On** by default, then set it to **On** now): **Exchange email, SharePoint sites, OneDrive accounts, Teams chats and channel messages**. Select **Next**.
 
@@ -51,9 +55,7 @@ In this lab, you will still configure a policy tip for the DLP policy that you c
         - In the **Sensitive info types** pane, type **IP address** inside the **Search** field and then hit Enter.
         
         - In the search results, select the **IP Address** check box and then select **Add**.
-    
-     - In the **Actions** section, select **+ Add an action**. In the drop-down menu that appears, select **Restrict access or encrypt the content in Microsoft 365 locations**.
-    
+        
      - In the **User notifications** section, set the **Use notifications to inform your users and help educate them on the proper use of sensitive info** toggle switch to **On**.
     
     - In the **Incident reports** section, set the **Send an alert to admins when a rule match occurs** toggle switch to **On**.
