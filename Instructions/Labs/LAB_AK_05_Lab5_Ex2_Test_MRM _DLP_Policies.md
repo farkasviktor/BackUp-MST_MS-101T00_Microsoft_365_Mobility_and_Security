@@ -12,7 +12,7 @@ In this exercise, you will send an email from Holly Dickson to one of your pilot
 
 	**Note:** If **Outlook on the web** was already open, then verify that you are logged in as **Holly** by checking the user icon in the upper right corner (the **HD** circle). If Outlook was open for any other user, then close the tab and repeat the instructions in this step to open Outlook on the Web for Holly.
 
-3. In **Outlook on the web**, in the upper left corner of the screen, select **+New message**. 
+3. In **Outlook on the web**, in the upper left corner of the screen, select **New message**. 
 
 4. In the message pane that appears, enter the following information:
 
