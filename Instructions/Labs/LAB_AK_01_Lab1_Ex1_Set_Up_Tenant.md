@@ -39,7 +39,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
 
 10. If a **Get your work done with Office 365** window appears, then close it now. 
 
-11. On the **Microsoft Office Home** tab, in the column of Microsoft 365 app icons that appear on the left side of the screen, scroll down and select the **Admin** icon; this opens the **Microsoft 365 admin center** in a new browser tab.
+11. On the **Microsoft Office Home** tab, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen. In the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab.
 	
 12. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** and then select **Settings**. In the Settings group, select **Org settings**. 
 
@@ -245,7 +245,7 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 6. If a **Get your work done with Office 365** window appears, select the **X** to close it. 
 
-7. On the **Microsoft Office Home** tab, in the column of Microsoft 365 app icons that appears on the left side of the screen, scroll down and select the **Admin** icon; this opens the **Microsoft 365 admin center** in a new browser tab.
+7. On the **Microsoft Office Home** tab, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen. In the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab.
 
 8. If a survey window appears, select **Cancel**.
 
