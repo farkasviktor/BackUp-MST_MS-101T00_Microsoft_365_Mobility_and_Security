@@ -18,7 +18,7 @@ In this lesson you will create a WIP policy and assign to it the **WIP Users** g
 
 5. In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**.
 
-6. In the **Microsoft Office Home** tab, select the **Admin** icon in the column of app icons that appears on the left-side of the screen. This opens the Microsoft 365 admin center. 
+6. On the **Microsoft Office Home** tab, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen. In the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab. 
 
 7. In the **Microsoft 365 admin center**, select **Show all** in the left-hand navigation pane, and then under the **Admin centers** group, select **Endpoint Manager**.
 
