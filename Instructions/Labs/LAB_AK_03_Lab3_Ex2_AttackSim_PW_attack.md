@@ -153,7 +153,7 @@ To use Microsoft's Attack simulation training to simulate phishing attacks, Holl
 
 1. You should still be logged into **LON-CL1** as the **Admin** account and into Microsoft 365 as Holly Dickson.
 
-2. To disable MFA for Holly Dickson's user account, you must first access the **Active users** list in the Microsoft 365 admin center. If you have the **Microsoft 365 admin center** open in a browser tab, then select that now; otherwise, open a new browser tab, enter **https://portal.office.com** in the address bar, and then on the **Office 365 home** page, select **Admin**. 
+2. To disable MFA for Holly Dickson's user account, you must first access the **Active users** list in the Microsoft 365 admin center. If you have the **Microsoft 365 admin center** open in a browser tab, then select that now; otherwise, open a new browser tab, enter **https://portal.office.com** in the address bar, and then on the **Office 365 home** page, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen. In the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab. 
 
 3. On the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users** and then select **Active users**.
 
