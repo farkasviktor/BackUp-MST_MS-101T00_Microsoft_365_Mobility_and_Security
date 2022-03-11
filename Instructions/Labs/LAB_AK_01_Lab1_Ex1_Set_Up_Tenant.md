@@ -84,8 +84,8 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
 	- **Alex Wilber**
 	- **Joni Sherman**
 	- **Lynne Robbins**
-	- **Patti Fernandez**
-	- **MOD Administrator** <br/>
+	- **MOD Administrator**
+	- **Patti Fernandez** <br/>
 
     **Note:** Alex, Joni, Lynne, and Patti are part of Holly's pilot team. Their accounts will be used throughout the labs for this course.
     
