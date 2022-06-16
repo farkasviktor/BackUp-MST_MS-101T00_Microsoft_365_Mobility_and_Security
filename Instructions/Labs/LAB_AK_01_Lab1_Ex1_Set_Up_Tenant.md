@@ -297,7 +297,7 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 	**Note:** While you could have added members to this group at the time you created it, you will instead add members after the group has been created. This will give you experience in how to add members to an existing group. 
 
-28. In the **Members** tab, under the **Owners** section, Joni Sherman should appear as the only group owner. Under the **Members** section, select **View all and manage members**.
+28. In the **Members** tab, under the **Owners** section, Joni Sherman should appear as the only group owner. Under the **Members** section, select **Add members and owners**, and then select **Add members**.
 
 29. In the **Members** pane for the Sales Group, select the **+Add members** button.
 
