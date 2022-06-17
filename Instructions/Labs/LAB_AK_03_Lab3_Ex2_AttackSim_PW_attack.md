@@ -17,13 +17,15 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 3. In the **Microsoft 365 Defender** portal, you should still be in the **Attack simulation training** page; if not, then in the left-hand navigation pane, under **Email & collaboration**, select **Attack simulation training**.
 
-4. On the **Attack Simulation training** page, Holly wants to conduct a **Drive-by URL** attack in which she will use a URL to gather information about the target and Adatum itself.  <br/>
+4. On the **Attack Simulation training** page, select the **Simulations** tab, and then select **+ Launch a simulation**.
 
-	In the prior lab exercise, you selected an existing payload template (2 Failed Messages). In this lab, you will create a custom payload. On the menu at the top of the page, select **Payloads**. On the **Payloads** tab, select **+ Create a payload**. This initiates a Payload wizard.
+5. On the **Select Technique** page, under the **Drive-by URL** option, select the **View details of Drive-by URL** link. This opens a **Drive-by URL** pane on the right. Review the **Description** and the **Simulation steps** for this type of attack. When you're done, close the **Drive-by URL** pane and select **Next**.
 
-5. On the **Select type** page of the Payload wizard, the **Email** option should be selected by default (if not, select it now). Select **Next**. 
+1. On the **Name Simulation** page, name the simulation **Custom payload** and select **Next**.
 
-6. On the **Select Technique** page, under the **Drive-by URL** option, select the **View details of Drive-by URL** link. This opens a **Drive-by URL** pane on the right. Review the **Description** and the **Simulation steps** for this type of attack. When you're done, close the **Drive-by URL** pane.
+1. On the **Select payload and login page**, select **+ Create a payload**.
+
+1. On the **Select type** page of the Payload wizard, the **Email** option should be selected by default (if not, select it now). Select **Next**. 
 
 7. On the **Select Technique** page, select the **Drive-by URL** attack type and then select **Next**.
 
