@@ -41,11 +41,13 @@ In this task, you will create a Safe Links policy that applies to all users in y
 
 11. On the **New Safe Links policy created** page, select **Done**. Once the **LinkPolicy1** policy is created, it will appear in the Safe links list. 
 
-12. On the **Safe links** page, select **Global settings** on the menu bar.
+12. In the navigation thread at the top of the page (**Policies & rules > Threat policies > Safe attachments**), select **Threat policies**.
 
-13. In the **Safe Links settings for your organization** pane that appears, enter **http://tailspintoys.com** in the **Block the following URLs** field. Do **NOT** change the default settings for any of the other options, scroll down and then select **Save**.
+13. In the **Threat policies** page, select **Tenant Allow/Block Lists**.
 
-14. Leave the Safe Links tab open in your browser for the next task.
+14. On the **Tenant Allow/Block Lists** page, select the **URLs** tab.
+
+15. On the **URLs** tab, select **+ Block**. In the Block URLs field, enter **http://tailspintoys.com** and then select **Add**.
 
 **STOP!!** As mentioned at the start of this lab exercise, now that you have created a Safe Links policy, you must wait at least 30 minutes for the policy to propagate through the system before you can perform the next task in this exercise. 
 
