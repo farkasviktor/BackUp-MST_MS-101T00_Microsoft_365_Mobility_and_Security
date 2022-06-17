@@ -76,18 +76,7 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 20. On the **Review Payload** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change, or select **Back** to enter any of the information in the Configure section. Once everything is correct, select **Submit**. A few moments will pass and you will receive a confirmation stating **New payload created**. Select **Done**. 
 
-21. On the **Attack simulation training** page, you should still be viewing the **Payloads** tab. Scroll down through the list of payloads to the **Free gift offer** payload that you just created. Review the information. Note that no **Compromised rate (%)** has been determined yet, since the payload hasn't been used in simulation. Once you're done, select the **Overview** tab.
-
-22. On the **Overview** tab of the **Attack simulation training** page, at the bottom of the **Recent Simulations** section, select **Launch a simulation**. This initiates the **Simulation** wizard.
-
-23. On the **Select Technique** page, select the **Drive-by URL** attack type and then select **Next**.
-
-24. On the **Name Simulation** page, provide the following information: <br/>
-
-	- Simulation Name: **Drive by URL - Free offer**
-	- Description: **This simulation tests whether users are susceptible to free gift offers from malicious web sites**
-
-25. Select **Next**.
+21. On the **Attack simulation training** page, you should still be viewing the **Payloads** tab. Scroll down through the list of payloads to the **Free gift offer** payload that you just created. Review the information. Note that no **Compromised rate (%)** has been determined yet, since the payload hasn't been used in simulation. 
 
 26. On the **Select Payload** page, hover your mouse over **Free gift offer** in the list of payloads and then select the circle that appears to the left of it. Select **Next**. 
 
