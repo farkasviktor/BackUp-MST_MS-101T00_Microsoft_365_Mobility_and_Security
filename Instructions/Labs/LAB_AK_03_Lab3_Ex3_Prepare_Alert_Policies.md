@@ -31,7 +31,7 @@ Perform the following steps to assign Lynne Robbins the Compliance Data Administ
 
 3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Permissions & roles**.
 
-4. On the **Permissions & roles** page, under the **Email & collaboration** section, select **Roles**. In the list of roles that appear, select the **Compliance Data Administrator** role group. 
+4. On the **Permissions** page, under the **Email & collaboration** section, select **Roles**. In the list of roles that appear, select the **Compliance Data Administrator** role group. 
 
 5. In the **Compliance Data Administrator** pane, scroll to the bottom and in the **Members** section, select **Edit**. 
 
