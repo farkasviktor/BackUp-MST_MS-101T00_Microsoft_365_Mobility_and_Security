@@ -364,7 +364,7 @@ In Module 8, you will perform a Content Search lab that requires that Joni Sherm
 
 2. In your **Microsoft Edge** browser, you should still have **Microsoft 365 Defender** open in a tab from the prior task. If you closed that tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Security**.
 
-3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Permissions & roles**.
+3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Permissions**.
 
 4. In the **Permissions & roles** page, under the **Email & collaboration roles (1)** section, select **Roles**.
 
