@@ -64,7 +64,7 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 5. In the **Alex Wilber** pane that appears, the **Mailbox** tab is displayed by default. Under the **Mailbox permissions** section, select **Manage mailbox delegation**.
 
-6. On the **Manage mailbox delegation** pane, there are three mailbox permissions that can be updated: **Read and manage**, **Send as**, and **Send on behalf**. You want to add each of these permissions for Alex's mailbox to **Joni Sherman**. For each permission, perform the following steps to add Joni to that permission: <br/>
+6. On the **Delegation** pane, there are three mailbox permissions that can be updated: **Read and manage**, **Send as**, and **Send on behalf**. You want to add each of these permissions for Alex's mailbox to **Joni Sherman**. For each permission, perform the following steps to add Joni to that permission: <br/>
 
 	- Select the **Edit** button for the permission. 
 	- Select the **+Add permissions** button at the top of the pane.
