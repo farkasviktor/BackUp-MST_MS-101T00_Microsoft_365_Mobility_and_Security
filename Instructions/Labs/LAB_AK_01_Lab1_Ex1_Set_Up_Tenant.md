@@ -368,7 +368,7 @@ In Module 8, you will perform a Content Search lab that requires that Joni Sherm
 
 4. In the **Permissions & roles** page, under the **Email & collaboration roles (1)** section, select **Roles**.
 
-5. On the **Permissions & roles > Permissions** page, you want to select the **eDiscovery Manager** role. To quickly locate the role, enter **edisc** in the **Search** field on the menu bar and then select the **Search** icon. When the **eDiscovery Manager** role appears, select its check box.
+5. On the **Permissions > Permissions** page, you want to select the **eDiscovery Manager** role. To quickly locate the role, enter **edisc** in the **Search** field on the menu bar and then select the **Search** icon. When the **eDiscovery Manager** role appears, select its check box.
 
 6. In the **eDiscovery Manager** pane that appears, scroll down to the **eDiscovery Manager** section and select **Edit**.
 
