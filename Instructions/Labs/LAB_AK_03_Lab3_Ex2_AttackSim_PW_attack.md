@@ -21,22 +21,22 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 5. On the **Select Technique** page, under the **Drive-by URL** option, select the **View details of Drive-by URL** link. This opens a **Drive-by URL** pane on the right. Review the **Description** and the **Simulation steps** for this type of attack. When you're done, close the **Drive-by URL** pane and select **Next**.
 
-1. On the **Name Simulation** page, name the simulation **Custom payload** and select **Next**.
+6. On the **Name Simulation** page, name the simulation **Custom payload** and select **Next**.
 
-1. On the **Select payload and login page**, select **+ Create a payload**.
+7. On the **Select payload and login page**, select **+ Create a payload**.
 
-1. On the **Select type** page of the Payload wizard, the **Email** option should be selected by default (if not, select it now). Select **Next**. 
+8. On the **Select type** page of the Payload wizard, the **Email** option should be selected by default (if not, select it now). Select **Next**. 
 
-7. On the **Select Technique** page, select the **Drive-by URL** attack type and then select **Next**.
+9. On the **Select Technique** page, select the **Drive-by URL** attack type and then select **Next**.
 
-8. On the **Payload name** page, enter the following information: <br/>
+10. On the **Payload name** page, enter the following information: <br/>
 
 	- Email payload name: **Free gift offer**
 	- Description: **This payload is for Drive-by URL threats offering free prizes and gifts that are too good to be true**
 
-9. Select **Next**.
+11. Select **Next**.
 
-10. On the **Configure Payload** page, enter the following information: <br/>
+12. On the **Configure Payload** page, enter the following information: <br/>
 
 	- Enter name: **Klemen Sic**
 	- From email: **klemens@tailspintoys.com**
@@ -53,54 +53,54 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 	Tailspin Toys is offering you a FREE, one-time only gift of the toy of your choice as part of our 25th anniversary celebration! Please click on the following link to select the toy of your choice: **Free25thAnniversaryGift@tailspintoys.com** 
 
-11. Select **Next**.	
+13. Select **Next**.	
 
-12. On the **Add Indicators** page, select the **Add Indicator** button.
+14. On the **Add Indicators** page, select the **Add Indicator** button.
 
-13. On the **Add Indicator** pane that appears on the right, enter the following information: <br/>
+15. On the **Add Indicator** pane that appears on the right, enter the following information: <br/>
 
 	- Select an indicatory you would like to use: **Too good to be true offers**
 	- Where do you want to place this indicator on payload: **From the Body of the email**
 
-14. A **Select Text** button will appear. Select this button.
+16. A **Select Text** button will appear. Select this button.
 
-15. In the **Select the required text** pane that appears on the right, drag your cursor from the start of the code block to the end, so that the entire code block is highlighted. This will enable the **Select** button. Select this button. 
+17. In the **Select the required text** pane that appears on the right, drag your cursor from the start of the code block to the end, so that the entire code block is highlighted. This will enable the **Select** button. Select this button. 
 
-16. In the **Indicator Description** field, enter the following text: **Free gifts or other one-time only promotional give-aways**
+18. In the **Indicator Description** field, enter the following text: **Free gifts or other one-time only promotional give-aways**
 
-17. Select inside the **Indicator Preview** to see a preview of the indicator message. Then select outside the **Indicator Preview** field to exit the preview. 
+19. Select inside the **Indicator Preview** to see a preview of the indicator message. Then select outside the **Indicator Preview** field to exit the preview. 
 
-18. Select **Add**.
+20. Select **Add**.
 
-19. On the **Add Indicators** page, the indicator that you just created should be displayed. Select **Next**.
+21. On the **Add Indicators** page, the indicator that you just created should be displayed. Select **Next**.
 
-20. On the **Review Payload** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change, or select **Back** to enter any of the information in the Configure section. Once everything is correct, select **Submit**. A few moments will pass and you will receive a confirmation stating **New payload created**. Select **Done**. 
+22. On the **Review Payload** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change, or select **Back** to enter any of the information in the Configure section. Once everything is correct, select **Submit**. A few moments will pass and you will receive a confirmation stating **New payload created**. Select **Done**. 
 
-21. On the **Attack simulation training** page, you should still be viewing the **Payloads** tab. Scroll down through the list of payloads to the **Free gift offer** payload that you just created. Review the information. Note that no **Compromised rate (%)** has been determined yet, since the payload hasn't been used in simulation. 
+23. On the **Attack simulation training** page, you should still be viewing the **Payloads** tab. Scroll down through the list of payloads to the **Free gift offer** payload that you just created. Review the information. Note that no **Compromised rate (%)** has been determined yet, since the payload hasn't been used in simulation. 
 
-26. On the **Select Payload** page, hover your mouse over **Free gift offer** in the list of payloads and then select the circle that appears to the left of it. Select **Next**. 
+24. On the **Select Payload** page, hover your mouse over **Free gift offer** in the list of payloads and then select the circle that appears to the left of it. Select **Next**. 
 
-27. On the **Target Users** page, select **Include only specific users and groups**, and then select **+Add Users**. 
+25. On the **Target Users** page, select **Include only specific users and groups**, and then select **+Add Users**. 
 
-28. In the **Add Users** pane that appears, in the **Search for Users or Groups** field at the top of the pane, enter **Lynne** and then hit Enter. In the list of users that appears whose name starts with Lynne, select **Lynne Robbins** and then select **Add 1 User(s)**.
+26. In the **Add Users** pane that appears, in the **Search for Users or Groups** field at the top of the pane, enter **Lynne** and then hit Enter. In the list of users that appears whose name starts with Lynne, select **Lynne Robbins** and then select **Add 1 User(s)**.
 
-29. On the **Target Users** page, Lynne Robbins should be displayed as the targeted user. Select **Next**. 
+27. On the **Target Users** page, Lynne Robbins should be displayed as the targeted user. Select **Next**. 
 
-30. On the **Assign Training** page, under the **Preferences** section, the **Assign training for me (Recommended)** option should be selected by default (if not, select it now). Select the **Due Date** field. In the drop-down menu that appears, select **7 days after Simulation ends** and then select **Next**.
+28. On the **Assign Training** page, under the **Preferences** section, the **Assign training for me (Recommended)** option should be selected by default (if not, select it now). Select the **Due Date** field. In the drop-down menu that appears, select **7 days after Simulation ends** and then select **Next**.
 
-31. On the **Training landing page**, the **Select the landing page option to be used** field should be prefilled with the **Microsoft landing page** option (if not, select it now). Select the **Preview page** button that appears below this field. 
+29. On the **Training landing page**, the **Select the landing page option to be used** field should be prefilled with the **Microsoft landing page** option (if not, select it now). Select the **Preview page** button that appears below this field. 
 
-32. The **Microsoft landing page** appears in the pane on the right. This provides an example of what the landing page will look like when someone experiences a phishing attack. Review the features of this landing page, and then close **Microsoft landing page** pane.
+30. The **Microsoft landing page** appears in the pane on the right. This provides an example of what the landing page will look like when someone experiences a phishing attack. Review the features of this landing page, and then close **Microsoft landing page** pane.
 
-33. On the **Training landing page**, note the text that appears in the **Header** and **Body** fields. This is the text that you saw when you previewed the Microsoft landing page. Change the values of these fields to something different, and then select the **Preview page** button again. In the **Microsoft landing page** that appears in the pane on the right, you should see the changes that you made to the header and body text fields. Close the **Microsoft landing page** pane when you're done reviewing.
+31. On the **Training landing page**, note the text that appears in the **Header** and **Body** fields. This is the text that you saw when you previewed the Microsoft landing page. Change the values of these fields to something different, and then select the **Preview page** button again. In the **Microsoft landing page** that appears in the pane on the right, you should see the changes that you made to the header and body text fields. Close the **Microsoft landing page** pane when you're done reviewing.
 
-34. Select **Next**.
+32. Select **Next**.
 
-35. On the **Select end user notification**, choose how you want the end user to be notified. For the purpose of this lab, select **Microsoft default notification** and then select **Next**.
+33. On the **Select end user notification**, choose how you want the end user to be notified. For the purpose of this lab, select **Microsoft default notification** and then select **Next**.
 
-36. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
+34. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
 
-37. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. A few moments will pass and you will receive a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
+35. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. A few moments will pass and you will receive a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
 
 
 ### Task 2: Review the Drive-by URL attack results
