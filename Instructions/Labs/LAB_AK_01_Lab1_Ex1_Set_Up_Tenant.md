@@ -366,7 +366,7 @@ In Module 8, you will perform a Content Search lab that requires that Joni Sherm
 
 3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Permissions**.
 
-4. In the **Permissions & roles** page, under the **Email & collaboration roles (1)** section, select **Roles**.
+4. In the **Permissions** page, under the **Email & collaboration roles (1)** section, select **Roles**.
 
 5. On the **Permissions & roles > Permissions** page, you want to select the **eDiscovery Manager** role. To quickly locate the role, enter **edisc** in the **Search** field on the menu bar and then select the **Search** icon. When the **eDiscovery Manager** role appears, select its check box.
 
