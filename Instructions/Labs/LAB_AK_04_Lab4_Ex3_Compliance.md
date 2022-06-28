@@ -23,6 +23,10 @@ To test archiving and retention in your Adatum pilot project, you will create a 
 	- Select Type: **Mail-enabled security**
 
 	- Name: **WIP Users** (tab into the **Description** field to enable the **Next** button)
+	
+	- Group Owner: **Holly Dickson**
+	
+	- Members: **None** (These will be added in the following steps)
 
 	- Group email address: **wipusers** 
 
