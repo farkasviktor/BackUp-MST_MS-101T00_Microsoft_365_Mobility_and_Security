@@ -96,7 +96,12 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 32. Select **Next**.
 
-33. On the **Select end user notification**, choose how you want the end user to be notified. For the purpose of this lab, select **Microsoft default notification** and then select **Next**.
+33. On the **Select end user notification**, choose how you want the end user to be notified. For the purpose of this lab, select **Microsoft default notification**. In the Notifications table, configure the following notifications and then select **Next**.
+
+	 Notifications | Delivery preferences 
+	 ------ | ------
+	 Microsoft default positive reinforcement notification | Deliver after campaign ends
+	 Microsoft default training reminder notification | Weekly 
 
 34. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
 
