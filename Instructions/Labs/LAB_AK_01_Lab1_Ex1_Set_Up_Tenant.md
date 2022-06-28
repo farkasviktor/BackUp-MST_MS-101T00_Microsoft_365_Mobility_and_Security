@@ -91,7 +91,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
     
 22. Select **Save**.
 
-23. At the top of the **Release preferences** pane, note the message indicating the 4 users were added to the targeted release. Select the **X** in the upper right-hand corner to close the pane. 
+23. At the top of the **Release preferences** pane, note the message indicating the 5 users were added to the targeted release. Select the **X** in the upper right-hand corner to close the pane. 
 
 24. In the list of organization profile data, select **Custom themes**.
 
@@ -199,11 +199,11 @@ Another example is the Organization Management role group, which can only be ass
 
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Security**.
 
-3. In the **Microsoft 365 Defender** window, select **Permissions & roles** in the left-hand navigation pane.
+3. In the **Microsoft 365 Defender** window, select **Permissions** in the left-hand navigation pane.
     
-4. In the **Permissions & roles** page, the roles are displayed under two groups - **Azure AD** and **Email & collaboration roles**. Under the **Email & collaboration roles** group, select **Roles**.
+4. In the **Permissions** page, the roles are displayed under two groups - **Azure AD** and **Email & collaboration roles**. Under the **Email & collaboration roles** group, select **Roles**.
     
-5. On the **Permissions & roles > Permissions** page, select the **Organization Management** role.
+5. On the **Permissions > Permissions** page, select the **Organization Management** role.
 
 6. On the **Organization Management** pane that appears, scroll down to the **Members**section and select **Edit**.
 
@@ -297,7 +297,7 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 	**Note:** While you could have added members to this group at the time you created it, you will instead add members after the group has been created. This will give you experience in how to add members to an existing group. 
 
-28. In the **Members** tab, under the **Owners** section, Joni Sherman should appear as the only group owner. Under the **Members** section, select **View all and manage members**.
+28. In the **Members** tab, under the **Owners** section, Joni Sherman should appear as the only group owner. Under the **Members** section, select **Add members and owners**, and then select **Add members**.
 
 29. In the **Members** pane for the Sales Group, select the **+Add members** button.
 
@@ -364,11 +364,11 @@ In Module 8, you will perform a Content Search lab that requires that Joni Sherm
 
 2. In your **Microsoft Edge** browser, you should still have **Microsoft 365 Defender** open in a tab from the prior task. If you closed that tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Security**.
 
-3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Permissions & roles**.
+3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Permissions**.
 
-4. In the **Permissions & roles** page, under the **Email & collaboration roles (1)** section, select **Roles**.
+4. In the **Permissions** page, under the **Email & collaboration roles (1)** section, select **Roles**.
 
-5. On the **Permissions & roles > Permissions** page, you want to select the **eDiscovery Manager** role. To quickly locate the role, enter **edisc** in the **Search** field on the menu bar and then select the **Search** icon. When the **eDiscovery Manager** role appears, select its check box.
+5. On the **Permissions > Permissions** page, you want to select the **eDiscovery Manager** role. To quickly locate the role, enter **edisc** in the **Search** field on the menu bar and then select the **Search** icon. When the **eDiscovery Manager** role appears, select its check box.
 
 6. In the **eDiscovery Manager** pane that appears, scroll down to the **eDiscovery Manager** section and select **Edit**.
 
