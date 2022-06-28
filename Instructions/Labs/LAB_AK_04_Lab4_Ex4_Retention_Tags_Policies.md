@@ -102,6 +102,8 @@ Now that Holly has created a retention policy through the Exchange Admin Center,
 
 4. On the **Name your retention policy** page, enter **Exchange preservation** in the **Name** field and select **Next**.
 
+1. In the **Choose type of retention policy to create** page, select **Static** and then select **Next**.
+
 5. In the **Choose locations to apply the policy** page, as you scroll down the page, note that the **Status** of the **Exchange email** location is turned **On**. Leave this set to On. However, for all the other locations that are turned on, select their toggle switches to turn them **Off**.
 
 6. As you scroll through the locations, **Exchange email** should be the only location turned on.
