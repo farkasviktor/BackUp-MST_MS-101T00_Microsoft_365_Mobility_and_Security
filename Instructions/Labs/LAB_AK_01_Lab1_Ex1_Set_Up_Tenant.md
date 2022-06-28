@@ -201,7 +201,7 @@ Another example is the Organization Management role group, which can only be ass
 
 3. In the **Microsoft 365 Defender** window, select **Permissions** in the left-hand navigation pane.
     
-4. In the **Permissions & roles** page, the roles are displayed under two groups - **Azure AD** and **Email & collaboration roles**. Under the **Email & collaboration roles** group, select **Roles**.
+4. In the **Permissions** page, the roles are displayed under two groups - **Azure AD** and **Email & collaboration roles**. Under the **Email & collaboration roles** group, select **Roles**.
     
 5. On the **Permissions & roles > Permissions** page, select the **Organization Management** role.
 
