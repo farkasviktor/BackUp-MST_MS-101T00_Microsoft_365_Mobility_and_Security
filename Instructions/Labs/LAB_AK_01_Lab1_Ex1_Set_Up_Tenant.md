@@ -91,7 +91,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
     
 22. Select **Save**.
 
-23. At the top of the **Release preferences** pane, note the message indicating the 4 users were added to the targeted release. Select the **X** in the upper right-hand corner to close the pane. 
+23. At the top of the **Release preferences** pane, note the message indicating the 5 users were added to the targeted release. Select the **X** in the upper right-hand corner to close the pane. 
 
 24. In the list of organization profile data, select **Custom themes**.
 
