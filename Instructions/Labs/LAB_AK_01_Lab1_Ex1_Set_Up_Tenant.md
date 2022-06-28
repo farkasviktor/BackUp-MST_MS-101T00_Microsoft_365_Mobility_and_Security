@@ -199,7 +199,7 @@ Another example is the Organization Management role group, which can only be ass
 
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Security**.
 
-3. In the **Microsoft 365 Defender** window, select **Permissions & roles** in the left-hand navigation pane.
+3. In the **Microsoft 365 Defender** window, select **Permissions** in the left-hand navigation pane.
     
 4. In the **Permissions & roles** page, the roles are displayed under two groups - **Azure AD** and **Email & collaboration roles**. Under the **Email & collaboration roles** group, select **Roles**.
     
