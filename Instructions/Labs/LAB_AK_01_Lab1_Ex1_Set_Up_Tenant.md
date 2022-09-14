@@ -1,4 +1,4 @@
-# Module 1 - Lab 1 - Exercise 1 - Set up your Microsoft 365 Tenant
+# Learning Path 1 - Lab 1 - Exercise 1 - Set up your Microsoft 365 Tenant
 
 In the labs for this course, you are taking on the role of Holly Dickson, Adatum Corporation's Enterprise Administrator. Adatum Corporation is a subsidiary of Contoso Electronics. Adatum does NOT have legacy, on-premises servers; therefore, you will be implementing Microsoft 365 in a cloud-only deployment. You have deployed Microsoft 365 in a virtualized lab environment, and you have been tasked with completing a pilot project that tests the security, compliance, and device management features in Microsoft 365 as they relate to Adatum's business requirements.
 
