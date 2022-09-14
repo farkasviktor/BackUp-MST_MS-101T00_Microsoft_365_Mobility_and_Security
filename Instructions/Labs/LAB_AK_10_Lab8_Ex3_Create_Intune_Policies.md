@@ -1,4 +1,4 @@
-# Learning Path 10 - Lab 9 - Exercise 3 - Create Intune Policies 
+# Learning Path 10 - Lab 8 - Exercise 3 - Create Intune Policies 
 
 Many mobile device management (MDM) solutions help protect organizational data by requiring users and devices to meet certain requirements. In Intune, these requirements are referred to as compliance policies. Compliance policies define the rules and settings that users and devices must meet to be compliant. When combined with Conditional Access requirements, administrators can block users and devices that do not meet the rules.
 
@@ -394,4 +394,4 @@ The purpose of this task is to simply review the different platforms that are av
 8. Leave all browser tabs open for the next lab exercise.
 
 
-# Proceed to Lab 9 - Exercise 4
+# Proceed to Lab 8 - Exercise 4
