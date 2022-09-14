@@ -1,4 +1,4 @@
-# Module 8 - Lab 8 - Exercise 1 - Configure the Microsoft Store for Business
+# Learning Path 8 - Lab 8 - Exercise 1 - Configure the Microsoft Store for Business
 
 In your role as Holly Dickson, Adatum's Enterprise Administrator, you have Microsoft 365 deployed in a virtualized lab environment as you deploy your pilot project. In this lab, you will work with the Microsoft Store for Business. 
 
