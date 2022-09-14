@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 5 - Exercise 3 - Initialize Compliance 
+# Learning Path 5 - Lab 5 - Exercise 3 - Initialize Compliance 
 
 In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Microsoft 365 deployed in a virtualized lab environment. As you proceed with your Microsoft 365 pilot project, your next steps are to implement archiving and retention at Adatum. You will begin by initializing compliance through the MDM auto-enrollment of new devices in your tenant. You will then configure retention tags and policies, and you will implement archiving with MRM retention tags. 
 
