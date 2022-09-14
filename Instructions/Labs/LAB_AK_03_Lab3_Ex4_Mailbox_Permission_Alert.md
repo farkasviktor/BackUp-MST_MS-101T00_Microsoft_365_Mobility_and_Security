@@ -1,4 +1,4 @@
-# Module 3 - Lab 3 - Exercise 4 - Implement Mailbox Permission Alert
+# Learning Path 3 - Lab 3 - Exercise 4 - Implement Mailbox Permission Alert
 
 
 In this exercise you will configure and test an alert that will notify Lynne Robbins when FullAccess permissions are granted to any mailbox within Adatum.
