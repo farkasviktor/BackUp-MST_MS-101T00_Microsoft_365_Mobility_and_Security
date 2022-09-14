@@ -93,4 +93,4 @@ To test this default alert, Holly Dickson will create an eDiscovery search. This
 You have now successfully tested the Microsoft 365 eDiscovery system alert that monitors the creation of an eDiscovery search or the export of data from a completed search.
 
 
-# End of Lab 3
+# Proceed to Lab 3 - Exercise 5
