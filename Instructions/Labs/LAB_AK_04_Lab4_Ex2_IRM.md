@@ -1,4 +1,4 @@
-# Module 4 - Lab 4 - Exercise 2 - Validate Information Rights Management 
+# Learning Path 4 - Lab 4 - Exercise 2 - Validate Information Rights Management 
 
 In this exercise, you will learn how to validate Information Rights Management for both Exchange Online and SharePoint Online.
  
