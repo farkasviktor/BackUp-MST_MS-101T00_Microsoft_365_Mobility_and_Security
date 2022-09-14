@@ -1,4 +1,4 @@
-# Module 10 - Lab 9 - Exercise 4 - Enroll a Windows 10 Device
+# Learning Path 10 - Lab 9 - Exercise 4 - Enroll a Windows 10 Device
 
 One of Adatum’s goals for their Microsoft 365 deployment is to enroll their Windows 10 devices to Microsoft Intune so that the devices can be managed by MDM. As part of her pilot project, Holly Dickson wants to enroll the LON-CL1 PC to Intune. In this exercise, you will first verify that the device is not currently enrolled, and having done that, you will enroll the device to Azure AD and Intune and then verify the enrollment. 
 
