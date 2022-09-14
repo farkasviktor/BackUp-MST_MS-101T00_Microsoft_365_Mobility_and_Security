@@ -1,4 +1,4 @@
-# Module 8 - Lab 8 - Exercise 2 - Manage the Microsoft Store for Business
+# Learning Path 8 - Lab 8 - Exercise 2 - Manage the Microsoft Store for Business
 
 In this exercise, you will add five apps to Adatum's company store, and you will create a collection of three apps that will also be added to the store. You will then verify how those apps appear in the company store to an Adatum employee.
 
