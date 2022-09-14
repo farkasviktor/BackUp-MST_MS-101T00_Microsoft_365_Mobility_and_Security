@@ -1,4 +1,4 @@
-# Module 6 - Lab 6 - Exercise 2 - Implement Windows Information Protection  
+# Learning Path 6 - Lab 6 - Exercise 2 - Implement Windows Information Protection  
 
 Now that Holly Dickson has implemented Sensitivity labels as part of her pilot project at Adatum, she is ready to implement Windows Information Protection (WIP). In your role as Holly Dickson, you will use this exercise to create a WIP policy that will be applied to any member of the WIP Users group who has an MDM-enrolled device in Intune.
 
