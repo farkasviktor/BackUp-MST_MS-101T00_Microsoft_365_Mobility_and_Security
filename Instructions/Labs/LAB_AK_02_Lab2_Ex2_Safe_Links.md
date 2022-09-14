@@ -1,4 +1,4 @@
-# Module 2 - Lab 2 - Exercise 2 - Implement a Safe Links Policy
+# Learning Path 2 - Lab 2 - Exercise 2 - Implement a Safe Links Policy
 
 Now that you have created a Safe Attachments policy for Adatum, you want to create a Safe Links policy and then validate the policy to ensure that it works properly.
 
