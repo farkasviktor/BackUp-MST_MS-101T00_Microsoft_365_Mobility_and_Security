@@ -1,4 +1,4 @@
-# Module 10 - Lab 9 - Exercise 1 - Enable Device Management
+# Learning Path 10 - Lab 9 - Exercise 1 - Enable Device Management
 
 In your role as Holly Dickson, Adatum's Enterprise Administrator, you have Microsoft 365 deployed in a virtualized lab environment for your pilot project. In this lab, you will manage user devices using Intune.
 
