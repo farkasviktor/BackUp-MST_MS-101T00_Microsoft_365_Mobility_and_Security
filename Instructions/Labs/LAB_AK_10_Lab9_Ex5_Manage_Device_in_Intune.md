@@ -1,4 +1,4 @@
-# Module 10 - Lab 9 - Exercise 5 - Manage and Monitor a Device in Intune
+# Learning Path 10 - Lab 9 - Exercise 5 - Manage and Monitor a Device in Intune
 
 Holly Dickson wants to make managing devices easier, so she has decided to implement Microsoft Intune device categories in her pilot project. Implementing device categories will enable her to automatically add devices to groups based on categories that she defines.
 
