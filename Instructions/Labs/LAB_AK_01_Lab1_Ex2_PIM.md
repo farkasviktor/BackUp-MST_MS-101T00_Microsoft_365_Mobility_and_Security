@@ -69,7 +69,7 @@ Holly also wants to update the notification settings for the Global admin role. 
 
 ### Task 2 - Assign an eligible user to the Global Admin role
 
-For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole user who will be eligible to be assigned the Global admin role. However, to simplify future role assignments, Holly wants to create a security group, assign Patti to the group, and then assign the group to the eligible role. 
+For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole user who will be eligible to be assigned the Global admin role. However, to simplify future role assignments, Holly wants to create a security group, assign Patti to the group, and then assign the group to the Global admin role. 
 
 Assigning roles to groups can simplify the management of role assignments in Azure AD. Instead of a Global admin (such as Holly) or a Privileged Role Administrator to assign a role to multiple people individually, they can create a security group and assign the role to the group. When people join the group, they are assigned the role indirectly. The company's existing governance workflow can then take care of the approval process and auditing of the group's membership to ensure that only legitimate users are members of the group and are thus assigned the particular role. 
 
