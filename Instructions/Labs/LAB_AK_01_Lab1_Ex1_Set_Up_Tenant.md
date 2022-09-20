@@ -297,7 +297,7 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 29. In the **Add members to Sales group** pane, in the list of users that appears, select **Alex Wilber, Joni Sherman**, and **Lynne Robbins**, and then select the **ADD(3)** button.
 
-31. Once the three new members have been saved in the group, select the **X** in the upper right-hand corner of the **Members** pane to close it.  <br/>
+31. Once the three new members have been saved in the group, select the **X** in the upper right-hand corner of the **Sales group** pane to close it.  <br/>
 
 	**Note:** You will not add Patti Fernandez to this group. Patti's key role in the pilot project is to test the Privileged Identity Management functionality in the next lab exercise. 
 
@@ -312,26 +312,28 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **SharePoint**. This will open the SharePoint admin center.
+2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **SharePoint**. This will open the SharePoint admin center in a new tab.
 
-3. In the **SharePoint admin center**, in the left-hand navigation pane, select **Settings**. 
+3. In the **Welcome to your new home page** window, select **Take the tour**.
 
-4. At the bottom of the **Settings** page is a sentence that says **Can’t find the setting you’re looking for? Go to the classic settings page.** In this sentence, select the hyperlinked text: **classic settings page**.
+4. In the **SharePoint admin center**, in the left-hand navigation pane, select **Settings**. 
 
-5. On the classic **Settings** page, scroll down to the **Information Rights Management (IRM)** section, select the **Use the IRM service specified in your configuration** option that appears to the right of it, and then select the **Refresh IRM Settings** button.
+5. At the bottom of the **Settings** page is a sentence that says **Can’t find the setting you’re looking for? Go to the classic settings page.** In this sentence, select the hyperlinked text: **classic settings page**.
 
-6. This will return you to the top of the **Settings** page. Scroll down to the **Information Rights Management (IRM)** section and verify the **Use the IRM service specified in your configuration** option is selected and a **We successfully refreshed your settings** message appears below the **Refresh IRM Settings** button. Continue scrolling to the bottom of the page and select the **OK** button. 
+6. On the classic **Settings** page, scroll down to the **Information Rights Management (IRM)** section, select the **Use the IRM service specified in your configuration** option that appears to the right of it, and then select the **Refresh IRM Settings** button.
 
-7. This will return you to the top of the **Settings** page. In your browser, close the current tab (the **https://xxxxxZZZZZZ-admin.sharepoint.com** tab).
+7. This will return you to the top of the **Settings** page. Scroll down to the **Information Rights Management (IRM)** section and verify the **Use the IRM service specified in your configuration** option is selected and a **We successfully refreshed your settings** message appears below the **Refresh IRM Settings** button. Continue scrolling to the bottom of the page and select the **OK** button. 
 
-8. Do **NOT** close the **SharePoint admin center** tab in your Edge browser. Leave this tab and your browser open for the next task.
+8. This will return you to the top of the **Settings** page. In your browser, close the current tab (the **https://xxxxxZZZZZZ-admin.sharepoint.com** tab).
+
+9. Do **NOT** close the **SharePoint admin center** tab in your Edge browser. Leave this tab and your browser open for the next task.
 
 
 ### Task 7 – Turn on Audit Logging to enable Alert Policies
 
 In Lab 3, you will create Alert Policies using the Microsoft 365 Defender portal. However, before you can implement alerts, an admin must first turn on Audit Logging for the organization. Since it can take a couple of hours for audit logging to become fully enabled once you turn it on, you will turn it on in this lab so that it's fully enabled by the time you get to Lab 3.
 
-**Important:** If you see an error message, "Fail to opt in, please refresh", Audit Logging is being enabled in the background and the message can safely be ignored.
+**Important:** If you see an error message that says "Fail to opt in, please refresh", Audit Logging is being enabled in the background and the message can safely be ignored.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. <br/>
 
@@ -339,15 +341,15 @@ In Lab 3, you will create Alert Policies using the Microsoft 365 Defender portal
 
 2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **Security**. This will open the **Microsoft 365 Defender** portal.
 
-3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Audit**.
+3. In **Microsoft 365 Defender**, in the left-hand navigation pane, scroll down and select **Audit**.
 
 4. In the **Audit** window, a banner is displayed that says: **Start recording user and admin activity** if auditing is not turned on for your organization. This banner is your prompt to turn on audit logging. <br/>
 
 	Select this banner now to turn on audit logging. 
 
-5. In the **security** dialog box that appears, select **Yes** for the system to update your organization settings. 
+5. The system will display the **Audit** window, which enables you to search through audited activities. You are not at a point yet of having any audited activities to search through. Now that you've turned on audit logging, any time you return to this **Audit** page in the **Microsoft 365 Defender** portal, this **Audit** page will appear. 
  
-6. A message box will appear at the top of the portal that asks you to **Please wait a moment while we update your organization settings...** It usually takes a couple of minutes for this message to disappear. You should leave the Client 1 VM and all the browser tabs in Edge open and proceed to the next lab. 
+6. Leave the Client 1 VM and all the tabs in your Edge browser open and proceed to the next lab. 
 
 
 ### Task 8 – Prepare Users for Content Searches
@@ -362,7 +364,7 @@ In Module 8, you will perform a Content Search lab that requires that Joni Sherm
 
 4. In the **Permissions** page, under the **Email & collaboration roles (1)** section, select **Roles**.
 
-5. On the **Permissions > Permissions** page, you want to select the **eDiscovery Manager** role. To quickly locate the role, enter **edisc** in the **Search** field on the menu bar and then select the **Search** icon. When the **eDiscovery Manager** role appears, select its check box.
+5. On the **Permissions > Permissions** page, you want to select the **eDiscovery Manager** role. (HINT: To quickly locate a specific role, you can enter the first few characters of the role name in the **Search** field on the menu bar and then select the **Search** icon. For example, let's assume you were looking for the Mailflow administrator role. You could enter **mail** in the **Search** field on the menu bar and then select the **Search** icon. This is a quick way to locate a specific role rather than scrolling through the list of roles.)
 
 6. In the **eDiscovery Manager** pane that appears, scroll down to the **eDiscovery Manager** section and select **Edit**.
 
