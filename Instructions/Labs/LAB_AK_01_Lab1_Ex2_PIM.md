@@ -22,9 +22,11 @@ In this exercise, you will perform these tasks for the Global administrator role
 
 Since the Microsoft 365 Global Administrator role provides a user with basically unlimited access to all Microsoft 365 resources, the number of users assigned to this role should obviously be kept to a minimum for security purposes. 
 
-For the purposes of this lab, the lab hosting provider assigned the Global admin role to the MOD Administrator and three of the other predefined user accounts. After you added Holly as a Global admin, five of 12 user accounts in your tenant are global admins, which is not something you would see in a real-world deployment. That being said, keep this guideline in mind for your real-world Microsoft 365 deployments. The best practice guideline that you should follow is to have from two to four Global admins.
+For the purpose of this lab, the lab hosting provider assigned the Global admin role to the MOD Administrator and three of the other predefined user accounts. After you added Holly as a Global admin, five of 12 user accounts in your tenant are now global admins, which is not something you would see in a real-world deployment. That being said, keep this guideline in mind for your real-world Microsoft 365 deployments. The best practice guideline that you should follow is to have from two to four Global admins.
 
 Holly Dickson, Adatum's Enterprise Administrator, wants to limit access to Global admin role using Privileged Identity Management. To do so, she must first configure the role to require approval before it can be assigned as an eligible role for a user, and then she wants to assign herself as the approver whenever an eligible user requests activating the role.
+
+Holly also wants to update the notification settings for the Global admin role. Privileged Identity Management (PIM) lets you know when important events occur in your Azure Active Directory (Azure AD) organization, such as when a role is assigned or activated. PIM keeps you informed by sending you and other participants email notifications. These emails might also include links to relevant tasks, such activating or renewing a role. In this task, Holly wants to update the notifications to ensure that approvals are tracked in real-time in a proactive manner.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as Holly Dickson from the previous lab exercise.
 
@@ -32,7 +34,7 @@ Holly Dickson, Adatum's Enterprise Administrator, wants to limit access to Globa
 
 3. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **All services**.
 
-4. In the **All services** window, the services are separated into three sections - General, Identity, and Services. Under the **Identity** section, select **Azure AD Privileged Identity Management**.
+4. In the **All services** window, the services are separated into three sections - General, Identity, and Services. Under the **Security** section, select **Azure AD Privileged Identity Management**.
 
 5. In the **Privileged Identity Management | Quick start** window, note how the window is divided into three parts - the navigation pane on the left, the middle pane (which provides navigation options for this page), and the detail pane on the right. <br/>
 
@@ -44,13 +46,25 @@ Holly Dickson, Adatum's Enterprise Administrator, wants to limit access to Globa
 
 8. In the **Role setting details -  Global Administrator** window, select **Edit** on the menu bar at the top of the page.
 
-9. In the **Edit role setting - Global Administrator** window, select the **Require Approval to activate** check box. 
+9. In the **Edit role setting - Global Administrator** window, the **Activation** tab is displayed by default. In this tab, select the **Require Approval to activate** check box. 
 
 10. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select this section. In the **Select a member** pane that opens on the right, scroll down through the list of users and select **Holly Dickson**, and then select the **Select** button.
 
-11. In the **Edit role setting - Global Administrator** window, select **Update**.
+11. In the **Edit role setting - Global Administrator** window, select the **Notification** tab.
 
-12. Leave all browser tabs open for the next task.
+12. On the **Notification** tab, note the three activities that can trigger sending of notifications: **Send notifications when...**    <br/>
+
+    - members are assigned as eligible to this role
+    - members are assigned as active to this role
+    - eligible members activate this role
+
+    For each activity, a **Role assignment alert** can be sent. Beside sending this alert notification email to the default admin, Holly wants the **Role assignment alert** sent to the MOD administrator account. <br/>
+
+    In the **Additional recipients** field for each of the three instances of the **Role assignment alert**, enter the MOD administrator's email ID (**admin@xxxxxZZZZZZZZ.onmicrosoft.com**)
+
+13. At the bottom of the **Edit role setting - Global Administrator** window, select **Update**.
+
+14. Leave all browser tabs open for the next task.
 
 
 ### Task 2 - Assign an eligible user to the Global Admin role
@@ -59,7 +73,7 @@ For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole u
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as Holly Dickson.
 
-2. In your **Edge** browser, you should still have the **Azure Active Directory admin center** open in a tab that's displaying the **Adatum Corporation | Settings** window. In the navigation thread at the top of the page (**All services > Privileged Identity Management > Adatum Corporation**), select **Privileged Identity Management**.
+2. In your **Edge** browser, you should still have the **Azure Active Directory admin center** open in a tab that's displaying the **Adatum Corporation | Settings** window. In the navigation thread at the top of the page (**All services > Privileged Identity Management | Azure AD roles > Adatum Corporation**), select **Privileged Identity Management**.
 
 3. In the **Privileged Identity Management | Quick start** window, in the middle pane under **Manage**, select **Azure AD roles**.
 
