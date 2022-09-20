@@ -60,7 +60,7 @@ Holly also wants to update the notification settings for the Global admin role. 
 
     For each activity, a **Role assignment alert** can be sent. Beside sending this alert notification email to the default admin, Holly wants the **Role assignment alert** sent to the MOD administrator account. <br/>
 
-    In the **Additional recipients** field for each of the three instances of the **Role assignment alert**, enter the MOD administrator's email ID (**admin@xxxxxZZZZZZZZ.onmicrosoft.com**)
+    In the **Additional recipients** field for each of the three instances of the **Role assignment alert**, enter the MOD administrator's email ID of **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
 
 13. At the bottom of the **Edit role setting - Global Administrator** window, select **Update**.
 
