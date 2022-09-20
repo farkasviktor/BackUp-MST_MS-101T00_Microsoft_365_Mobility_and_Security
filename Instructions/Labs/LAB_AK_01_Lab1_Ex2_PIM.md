@@ -69,7 +69,11 @@ Holly also wants to update the notification settings for the Global admin role. 
 
 ### Task 2 - Assign an eligible user to the Global Admin role
 
-For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole user who will be eligible to be assigned the Global admin role. In this task, Holly will enable Patti to be eligible for the Global admin role.
+For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole user who will be eligible to be assigned the Global admin role. However, to simplify future role assignments, Holly wants to create a security group, assign Patti to the group, and then assign the group to the eligible role. 
+
+Assigning roles to groups can simplify the management of role assignments in Azure AD. Instead of a Global admin (such as Holly) or a Privileged Role Administrator to assign a role to multiple people individually, they can create a security group and assign the role to the group. When people join the group, they are assigned the role indirectly. The company's existing governance workflow can then take care of the approval process and auditing of the group's membership to ensure that only legitimate users are members of the group and are thus assigned the particular role. 
+
+In this task, Holly will create a new security role for users who are eligible for the Global admin role, and then she will assign Patti to the group. Next, Holly will enable the group to be eligible for the Global admin role.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as Holly Dickson.
 
@@ -77,7 +81,7 @@ For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole u
 
 3. In the **Privileged Identity Management | Quick start** window, in the middle pane under **Manage**, select **Azure AD roles**.
 
-4. In the **Adatum Corporation | Quick start** window, the detail pane on the right displays the **Privileged Identity Management** window. This displays three groups - Assign, Activate, and Approve. Under the **Assign** group, select **Assign Eligibility**.
+4. In the **Adatum Corporation | Quick start** window, the detail pane on the right displays the **Privileged Identity Management** window. This displays the following groups - Assign, Activate, Approve, and Audit. Under the **Assign** group, select **Assign Eligibility**.
 
 5. In the **Adatum Corporation | Roles** window, scroll down through the list of roles and select **Global Administrator**.
 
