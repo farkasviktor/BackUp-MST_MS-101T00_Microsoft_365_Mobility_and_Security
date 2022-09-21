@@ -98,15 +98,13 @@ In this task, you will test the Safe Links Policy that you just created that blo
 
 19. In the **Welcome** windows, select the X in the upper right corner to close the window.
 
-20. In the MOD Administrator's **Inbox**, open the email that was sent by Holly.
+20. In the MOD Administrator's **Inbox**, select the email that was sent by Holly regarding free stuff for Adatum users.
 
-21. Select the hyperlink in the body of the message to open it. 
+21. Select the hyperlink in the body of the message to navigate to the site. 
 
-22. If a window opens indicating the new browser recommended by Microsoft is here, select **No thanks**. 
+22. A new tab should open in your **Edge** browser that takes you to the URL you just saw in the prior step. This site should display the following warning message: **This website is classified as malicious.** This not only indicates that opening this website might not be safe, but it also verifies that the Safe Links policy you just created is working properly.
 
-23. A new tab should open in your **Edge** browser that takes you to the URL you just saw in the prior step. This site should display the following warning message: **This website has been blocked per your organization's URL policy.** This not only indicates that opening this website might not be safe, but it also verifies that the Safe Links policy you just created is working properly.
-
-24. In LON-CL2, leave the Edge browser and all its tabs open for the next lab. 
+23. In LON-CL2, leave the Edge browser and all its tabs open for the next lab. 
 
 
 # End of Lab 2
