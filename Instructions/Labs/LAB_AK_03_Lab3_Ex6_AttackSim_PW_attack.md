@@ -17,36 +17,36 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 3. In the **Microsoft 365 Defender** portal, you should still be in the **Attack simulation training** page; if not, then in the left-hand navigation pane, under **Email & collaboration**, select **Attack simulation training**.
 
-4. On the **Attack Simulation training** page, select the **Simulations** tab, and then select **+ Launch a simulation**.
+4. On the **Attack Simulation training** page, the **Overview** tab is displayed by default. Select the **Simulations** tab, and then select **+ Launch a simulation** that appears on the menu bar.
 
-5. On the **Select Technique** page, under the **Drive-by URL** option, select the **View details of Drive-by URL** link. This opens a **Drive-by URL** pane on the right. Review the **Description** and the **Simulation steps** for this type of attack. When you're done, close the **Drive-by URL** pane and select **Next**.
+5. On the **Select Technique** page, select the **Drive-by URL** option. Under this option, select the **View details of Drive-by URL** link. This opens a **Drive-by URL** pane on the right. Review the **Description** and the **Simulation steps** for this type of attack. When you're done, close the **Drive-by URL** pane and select **Next**.
 
-6. On the **Name Simulation** page, name the simulation **Custom payload** and select **Next**.
+6. On the **Name Simulation** page, enter **Custom payload** in the **Simulation name** field and then select **Next**.
 
-7. On the **Select payload and login page**, select **+ Create a payload**.
+7. On the **Select payload and login page**, select **+Create a payload**.
 
 8. On the **Select type** page of the Payload wizard, the **Email** option should be selected by default (if not, select it now). Select **Next**. 
 
-9. On the **Select Technique** page, select the **Drive-by URL** attack type and then select **Next**.
+9. On the **Select Technique** page, the **Drive-by URL** attack type should be selected by default (all other options are disabled since you already selected this option back in step 5). Select **Next**.
 
 10. On the **Payload name** page, enter the following information: <br/>
 
-	- Email payload name: **Free gift offer**
+	- Payload name: **Free gift offer**
 	- Description: **This payload is for Drive-by URL threats offering free prizes and gifts that are too good to be true**
 
 11. Select **Next**.
 
 12. On the **Configure Payload** page, enter the following information: <br/>
 
-	- Enter name: **Klemen Sic**
+	- From name: **Klemen Sic**
 	- From email: **klemens@tailspintoys.com**
 	- Email subject: **Free toy giveaway promotion from Tailspin Toys**
 	- Select a URL you want to be your phishing link: select the drop-down arrow and select **https://www.prizegives.com** from the list of fictitious URLs. 
 	- Theme: **Personalized Offer**
 	- Industry: **Retail**
 	- Current Event: **Yes**
-	- Under Language, Select the language for payload : **English** 
-	- Email message: Enter the following text that will be displayed in the body of the email message: **Tailspin Toys is offering you a FREE, one-time only giveaway of a toy of your choice as part of our 25th anniversary celebration! Please click on the following link to select the toy of your choice:** 
+	- Select the language for payload : **English** 
+	- Email message: Enter the following text that will be displayed in the body of the email message: **Tailspin Toys is offering you a FREE, one-time only giveaway of a toy of your choice as part of our 25th anniversary celebration! Please click on the following link to select the toy of your choice: ** 
 	- After entering the prior message, select the **Phishing link** option at the top of the text form (to the right of **Dynamic tag**). In the **Name Phishing Url** dialog box that appears, enter **Free25thAnniversaryGift@tailspintoys.com** in the **Name** field and then select **Confirm**.
 
 	The message should now appear as: 
@@ -55,32 +55,32 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 13. Select **Next**.	
 
-14. On the **Add Indicators** page, select the **Add Indicator** button.
+14. On the **Add Indicators** page, select **Add Indicator**.
 
 15. On the **Add Indicator** pane that appears on the right, enter the following information: <br/>
 
-	- Select an indicatory you would like to use: **Too good to be true offers**
-	- Where do you want to place this indicator on payload: **From the Body of the email**
+	- Select an indicator you would like to use: **Too good to be true offers**
+	- Where do you want to place this indicator on payload: **From the Body of the Email**
 
 16. A **Select Text** button will appear. Select this button.
 
 17. In the **Select the required text** pane that appears on the right, drag your cursor from the start of the code block to the end, so that the entire code block is highlighted. This will enable the **Select** button. Select this button. 
 
-18. In the **Indicator Description** field, enter the following text: **Free gifts or other one-time only promotional give-aways**
+18. In the **Indicator Description** field, replace the default description with the following text: **Free gifts or other one-time only promotional give-aways**
 
 19. Select inside the **Indicator Preview** to see a preview of the indicator message. Then select outside the **Indicator Preview** field to exit the preview. 
 
-20. Select **Add**.
+20. Select the **Add** button at the bottom of the **Add Indicator** pane.
 
 21. On the **Add Indicators** page, the indicator that you just created should be displayed. Select **Next**.
 
 22. On the **Review Payload** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change, or select **Back** to enter any of the information in the Configure section. Once everything is correct, select **Submit**. A few moments will pass and you will receive a confirmation stating **New payload created**. Select **Done**. 
 
-23. On the **Attack simulation training** page, you should still be viewing the **Payloads** tab. Scroll down through the list of payloads to the **Free gift offer** payload that you just created. Review the information. Note that no **Compromised rate (%)** has been determined yet, since the payload hasn't been used in simulation. 
+23. On the **Select payload and login page** window, the **Free gift offer** payload that you just created should appear in the list. Review the information for this payload. Note that no **Predicted Compromised rate (%)** has been determined yet, since the payload hasn't been used in a simulation. 
 
-24. On the **Select Payload** page, hover your mouse over **Free gift offer** in the list of payloads and then select the circle that appears to the left of it. Select **Next**. 
+24. On the **Select payload and login page** page, select the check box to the left of the **Free gift offer** payload, and then select **Next**. 
 
-25. On the **Target Users** page, select **Include only specific users and groups**, and then select **+Add Users**. 
+25. On the **Target Users** page, select the **Include only specific users and groups** option, and then select **+Add Users**. 
 
 26. In the **Add Users** pane that appears, in the **Search for Users or Groups** field at the top of the pane, enter **Lynne** and then hit Enter. In the list of users that appears whose name starts with Lynne, select **Lynne Robbins** and then select **Add 1 User(s)**.
 
@@ -88,24 +88,24 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 28. On the **Assign Training** page, under the **Preferences** section, the **Assign training for me (Recommended)** option should be selected by default (if not, select it now). Select the **Due Date** field. In the drop-down menu that appears, select **7 days after Simulation ends** and then select **Next**.
 
-29. On the **Training landing page**, the **Select the landing page option to be used** field should be prefilled with the **Microsoft landing page** option (if not, select it now). Select the **Preview page** button that appears below this field. 
+29. On the **Landing page**, you will accept the default settings. These settings use the **Microsoft default landing page** and the **Microsoft Landing Page Template 1**. <br/>
 
-30. The **Microsoft landing page** appears in the pane on the right. This provides an example of what the landing page will look like when someone experiences a phishing attack. Review the features of this landing page, and then close **Microsoft landing page** pane.
+	Select the **Open preview panel** button that appears below the **Payload Indicators** section. 
 
-31. On the **Training landing page**, note the text that appears in the **Header** and **Body** fields. This is the text that you saw when you previewed the Microsoft landing page. Change the values of these fields to something different, and then select the **Preview page** button again. In the **Microsoft landing page** that appears in the pane on the right, you should see the changes that you made to the header and body text fields. Close the **Microsoft landing page** pane when you're done reviewing.
+30. A preview of the **Microsoft landing page** appears in the pane on the right. This provides an example of what the landing page will look like when someone experiences a phishing attack. Scroll down through this landing page preview and review the features. When you're finished, select the **Close** button at the bottom of the pane. 
 
-32. Select **Next**.
+31. On the **Landing page**, select **Next**.
 
-33. On the **Select end user notification**, choose how you want the end user to be notified. For the purpose of this lab, select **Microsoft default notification**. In the Notifications table, configure the following notifications and then select **Next**.
+32. On the **Select end user notification** page, choose how you want the end user to be notified. For the purpose of this lab, select **Microsoft default notification (recommended)**. In the list of notifications, configure the following notifications:
 
-	 Notifications | Delivery preferences 
-	 ------ | ------
-	 Microsoft default positive reinforcement notification | Deliver after campaign ends
-	 Microsoft default training reminder notification | Weekly 
+	 - Microsoft default positive reinforcement notification - set **Delivery preferences** to **Deliver after campaign ends**
+	 - Microsoft default training reminder notification - set **Delivery preferences** to  **Weekly**
+
+33. Select **Next**
 
 34. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
 
-35. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. A few moments will pass and you will receive a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
+35. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. It may take a few minutes before you receive a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
 
 
 ### Task 2: Review the Drive-by URL attack results
