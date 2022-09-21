@@ -67,44 +67,76 @@ Holly also wants to update the notification settings for the Global admin role. 
 14. Leave all browser tabs open for the next task.
 
 
-### Task 2 - Assign an eligible user to the Global Admin role
+### Task 2 - Assign an eligible group to the Global Admin role
 
 For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole user who will be eligible to be assigned the Global admin role. However, to simplify future role assignments, Holly wants to create a security group, assign Patti to the group, and then assign the group to the Global admin role. 
 
 Assigning roles to groups can simplify the management of role assignments in Azure AD. Instead of requiring a Global admin (such as Holly) or a Privileged Role Administrator to assign a role to multiple people individually, they can create a security group and assign the group to the role. When people join the group, they are assigned the role indirectly. The company's existing governance workflow can then take care of the approval process and auditing of the group's membership to ensure that only legitimate users are members of the group and are thus assigned the particular role. 
 
-In this task, Holly will create a new security role for users who are eligible for the Global admin role, and then she will assign Patti to the group. Next, Holly will enable the group to be eligible for the Global admin role.
+In this task, Holly will create a new, role assignable security group for users who are eligible for the Global admin role, and then she will assign Patti to the group. Next, Holly will enable the group to be eligible for the Global admin role.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as Holly Dickson.
 
-2. In your **Edge** browser, you should still have the **Azure Active Directory admin center** open in a tab that's displaying the **Adatum Corporation | Settings** window. In the navigation thread at the top of the page (**All services > Privileged Identity Management | Azure AD roles > Adatum Corporation**), select **Privileged Identity Management**.
+2. You will begin by creating a new, role assignable security group called **PIM-Global-Administrators** in Azure AD, and you will assign Patti as a member of the group. <br/>
 
-3. In the **Privileged Identity Management | Quick start** window, in the middle pane under **Manage**, select **Azure AD roles**.
+    In your **Edge** browser, you should still have the **Azure Active Directory admin center** open in a tab that's displaying the **Adatum Corporation | Settings** window from the prior task. In the navigation thread at the top of the page (**All services > Privileged Identity Management | Azure AD roles > Adatum Corporation**), select **All services** (or select **All services** in the navigation pane).
 
-4. In the **Adatum Corporation | Quick start** window, the detail pane on the right displays the **Privileged Identity Management** window. This displays the following groups - Assign, Activate, Approve, and Audit. Under the **Assign** group, select **Assign Eligibility**.
+3. In the **All services** window, under the **Identity** section, select **Groups**.
 
-5. In the **Adatum Corporation | Roles** window, scroll down through the list of roles and select **Global Administrator**.
+4. In the **Groups | All groups** window, select **New group** in the menu bar.
 
-6. In the **Global Administrator | Assignments** window, select **+Add assignments** on the menu bar. 
+5. In the **New group** window, enter the following information:
 
-7. In the **Add assignments** window, the **Membership** tab is displayed by default. Scroll down on the page, and under **Select member(s)**, select **No member selected**.
+    - Group type - **Security**
 
-8. In the **Select a member** pane that appears on the right, scroll down through the list of users and select **Patti Fernandez**, and then select the **Select** button.
+    - Group name - **PIM-Global-Administrators**
 
-9. In the **Add assignments** window, select **Next** (this does the same thing as selecting the **Setting** tab). 
+    - Group description - **Group of eligible users that can be assigned to the Global Administrator role in PIM**
 
-10. In the **Add assignments** window, under the **Settings** tab, verify the **Assignment type** option is set to **Eligible**, and then select **Assign**. 
+    - Azure AD roles can be assigned to the group - **Yes**
 
-11. In the **Global Administrator | Assignments** window, note that Patti Fernandez is now an eligible user who can be assigned the Global Administrator role.
+    - Membership type - **Assigned**
 
-    **Note:** It can take 30 minutes for the **Pending Request** to be implemented.  Wait at least 10 minutes, then refresh the **Global Administrator | Assignments** window until you see Patti listed under the **Eligible assignments** tab.
+    - Owners - Select **No owners selected**. In the **Add owners** pane, select **Holly Dickson**.
 
-12. Leave all browser tabs open for the next task.
+    - Members - Select **No members selected**. In the **Add members** pane, enter **Patti** in the **Search** field. Select **Patti Fernandez**.
+
+6. Select **Create**.
+
+7. A dialog box appears that says: **Creating a group to which Azure AD roles can be assigned is a setting that cannot be changed later. Are you sure that you want to add this capability?**. Select **Yes**.
+
+8. You must now make the **PIM-Global-Administrators** group eligible for role assignment. 
+
+9. In the **Azure Active Directory admin center** navigation pane select **All services**.
+
+10. In the **All services** window, in the **Security** section, select **Azure AD Privileged Identity Management**.
+
+11. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Azure AD roles**.
+
+12. In the **Adatum Corporation | Quick start** window, the detail pane on the right displays the **Privileged Identity Management** window. This window displays the following sections - Assign, Activate, Approve, and Audit. Under the **Assign** section, select **Assign Eligibility**.
+
+13. In the **Adatum Corporation | Roles** window, scroll down through the list of roles and select **Global Administrator**.
+
+14. In the **Global Administrator | Assignments** window, select **+Add assignments** on the menu bar. 
+
+15. In the **Add assignments** window, the **Membership** tab is displayed by default. Under **Select member(s)**, select **No member selected**.
+
+16. In the **Select a member** pane that appears on the right, enter **PIM** in the **Search** field. This will display the list of eligible users and groups whose name starts with **PIM**. Select the **PIM-Global-Administrators** group that appears, and then select the **Select** button.
+
+17. In the **Add assignments** window, select **Next** (this does the same thing as selecting the **Setting** tab). 
+
+18. In the **Add assignments** window, under the **Settings** tab, verify the **Assignment type** option is set to **Eligible**. Also verify the **Permanently eligible** check box is selected (if not, then do so now), and then select **Assign**. 
+
+19. In the **Global Administrator | Assignments** window, note that the **PIM-Global-Administrators** group is an eligible assignment to the Global Administrator role. Because **PIM-Global-Administrators** is a group, it means that all members of this group (which consists of Patti Fernandez) are now eligible to be assigned the Global Administrator role.
+
+    **Note:** Lab testing has shown that it can sometimes take up to 30 minutes for new assignments to appear under the **Eligible assignments** tab. If **PIM-Global-Administrators** doesn't appear immediately, wait a few minutes and then select the **Refresh** option on the menu bar. Continue to select the **Refresh** option every few minutes until **PIM-Global-Administrators** appears in the list of **Eligible assignments**.
+
+20. Leave all browser tabs open for the next task.
 
 
 ### Task 3 - Submit a request for the Global Admin role
 
-Now that Patti Fernandez has been made an eligible user for the Global administrator role, Holly wants to test out the PIM process in her pilot project. In this task, Patti will submit a request to be assigned Global administrator role privileges. In the next task, Holly will review her request and approve it.
+Now that the **PIM-Global-Administrators** group has been made eligible for the Global administrator role, the members of the group (in this case, Patti Fernandez) can be assigned the Global Admim role. Holly wants to test out the PIM process in her pilot project. In this task, Patti will submit a request to be assigned Global administrator role privileges. In the next task, Holly will review her request and approve it.
 
 **Note:** The activation request process is set up to require Multi-Factor Authentication (MFA). If you do not have a phone to complete this process, notify your instructor. You may be able to partner up with another student to watch them complete the remaining two tasks.
 
