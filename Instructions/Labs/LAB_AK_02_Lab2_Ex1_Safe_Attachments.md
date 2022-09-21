@@ -4,9 +4,9 @@ You now have a Global admin account set up for Holly Dickson, and you're signed 
 
 **Note:** You will not be able to validate the Safe Attachments policy. To do so would require that you attach a virus or malware-infected file to an email, which is something that Microsoft does not recommend.
 
-### Task 1 – Create a Safe Attachment policy and turn on Defender for Office 365
+### Task 1 – Create a Safe Attachment policy and turn on Microsoft Defender for Office 365
 
-In this task, you will turn on Windows Defender for Office 365, which provides advanced threat protection for SharePoint, OneDrive, and Microsoft Teams. You will also create a Safe Attachments policy that will test email attachments for malware that are sent to recipients within the xxxxxZZZZZZ.onmicrosoft.com domain. You will configure the policy so that if an attachment is blocked, it will be removed from the email that is sent to the recipient, and a copy of the email will be redirected to Joni Sherman for additional review.
+In this task, you will turn on Microsoft Defender for Office 365, which provides advanced threat protection for SharePoint, OneDrive, and Microsoft Teams. You will also create a Safe Attachments policy that will test email attachments for malware that are sent to recipients within the xxxxxZZZZZZ.onmicrosoft.com domain. You will configure the policy so that if an attachment is blocked, it will be removed from the email that is sent to the recipient, and a copy of the email will be redirected to Joni Sherman for additional review.
 
 1. You should still be logged into your Client 1 VM as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 
@@ -22,7 +22,7 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
 
 7. In the **Global settings** pane that appears, set the following options and then select **Save** (if necessary):
 
-    - **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** - verify the toggle switch is set to **On** (set it to **On** if necessary). This enables Windows Defender for Office 365.
+    - **Turn on Defender for Office 365 for SharePoint, OneDrive, and Microsoft Teams** - verify the toggle switch is set to **On** (set it to **On** if necessary). This enables Microsoft Defender for Office 365.
 
     - **Turn on Safe Documents for Office clients** - verify the toggle switch is set to **On** (set it to **On** if necessary)
 
@@ -46,9 +46,9 @@ In this task, you will turn on Windows Defender for Office 365, which provides a
 
 16. Leave the Client 1 VM and the Safe Attachments tab in your Edge browser open for the next lab.
 
-**NOTE:** Unfortunately, we are unable to create a training lab in which you can validate the Safe Attachments policy that you just created. To do so, you must send an email that contains a malicious attachment. There are some common test viruses that are available, such as the EICAR test virus; however, with well-known test viruses such as EICAR, the messages in which they are attached get quarantined before they can be processed by Windows Defender for Office 365. Since the Safe Attachments functionality is meant to protect against unknown and zero-day viruses and malware, it is very difficult, and not recommended, to create such an attachment.
+**NOTE:** Unfortunately, we are unable to create a training lab in which you can validate the Safe Attachments policy that you just created. To do so, you must send an email that contains a malicious attachment. There are some common test viruses that are available, such as the EICAR test virus. However, with well-known test viruses such as EICAR, the messages in which they are attached get quarantined before they can be processed by Microsoft Defender for Office 365. Since the Safe Attachments functionality is meant to protect against unknown and zero-day viruses and malware, it is very difficult, and not recommended, to create such an attachment.
 
-That being said, after you have defined Safe Attachment policies in your real-world environment, one good way to see how the service is working is by viewing Advanced Threat Protection reports. For more information on using ATP reporting to validate your Safe Links and Safe Attachment policies, see [View reports for Office 365 Advanced Threat Protection](https://docs.microsoft.com/en-us/office365/securitycompliance/view-reports-for-atp).
+That being said, after you have defined Safe Attachment policies in your real-world environment, one good way to see how the service is working is by viewing the security-related reports in Microsoft Defender for Office 365. For more information on using these reports to validate your Safe Links and Safe Attachment policies, see [View Defender for Office 365 reports in the Microsoft 365 Defender portal]([https://learn.microsoft.com/microsoft-365/security/office-365-security/view-reports-for-mdo]).
 
 
 # Proceed to Lab 2 - Exercise 2
