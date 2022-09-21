@@ -10,32 +10,27 @@ In this task, you will create a Safe Links policy that applies to all users in y
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account, and you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-2. After finishing the previous task, you should still be in the **Microsoft 365 Defender**. If not, in your browser, enter **https://security.microsoft.com.**
+2. After finishing the previous task, you should still be in the **Microsoft 365 Defender** portal. If not, in your browser, enter **https://security.microsoft.com.**
 
 3. In **Microsoft 365 Defender**, you should still be on the **Safe Attachments** page after completing the previous task. In the navigation thread at the top of the page (**Policies & rules > Threat policies > Safe attachments**), select **Threat policies**. <br/>
 
-    If you had closed the **Safe Attachments** tab after the prior task, then navigate to the **Threat policies** page by selecting **Policies & rules** in the left-hand navigation page in **Microsoft 365 Defender**, and then selecting **Threat policies**.
+    Note: If you had closed the **Safe Attachments** tab after the prior task, then navigate to the **Threat policies** page by selecting **Policies & rules** in the left-hand navigation page in **Microsoft 365 Defender**, and then selecting **Threat policies**.
 
 4. In the **Threat policies** window, under the **Policies** section, select **Safe Links**. 
 
-5. On the **Safe links** page, select **+Create** on the menu bar. This initiates the **Create Safe Links Policy** wizard.
+5. On the **Safe links** page, select **+Create** on the menu bar. This initiates the **Create safe links policy** wizard.
 
 6. On the **Name your policy** page, enter **LinkPolicy1** in the **Name** field and then select **Next**.
 
-7. On the **Users and domains** page, in the **Domains** field type **onmicrosoft.com**. In the menu that appears, select Adatum's **onmicrosoft.com** domain. Adatum's domain will now appear below the **Domains** field. Select **Next**.
+7. On the **Users and domains** page, enter **onmicrosoft.com** in the **Domains** field. In the menu of suggested domains that appears, select Adatum's **xxxxxZZZZZZonmicrosoft.com** domain. Adatum's domain will now appear below the **Domains** field. Select **Next**.
 
-8. On the **Protection settings** page, enter the following settings and then select **Next**: 
+8. On the **URL & click protection settings** page, update the following settings and then select **Next**: 
 
-    - Select the action for unknown or potentially malicious URLs in messages - **On**
-    - Select the action for unknown or potentially malicious URLs within Microsoft Teams - **Off**
-    - Select the following check boxes:
-        - Apply real-time URL scanning for suspicious links and links that point to files
-        - Wait for URL scanning to complete before delivering the message
-        - Apply safe links to email messages sent within the organization
-        - Do not track user clicks
-        - Do not let users click through to the original URL
+    - Under the **Email** section, verify that all check boxes are selected (if any are not selected by default, then select them now):
+    - Under the **Click protection settings** section:
+        - Track user clicks - Adatum does not want to track user clicks, so clear this check box if it's selected by default
    
-9. On the **Notification** page, leave the default option selected (**Use the default notification text**) and select **Next**.
+9. On the **Notification** page, verify the **Use the default notification text** option is selected (if necessary, select it now) and then select **Next**.
 
 10. On the **Review** page, review the options that you selected. If any need to be corrected, select the appropriate **Edit** option and make the necessary corrections. Once they all appear correct, select **Submit**. 
 
@@ -43,11 +38,11 @@ In this task, you will create a Safe Links policy that applies to all users in y
 
 12. In the navigation thread at the top of the page (**Policies & rules > Threat policies > Safe attachments**), select **Threat policies**.
 
-13. In the **Threat policies** page, select **Tenant Allow/Block Lists**.
+13. In the **Threat policies** page, under the **Rules** section, select **Tenant Allow/Block Lists**.
 
-14. On the **Tenant Allow/Block Lists** page, select the **URLs** tab.
+14. On the **Tenant Allow/Block Lists** page, the **Domains & addresses** tab is displayed by default. Select the **URLs** tab.
 
-15. On the **URLs** tab, select **+ Block**. In the Block URLs field, enter **http://tailspintoys.com** and then select **Add**.
+15. On the **URLs** tab, select **+ Block** on the menu bar. In the **Block URLs** pane that appears, enter **http://tailspintoys.com** in the field and then select **Add**.
 
 **STOP!!** As mentioned at the start of this lab exercise, now that you have created a Safe Links policy, you must wait at least 30 minutes for the policy to propagate through the system before you can perform the next task in this exercise. 
 
