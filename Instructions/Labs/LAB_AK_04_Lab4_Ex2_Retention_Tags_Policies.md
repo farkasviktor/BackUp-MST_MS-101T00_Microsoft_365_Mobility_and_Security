@@ -25,7 +25,7 @@ In this next phase of your Adatum pilot project, you will access the Microsoft P
 8. In your Microsoft Edge browser, leave your Edge browser and all its tabs open for the next task. 
  
 
-### Task 2 – Create a retention policy for test user mailboxes
+### Task 2 – Create an email retention policy for test users
 
 As part of your pilot project for Adatum, you will configure data retention through the Microsoft Purview portal by creating a new retention policy. You will then assign this retention policy to Joni Sherman and Lynne Robbins’ mailboxes. Joni and Lynne are Holly's two test users for compliance testing.
 
@@ -70,7 +70,7 @@ As part of your pilot project for Adatum, you will configure data retention thro
 14. Leave the **Data lifecycle management** tab open in your Edge browser as you will create another retentio policy in the next task.
 
 
-### Task 3 – Create a retention policy to retain emails for all users
+### Task 3 – Create an email retention policy for all users
 
 Once testing has concluded, Holly wants to preserve the content of all Exchange Online mailboxes from deletion for 5 years after the last modification. You must create a retention policy with this setting.
 
