@@ -1,4 +1,4 @@
-# Learning Path 4 - Lab 4 - Exercise 2 - Configure Retention Tags and Policies  
+# Learning Path 4 - Lab 4 - Exercise 2 - Configure Retention Policies  
 
 In this exercise, you will implement archiving with MRM retention tags. You will then configure retention tags and policies through the Microsoft Purview portal. 
 
