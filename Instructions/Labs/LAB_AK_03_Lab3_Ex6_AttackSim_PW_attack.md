@@ -103,7 +103,7 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 	 - Microsoft default positive reinforcement notification - set **Delivery preferences** to **Deliver after campaign ends**
 	 - Microsoft default training reminder notification - set **Delivery preferences** to  **Weekly**
 
-34. Select **Next**
+34. Select **Next**.
 
 35. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
 
@@ -116,25 +116,15 @@ You will now review the results of the Drive-by URL simulation attack that you j
 
 1. Switch to the **LON-CL2** VM and log in as the **Admin** with a password of **Pa55w.rd**.
 
-2. In the Edge browser, in the **Outlook** tab in which you are signed in as the MOD Administrator, select the **MA** initials in the upper right-hand corner of the screen. In the **MOD Administrator** window that appears, select **Sign out**.
+2. In the Edge browser, you should have two tabs open - one with Lynne Robbins' Outlook mailbox, and one with the landing page from the attack simulation that you conducted in the prior lab exercise. Select the tab containing Lynne Robbins' Outlook mailbox.
 
-3. Close all browser tabs except for the **Sign out** tab. In the **Sign out** tab, enter the following URL in the address bar to navigate directly to Outlook on the web: **https://outlook.office365.com**.
- 
-4. In the **Pick an account** window, select **Use another account**. 
-
-5. In the **Sign in** window, enter **LynnR@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix ID provided by your lab hosting provider), and then in the **Enter password** window, enter **Pa55w.rd** and select **Sign in**. 
-
-6. Close the **Welcome** window.
-
-7. In Lynne's Outlook Inbox, you should see the email that was sent by the Attack Simulator that's from **klemens@tailspintoys.com**. Select the email to open it and review the details in the body of the message. 
+7. In Lynne's Outlook Inbox, you should see the email that was sent by the Attack Simulator that's from **klemens@tailspintoys.com**. The subject of the email is **Free toy giveaway promotion from Tailspin Toys**. Select the email to open it and review the details in the body of the message. 
 
 	**NOTE!** It can take up to 15 minutes for the email to arrive.  Wait for the email before proceeding.
 
-8. Select the link that is included in the email. Even though you know this is a Drive-by URL attack, this will enable you to see the effect of doing so in the Attack Simulator report that tracks the results of the spear phishing campaign.
+8. Select the link that is included in the email. Even though you know this is a Drive-by URL attack, this will enable you to see the effect of doing so in the Attack Simulator report that tracks the results of the spear phishing campaign. <br/>
 
-9. In the **Sign in** dialog box that appears, enter **LynnR@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix ID provided by your lab hosting provider), and then enter **Pa55w.rd** in the **Enter password** window. Select **Sign in**. 
-
-10. This displays a web page that explains how you have redirected to it as part of a Phishing awareness test being run by your organization. Read through the contents of this page. 
+	Selecting this link displays a web page that explains how you have been redirected to it as part of a Phishing awareness test being run by your organization.  Read through the contents of this site, which uses the landing page template that you selected in the prior task when setting up the attack simulation. 
 
 11. Switch back to **LON-CL1**.
 
@@ -147,11 +137,11 @@ You will now review the results of the Drive-by URL simulation attack that you j
 
 ### Task 3: Disable Multi-factor Authentication for the Global Admin
 
-To use Microsoft's Attack simulation training to simulate phishing attacks, Holly enabled Multi-Factor Authentication (MFA) for her user account. Now that she has completed the Attack simulation training test, she wants to disable MFA for her account so that she doesn't have to deal with MFA for the remainder of the pilot project.
+To use Microsoft's Attack simulation training to simulate phishing attacks, Holly enabled Multi-Factor Authentication (MFA) for her user account. Now that she has completed the Attack simulation training tests, she wants to disable MFA for her account so that she doesn't have to deal with MFA for the remainder of the pilot project.
 
 1. You should still be logged into **LON-CL1** as the **Admin** account and into Microsoft 365 as Holly Dickson.
 
-2. To disable MFA for Holly Dickson's user account, you must first access the **Active users** list in the Microsoft 365 admin center. If you have the **Microsoft 365 admin center** open in a browser tab, then select that now; otherwise, open a new browser tab, enter **https://portal.office.com** in the address bar, and then on the **Office 365 home** page, select the **App launcher** icon (the square made up of 3 rows of dots) that appears above the **Home** icon in the top left corner of the screen. In the **Apps** pane that appears, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab. 
+2. To disable MFA for Holly Dickson's user account, you must first access the **Active users** list in the Microsoft 365 admin center. If you have the **Microsoft 365 admin center** open in a browser tab, then select that now; otherwise, open a new browser tab, enter **https://portal.office.com** in the address bar, and then on the **Office 365 home** page, select the **Admin** icon that appears in the column of app icons on the left-side of the screen. This opens the **Microsoft 365 admin center** in a new browser tab. 
 
 3. On the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users** and then select **Active users**.
 
@@ -161,14 +151,15 @@ To use Microsoft's Attack simulation training to simulate phishing attacks, Holl
 
 6. On the **Disable multi-factor authentication?** dialog box, select **yes**. 
 
-7. When the **Updates successful** dialog box appears, select **close**. In the **multi-factor authentication** window, verify Holly's MFA Status has changed to **Disabled**. 
+7. When the **Updates successful** dialog box appears, select **close**. In the **multi-factor authentication** window, verify Holly's MFA Status has changed to **Disabled**. Close the **Multi-factor authentication** tab in your browser.
 
 8. You must now sign out of Microsoft 365 as Holly and then sign back in as Holly (without MFA). To do so, perform the following steps: <br/>
 
+	- Select Holly's account icon (HD in a circle) at the top-right of the screen and in Holly's profile window, select **Sign out**.
 	- Close your browser session and all browser tabs (to clear your cache).
 	- Open a new Edge browser session.
 	- Enter the **https://portal.office.com** URL.
-	- Sign in as **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) with a password of **Pa55w.rd**
+	- In the **Pick an account** window, select Holly's account and enter **Pa55w.rd** as the password.
 	- From the **Microsoft Office Home** page, select the **Admin** icon to navigate to the **Microsoft 365 admin center**.
 	
 	You are now ready to proceed to the next lab exercise.
