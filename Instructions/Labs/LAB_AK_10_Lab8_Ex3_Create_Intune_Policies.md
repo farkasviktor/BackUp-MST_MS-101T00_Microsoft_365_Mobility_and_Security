@@ -90,44 +90,7 @@ Given the problems caused at Adatum by devices that are running old versions of 
 21. Leave all browser tabs open for the next task.
 
 
-### Task 3: Manually create an EFS DRA Certificate
-
-EFS, which is the Encrypted File System that is built into Windows, allows anyone to encrypt a file. The encryption is done using digital certificates, and as part of that process, Windows assigns a Data Recovery Agent (DRA). A data recovery agent is a Microsoft Windows user who has been granted the right to decrypt data that was encrypted by other users. The assignment of DRA rights to an approved individual provides an IT department with a way to unlock encrypted data in case of an emergency. Data Recovery Agents can be defined at the domain, site, organizational unit, or local machine level. In a small to mid-sized business, the network administrator is often the designated DRA.
-
-In very simple terms, the network administrator uses Microsoft Windows Group Policy in Active Directory to assign everyone a public key for encryption and their own personal private key for decryption. This ensures that users can only decrypt the content they have created. The data recovery agent, however, is assigned a private key capable of unlocking all content encrypted with the public key.
-
-The administrator must generate a Data Recovery Agent certificate which grants the user permission to access the encrypted resources. However, if the DRA certificate is created after the encryption of the resource, the resource cannot be decrypted by the DRA certificate. If you don't already have an EFS DRA certificate, you'll need to create and extract one from your system before you can use Windows Information Protection (WIP).
-
-In this task, you're going to run a command prompt in which you enter the cipher command with a /R parameter. By default, /R creates a 2048 bit RSA recovery key and a DRA certificate; the recovery key is then written to a .PFX file, and the DRA certificate is written to a .CER file. An administrator can then add the contents of the .CER file to the EFS recovery policy to create the recovery key for users and import the .PFX file to recover individual files. The files will be stored in the C:\Users\Admin folder.
-
-The purpose of this task is to create this RSA recovery key so that if the device on which they reside becomes compromised, you can recover the files with this DRA certificate from Intune.
-
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
-
-2. In the Search field on the taskbar at the bottom of the screen, enter **cmd,** and in the menu that appears, select **Command Prompt**.
-
-3. In the **Command Prompt** window, you are going to enter a **cipher** command, which displays or alters the encryption of file directories on NTFS partitions. The **/R** parameter generate an EFS recovery key and a DRA certificate and then stores them in two respective files (for the purpose of this lab, you're going to name each file **DRAcert**; in the real-world, you can name them whatever you wish). The EFS recovery key will be written to a **DRAcert.PFX** file, and the certificate to a **DRAcert.CER** file. <br/>
-
-    At the command prompt, enter the following command and press Enter: <br/>
-  
-   **cipher /R:DRAcert**
-
-4. You will be prompted to type in a password to protect your .PFX file. Enter **Pa55w.rd** and press Enter.<br/>
-
-    **Note:** The cursor will NOT move when you type in the password, so you will not see what you're typing. You should also write down the password for future use; you will need this in a later task when you try to recover an encrypted file.
-
-5. You will be prompted to type in the password again to confirm it. Press Enter when done. <br/>
-
-    **Note:** If the password and confirmation password did not match, you must repeat the prior two steps.
-
-6. If the password and confirmation password match, you will receive messages indicating that your .CER and .PFX files were created successfully.
-
-7. Close the Command Prompt window.
-
-8. Leave all browser tabs open for the next task.
-
-
-### Task 4: Create an App Protection Policy
+### Task 3: Create an App Protection Policy
 
 In your role as Holly Dickson, Adatum's Enterprise Administrator, you are now going to create an app protection policy that will protect selected applications from intrusion. In other words, the apps will be protected so that they can only be accessed by individuals who are authorized to do so, such as Adatum employees and other users from your Microsoft 365 tenant. This enables you to use Windows Information Protection (WIP) policies with Windows 10 apps to protect apps without device enrollment.
 
@@ -198,7 +161,7 @@ In this task, you will create a WIP policy that protects an entire collection of
 You have just created a new App Protection Policy (APP), which is also referred to as a Windows Information Protection (WIP) policy.
 
 
-### Task 5: Create a packaged App rule for the store apps
+### Task 4: Create a packaged App rule for the store apps
 
 Packaged apps, also known as Universal Windows apps, are based on an app model that ensures that all the files within an app package share the same identity. Therefore, it is possible to control the entire app using a single AppLocker rule as opposed to the non-packaged apps where each file within the app could have a unique identity. An AppLocker rule for a packaged app controls both the installation as well as the running of the app.
 
@@ -267,7 +230,7 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 31. After you've created your XML files, you will import one of them by using **Microsoft Intune**, which you will do in the next task. 
 
 
-### Task 6: Import a list of protected apps using Endpoint Manager
+### Task 5: Import a list of protected apps using Endpoint Manager
 
 The purpose of this task is to show you how to use Intune to push an app to a device just like a Group Policy Object (GPO). In this task, you will use Notepad. In a previous task, Notepad was included as one of the recommended apps in the App protection policy that you created. In this task you will import into Intune the App protection policy (**apprule1.xml**) that you exported in the prior task.
 
@@ -306,44 +269,7 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 15. Leave the Command Prompt window open for the next task, but minimize it for now.
 
 
-### Task 7: Recover data using the EFS DRA certificate
-
-The purpose of this task is to show you how to recover a file that has been encrypted using WIP if the Windows 10 device on which it resides has been recovered after having been misplaced or stolen. In this case, you will decrypt the apptest1.txt file that you earlier encrypted. In a real-world scenario, you would start out by copying your WIP-encrypted file to a location where you have admin access; however, in this lab, we're simply going to point to the apptest1.txt file to keep things simple.
-
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
-
-2. You must now install the **DRAcert.PFX** file. To do so, select the **File Explorer** icon on the taskbar at the bottom of the screen. Maximize the **File Explorer** window.
-
-3. In **File Explorer**, expand **Local Disk (C:)**, expand **Users**, and select **Admin**.
-
-4. In the list of files in the **Admin** folder, double-click on the **DRAcert.PFX** file. This initiates the **Certificate Import Wizard**.
-
-5. On the **Welcome to the Certificate Import Wizard** page, select the **Current User** option and then select **Next**.
-
-6. On the **File to import** page, select **Next.**
-
-7. On the **Private key protection** page, in the **Password** field, enter the password that you assigned to the DRAcert file that you created in Task 2 (in a real-world scenario, you were instructed to write this down for future use). For this lab, enter **Pa55w.rd**, which was the password that you assigned to the DRAcert file. To verify what you typed, select the **Display Password** check box. Select **Next**.
-
-8. On the **Certificate store** page, select **Next.**
-
-9. On the **Completing the Certificate Import Wizard** page, select **Finish.**
-
-10. On the **Import was successful** dialog box, select **OK**.
-
-11. You should still have a **Command Prompt** window open from the previous task. Select the **Command Prompt** icon on the taskbar to display the window. If you closed the Command Prompt window at the end of the prior task, then open a command prompt with elevated rights.
-
-12. In the Command Prompt window, run the following command to decrypt the apptest1.txt file (the /d parameter directs the cipher command to decrypt the file):<br/>
-
-    **cipher /d  C:\Users\Admin\Documents\apptest1.txt** <br/>
-    
-    A message should be displayed in the Command Prompt window indicating one file was decrypted.
-
-13.	Close the Command Prompt and File Explorer windows.
-
-14. Leave all browser tabs open for the next task.
-
-
-### Task 8: Configure enrollment restrictions
+### Task 6: Configure enrollment restrictions
 When enrolling devices to Microsoft Intune, you have the option to Allow or Block personally owned devices from being enrolled. This is done by restricting what device type platforms you want to allow when devices are enrolled. For example, if you configured Intune to only allow iOS devices to be enrolled and a user attempts to enroll an Android device, the operation would be blocked from enrolling.
 
 1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
@@ -375,7 +301,7 @@ When enrolling devices to Microsoft Intune, you have the option to Allow or Bloc
 14. Leave all browser tabs open for the next task.
 
 
-### Task 9: Review device configuration profiles
+### Task 7: Review device configuration profiles
 
 The purpose of this task is to simply review the different platforms that are available to be assigned to a device configuration profile. You will not create a profile; you will simply review the platforms that are available to assign to a profile.
 
