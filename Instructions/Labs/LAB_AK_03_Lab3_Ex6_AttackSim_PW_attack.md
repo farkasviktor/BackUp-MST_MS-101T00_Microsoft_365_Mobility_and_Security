@@ -88,24 +88,26 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 28. On the **Assign Training** page, under the **Preferences** section, the **Assign training for me (Recommended)** option should be selected by default (if not, select it now). Select the **Due Date** field. In the drop-down menu that appears, select **7 days after Simulation ends** and then select **Next**.
 
-29. On the **Landing page**, you will accept the default settings. These settings use the **Microsoft default landing page** and the **Microsoft Landing Page Template 1**. <br/>
+29. On the **Landing page**, you will accept the default settings for now. These settings use the **Microsoft default landing page** and the **Microsoft Landing Page Template 1**. <br/>
 
 	Select the **Open preview panel** button that appears below the **Payload Indicators** section. 
 
-30. A preview of the **Microsoft landing page** appears in the pane on the right. This provides an example of what the landing page will look like when someone experiences a phishing attack. Scroll down through this landing page preview and review the features. When you're finished, select the **Close** button at the bottom of the pane. 
+30. A preview of the **Microsoft landing page** appears in the pane on the right. Scroll down through this preview panel and review the features. This preview panel provides an example of what the landing page will look like when someone experiences a Drive-by URL attack and the simulation uses **Microsoft Landing Page Template 1**. When you're finished, select the **Close** button at the bottom of the preview panel. 
 
-31. On the **Landing page**, select **Next**.
+31. On the **Landing page**, in the **Select landing page layout** field, select one of the other templates and then select **Open preview panel**. Examine the preview panel and note how the landing page for this template is different from **Microsoft Landing Page Template 1**. When you're finished, select the **Close** button at the bottom of the preview panel.
 
-32. On the **Select end user notification** page, choose how you want the end user to be notified. For the purpose of this lab, select **Microsoft default notification (recommended)**. In the list of notifications, configure the following notifications:
+32. Repeat the prior step and select another template. Note how this template is different from the other two you looked at. Repeat this step as many times as you would like until you find a template that you want to use for this simulation. Once you're satisfied with the template that you've chosen, select **Next** on the **Landing page**.
+
+33. On the **Select end user notification** page, choose how you want the end user to be notified. For the purpose of this lab, select **Microsoft default notification (recommended)**. In the list of notifications, configure the following notifications:
 
 	 - Microsoft default positive reinforcement notification - set **Delivery preferences** to **Deliver after campaign ends**
 	 - Microsoft default training reminder notification - set **Delivery preferences** to  **Weekly**
 
-33. Select **Next**
+34. Select **Next**
 
-34. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
+35. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
 
-35. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. It may take a few minutes before you receive a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
+36. On the **Review Simulation** page, review the entered information. If anything needs to be changed, select the appropriate **Edit** option to make the change. Once everything is correct, select **Submit**. It may take a few minutes before you receive a confirmation stating **Simulation has been scheduled for launch**. Select **Done**.
 
 
 ### Task 2: Review the Drive-by URL attack results
