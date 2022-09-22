@@ -88,13 +88,13 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 28. On the **Assign Training** page, under the **Preferences** section, the **Assign training for me (Recommended)** option should be selected by default (if not, select it now). Select the **Due Date** field. In the drop-down menu that appears, select **7 days after Simulation ends** and then select **Next**.
 
-29. On the **Landing page**, you will accept the default settings for now. These settings use the **Microsoft default landing page** and the **Microsoft Landing Page Template 1**. <br/>
+29. On the **Landing page** window, you will accept the default settings for now. These settings use the **Microsoft default landing page** and the **Microsoft Landing Page Template 1**. <br/>
 
 	Select the **Open preview panel** button that appears below the **Payload Indicators** section. 
 
 30. A preview of the **Microsoft landing page** appears in the pane on the right. This preview panel provides an example of what the landing page will look like when someone experiences a Drive-by URL attack and the simulation uses **Microsoft Landing Page Template 1**. Scroll down through this preview panel and review the features of this template. When you're finished, select the **Close** button at the bottom of the preview panel. 
 
-31. On the **Landing page**, in the **Select landing page layout** field, select one of the other templates and then select **Open preview panel**. Examine the preview panel and note how the landing page for this template is different from **Microsoft Landing Page Template 1**. When you're finished, select the **Close** button at the bottom of the preview panel.
+31. On the **Landing page** window, in the **Select landing page layout** field, select one of the other templates and then select **Open preview panel**. Examine the preview panel and note how the landing page for this template is different from **Microsoft Landing Page Template 1**. When you're finished, select the **Close** button at the bottom of the preview panel.
 
 32. Repeat the prior step and select another template. Note how this template is different from the other two you looked at. Repeat this step as many times as you would like until you find a template that you want to use for this simulation. Once you're satisfied with a template, select **Next** on the **Landing page**.
 
