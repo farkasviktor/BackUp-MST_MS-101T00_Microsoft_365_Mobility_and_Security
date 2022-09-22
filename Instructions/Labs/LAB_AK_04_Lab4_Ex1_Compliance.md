@@ -2,7 +2,7 @@
 
 In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Microsoft 365 deployed in a virtualized lab environment. As you proceed with your Microsoft 365 pilot project, your next steps are to implement archiving and retention at Adatum. You will begin by initializing compliance through the MDM auto-enrollment of new devices in your tenant. You will then configure retention tags and policies, and you will implement archiving with retention policies. 
 
-### Task 1 - Create a Group for Compliance Testing
+### Task 1 - Create a security group for Compliance Testing
 
 To test archiving and retention in your Adatum pilot project, you will create a new mail-enabled security group and assign two users to the group – Joni Sherman and Lynne Robbins. This group will then be used in the next task when you configure MDM auto-enrollment for new devices in your tenant. 
 
@@ -22,7 +22,7 @@ To test archiving and retention in your Adatum pilot project, you will create a 
 
 7. On the **Assign owners** page, select **+Assign owners**. 
 
-8. In the **Assign owners** pane that appears, select **Holly Dickson** and then select **Add (1)**. 
+8. In the **Assign owners** pane that appears, select **Holly Dickson** and then select **Add(1)**. 
 
 9. On the **Assign owners** page, select **Next**.
 
@@ -49,7 +49,7 @@ To test archiving and retention in your Adatum pilot project, you will create a 
 17. Leave your browser open to the Microsoft 365 admin center and proceed to the next task.
 
 
-### Task 2 – Configure Mobile Device Management (MDM) Auto-enrollment
+### Task 2 – Configure Mobile Device Management for compliance testing
 
 In this task you will activate MDM auto-enrollment for new devices in your Adatum Corporation tenant. The devices will belong to members of the Compliance Test Users group that you created in Azure AD in the prior task. You will also verify that Intune is set by default as your mobile device management (MDM) authority. 
 
@@ -59,7 +59,7 @@ In this task you will activate MDM auto-enrollment for new devices in your Adatu
 
 3. In the **Azure Active Directory admin center**, select **Azure Active Directory** in the left-hand navigation pane.
 
-4. This returns the **Adatum Corporation | Overview** page. Under the **Manage** section in the middle pane, scroll down and select **Mobility (MDM and MAM)**.
+4. This returns the **Adatum Corporation | Overview** page. Under the **Manage** section in the middle pane, select **Mobility (MDM and MAM)**.
 
 5. In the right-hand pane, select **Microsoft Intune**.
 
@@ -67,15 +67,15 @@ In this task you will activate MDM auto-enrollment for new devices in your Adatu
 
 7. To the right of the **Groups** option, select **No groups selected**. 
 
-8. In the **Select groups** pane that appears, scroll down through the list of groups, select **WIP Users**, and then at the bottom of the pane select the **Select** button. <br/>
+8. In the **Select groups** pane that appears, select **Compliance Test Users**, and then at the bottom of the pane select the **Select** button. <br/>
 
-	**Note:** You configured the **MDM user scope** to automatically enroll devices that belong to members of the **WIP Users** group into MDM management with Microsoft Intune. Once Holly tests this feature in Adatum's pilot project, and assuming she is satisfied with the results, she will then set the **MDM user scope** to **All**.
+	**Note:** You just configured the **MDM user scope** to automatically enroll devices that belong to members of the **Compliance Test Users** group into MDM management with Microsoft Intune. Once Holly tests this feature in Adatum's pilot project, and assuming she is satisfied with the results, she will then set the **MDM user scope** to **All**.
 	
 9. This returns the **Configure** window. In the middle pane, select **Restore default MDM URLs** to ensure the correct URLs are set. 
 
 10. Select **Save** on the menu bar at the top of the page.
 
-11. Select the **Microsoft 365 admin center** tab in your browser. In the left-hand navigation pane, under the **Admin centers** section, select **Endpoint Manager**.
+11. Select the **Microsoft 365 admin center** tab in your Edge browser. In the left-hand navigation pane, under the **Admin centers** section, select **Endpoint Manager**.
 
 12. In the **Microsoft Endpoint Manager admin center** window, select **Tenant administration** in the left-hand navigation pane.
 
