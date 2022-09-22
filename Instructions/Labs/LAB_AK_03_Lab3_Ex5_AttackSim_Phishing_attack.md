@@ -118,7 +118,7 @@ In this lab exercise, you will use one of the existing payload templates. In the
 	 - Microsoft default positive reinforcement notification - set **Delivery preferences** to **Deliver after campaign ends**
 	 - Microsoft default training reminder notification - set **Delivery preferences** to  **Weekly**
 
-17. Select **Next**
+17. Select **Next**.
 
 18. On the **Launch Details** page, select the **Launch this simulation as soon as I'm done** option and then select **Next**.
 
