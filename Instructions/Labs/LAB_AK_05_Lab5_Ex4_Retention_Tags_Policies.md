@@ -1,35 +1,37 @@
 # Learning Path 5 - Lab 5 - Exercise 4 - Configure Retention Tags and Policies  
 
-In this exercise, you will implement archiving with MRM retention tags. You will then configure retention tags and policies through two different ways - first, through the Exchange Admin Center, and second, through the Microsoft 365 Compliance Center. 
+In this exercise, you will implement archiving with MRM retention tags. You will then configure retention tags and policies through the Microsoft Purview portal. 
 
 ### Task 1 – Activate In-Place Archiving
 
-In this next phase of your Adatum pilot project, you will access the Microsoft 365 Compliance Center to activate Holly Dickson’s archive mailbox.   
+In this next phase of your Adatum pilot project, you will access the Microsoft Purview portal to activate Holly Dickson’s archive mailbox.   
 
 1. You should still be logged into LON-CL1 as the **Admin** and into **Microsoft 365** as Holly Dickson.
 
-2. In Microsoft Edge, in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Compliance** to open the Microsoft 365 Compliance center.
+2. In Microsoft Edge, in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Compliance** to open the Microsoft Purview portal.
 
-3. In the **Microsoft 365 Compliance** center, in the left-hand navigation pane, select **Information governance**. 
+3. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Data lifecycle management** to expand the group, and then select **Microsoft 365**. 
 
-4. On the **Information governance** page, the **Labels** tab appears by default. In the list of tabs along the top of the page, select **Archive**.
+4. On the **Data lifecycle management** page, the **Overview** tab appears by default. In the list of tabs along the top of the page, select **Archive**.
 
-4. On the **Archive** page, note that the archive mailboxes for all users other than Holly Dickson have a status of **Enabled**. These archive mailboxes were enabled when the VM lab environment was built for this training course and these users were preconfigured in the tenant. However, since you added Holly's user account in one of the first labs at the start of this course, her archive mailbox is **Disabled** by default.
+5. On the **Archive** tab, note that the archive mailboxes for all users other than Holly Dickson have a status of **Enabled**. These archive mailboxes were enabled when the VM lab environment was built for this training course and these users were preconfigured in the tenant. However, since you added Holly's user account in one of the first labs at the start of this course, her archive mailbox is **Disabled** by default. <br/>
 
-5. To enable Holly’s archive mailbox, select the check box next to **Holly Dickson** in the user list and then select **Enable Archive** in the menu bar that appears above the list of users.
+	To enable Holly’s archive mailbox, select the check box next to **Holly Dickson** in the user list and then select **Enable Archive** in the menu bar that appears above the list of users.
 
 6. In the **Warning** dialog box that appears, select **Enable** to confirm this action.
 
-7. In your Microsoft Edge browser, leave the Microsoft 365 Compliance Center tab open as you will use it in a later task in this lab. 
+7. If necessary, select the **Refresh** icon on the menu bar above the list of users. Holly's archive mailbox should now be **Enabled**.
+
+8. In your Microsoft Edge browser, leave the Microsoft Purview tab open as you will use it in a later task in this lab. 
  
 
-### Task 2 – Create an MRM retention tag and policy in the Classic Exchange Admin Center
+### Task 2 – Create a retention policy with multiple retention tags for two users
 
-As part of your pilot project for Adatum, you will configure MRM retention through the Exchange Admin Center by creating an MRM retention tag and then adding it to a new MRM retention policy. You will also assign several default tags to the policy as well. You will then assign this retention policy to Joni Sherman and Lynne Robbins’ mailboxes.
+As part of your pilot project for Adatum, you will configure MRM retention through the Microsoft Purview portal by creating a retention tag and then adding it to a new retention policy. You will also assign several default tags to the policy as well. You will then assign this retention policy to Joni Sherman and Lynne Robbins’ mailboxes.
 
-1. On LON-CL1, open a new tab on your Edge browser and go to **https://outlook.office365.com/ecp/**. 
+1. On LON-CL1, your Microsoft Edge browser should still have the Microsoft Purview portal open from the prior task.
 
-2. In the **Classic Exchange admin center**, in the left-hand navigation pane, select **compliance management**.
+2. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Data lifecycle management** t **compliance management**.
 
 3. In the **compliance management** window, in the list of tabs that appear across the top of the page, select **retention tags**.
 
@@ -90,7 +92,7 @@ As part of your pilot project for Adatum, you will configure MRM retention throu
 You have created a new retention policy through the Exchange Admin Center. You assigned several retention tags to this policy, including a custom retention tag, and you assigned the retention policy to Lynne and Joni’s mailboxes.
 
 
-### Task 3 – Create a Retention Policy in the Microsoft 365 Compliance Center
+### Task 3 – Create a retention policy to retain emails for all users
 
 Now that Holly has created a retention policy through the Exchange Admin Center, she wants to do the same in the Microsoft 365 Compliance Center. For this policy, Holly wants to preserve the content of all Exchange Online mailboxes from deletion for 7 years after the last modification. 
 
