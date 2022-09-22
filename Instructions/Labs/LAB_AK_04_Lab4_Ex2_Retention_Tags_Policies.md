@@ -22,111 +22,89 @@ In this next phase of your Adatum pilot project, you will access the Microsoft P
 
 7. If necessary, select the **Refresh** icon on the menu bar above the list of users. Holly's archive mailbox should now be **Enabled**.
 
-8. In your Microsoft Edge browser, leave the Microsoft Purview tab open as you will use it in a later task in this lab. 
+8. In your Microsoft Edge browser, leave your Edge browser and all its tabs open for the next task. 
  
 
-### Task 2 – Create a retention policy with multiple retention tags for two users
+### Task 2 – Create a retention policy for test user mailboxes
 
-As part of your pilot project for Adatum, you will configure MRM retention through the Microsoft Purview portal by creating a retention tag and then adding it to a new retention policy. You will also assign several default tags to the policy as well. You will then assign this retention policy to Joni Sherman and Lynne Robbins’ mailboxes.
+As part of your pilot project for Adatum, you will configure data retention through the Microsoft Purview portal by creating a new retention policy. You will then assign this retention policy to Joni Sherman and Lynne Robbins’ mailboxes. Joni and Lynne are Holly's two test users for compliance testing.
 
 1. On LON-CL1, your Microsoft Edge browser should still have the Microsoft Purview portal open from the prior task.
 
-2. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Data lifecycle management** t **compliance management**.
+2. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Data lifecycle management**, and then select **Microsoft 365**.
 
-3. In the **compliance management** window, in the list of tabs that appear across the top of the page, select **retention tags**.
+3. In the **Data lifecycle management** window, in the list of tabs that appear across the top of the page, select **Retention policies**.
 
-4. You want to create a retention tag, so select the **plus (+) sign** icon in the toolbar that appears above the list of existing retention tags. In the drop-down menu that appears, select **applied by users to items and folders (personal)**.
+4. On the **Retention policies** tab, select **+New retention policy** on the menu bar. This initiates the **Create retention policy** wizard.
 
-5. In **new tag applied by users to items and folders (personal)** window, enter **3 Years Move – Archive after three years** in the **Name** field.
+5. On the **Name your retention policy** page, enter **Test user email retention** in the **Name** field and then select **Next**.
 
-6. Under **Retention Action**, select the **Move to Archive** option.
+6. On the **Choose the type of retention policy to create** field, select **Static** and then select **Next**.
 
-7. Under **Retention period**, select the **When the item reaches the following age (in days)** option and enter **1095** in the retention period field that appears below this option (1095 days = 3 years).
+7. On the **Choose locations to apply the policy** page, note the Exchnage email location. It's currently set to include **All recipients**. You want to change this to just apply to Joni Sherman and Lynne Robbins' mailboxes. Under **All recipients**, select **Edit**.
 
-8. In the **Comment** field, enter **Personal tag to archive email three years after being received**.
+8. In the **Exchange email** pane that appears, hover your mouse over **Joni Sherman** and then select her check box. Do the same for **Lynne Robins**. <br/>
 
-9. Select **Save** to save the retention tag, and then select **OK** once the tag is successfully saved.
+	**Note:** If you select a user's name, the other check boxes that have been selected will be unselected. To select multiple users, you must hover your mouse over each user's name and select their check box that appears. <br/>
 
-10. On the menu bar on the top of the page, select the **retention policies** tab.
+	Once both check boxes are selected, select **Done**.
 
-11. In the **retention policies page**, note that there is one default retention policy. Since this policy is selected by default, its corresponding properties are displayed in the detail pane on the right-side of the screen. This information displays all the default retention tags that have been assigned to this policy. <br/>
+9. On the **Choose locations to apply the policy** page, the **Exchange email** location should now indicate that **2 recipients** are included. <br/>
 
-	You want to create a custom retention policy, so select the **plus (+) sign** icon in the toolbar that appears across the list of existing retention policies. 
+	Since this policy will only apply to Exchange email for Joni and Lynne, set the **Status** toggle switch to **Off** for all other locations in which it's currently set to On (**SharePoint sites**, **OneDrive accounts**, and **Microsoft 365 Groups**). Select **Next**.
 
-12. In **new retention policy** window, enter **Office Retention Policy** in the **Name** field.
+10. On the **Decide if you want to retain content, delete it, or both** page, verify the **Retain items for a specific period** option is selected (if necessary, select it now). Then enter the following information for this option: <br/>
 
-13. You now want to assign one or more retention tags to this new policy. Below **Retention tags**, select the **plus (+) sign** icon.
+	- Retain items for a specific period - select in this field, and in the drop-down menu that appears, select **Custom**. Three fields will appear - years, months, and days. For testing purposes, Holly want to test email retention immediately and not wait a matter of months or years. As such, set the time periods to the following values: **Years - 0, Months - 0, Days - 3**.
 
-14. In the **select retention tags** window, select the **3 Years Move** tag that you just created, select the **add -&gt;** button, and then select **OK**.
+	- Start the retention period based on - **When items were created**
 
-15. In addition to the personal retention tag that you just added to the retention policy, you also want to add the following default tags as well:
+	- At the end of the retention period - **Delete items automatically**
 
-	- Default 2 year move to archive
+11. Select **Next**.
 
-	- Deleted Items
+12. On the **Review and finish** page, review your selections. If anything needs to be changed, select the appropriate Edit link and make the necessary changes. Otherwise, if everything is correct, select **Submit**.
 
-	- Junk Email
+13. On the **You successfully created a retention policy** window, select **Done**.
 
-	- Recoverable Items 14 days move to archive
-
-	Repeat the prior two steps to add these tags to this policy. **Hint:** Hold down the **Ctrl** key as you select each tag in the list; this will enable you to select all four default tags at one time before selecting the **add-&gt;** button.
-
-16. On the **new retention policy** window, select **Save** and then select **OK**.
-
-17. You are now going to apply this retention policy to the mailboxes for your two test users, Joni Sherman and Lynne Robbins. In the **Exchange Admin Center**, in the left-hand navigation pane, select **recipients**. In the **recipients** page, the **mailboxes** tab is displayed by default. 
-
-18. In the list of recipient mailboxes, select **Joni Sherman** and then select the **pencil (edit) icon** in the toolbar to edit the properties of Joni’s mailbox.
-
-19. In the **Edit User Mailbox** for Joni Sherman, select **mailbox features** in the left-hand navigation pane.
-
-20. If a **Warning** dialog box appears, select **OK**.
-
-21. Select the drop-down arrow in the **Retention policy** field and select **Office Retention Policy**.
-
-22. Select **Save** and then select **OK**.
-
-23. Repeat steps 19-23 for **Lynne Robbins**.
-
-24. Leave your web browser open and proceed to the next task.
-
-You have created a new retention policy through the Exchange Admin Center. You assigned several retention tags to this policy, including a custom retention tag, and you assigned the retention policy to Lynne and Joni’s mailboxes.
+14. Leave the **Data lifecycle management** tab open in your Edge browser as you will create another retentio policy in the next task.
 
 
 ### Task 3 – Create a retention policy to retain emails for all users
 
-Now that Holly has created a retention policy through the Exchange Admin Center, she wants to do the same in the Microsoft 365 Compliance Center. For this policy, Holly wants to preserve the content of all Exchange Online mailboxes from deletion for 7 years after the last modification. 
+Once testing has concluded, Holly wants to preserve the content of all Exchange Online mailboxes from deletion for 5 years after the last modification. You must create a retention policy with this setting.
 
-1. In **Microsoft Edge**, select the **Microsoft 365 Compliance** center tab if it's still open; otherwise, in the **Microsoft 365 admin center**, under **Admin centers**, select **Compliance**.
+1. On LON-CL1, your Microsoft Edge browser should still have the Microsoft Purview portal open from the prior task, and it should be displaying the **Data lifecycle management** window.
 
-2. In the **Microsoft 365 Compliance** center, in the left-hand navigation pane, select **Information governance** and then select **Retention Policy**.
+3. In the **Data lifecycle management** window, in the list of tabs that appear across the top of the page, select **Retention policies**.
 
-3. In the **Retention Policy** window, select the **+ New Retention Policy** button to start the wizard that’s used to create a new retention policy.
+4. On the **Retention policies** tab, select **+New retention policy** on the menu bar. This initiates the **Create retention policy** wizard.
 
-4. On the **Name your retention policy** page, enter **Exchange preservation** in the **Name** field and select **Next**.
+5. On the **Name your retention policy** page, enter **Exchange preservation** in the **Name** field and then select **Next**.
 
-1. In the **Choose type of retention policy to create** page, select **Static** and then select **Next**.
+6. On the **Choose the type of retention policy to create** field, select **Static** and then select **Next**.
 
-5. In the **Choose locations to apply the policy** page, as you scroll down the page, note that the **Status** of the **Exchange email** location is turned **On**. Leave this set to On. However, for all the other locations that are turned on, select their toggle switches to turn them **Off**.
+7. On the **Choose locations to apply the policy** page, note the Exchnage email location. It's currently set to include **All recipients**. Do not change this value, since you want this policy to apply to all user mailboxes.
 
-6. As you scroll through the locations, **Exchange email** should be the only location turned on.
+8. Since this policy will only apply to Exchange email, set the **Status** toggle switch to **Off** for all other locations that are turned On. Select **Next**.
 
-7. Select **Next**.
+9. On the **Decide if you want to retain content, delete it, or both** page, verify the **Retain items for a specific period** option is selected (if necessary, select it now). Then enter the following information for this option: <br/>
 
-8. On the **Decide if you want to retain content, delete it, or both** page, leave the **Retain items for a specific period** option selected, as well as the **7 years**. Do not change these fields.<br/>
+	- Retain items for a specific period - **5 years**
 
-	However, in the **Start the retention period based on** field, it currently indicates **when items were created**. Select the drop-down arrow for this field and select **when items were last modified**. <br/>
-	
-	In the **At the end of the retention period** option, select **Delete items automatically**.
+	- Start the retention period based on - **When items were last modified**
 
-9. Select **Next**.
+	- At the end of the retention period - **Delete items automatically**
 
-10. On the **Review and finish** page, review all the settings. If any need to be corrected, select the **Edit** option and make the appropriate correction. Once everything looks correct, select **Submit** to finish the wizard.
+10. Select **Next**.
 
-12. Select **Done**.
+11. On the **Review and finish** page, review your selections. If anything needs to be changed, select the appropriate Edit link and make the necessary changes. Otherwise, if everything is correct, select **Submit**.
 
-11. Do not close your Client 1 VM or Microsoft Edge. Leave your web browser open as well as all tabs for the next lab.
+12. On the **You successfully created a retention policy** window, select **Done**.
 
-You have now created a new retention policy in the Compliance Center that retains all Exchange emails from all mailboxes for 7 years after the last modification.
+13. In your Microsoft Edge browser, close all tabs except for the **Microsoft Office Home** tab and the tab containing the **Microsoft 365 admin center**.
+
+You have now created a new retention policy in the Microsoft Purview portal that retains all Exchange emails from all mailboxes for 5 years after the last modification.
 
  # Proceed to Lab 4 - Exercise 3
  
