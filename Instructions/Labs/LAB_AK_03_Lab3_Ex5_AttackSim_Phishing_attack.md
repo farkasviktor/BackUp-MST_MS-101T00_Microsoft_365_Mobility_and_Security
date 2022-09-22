@@ -147,7 +147,7 @@ In this task, you will verify whether Adatum has received the email that you con
 
 8. In the **Sign in** dialog box that appears, enter **LynneR@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix ID provided by your lab hosting provider), and then enter **Pa55w.rd** in the **Enter password** window. Select **Sign in**. 
 
-9. This displays a web page that explains how you have been redirected to it as part of a Phishing awareness test being run by your organization. Read through the contents of this page. This site uses the landing page template that you selected in the prior task when setting up the attack simulation.
+9. This displays a web page that explains how you have been redirected to it as part of a Phishing awareness test being run by your organization. Read through the contents of this site, which uses the landing page template that you selected in the prior task when setting up the attack simulation.
 
 10. Switch back to LON-CL1.
 
