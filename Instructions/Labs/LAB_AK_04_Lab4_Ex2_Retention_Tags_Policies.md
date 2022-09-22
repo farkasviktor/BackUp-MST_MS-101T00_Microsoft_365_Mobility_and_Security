@@ -1,4 +1,4 @@
-# Learning Path 5 - Lab 5 - Exercise 4 - Configure Retention Tags and Policies  
+# Learning Path 4 - Lab 4 - Exercise 2 - Configure Retention Tags and Policies  
 
 In this exercise, you will implement archiving with MRM retention tags. You will then configure retention tags and policies through the Microsoft Purview portal. 
 
@@ -128,5 +128,5 @@ Now that Holly has created a retention policy through the Exchange Admin Center,
 
 You have now created a new retention policy in the Compliance Center that retains all Exchange emails from all mailboxes for 7 years after the last modification.
 
- # End of Lab 5
+ # Proceed to Lab 4 - Exercise 3
  
