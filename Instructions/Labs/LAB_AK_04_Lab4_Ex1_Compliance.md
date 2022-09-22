@@ -1,63 +1,57 @@
 # Learning Path 4 - Lab 4 - Exercise 1 - Initialize Compliance 
 
-In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Microsoft 365 deployed in a virtualized lab environment. As you proceed with your Microsoft 365 pilot project, your next steps are to implement archiving and retention at Adatum. You will begin by initializing compliance through the MDM auto-enrollment of new devices in your tenant. You will then configure retention tags and policies, and you will implement archiving with MRM retention tags. 
+In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Microsoft 365 deployed in a virtualized lab environment. As you proceed with your Microsoft 365 pilot project, your next steps are to implement archiving and retention at Adatum. You will begin by initializing compliance through the MDM auto-enrollment of new devices in your tenant. You will then configure retention tags and policies, and you will implement archiving with retention policies. 
 
 ### Task 1 - Create a Group for Compliance Testing
 
-To test archiving and retention in your Adatum pilot project, you will create a new mail-enabled security group and assign two users to the group – Joni Sherman and Lynne Robbins. These will be your two test users involved in the Windows Information Protection (WIP) pilot program. This group will then be used in the next task when you configure MDM auto-enrollment for new devices in your tenant. 
+To test archiving and retention in your Adatum pilot project, you will create a new mail-enabled security group and assign two users to the group – Joni Sherman and Lynne Robbins. This group will then be used in the next task when you configure MDM auto-enrollment for new devices in your tenant. 
 
-1. At the end of the prior lab, you were using the LON-CL2 VM. Switch to the **LON-CL1** VM. <br/>
-
-	You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In **Microsoft Edge**, select the **Microsoft 365 admin center** tab; if you closed this tab earlier, then open a new tab and go to **https://admin.microsoft.com.** <br/>
 
-	At this point, you probably have quite a few tabs open in your browser. If you wish, you can take this opportunity to close every tab except for the **Office 365 Home** tab and the **Microsoft 365 admin center** tab.
+	At this point, you may have quite a few tabs open in your browser. If you wish, you can take this opportunity to close every tab except for the **Office 365 Home** tab and the **Microsoft 365 admin center** tab.
 
 3. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Teams & groups** and then select **Active teams & groups** below it.
 
-4. On the **Active teams & groups** window, select **Add a group** to create a new group for compliance testing. 
+4. On the **Active teams & groups** window, select the **Add a group** option on the menu bar to create a new group for compliance testing. This initiates the **Add a group** wizard.
 
-5. In the **Add a group** window, adding a group is a multi-step process, as depicted in the flow diagram on the left-hand side of the window. As you progress through the steps, enter the following information to create a new group:
+5. On the **Choose a group type** page, select the **Mail-enabled security** option and then select **Next**.
 
-	- Select Type: **Mail-enabled security**
+6. On the **Set up the basics** page, enter **Compliance Test Users** in the **Name** field. Tab into the **Description** field to enable the **Next** button, and then select it.
 
-	- Name: **WIP Users** (tab into the **Description** field to enable the **Next** button)
-	
-	- Group Owner: **Holly Dickson**
-	
-	- Members: **None** (These will be added in the following steps)
+7. On the **Assign owners** page, select **+Assign owners**. 
 
-	- Group email address: **wipusers** 
+8. In the **Assign owners** pane that appears, select **Holly Dickson** and then select **Add (1)**. 
 
-	- Group email address domain: to the right of the group email address alias is the email address domain. **xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) should be displayed here. Select this field so enable the **Next** button but do not change its value.
+9. On the **Assign owners** page, select **Next**.
 
-6. On the **Review and finish adding group** window, select **Create group**. Once the group is created, note the warning at the top of the **New group created** window that indicates it can take up to an hour for the group to appear in the Groups list. Our testing experience has shown that the group normally appears within a few minutes.
+10. On the **Assign members** page, select **+Add members**. 
 
-7. On the **New group created** window, select **Close**. 
+11. In the **Add members** pane that appears, select **Joni Sherman** and **Lynne Robbins**, and then select **Add(2)**.
 
-8. This will return you to the **Active teams & groups** list in the **Microsoft 365 admin center**. Select the **Refresh** icon on the menu bar to refresh the list of groups. You cannot proceed until the WIP Users group appears in the list; therefore, keep refreshing the list every minute or so.
+12. On the **Add members** page, select **Next**.
 
-9. Once **WIP Users** appears under the **Mail-enabled security** list, select it.
+13. On the **Edit settings** page, enter **comptestusers** in the **Group email address** field. <br/>
 
-10. In the **WIP Users** pane that appears, select the **Members** tab. 
+	**Note:** The Group email address domain (to the right of the group email address alias) displays the default domain for the company's Microsoft 365 tenant (in this case, **xxxxxZZZZZZ.onmicrosoft.com**, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In a real-world scenario in which a company has multiple domains, you may need to select into this field to select the correct domain. <br/>
 
-11. In the **Members** tab, in the **Members** section select **View all and manage members**.
+	Select **Next**.
 
-12. In the **View members** window, select the **+Add members** button; this displays the list of users.
+14. On the **Review and finish adding group** window, review your selections. If anything needs to be changed, select the appropriate Edit link and make the necessary changes. Otherwise, if everything is correct, select **Create group**.
 
-13. In the list of users, select **Joni Sherman** and **Lynne Robbins**, select **Add(2)**, and then select **Close**.  <br/>
+15. Once the group is created, the **Compliance Test Users group created** window appears. Note the message at the top of the page that indicates it can take up to an hour for the group to appear in the Active teams & groups list. Lab testing has shown that the group normally appears within a few minutes. Select **Close**.
 
-	‎**Note:** It may take a few minutes for both Joni and Lynne to display in the list of users. Simply refresh the list until both users appear.
+16. This will return you to the **Active teams & groups** list in the **Microsoft 365 admin center**. By default, the **Microsoft 365** tab is displayed. Since you created a mail-enabled security group, select the **Mail-enabled security** tab to display this type of groups. If the **Compliance Test Users group** does not appear in the list of mail-anabled security groups, select the **Refresh** icon on the menu bar to refresh the list of groups. <br/>
 
-14. In the **WIP users** window, select **Close**.
+	**Important:** You cannot proceed until the Compliance Test Users group appears in the list; therefore, keep refreshing the list every few minutes until it appears.
 
-15. Leave your browser open to the Microsoft 365 admin center and proceed to the next task.
+17. Leave your browser open to the Microsoft 365 admin center and proceed to the next task.
 
 
 ### Task 2 – Configure Mobile Device Management (MDM) Auto-enrollment
 
-In this task you will activate MDM auto-enrollment for new devices in your Adatum Corporation tenant. The devices will belong to members of the WIP Users group that you created in Azure AD in the prior task. Activating MDM auto-enrollment is required so that you can implement Windows Information Protection in a later lab. You will also verify that Intune is set by default as your mobile device management authority. 
+In this task you will activate MDM auto-enrollment for new devices in your Adatum Corporation tenant. The devices will belong to members of the Compliance Test Users group that you created in Azure AD in the prior task. You will also verify that Intune is set by default as your mobile device management (MDM) authority. 
 
 1. You should still be in LON-CL1 and logged into Microsoft 365 as Holly Dickson. 
 
