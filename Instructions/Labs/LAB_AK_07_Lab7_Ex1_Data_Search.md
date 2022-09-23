@@ -50,7 +50,7 @@ Begin by selecting **+ Add condition**. In the menu that appears, select **Sende
 16. Once the search is complete, proceed to the next task. Leave this window open as you resume testing in the next task from this point.
 
 
-### Task 2 – Export the Search Report
+### Task 2 – Export the search report
 
 When someone opens a case to search for content, you typically export the results for further processing, oftentimes by legal teams that must investigate a case. You can also export the search report. In this task, Holly will export the search report from the previous case. In the next task, you will export the search results from the same case.
 
@@ -95,7 +95,7 @@ When someone opens a case to search for content, you typically export the result
 15. Leave all your Edge browser tabs open for the next task.
 
 
-### Task 3 – Export the Search Results
+### Task 3 – Export the search results
 
 When someone opens a case to search for content, you typically export the results for further processing, oftentimes by legal teams that must investigate a case. While the prior task exported the search report, such a report only displays the emails and not the complete search results containing the message or document content. As such, in a real-world scenario, you could not process the report to fulfill a data subject request's legal requirements. To do so, you would need to export the seach results. In this task, you will export the search results. 
 	
