@@ -32,7 +32,7 @@ In this task, you will send an email from Holly Dickson to Lynne Robbins that te
 
 4. Select Holly's **Sent Items** folder to verify the email was sent.
 
-6. Select Holly's **Inbox** folder. Holly should receive an email from **Microsoft Outlook** with the subject **Notification: <email subject line>** (in this case, **DLP Policy Test 1**). Select this email and review its content. 
+6. Select Holly's **Inbox** folder. Holly should receive an email from **Microsoft Outlook** with the subject **Notification: DLP Policy Test 1**. Select this email and review its content. 
 
 7. Switch to **LON-CL2**. 
 
@@ -83,7 +83,7 @@ In this task, you will send an email from Holly Dickson to Lynne Robbins that te
 
 9. Select Holly's **Sent Items** folder to verify the email was sent.
 
-10. Select Holly's **Inbox** folder. Holly should receive an email from **Microsoft Outlook** with the subject **Notification: <email subject line>** (in this case, **DLP Policy Test 2**). Select this email and review its content.
+10. Select Holly's **Inbox** folder. Holly should receive an email from **Microsoft Outlook** with the subject **Notification: DLP Policy Test 2**. Select this email and review its content.
 	
 11. Switch to **LON-CL2**. 
 
