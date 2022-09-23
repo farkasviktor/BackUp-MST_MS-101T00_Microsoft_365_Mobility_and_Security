@@ -102,7 +102,7 @@ Once testing has concluded, Holly wants to preserve the content of all Exchange 
 
 12. On the **You successfully created a retention policy** window, select **Done**.
 
-13. In your Microsoft Edge browser, close all tabs except for the **Microsoft Office Home** tab and the tab containing the **Microsoft 365 admin center**.
+13. In your Microsoft Edge browser, leave all the tabs open as you proceed to the next exercise.
 
 You have now created a new retention policy in the Microsoft Purview portal that retains all Exchange emails from all mailboxes for 5 years after the last modification.
 
