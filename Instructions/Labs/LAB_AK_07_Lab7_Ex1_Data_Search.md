@@ -50,15 +50,13 @@ Begin by selecting **+ Add condition**. In the menu that appears, select **Sende
 16. Once the search is complete, proceed to the next task. Leave this window open as you resume testing in the next task from this point.
 
 
-### Task 2 – Export the Search Query Results
+### Task 2 – Export the Search Report
 
-When someone opens a case to search for content, you typically export the results for further processing, oftentimes by legal teams that must investigate a case. In this task, Holly will export the search results from the previous case.
+When someone opens a case to search for content, you typically export the results for further processing, oftentimes by legal teams that must investigate a case. You can also export the search report. In this task, Holly will export the search report from the previous case. In the next task, you will export the search results from the same case.
 
 1. This task will resume from where you left off in the prior task, which was the **Search** tab on the **Content search** window. The only existing search request is the **Holly Dickson test search** that you just created and ran. <br/>
 
-	Select the **Holly Dickson test search** record. This will open a detail pane on the right for this search request. Note the information captured for this search, including the number of items that were retrieved. Select the **Actions** button at the bottom of the pane. In the drop-down menu that appears, select **Export report**. <br/>
-	
-	**Warning:** In your real-world scenarios, if you want to select the **Export results** button, you must be assigned the **Organization Management** role. If you're not assigned this role, you won't have the necessary permissions to export the search results. As such, this action will ultimately fail.  
+	Select the **Holly Dickson test search** record. This will open a detail pane on the right for this search request. Note the information captured for this search, including the number of items that were retrieved. Select the **Actions** button at the bottom of the pane. In the drop-down menu that appears, select **Export report**.  
 
 2. In the **Export report** pane that appears on the right, you only want to view the items with a recognized format, so verify that under the **Output options** section, the first option is selected (**All items, excluding ones that have unrecognized format, are encrypted, or weren't indexed for other reasons**). <br/>
 
@@ -72,29 +70,74 @@ When someone opens a case to search for content, you typically export the result
 
 6. In the **Holly Dickson test search_ReportsOnly** pane that appears on the right, under the **Export key** section, select the **Copy to clipboard** option that appears below the export key. You will paste in this key in a few more steps.
 
-7. At the top of the **Holly Dickson test search_ReportsOnly** pane, select the **Download report** button. In the **Open this file?** window that appears, select **Open**.
+7. At the top of the **Holly Dickson test search_ReportsOnly** pane, select **Download report**. In the **Open this file?** window that appears, select **Open**.
 
 8. In the **Do you want to install this application?** dialog box that appears, select **Install** to install the **Microsoft Office 365 eDiscovery Export Tool**. 
 
-9. When the **eDiscovery Export Tool** is installed, you need to paste in the export key that you just copied to the clipboard. In the **eDiscovery Export Tool** dialog box, select into the **Paste the export key that will be used to connect to the source** field and then press **Ctrl+V** to paste in the key. 
+9. Once the **eDiscovery Export Tool** is installed, an **eDiscovery Export Tool** window appears. You must paste in the export key that you just copied to the clipboard into this window. <br/>
 
-10. Select the **Browse** button next to the **Select the location that will be used to store downloaded files** field, and in the **Browse For Folder** window that appears, select the **Documents** folder and then select **OK**.
+	In the **eDiscovery Export Tool** window, select into the **Paste the export key that will be used to connect to the source** field and then press **Ctrl+V** to paste in the key. <br/>
+
+	Then select the **Browse** button next to the **Select the location that will be used to store downloaded files** field.
+
+10. In the **Browse For Folder** window that appears, select the **Downloads** folder and then select **OK**.
 
 11. In the **eDiscovery Export Tool** window, select **Start** to begin the export process.
 
 12. As soon as the **eDiscovery Export Tool** shows three green checkmarks next to the **Status** field alog with a **The export completed successfully** message below them, the export is done. Select the link that appears next to **Export Location**.
 
-13. This opens a **File Explorer** window. Double-click the **Results.csv** file to open Excel and view the report data for all case items found. If a **How do you want to open this file?** dialog box appears, select **Excel** if it's available. If Excel is not available, uncheck the **Always use this app to open .csv files** and then select Microsoft Edge. <br/>
+13. This opens a **File Explorer** window showing the **Downloads** folder. Double-click the **Results.csv** file to open Excel and view the report data for all case items found. If a **How do you want to open this file?** dialog box appears, select **Excel** if it's available. If Excel is not available, uncheck the **Always use this app to open .csv files** and then select Microsoft Edge. <br/>
 
-	Review the report containing the exported search results. When you're done, either close the Excel spreadsheet and the **File Explorer** window, or if you had to use Edge to view the report, close the **Results.csv** tab. 
+	Review the spreadsheet containing the exported search report. When you're done, either close the Excel spreadsheet and the **File Explorer** window, or if you had to use Edge to view the report, close the **Results.csv** tab. 
 
-14. Close the **eDiscovery Export Tool** window by selecting the **Close** button, and then close the **Holly Dickson test search_ReportsOnly** pane. <br/>
+14. You have successfully exported a case report to your local computer. Close the **eDiscovery Export Tool** window by selecting the **Close** button, and then close the **Holly Dickson test search_ReportsOnly** pane. 
 
-	You have successfully exported a case report to your local computer. <br/>
+15. Leave all your Edge browser tabs open for the next task.
 
-	**Warning:** Because the report contains only a report of the emails and not the message or document content, in a real-world scenario, you could not process this report to fulfill a data subject request's legal requirements.
 
-15. In your browser, close all tabs EXCEPT for the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab. 
+### Task 3 – Export the Search Results
+
+When someone opens a case to search for content, you typically export the results for further processing, oftentimes by legal teams that must investigate a case. While the prior task exported the search report, such a report only displays the emails and not the complete search results containing the message or document content. As such, in a real-world scenario, you could not process the report to fulfill a data subject request's legal requirements. To do so, you would need to export the seach results. In this task, you will export the search results. 
+	
+**Warning:** To export search results, you must be assigned the **Organization Management** role. If you're not assigned this role, you won't have the necessary permissions to export the search results. As such, this action will ultimately fail. Holly was assigned the Organization Management role back in Lab 1 in preparation for this lab.
+
+1. This task will resume from where you left off in the prior task, which was in the **Export** tab on the **Content search** window. To export the search result, select the **Search** tab.
+
+2. On the **Search** tab, select the **Holly Dickson test search** record. This will open a detail pane on the right for this search request. Note the information captured for this search, including the number of items that were retrieved. Select the **Actions** button at the bottom of the pane. In the drop-down menu that appears, select **Export results**. 
+	
+3. In the **Export result** pane that appears on the right, you only want to export the items with a recognized format, so verify that under the **Output options** section, the first option is selected (**All items, excluding ones that have unrecognized format, are encrypted, or weren't indexed for other reasons**). 
+
+4. Under the **Export Exchange content as** section, if you had a large number of messages from multiple users, you would normally select **One PST file for each mailbox** in order to keep the messages separated by user. However, since our prior search only had a very small number of search results, it will be more efficient to have one file containing all the messages. Select **One PST file containing all messages**.
+
+5. Review the message that appears above the **Export** button at the bottom of the pane, and then select the **Export** button.
+
+6. In the **compliance** dialog box that appears indicating a job has been created, select **OK**. This should also close the **Holly Dickson test search** pane (if not, then close it now). 
+
+7. In the **Content search** window, the **Search** tab is currently displayed. Select the **Export** tab.
+
+8. In the list of Export records, select **Holly Dickson test search_Export**. 
+
+9. In the **Holly Dickson test search_Export** pane that appears on the right, under the **Export key** section, select the **Copy to clipboard** option that appears below the export key. You will paste in this key in a few more steps.
+
+10. At the top of the **Holly Dickson test search_ReportsOnly** pane, select **Download result**. In the **Open this file?** window that appears, select **Open**.
+
+11. In the **eDiscovery Export Tool** window that appears, you need to paste in the export key that you just copied to the clipboard. In the **eDiscovery Export Tool** window, select into the **Paste the export key that will be used to connect to the source** field and then press **Ctrl+V** to paste in the key. <br/>
+
+	Then select the **Browse** button next to the **Select the location that will be used to store downloaded files** field.
+
+12. In the **Browse For Folder** window that appears, select the **Downloads** folder and then select **OK**.
+
+13. In the **eDiscovery Export Tool** window, select **Start** to begin the export process.
+
+14. As soon as the **eDiscovery Export Tool** shows three green checkmarks next to the **Status** field alog with a **The export completed successfully** message below them, the export is done. Select the link that appears next to **Export Location**.
+
+15. This opens a **File Explorer** window showing the **Downloads** folder. Double-click the **Results.csv** file to open Excel and view the report data for all case items found. If a **How do you want to open this file?** dialog box appears, select **Excel** if it's available. If Excel is not available, uncheck the **Always use this app to open .csv files** and then select Microsoft Edge. <br/>
+
+	Review the spreadsheet containing the exported search results. When you're done, either close the Excel spreadsheet and the **File Explorer** window, or if you had to use Edge to view the report, close the **Results.csv** tab. 
+
+16. You have successfully exported the search result to your local computer. Close the **eDiscovery Export Tool** window by selecting the **Close** button, and then close the **Holly Dickson test search_Export** pane.
+
+17. Leave your Edge browser and all tabs open for the next lab exercise.
 
 
 
