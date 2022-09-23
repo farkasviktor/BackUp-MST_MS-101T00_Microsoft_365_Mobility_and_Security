@@ -1,10 +1,13 @@
-# Learning Path 4 - Lab 4 - Exercise 2 - Configure Retention Policies  
+# Learning Path 4 - Lab 4 - Exercise 2 - Configure In-place Archiving and Retention Policies  
 
-In this exercise, you will implement archiving with MRM retention tags. You will then configure retention tags and policies through the Microsoft Purview portal. 
+In this exercise, you will implement In-place archiving for Holly Dickson's mailbox. You will then configure two retention policies through the Microsoft Purview portal. 
 
-### Task 1 – Activate In-Place Archiving
+### Task 1 – Activate In-Place Archiving for a new user's mailbox
 
-In this next phase of your Adatum pilot project, you will access the Microsoft Purview portal to activate Holly Dickson’s archive mailbox.   
+In this next phase of your Adatum pilot project, you will access the Microsoft Purview portal to activate Holly Dickson’s archive mailbox. After Holly's archive mailbox is enabled, the default retention policy that's assigned to her mailbox does the following: <br/>
+
+- Moves items that are two years or older from Holly's primary mailbox to her archive mailbox.
+- Moves items that are 14 days or older from the Recoverable Items folder in Holly's primary mailbox to the Recoverable Items folder in her archive mailbox.
 
 1. You should still be logged into LON-CL1 as the **Admin** and into **Microsoft 365** as Holly Dickson.
 
@@ -27,7 +30,7 @@ In this next phase of your Adatum pilot project, you will access the Microsoft P
 
 ### Task 2 – Create an email retention policy for test users
 
-As part of your pilot project for Adatum, you will configure data retention through the Microsoft Purview portal by creating a new retention policy. You will then assign this retention policy to Joni Sherman and Lynne Robbins’ mailboxes. Joni and Lynne are Holly's two test users for compliance testing.
+As part of your pilot project for Adatum, you will configure email retention through the Microsoft Purview portal by creating a new retention policy. You will then assign this retention policy to Joni Sherman and Lynne Robbins’ mailboxes. Joni and Lynne are Holly's two test users for compliance testing. Holly wants to use this policy to test email retention for these two test users before creating a second retention policy in the next task that will be applied organization-wide.
 
 1. On LON-CL1, your Microsoft Edge browser should still have the Microsoft Purview portal open from the prior task.
 
@@ -55,7 +58,7 @@ As part of your pilot project for Adatum, you will configure data retention thro
 
 10. On the **Decide if you want to retain content, delete it, or both** page, verify the **Retain items for a specific period** option is selected (if necessary, select it now). Then enter the following information for this option: <br/>
 
-	- Retain items for a specific period - select in this field, and in the drop-down menu that appears, select **Custom**. Three fields will appear - years, months, and days. For testing purposes, Holly want to test email retention immediately and not wait a matter of months or years. As such, set the time periods to the following values: **Years - 0, Months - 0, Days - 3**.
+	- Retain items for a specific period - select in this field, and in the drop-down menu that appears, select **Custom**. Three fields will appear - years, months, and days. For testing purposes, Holly wants to test email retention for emails in Joni and Lynne's mailboxes by only retaining emails that are less than one year old. As such, set the time periods to the following values: **Years - 1, Months - 0, Days - 0**.
 
 	- Start the retention period based on - **When items were created**
 
@@ -72,21 +75,25 @@ As part of your pilot project for Adatum, you will configure data retention thro
 
 ### Task 3 – Create an email retention policy for all users
 
-Once testing has concluded, Holly wants to preserve the content of all Exchange Online mailboxes from deletion for 5 years after the last modification. You must create a retention policy with this setting.
+Holly has concluded her testing of email retention on Joni and Lynne's mailboxes using the **Test user email retention** policy that you created in the prior task. Holly now wants to create a retention policy that preserves the content of all Exchange Online mailboxes from deletion for 5 years after the last modification. Since Holly has completed her email retention testing, she wants to first disable the **Test user email retention** policy. By doing so, Joni and Lynne's mailboxes will be goverened by the retention policy that you create in this task that applies to all Adatum mailboxes. 
 
 1. On LON-CL1, your Microsoft Edge browser should still have the Microsoft Purview portal open from the prior task, and it should be displaying the **Data lifecycle management** window.
 
-3. In the **Data lifecycle management** window, in the list of tabs that appear across the top of the page, select **Retention policies**.
+2. In the **Data lifecycle management** window, in the list of tabs that appear across the top of the page, select **Retention policies** (if another tab is selected).
+
+3. On the **Retention policies** tab, select the check box next to **Test user email retention**, and then select **Disable policy** on the menu bar.  <br/>
+
+	Once the policy is disabled, a message will briefly appear at the top of the page indicating the policy is disabled. You can test this out by once again selecting the check box next to **Test user email retention**. Note that the menu bar includes an **Enable policy** option. This option indicates the policy is currently disabled. You can now proceed to the remaining steps in this task to create Adatum's official, organization-wide email retention policy.
 
 4. On the **Retention policies** tab, select **+New retention policy** on the menu bar. This initiates the **Create retention policy** wizard.
 
-5. On the **Name your retention policy** page, enter **Exchange preservation** in the **Name** field and then select **Next**.
+5. On the **Name your retention policy** page, enter **Adatum email retention** in the **Name** field and then select **Next**.
 
 6. On the **Choose the type of retention policy to create** field, select **Static** and then select **Next**.
 
-7. On the **Choose locations to apply the policy** page, note the Exchnage email location. It's currently set to include **All recipients**. Do not change this value, since you want this policy to apply to all user mailboxes.
+7. On the **Choose locations to apply the policy** page, this policy will only apply to **Exchange email**. Ensure that it's **Status** is set to **On**. Set the **Status** toggle switch to **Off** for all other locations that are turned **On** by default. **Exchange email** should be the only location whose **Status** is set to **On**. 
 
-8. Since this policy will only apply to Exchange email, set the **Status** toggle switch to **Off** for all other locations that are turned On. Select **Next**.
+8. For the **Exchange email** location, note that it's currently set to include **All recipients**. Do not change this value, since you want this policy to apply to all user mailboxes. Select **Next**.
 
 9. On the **Decide if you want to retain content, delete it, or both** page, verify the **Retain items for a specific period** option is selected (if necessary, select it now). Then enter the following information for this option: <br/>
 
