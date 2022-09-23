@@ -65,15 +65,17 @@ In this task, you will send an email from Holly Dickson to Lynne Robbins that te
 
 	- Message area: **Hey Lynne - I will test IP address 192.168.0.1 and then IP address 172.16.0.1.**
 
-	**Note:** When drafting this email with sensitive data (in this case, multiple IP addresses), it will trigger the IP address policy that you previously created, and specifically, the multiple IP address rule. As such, a **Policy tip** should be displayed indicating the email message violates an organizational policy. You'll ignore this policy tip and send the email anyway in order to test the remainder of the DLP policy, which will block the email but give you the option to override the blockage by entering a business justification for sending this sensitive data.
+	**Note:** When drafting this email with sensitive data (in this case, multiple IP addresses), it will trigger the IP address policy that you previously created, and specifically, the multiple IP address rule. As such, a **Policy tip** should be displayed indicating the email message violates an organizational policy. You'll ignore this policy tip and send the email anyway in order to test the remainder of the DLP policy, which will block the email. Once you test the email block, you'll override the blockage by entering a business justification for sending this sensitive data, and then you'll try and send the email again.
 
-3. Once the policy tip is displayed, select **Send**. You should immediately receive a **Send blocked** dialog box that indicates the message includes one or more recipients who aren't authorized to receive sensitive information. Select **OK**.
+3. Once the policy tip is displayed, select **Send**. You should immediately receive a **Send blocked** dialog box that indicates the message includes one or more recipients who aren't authorized to receive sensitive information. Select **OK**. <br/>
+
+	**Hint:** Normally you would override the block before sending it, but in this case we wanted you to experience the block to see how it works. In the next steps, you'll override the block and attempt to re-send the email.
 
 4. Select Holly's **Sent Items** folder to verify the email was not sent.
 
 5. Select Holly's **Inbox** folder. Note that the email message is no longer displayed. Select Holly's **Drafts** folder, which contains a copy of the email. Select the email.
 
-6. To send this email, you must override the block BEFORE you select the Send button. To override the block, in the policy tip that appears at the top of the message, select **Show details**.
+6. To send this email, you must override the block BEFORE you select the **Send** button. To override the block, in the policy tip that appears at the top of the message, select **Show details**.
 
 7. In the detail message that appears in the policy tip, select **Override**.
 
