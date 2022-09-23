@@ -6,13 +6,7 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Mic
 
 In this task you will create a Data Loss Prevention policy in the Microsoft Purview portal to protect sensitive data from being shared by users. The DLP Policy that you create will inform your users if they want to share content that contains IP addresses. 
 
-The policy will contain two rules, or actions, each of which is dependent on the number of IP addresses in the message. If the message contains one IP address, the policy will notify people with a policy tip and still email the message. However, if the content contains two or more IP addresses, then the message will be blocked, an incident email with a high sensitivity level will be sent to the sender, and a policy tip will be displayed that allow the sender to override the email blockage if the sender provides a business justification within the policy tip.
-
-**IMPORTANT:** Unfortunately, you will be unable to test the policy tips in this DLP Policy. When you use the Microsoft 365 compliance center to create a DLP policy that contains a policy tip, the policy tip will NOT be displayed if you also created mail flow rules in the Exchange admin center. If you will recall, back in Module 4, Lab 4, Exercise 1, you created two mail flow transport rules in Exchange, one using the Exchange admin center and the other using PowerShell. 
-
-Because you created mail transport rules in the Exchange admin center in the prior lab, policy tips that you configure for DLP policies in the Microsoft 365 compliance center will NOT work. The DLP policy will work, but the policy tip action will not. Even if you delete the mail transport rules, the policy tips will still not function. 
-
-In this lab, you will still configure a policy tip for the DLP policy that you create in this task; doing so will provide you with experience in configuring policy tips even though you won't be able to verify them. The reason for this is that we also wanted you to experience creating mail transport rules in the earlier lab, even though we knew it meant you would not be able to see the policy tips in this DLP lab.  
+The policy will contain two rules, or actions, each of which is dependent on the number of IP addresses in the message. If the message contains one IP address, the policy will notify people with a policy tip and still email the message. However, if the content contains two or more IP addresses, then the message will be blocked, an incident email with a high sensitivity level will be sent to the sender, and a policy tip will be displayed that allows the sender to override the email blockage if the sender provides a business justification within the policy tip.
 
 1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
@@ -57,6 +51,10 @@ In this lab, you will still configure a policy tip for the DLP policy that you c
         - In the search results, select the **IP Address** check box and then select **Add**.
         
      - Scroll down to the **User notifications** section, set the **Use notifications to inform your users and help educate them on the proper use of sensitive info** toggle switch to **On**.
+
+    - In the **Policy tips** section, select the **Customize the policy tip text** check box. Microsoft 365's default policy tip says: **Your email message conflicts with a policy in your organization.** Holly wants you to customize the Policy Tip message. <br/>
+
+    Enter the following text in this field: **ATTENTION! You have entered sensitive information (an IP address) in this message. You will not be prevented from sending this message, but please review whether the recipients are authorized to see this sensitive data.** 
     
     - In the **Incident reports** section, verify the **Send an alert to admins when a rule match occurs** toggle switch is set to **On** (if necessary, set it to **On**)
 
@@ -87,6 +85,12 @@ In this lab, you will still configure a policy tip for the DLP policy that you c
         - Under the **Block users from receiving email or accessing shared SharePoint, OneDrive, and Teams files** option, select the **Block everyone** option.
     
      - In the **User notifications** section, set the **Use notifications to inform your users and help educate them on the proper use of sensitive info** toggle switch to **On**. 
+
+    - In the **Policy tips** section, select the **Customize the policy tip text** check box. Microsoft 365's default policy tip says: **Your email message conflicts with a policy in your organization.** Holly wants you to customize the Policy Tip message. <br/>
+
+    Enter the following text in this field: **ATTENTION! You have entered sensitive information (multiple IP addresses) in this message. You will be blocked if you attempt to send this message. Overriding this blockage indicates you have authorized sending this sensitive data to the recipients.** 
+    
+    - In the **User overrides** section, select the **Allow overrides from M365 services** check box. This enables two additional settings that indicate how overrides will be handled. Select each of the check boxes for the following options: **Require a business justification to override** and **Override the rule automatically if they report it as a false positive**.
     
     - In the **Incident reports** section, verify the **Send an alert to admins when a rule match occurs** toggle switch is set to **On** (if necessary, set it to **On**).
 
