@@ -133,9 +133,11 @@ When someone opens a case to search for content, you typically export the result
 
 15. This opens a **File Explorer** window showing the **Downloads** folder. Double-click the **Results.csv** file to open Excel and view the report data for all case items found. If a **How do you want to open this file?** dialog box appears, select **Excel** if it's available. If Excel is not available, uncheck the **Always use this app to open .csv files** and then select Microsoft Edge. <br/>
 
-	Review the spreadsheet containing the exported search results. When you're done, either close the Excel spreadsheet and the **File Explorer** window, or if you had to use Edge to view the report, close the **Results.csv** tab. 
+	Review the spreadsheet containing the exported search results. Note the differences between the search results in this task and the search report that you downloaded in the prior task. <br/>
 
-16. You have successfully exported the search result to your local computer. Close the **eDiscovery Export Tool** window by selecting the **Close** button, and then close the **Holly Dickson test search_Export** pane.
+	When you're done, either close the Excel spreadsheet and the **File Explorer** window, or if you had to use Edge to view the report, close the **Results.csv** tab. 
+
+16. You have successfully exported the search results to your local computer. Close the **eDiscovery Export Tool** window by selecting the **Close** button, and then close the **Holly Dickson test search_Export** pane.
 
 17. Leave your Edge browser and all tabs open for the next lab exercise.
 
