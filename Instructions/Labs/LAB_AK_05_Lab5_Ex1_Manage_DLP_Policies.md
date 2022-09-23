@@ -88,7 +88,7 @@ The policy will contain two rules, or actions, each of which is dependent on the
 
     - In the **Policy tips** section, select the **Customize the policy tip text** check box. Microsoft 365's default policy tip says: **Your email message conflicts with a policy in your organization.** Holly wants you to customize the Policy Tip message. <br/>
 
-    Enter the following text in this field: **ATTENTION! You have entered sensitive information (multiple IP addresses) in this message. You will be blocked if you attempt to send this message. Overriding this blockage indicates you have authorized sending this sensitive data to the recipients.** 
+    Enter the following text in this field: **ATTENTION! You have entered sensitive information (multiple IP addresses) in this message. You will be blocked if you attempt to send this message. Overriding this block indicates you have authorized sending this sensitive data to the recipients.** 
     
     - In the **User overrides** section, select the **Allow overrides from M365 services** check box. This enables two additional settings that indicate how overrides will be handled. Select each of the check boxes for the following options: **Require a business justification to override** and **Override the rule automatically if they report it as a false positive**.
     
