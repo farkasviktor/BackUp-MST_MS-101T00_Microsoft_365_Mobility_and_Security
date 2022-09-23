@@ -34,7 +34,7 @@ In this task, you will send an email from Holly Dickson to Lynne Robbins that te
 
 6. Select Holly's **Inbox** folder. Holly should receive an email from **Microsoft Outlook** with the subject **Notification: <email subject line>** (in this case, **DLP Policy Test 1**). Select this email and review its content. 
 
-7. Switch to LON-CL2. 
+7. Switch to **LON-CL2**. 
 
 8. If you need to sign into the VM, the **Admin** account should appear by default, so enter **Pa55w.rd** in the **Password** field to log in. 
 
@@ -85,7 +85,7 @@ In this task, you will send an email from Holly Dickson to Lynne Robbins that te
 
 10. Select Holly's **Inbox** folder. Holly should receive an email from **Microsoft Outlook** with the subject **Notification: <email subject line>** (in this case, **DLP Policy Test 2**). Select this email and review its content.
 	
-11. Switch to LON-CL2. 
+11. Switch to **LON-CL2**. 
 
 12. You should still be logged into **Outlook on the Web** in the LON-CL2 VM as **Lynne Robbins**. In your **Edge** browser, Lynne’s mailbox should still be open in **Outlook on the web** from when you last used it in the previous task.
 
