@@ -201,7 +201,7 @@ Another example is the Organization Management role group, which can only be ass
     
 5. On the **Permissions > Permissions** page, select the check box to the left of the **Organization Management** role.
 
-6. On the **Organization Management** pane that appears, scroll down to the **Members**section and select **Edit**.
+6. On the **Organization Management** pane that appears, scroll down to the **Members** section and select **Edit**.
 
 7. On the **Editing Choose members** page, it displays a message indicating **The list is currently empty.** Select **Choose members** that appears below this message.
 
@@ -360,11 +360,13 @@ In Module 8, you will perform a Content Search lab that requires that Joni Sherm
 
 2. In your **Microsoft Edge** browser, you should still have **Microsoft 365 Defender** open in a tab from the prior task. If you closed that tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Security**.
 
-3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Permissions**.
+3. In **Microsoft 365 Defender**, scroll towards the bottom of the left-hand navigation pane and select **Permissions**.
 
 4. In the **Permissions** page, under the **Email & collaboration roles (1)** section, select **Roles**.
 
-5. On the **Permissions > Permissions** page, you want to select the **eDiscovery Manager** role. (HINT: To quickly locate a specific role, you can enter the first few characters of the role name in the **Search** field on the menu bar and then select the **Search** icon. For example, let's assume you were looking for the Mailflow administrator role. You could enter **mail** in the **Search** field on the menu bar and then select the **Search** icon. This is a quick way to locate a specific role rather than scrolling through the list of roles.)
+5. On the **Permissions > Permissions** page, you want to select the **eDiscovery Manager** role. <br/>
+
+	**HINT:** To quickly locate a specific role, you can enter the first few characters of the role name in the **Search** field on the menu bar and then select the **Search** icon. For example, let's assume you were looking for the **Mailflow administrator** role. You could enter **mail** in the **Search** field on the menu bar and then select the **Search** icon. This would display the roles starting with **mail**. While the eDiscovery Manager role appears at the top of the list, this technique is good to know if you want a quick way to locate a specific role without having to scroll through the entire list.
 
 6. In the **eDiscovery Manager** pane that appears, scroll down to the **eDiscovery Manager** section and select **Edit**.
 
