@@ -29,23 +29,25 @@ Perform the following steps to assign Lynne Robbins the Compliance Data Administ
 
 2. After finishing the previous lab, you should still be in the **Microsoft 365 admin center** in your browser. In the left-hand navigation pane, select **Show all**, and then under the **Admin centers** group, select **Security**.
 
-3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Permissions **.
+3. In **Microsoft 365 Defender**, scroll down towards the bottom of the left-hand navigation pane and select **Permissions**.
 
-4. On the **Permissions** page, under the **Email & collaboration** section, select **Roles**. In the list of roles that appear, select the **Compliance Data Administrator** role group. 
+4. On the **Permissions** page, under the **Email & collaboration roles** section, select **Roles**. 
 
-5. In the **Compliance Data Administrator** pane, scroll to the bottom and in the **Members** section, select **Edit**. 
+5. In the list of roles that appears, select the **Compliance Data Administrator** role group. 
 
-6. In the **Editing Choose members** window, select **Choose members**. 
+6. In the **Compliance Data Administrator** pane, note the list of roles that have been assigned to this role group. Scroll to the bottom of the pane, and in the **Members** section, select **Edit**. 
 
-7. In the **Choose members** window, select **+Add**, and then in the list of users that appears, select **Lynne Robbins,** and then select **Add.**
+7. In the **Editing Choose members** window, note the message indicating the list of members is currently empty. Below this message, select **Choose members**. 
 
-8. In the **Choose members** window, select **Done.**
+8. In the **Choose members** window, select **+Add**, and then in the list of users that appears, select **Lynne Robbins,** and then select **Add.**
 
-9. In the **Editing Choose members** window, select **Save.**
+9. In the **Choose members** window, select **Done.**
 
-10. In the **Compliance Data Administrator** window, select **Close.**
+10. In the **Editing Choose members** window, select **Save.**
 
-11. Leave the Client 1 VM and the Permissions tab in your Edge browser open for the next task.
+11. In the **Compliance Data Administrator** pane, select **Close.**
+
+12. Leave all tabs in your Edge browser open for the next task.
 
 You have now added Lynne Robbins to the Compliance Data Administrator role group.
 
