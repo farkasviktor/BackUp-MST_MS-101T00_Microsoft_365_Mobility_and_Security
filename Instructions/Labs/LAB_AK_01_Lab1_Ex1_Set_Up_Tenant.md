@@ -189,7 +189,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 In the prior task, you successfully added the Global administrator role to Holly Dickson's account. This role will provide Holly with the majority of privileges needed to manage Adatum's Microsoft 365 tenant. It's important to note that not every Microsoft 365 role is available for selection when adding a user account. For example, to assign permissions for archiving, auditing, and retention policies, you must do so in the Exchange admin center. 
 
-Another example is the Organization Management role group, which can only be assigned in the Microsoft 365 Defender portal. This role group provides permissions to manage Exchange objects and their properties in the Exchange organization. Members of this role group can also delegate role groups and management roles in the organization. Holly will require this role to complete the remaining lab exercises in this course.
+Another example is the Organization Management role group, which can only be assigned in the Microsoft 365 Defender portal. This role group provides permissions to manage Exchange objects and their properties in the Exchange organization. Members of this role group can also delegate role groups and management roles in the organization. Holly will require this role to complete the remaining lab exercises in this course. You will also assign this role group to Lynne Robbins so that Lynne can view Alerts in the Microsoft 365 Defender portal.
 
 1. In your **Edge** browser, you should still have a tab open for the **Microsoft 365 admin center**. If so, then select this tab and proceed to the next step; otherwise, navigate to the **Office 365 home** page, log in as your tenant admin account, navigate to the **Microsoft 365 admin center**, and then in the left-hand navigation pane, select **Show all**. 
 
@@ -207,9 +207,9 @@ Another example is the Organization Management role group, which can only be ass
 
 8. On the **Choose members** page, select the **+Add** button.
 
-9. On the **Choose members** list, select the **Holly Dickson** account and then select the **Add** button.
+9. On the **Choose members** list, select **Holly Dickson** and **Lynne Robbins** and then select the **Add** button.
 
-**Note:** It may take several minutes for Holly's account to appear in the list of active users. If Holly's name does not immediately appear, then select the Search icon (the magnifying glass icon) to the right of the Search field to refresh the list of users. Continue to select the Search icon every few minutes until Holly's name finally appears.
+**Note:** It may take several minutes for Holly and Lynne's accounts to appear in the list of active users. If their names do not immediately appear, then select the Search icon (the magnifying glass icon) to the right of the Search field to refresh the list of users. Continue to select the Search icon every few minutes until their names finally appear.
 
 10. On the **Choose members** page, select the **Done** button.
 
