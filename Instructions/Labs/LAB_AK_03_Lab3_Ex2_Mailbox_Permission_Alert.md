@@ -64,43 +64,42 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 2. In your Edge browser, select the **Microsoft 365 admin center** tab, and then in the left-hand navigation pane, under the **Admin centers** group, select **Exchange**. This opens the Exchange admin center for Exchange Online.
 
-3. In the **Exchange admin center**, the **Mailboxes** window appears by default (if it doesn't, then in the left-hand navigation pane, under the **Recipients** group, select **Mailboxes**). 
+3. In the **Exchange admin center**, the **Manage Mailboxes** window appears by default (if it doesn't, then in the left-hand navigation pane, under the **Recipients** group, select **Mailboxes**). 
 
-4. In the **Mailboxes** window, select **Alex Wilber** from the list of mailboxes (select Alex's name; do not select the check mark to the left of his name).
+4. In the **Manage Mailboxes** window, select **Alex Wilber** from the list of mailboxes (select Alex's name; do not select the check mark to the left of his name).
 
 5. In the **Alex Wilber** pane that appears, the **General** tab is displayed by default. Select the **Deletgation** tab.
 
-6. On the **Delegation** pane, there are three mailbox permissions that can be updated: **Read and manage**, **Send as**, and **Send on behalf**. You want to add each of these permissions for Alex's mailbox to **Joni Sherman**. For each permission, perform the following steps to add Joni to that permission: <br/>
+6. On the **Delegation** tab, there are three mailbox permissions that can be updated: **Send as**, **Send on behalf**, and **Read and manage (Full access)**. You want to add each of these permissions for Alex's mailbox to **Joni Sherman**. For each permission, perform the following steps to add Joni to that permission: <br/>
 
 	- Select the **Edit** button for the permission. 
-	- Select the **+Add permissions** button at the top of the pane.
+	- On teh **Manage mailbox delegation** pane, select **+Add members**.
 	- In the list of users that appears, select the check box for **Joni Sherman** and then select **Save**.
-	- Once the mailbox permission is added, select the back arrow at the top of the pane. 
-	- This displays Joni as having the permission that you just edited. At the top of the pane, select the back arrow to return to the **Manage mailbox delegation** pane, which displays the three permissions. Repeat these steps for each of the three permissions. 
+	- In the **Add delegate permissions?** pane, select **Confirm**.
+	- Once the mailbox permission is added to Alex's mailbox, select the back arrow at the top of the pane. 
+	- This returns you to the **Delegation** tab on the **Alex Wilber** pane, which displays the three permissions. Repeat these steps for each of the two remaining permissions. 
 
-7. Once you have assigned Joni to each of the three permissions on the **Manage mailbox delegation** pane, select the **X** in the upper right-hand corner to close the pane. 
+7. Once you have assigned Joni to each of the three permissions on the **Delegation** tab, select the **X** in the upper right-hand corner to close the **Alex Wilber** pane. 
 
-8. In the **Alex Wilber** pane, select the **X** in the upper right-hand corner to close the pane. 
-
-9. Since **Holly Dickson** has changed the mailbox permissions for Alex Wilbur by giving Joni Sherman full access permissions to his mailbox, an alert email should automatically be sent to Lynne Robbins’ Inbox that notifies her of this event.
+8. Since **Holly Dickson** has changed the mailbox permissions for Alex Wilbur by giving Joni Sherman full access permissions to his mailbox, an alert email should automatically be sent to Lynne Robbins’ Inbox that notifies her of this event.
 
 	‎Switch to LON-CL2. 
 
-10. In your Edge browser, select the **Mail - Lynne Robbins - Outlook** tab that has Outlook on the web open for Lynne Robbins' mailbox. In Lynne Robbins’ **Inbox**, an email should be received from the Alerts notification system (**Office365Alerts@microsoft.com**) to let her know that Holly Dickson has made a Mailbox permission change. <br/>
+9. In your Edge browser, select the **Mail - Lynne Robbins - Outlook** tab that has Outlook on the web open for Lynne Robbins' mailbox. In Lynne Robbins’ **Inbox**, an email should be received from the Alerts notification system (**Office365Alerts@microsoft.com**) to let her know that Holly Dickson has made a Mailbox permission change. <br/>
 
-	**Note:** In can take up to 15 minutes or so for the email to be received in Lynne's Inbox. 
+	**WARNING:** In can take up to 15 minutes or so for the email to be received in Lynne's Inbox. 
 
-11. Open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Security and Compliance Center**, displays the **View alerts** window, and opens the **Mailbox permission change** alert. <br/>
+10. Once the notification email arrives in Lynne's Inbox, open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Security and Compliance Center**, displays the **View alerts** window, and opens the **Mailbox permission change** alert. <br/>
 
 	Scroll down through the **Mailbox permission change** alert and review all the information. When you are done, select **Close** to close the **Mailbox permission change** alert, then close the **View alerts** tab in your browser.
 
-12. Switch back to the LON-CL1.
+11. Switch back to the LON-CL1.
 
-13. In the **Microsoft 365 Security &amp; Compliance center** left-hand navigation pane, select **Incidents & alerts** to expand the group select **Alerts,** and then under it, select **View Alerts**. The notification that was just created based on the **Mailbox permission change** alert should appear in the list.
+12. In the **Microsoft 365 Security &amp; Compliance center** left-hand navigation pane, select **Incidents & alerts** to expand the group select **Alerts,** and then under it, select **View Alerts**. The notification that was just created based on the **Mailbox permission change** alert should appear in the list.
 
-14. In your browser, close the Exchange admin center tab (**mailboxes - Microsoft Exchange**), but leave the other browser tabs open.
+13. In your browser, close the Exchange admin center tab (**mailboxes - Microsoft Exchange**), but leave the other browser tabs open.
 
-15. Leave your LON-CL1 and LON-CL2 VMs open for the remaining tasks in this lab.
+14. Leave your LON-CL1 and LON-CL2 VMs open for the remaining tasks in this lab.
 
 You have just successfully tested a mailbox permission alert that sent an alarm message on granting FullAccess to a user mailbox.
 
