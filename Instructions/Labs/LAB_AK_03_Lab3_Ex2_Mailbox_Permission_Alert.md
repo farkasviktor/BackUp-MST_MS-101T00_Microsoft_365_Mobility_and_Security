@@ -9,15 +9,17 @@ In this exercise you will configure and test an alert that will notify Lynne Rob
 
 2. **Microsoft 365 Defender** should still be open in your Edge browser from the prior task. In the left-hand navigation pane, under the **Email & collaboration** section, select **Policies & rules**. 
 
-3. On the **Policies & rules** window, select **Alert policy**.
+3. On the **Policies & rules** window, select **Alert policy**. If a dialog box appears indicating the alert policy portal has been updated, select the **Dismiss** button.
 
-4. In the **Alert policy** window, select **+New alert policy** on the menu bar.
+4. In the **Alert Policy** window, note the message at the top of the page indicating the fact that mail flow alerts have moved to the Exchange admin center. Mail flow alerts can no longer be maintained in the Microsoft 365 Defender security portal. <br/> 
 
-5. In the **New alert policy** window, enter the following information:
+	In the **Alert Policy** window, review the list of preconfigured alert policies that are available in Microsoft 365. Select **+New Alert Policy** on the menu bar. This initiates the **New Alert Policy** wizard.
+
+5. On the **Name your alert, categorize it, and choose a severity** page, enter the following information:
 
 	- Name: **Mailbox permission change**
 
-	- Description: **This alert notifies Lynne Robbins when FullAccess permissions are granted to any mailbox in Adatum Corp.**
+	- Description: **This alert notifies Lynne Robbins when FullAccess permissions are granted to any mailbox in Adatum Corporation**
 
 	- Severity: **Medium**
 
@@ -25,27 +27,31 @@ In this exercise you will configure and test an alert that will notify Lynne Rob
 
 6. Select **Next.**
 
-7. On the **Choose an activity, conditions and when to trigger the alert** window, enter the following information:
+7. On the **Choose an activity, conditions and when to trigger the alert** page, enter the following information:
 
-	- Activity is: select the drop-down arrow in the field, enter **mail** in the search box, and select **Granted mailbox permission**
+	- Activity is: select the drop-down arrow in the field, enter **mail** in the **Select an activity** field, and select **Granted mailbox permission** from the list of activities containing **mail**
 
 	- How do you want the alert to be triggered? **Every time an activity matches the rule**
 
 8. Select **Next.**
 
-9. On the **Decide if you want to notify people when this alert is triggered** window, enter the following information:
+9. On the **Decide if you want to notify people when this alert is triggered** page, enter the following information:
 
-	- Email recipients: Select the "X" to the right of **Holly Dickson's** account to remove her, enter **Lynne**, and then select **Lynne Robbins** from the user list
+	- Email recipients: Select the "X" to the right of **Holly Dickson's** account to remove her, the enter **Lynne** in the field, and then select **Lynne Robbins** from the list of users whose first name starts with **Lynne**
 
 	- Daily notification limit: **No limit**
 
 10. Select **Next.**
 
-11. On the **Review your settings** page, review the settings and if anything needs to be corrected, select its corresponding **Edit** option and make the necessary corrections. When everything is correct, verify the **Yes, turn it on right away** option is selected (select it if necessary) and then select **Finish**.
+11. On the **Review your settings** page, review the settings and if anything needs to be corrected, select its corresponding **Edit** option and make the necessary corrections. <br/>
+
+	When everything is correct, under the **Do you want to turn the policy on right away?** setting, select **Yes, turn it on right away**. Select **Submit**.
 
 12. Verify your new alert policy appears in the list on the **Alert policy** page and its **Status** in **On**.
 
-13. Leave the Client 1 VM and the Alert policy tab in your Edge browser open for the next task.
+13. On the **New Alert Policy** window, select **Done**.
+
+14. Leave the Client 1 VM and the Alert policy tab in your Edge browser open for the next task.
 
 You have now created an activity alert in Microsoft 365 Defender that is triggered when FullAccess permissions are granted to any mailboxes.
 
