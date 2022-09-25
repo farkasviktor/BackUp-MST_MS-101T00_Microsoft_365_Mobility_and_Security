@@ -73,7 +73,7 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 6. On the **Delegation** tab, there are three mailbox permissions that can be updated: **Send as**, **Send on behalf**, and **Read and manage (Full access)**. You want to add each of these permissions for Alex's mailbox to **Joni Sherman**. For each permission, perform the following steps to add Joni to that permission: <br/>
 
 	- Select the **Edit** button for the permission. 
-	- On teh **Manage mailbox delegation** pane, select **+Add members**.
+	- On the **Manage mailbox delegation** pane, select **+Add members**.
 	- In the list of users that appears, select the check box for **Joni Sherman** and then select **Save**.
 	- In the **Add delegate permissions?** pane, select **Confirm**.
 	- Once the mailbox permission is added to Alex's mailbox, select the back arrow at the top of the pane. 
@@ -95,11 +95,19 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 11. Switch back to the LON-CL1.
 
-12. In the **Microsoft 365 Security &amp; Compliance center** left-hand navigation pane, select **Incidents & alerts** to expand the group select **Alerts,** and then under it, select **View Alerts**. The notification that was just created based on the **Mailbox permission change** alert should appear in the list.
+12. In the **Microsoft Purview** portal, in the left-hand navigation pane, select **Alerts**.
 
-13. In your browser, close the Exchange admin center tab (**mailboxes - Microsoft Exchange**), but leave the other browser tabs open.
+13. On the **Alerts** page, the notification that was just created based on the **Mailbox permission change** alert should appear at the top of the list. Select the **Mailbox permission change** alert.
 
-14. Leave your LON-CL1 and LON-CL2 VMs open for the remaining tasks in this lab.
+14. In the **Mailbox permission change** alert pane that appears, review the alert details. Note the description that appears in the **Details** field. Under **Activity list**, select **View activity list**. 
+
+15. In the **Activity list** tab that appears, examine the activity record. Note the Activity (**Add-MailboxPermission**), the user who performed the activity (**Holly**), and the user to whom the activity was performed against (the Item column, which displays Joni Sherman's alias of **JoniS**). Select **Close**.
+
+16. In the **Mailbox permission change** alert pane, select **Close**.
+
+17. In your browser, close the Exchange admin center tab, but leave the other browser tabs open.
+
+18. Leave your LON-CL1 and LON-CL2 VMs open for the remaining tasks in this lab.
 
 You have just successfully tested a mailbox permission alert that sent an alarm message on granting FullAccess to a user mailbox.
 
