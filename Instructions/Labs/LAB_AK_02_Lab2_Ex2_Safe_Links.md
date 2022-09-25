@@ -54,11 +54,11 @@ In this task, you will test the Safe Links Policy that you just created that blo
 
 1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In your **Microsoft Edge** browser, select the **Microsoft Office Home** tab and then in the column of app icons on the left side of the screen, select the **Outlook** icon.
+2. In your **Microsoft Edge** browser, select the **Microsoft Office Home** tab and then in the column of app icons on the left side of the screen, select the **Outlook** icon. This will open Holly Dickson's mailbox.
 
 3. **Outlook** will open in a new tab in your browser, and Holly's **Inbox** will be displayed.
 
-4. Select the **New Message** button in the upper left part of the screen.
+4. Select the **New mail** button in the upper left part of the screen.
 
 5. In the email form that appears in the right-hand pane, enter the following information:
 
@@ -68,17 +68,17 @@ In this task, you will test the Safe Links Policy that you just created that blo
 
     - body of the message: **Please click on me for free toys from TailSpin Toys.**
 
-6. Select the text that you added in the body of the message.
+6. Select the entire text string that you just added in the body of the message.
 
-7. Below the body of the message is a long row of formatting icons. Select the **Insert link** icon, which depicts two overlapping circles.
+7. Below the body of the message is a long row of formatting icons. Select the **Insert link** icon, which depicts two overlapping circles. In the menu that appears, select **Insert link (Ctrl+K)**.
 
-8. In the **Insert link** window, the text that you highlighted in the body of the message should be displayed in the **Display as** field. In the **Web address (URL)** field, enter the following URL: **http://tailspintoys.com/aboutus/freetoys**.
+8. In the **Insert link** window that appears, the text that you highlighted in the body of the message should be displayed in the **Display as** field. In the **Web address (URL)** field, enter the following URL: **http://tailspintoys.com/aboutus/freetoys**.
 
-9. Select **OK**.
+9. Select **OK**. 
 
-10. In the body of the email, the message should still be selected. Click anywhere in the body of the message to remove the highlighting. The color of the text should now be blue, and it should be underlined, indicating that this message is hyperlinked to a URL.
+10. In the body of the email, the message should still be highlighted. Select anywhere in the body of the message to remove the highlighting. The color of the text should now be blue, and it should be underlined, indicating that this message is hyperlinked to a URL.
 
-11. Select either **Send** button (top or bottom of the form).
+11. Select the **Send** button. Select Holly's **Sent Items** folder to verify the message was sent.
 
 12. You now want to go the MOD Administrator's Inbox in Outlook and validate whether the Safe Links policy you created in the prior task worked on the email that you just sent from Holly to the MOD Administrator.<br/>
 
@@ -102,7 +102,7 @@ In this task, you will test the Safe Links Policy that you just created that blo
 
 21. Select the hyperlink in the body of the message to navigate to the site. 
 
-22. A new tab should open in your **Edge** browser that takes you to the URL you just saw in the prior step. This site should display the following warning message: **This website is classified as malicious.** This not only indicates that opening this website might not be safe, but it also verifies that the Safe Links policy you just created is working properly.
+22. A new tab should open in your **Edge** browser that takes you to the URL you just saw in the prior step. This site should display the following warning message: **This website is classified as malicious.** This not only indicates that opening this website may not be safe, but it also verifies that the Safe Links policy you just created is working properly.
 
 23. In LON-CL2, leave the Edge browser and all its tabs open for the next lab. 
 
