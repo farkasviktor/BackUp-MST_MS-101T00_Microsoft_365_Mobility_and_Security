@@ -1,4 +1,4 @@
-# Learning Path 10 - Lab 8 - Exercise 1 - Enable Device Management
+# Learning Path 10 - Lab 8 - Exercise 1 - Prepare for Mobile Device Management in Microsoft 365
 
 In your role as Holly Dickson, Adatum's Enterprise Administrator, you have Microsoft 365 deployed in a virtualized lab environment for your pilot project. In this lab, you will manage user devices using Intune.
 
@@ -35,9 +35,9 @@ In this task you will verify that Adatum has installed the Enterprise Mobility +
 You have now verified the available Enterprise Mobility + Security E5 licenses in your tenant and assigned an EMS E5 license to Holly.
 
 
-### Task 2: Review Intune device management features
+### Task 2: Review MDM features in Microsoft Endpoint Manager
 
-Devices must be managed before you can give users access to company resources or manage settings on those devices. This begins with enabling device management with Intune. With Adatum's tenant, Holly will discover that Intune has been set by default as Adatum's MDM authority. This task has you navigate through various device management features in Intune in order to introduce you to some of the MDM functionality that's available.
+Devices must be managed before you can give users access to company resources or manage settings on those devices. This begins with enabling device management with Intune. With Adatum's tenant, Holly will discover that Intune has been set by default as Adatum's MDM authority. This task has you navigate through various device management features in Microsoft Endpoint Manager in order to introduce you to some of the MDM functionality that's available.
 
 1. You should still be logged into LON-CL1 as the **Admin** account and into Microsoft 365 as Holly Dickson.
 
