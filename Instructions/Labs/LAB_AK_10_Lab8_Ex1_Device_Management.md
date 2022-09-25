@@ -53,28 +53,28 @@ Devices must be managed before you can give users access to company resources or
 
 6. Select the **Back arrow** on the address bar to return to the **Devices | Overview** page. In the middle pane under the **Policy** section, select **Enrollment device limit restrictions**. Review the information on the **Devices | Enrollment device limit restrictions** page. Note the fact that each user has a default limit of 5 devices they can enroll into Intune. You can change this value by performing the following steps: <br/>
 
-      a. For the **Default** priority, select **All users** under the **Name** column.
-      b. On the **All users** page, in the middle section under **Manage**, select **Properties**.
-      c. On the **All users | Properties** page, select **Edit** that appears next to **Device limit**.
-      d. On the **Edit restriction** page, select the **Device limit** field and select the new limit value in the drop-down menu. For example, set the value to **3**. Then select the **Review + Save** button.
-      e. On the **Edit restriction** page, under the **Reivew + save** tab, not the change to the device limit. Select **Save**.
+   - For the **Default** priority, select **All users** under the **Name** column.
+   - On the **All users** page, in the middle section under **Manage**, select **Properties**.
+   - On the **All users | Properties** page, select **Edit** that appears next to **Device limit**.
+   - On the **Edit restriction** page, select the **Device limit** field and select the new limit value in the drop-down menu. For example, set the value to **3**. Then select the **Review + Save** button.
+   - On the **Edit restriction** page, under the **Reivew + save** tab, not the change to the device limit. Select **Save**.
 
 7. In the **Microsoft Endpoint Manager admin center**, select **Devices** in the left-hand navigation pane. 
 
 8. On the **Devices | Overview** page. In the middle pane under the **Policy** section, select **Enrollment device platform restrictions**. Review the information on the **Devices | Enrollment device platform restrictions** page. Note the tabs at the top of the page. Administrators can define version and management type restrictions for each platform type (see the tabs at the top of the page). While you won't add any restrictions at this time, perform the following steps to examine the types of restrictions that can be applied - in this case, for the **Default** restriction: <br/>
 
-      a. The **Default** restriction appears on each tab. Regardless of the tab you're on, select **All users** for the **Default** restriction.
-      b. On the **All users** page, in the middle pane under the **Manage** section, select **Properties**.
-      c. On the **All users | Properties** page, review the current settings for each platform in the **Default** restriction. Then select **Edit** that appears next to **Platform settings**.
-      d. On the **Edit restriction** page, note the various platform settings that you can configure. Do not modify any of the settings at this time. Once you're done reviewing the settings, select **Devices** in the **Microsoft Endpoint Manager admin center** navigation pane.
+   - The **Default** restriction appears on each tab. Regardless of the tab you're on, select **All users** for the **Default** restriction.
+   - On the **All users** page, in the middle pane under the **Manage** section, select **Properties**.
+   - On the **All users | Properties** page, review the current settings for each platform in the **Default** restriction. Then select **Edit** that appears next to **Platform settings**.
+   - On the **Edit restriction** page, note the various platform settings that you can configure. Do not modify any of the settings at this time. Once you're done reviewing the settings, select **Devices** in the **Microsoft Endpoint Manager admin center** navigation pane.
 
 9. On the **Devices | Overview** page, in the middle pane under the **Policy** section, select **Configuration profiles**. Review the information on the **Devices | Configuration profiles** page. When configuring profiles for each platform type, Microsoft Endpoint Manager provides a variety of templates that can be used as the basis for a new template. Using preconfigured templates is the quickest and most efficient way to create a configuration profile. Perform the following steps to examine the list of templates available:  <br/>
 
-      a. On the **Devices | Configuration profiles** page, select the **+Create profile** option that appears in the menu bar at the top of the page.
-      b. On the **Create a profile** pane that appears, select in the **Platform** field, and then select **Windows 10 and later**. 
-      c. Select in the **Profile type** field. Select **Templates** from the drop-down menu.
-      d. Review the list of templates. 
-      e. Do not select a template. When you've finished reviewing the available templates, close the **Create a profile** pane.     
+   - On the **Devices | Configuration profiles** page, select the **+Create profile** option that appears in the menu bar at the top of the page.
+   - On the **Create a profile** pane that appears, select in the **Platform** field, and then select **Windows 10 and later**. 
+   - Select in the **Profile type** field. Select **Templates** from the drop-down menu.
+   - Review the list of templates. 
+   - Do not select a template. When you've finished reviewing the available templates, close the **Create a profile** pane.     
 
 10. select **Devices** in the **Microsoft Endpoint Manager admin center** navigation pane 
 
