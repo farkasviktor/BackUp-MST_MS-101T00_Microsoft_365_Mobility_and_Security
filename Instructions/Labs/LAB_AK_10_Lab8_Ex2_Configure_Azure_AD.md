@@ -43,14 +43,6 @@ In this task, you will change the default settings for users to join their devic
 
    **Note:** Back in Lab 4, you performed a task that configured Mobile Device Management (MDM) auto-enrollment; this was a prerequisite to performing a later Windows Information Protection lab. When you performed this MDM configuration lab, it automatically enrolled the devices belonging to members of the Compliance Test Users group. At the time, Joni Sherman was logged into Microsoft 365 on LON-CL2, and since she was a member of the Compliance Test Users group, LON-CL2 was automatically enrolled into Intune as its MDM authority. <br/>
 
-   If Joni Sherman was not logged into Microsoft 365 on LON-CL2 at the time you performed Lab 4, then LON-CL2 won't appear on this page. If that's the case, then you must enroll LON-CL2 to Intune. To do so, perform the following steps: <br/>
-
-   - In your Edge browser, select the **Microsoft 365 admin center** tab. 
-   - In the **Microsoft 365 admin center** window, in the navigation pane under the **Admin centers** section, select **Endpoint Manager**.
-   - On the **Microsoft Endpoint Manager admin center** window, select **Devices**.
-   - On the **Devices | Overview** window, in the middle pane under the **Device enrollment** section, select **Enroll devices**.
-   - On the **Enroll devices | Windows enrollment** window, under the **General** section, select **Automatic enrollment**.
-
 5. In the **Devices | All devices** window, in the middle pane, select **Device settings**.
 
 6. In the **Devices | Device settings** window, in the details pane on the right, in the **Users may join devices to Azure AD** option, verify that **All** is selected. This means that all Azure AD users can join their devices to Azure Active Directory.
