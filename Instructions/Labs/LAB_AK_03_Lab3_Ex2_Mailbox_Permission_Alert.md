@@ -87,7 +87,7 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 9. In your Edge browser, select the **Mail - Lynne Robbins - Outlook** tab that has Outlook on the web open for Lynne Robbins' mailbox. In Lynne Robbins’ **Inbox**, an email should be received from the Alerts notification system (**Office365Alerts@microsoft.com**) to let her know that Holly Dickson has made a Mailbox permission change. <br/>
 
-	**WARNING:** In can take up to 15 minutes or so for the email to be received in Lynne's Inbox. 
+	**WARNING:** Lab testing has shown that in some cases, it can take up to 15 minutes or so for the email to be received in Lynne's Inbox. 
 
 10. Once the notification email arrives in Lynne's Inbox, open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Microsoft 365 Defender** portal, displays the **Alerts** window, and automatically opens the **Mailbox permission change** pane for this alert activity that triggered the email notification to Lynne. <br/>
 
