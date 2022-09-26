@@ -9,9 +9,9 @@ In this exercise you will configure and test an alert that notifies Lynne Robbin
 
 2. In your Edge browser, in the **Microsoft 365 Defender** tab, you should still be in the **Alert policy** window from the prior lab exercise (if not, then in the left-hand navigation pane, select **Policies & rules** and then select **Alert policy**).
 
-3. In the **Alert policy** window, select the **+New alert policy** on the menu bar.
+3. In the **Alert policy** window, select the **+New Alert Policy** on the menu bar. This initiates the **New Alert Policy** wizard.
 
-4. In the **New alert policy** window, enter the following information:
+4. On the **Name your alert, categorize it, and choose a severity** window, enter the following information:
 
 	- Name: **Site collection admin permissions**
 
@@ -25,7 +25,7 @@ In this exercise you will configure and test an alert that notifies Lynne Robbin
 
 6. On the **Choose an activity, conditions and when to trigger the alert** window, enter the following information:
 
-	- Activity is: select the drop-down arrow in the field, enter **site collection** in the search box, and select **Added site collection admin**
+	- Activity is: select the **Select an activity** field, then in the menu that appears, scroll down to the **Site administration activities** section and select **Added site collection admin**
 
 	- How do you want the alert to be triggered? **Every time an activity matches the rule**
 
@@ -39,15 +39,15 @@ In this exercise you will configure and test an alert that notifies Lynne Robbin
 
 9. Select **Next.**
 
-10. Review your settings. When everything is correct, verify the **Yes, turn it on right away** option is selected and then select **Finish**.
+10. On the **Review your settings** page, under the **Do you want to turn the policy on right away?** option, select **Yes, turn it on right away** and then select **Submit**. Then select **Done**
 
-11. Leave the Client 1 VM and all the Edge browser tabs open for the next task.
+11. Leave all the Edge browser tabs open for the next task.
 
 You have now configured an additional alert policy that monitors when a site collection administrator is added to SharePoint Online site collections.
 
 ### Task 2 – Validate the  SharePoint Permissions Alert
 
-In the prior task, you configured an alert that will notify Lynne Robbins when a site collection admin is added to a site collection. To test this alert, Holly Dickson will add Alex Wilber as a site collection admin to the global SharePoint Communication site. This activity should trigger the alert policy that you just created, which should send an alert notification email to Lynne Robbins’ mailbox. You will then switch to the Client 2 VM to see if Lynne received this email. 
+In the prior task, you configured an alert that will notify Lynne Robbins when a site collection admin is added to a site collection. To test this alert, Holly Dickson will add Alex Wilber as a site collection admin to the global SharePoint Communication site. This activity should trigger the alert policy that you just created, which should send an alert notification email to Lynne Robbins’ mailbox. You will then switch to the LON-CL2 VM to see if Lynne received this email. 
 
 1. You should still be logged into the Client 1 VM (LON-CL1) as the **Admin**, and you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
@@ -57,7 +57,7 @@ In the prior task, you configured an alert that will notify Lynne Robbins when a
 
 4. In the ribbon at the top of the page, the **Permissions** tab is displayed by default. Under the **Manage** group, select **Site Collection Administrators**.
 
-5. In the **Site Collection Administrators** dialog box, the administrator accounts assigned to this role group are displayed in the data entry field. To the right of the final account, enter **Alex**, select **Alex Wilber** from the list of users that appears, and then select **OK**. 
+5. In the **Site Collection Administrators** dialog box, the Global administrator account that was assigned by default to this role group is displayed in the data entry field. To the right of this account, enter **Alex**, select **Alex Wilber** from the list of users that appears, and then select **OK**. 
 
 6. Since a new site collection admin has been added, an alert should automatically be sent to Lynne Robbins’ Inbox notifying her of this event. Perform the remaining steps to verify that Lynne received this email.
 
@@ -67,9 +67,9 @@ In the prior task, you configured an alert that will notify Lynne Robbins when a
 
 	**Note:** Based on lab testing, the time for an email to be generated and received in Lynne's Inbox can range from a couple of minutes to an hour. 
 
-8. Once the email arrives in Lynne's Inbox, open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Office 365 Security and Compliance** center, displays the **View alerts** window, and opens the **Site collection admin permissions** alert. <br/>
+8. Once the email arrives in Lynne's Inbox, open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Microsoft 365 Defender** portal, displays the **Alerts** window, and opens the **Site collection admin permissions** pane. <br/>
 
-	Scroll down through the alert and review all the information. When you are done, select **Close** to close the alert, then close the **View alerts** tab in your browser.
+	Scroll down through the **Site collection admin permissions** pane and review all the information. When you are done, select **Close** to close the pane.
 
 9. Switch back to the LON-CL1.
 
