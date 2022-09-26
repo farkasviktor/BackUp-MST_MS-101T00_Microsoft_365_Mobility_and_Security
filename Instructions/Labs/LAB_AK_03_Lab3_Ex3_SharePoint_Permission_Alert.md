@@ -67,15 +67,13 @@ In the prior task, you configured an alert that will notify Lynne Robbins when a
 
 	**Note:** Based on lab testing, the time for an email to be generated and received in Lynne's Inbox can range from a couple of minutes to an hour. 
 
-8. Once the email arrives in Lynne's Inbox, open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Microsoft 365 Defender** portal, displays the **Alerts** window, and opens the **Site collection admin permissions** pane. <br/>
+8. Once the email arrives in Lynne's Inbox, open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Microsoft 365 Defender** portal, displays the **Alerts** window, and opens the **Site collection admin permissions** pane for the alert activity that triggered the email notification to Lynne. <br/>
 
-	Scroll down through the **Site collection admin permissions** pane and review all the information. When you are done, select **Close** to close the pane.
+	Scroll down through the **Site collection admin permissions** pane and review all the information for this alert activity. When you are done, select **Close** to close the pane.
 
 9. Switch back to the LON-CL1.
 
-10. In your Edge browser, select the **Alert policy** tab that displays **Microsoft 365 Defender**. In the left-hand navigation pane, select **Incidents & alerts** to expand the group, and then select **Alerts**. The notification that was just created based on the **Site collection admin permissions** alert should appear in the list.
-
-11. Leave your LON-CL1 and LON-CL2 VMs open for the remaining tasks in this lab.
+10. Leave your LON-CL1 and LON-CL2 VMs open for the remaining tasks in this lab.
 
 You have now successfully tested the SharePoint alert to monitor site collection admin permissions on SharePoint sites. 
 
