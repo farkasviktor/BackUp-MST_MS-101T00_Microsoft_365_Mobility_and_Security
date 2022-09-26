@@ -67,7 +67,7 @@ In the prior task, you configured an alert that will notify Lynne Robbins when a
 
 	**Note:** Based on lab testing, the time for an email to be generated and received in Lynne's Inbox can range from a couple of minutes to an hour. 
 
-8. Once the email arrives in Lynne's Inbox, open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Microsoft 365 Defender** portal, displays the **Alerts** window, and opens the **Site collection admin permissions** pane for the alert activity that triggered the email notification to Lynne. <br/>
+8. Once the email arrives in Lynne's Inbox, open the email and review the contents. Scroll to the bottom of the email and select the **View alert details** button. This opens the **Microsoft 365 Defender** portal, displays the **Alerts** window, and automatically opens the **Site collection admin permissions** pane for the alert activity that triggered the email notification to Lynne. <br/>
 
 	Scroll down through the **Site collection admin permissions** pane and review all the information for this alert activity. When you are done, select **Close** to close the pane.
 
