@@ -5,7 +5,7 @@ In this exercise you will configure and test an alert that will notify Lynne Rob
 
 ### Task 1 – Create a Mailbox Permission Alert
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account and into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account and into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **User.pw1**. 
 
 2. **Microsoft 365 Defender** should still be open in your Edge browser from the prior task. In the left-hand navigation pane, under the **Email & collaboration** section, select **Policies & rules**. 
 
@@ -68,7 +68,7 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 4. In the **Manage Mailboxes** window, select **Alex Wilber** from the list of mailboxes (select Alex's name; do not select the check mark to the left of his name).
 
-5. In the **Alex Wilber** pane that appears, the **General** tab is displayed by default. Select the **Deletgation** tab.
+5. In the **Alex Wilber** pane that appears, the **General** tab is displayed by default. Select the **Delegation** tab.
 
 6. On the **Delegation** tab, there are three mailbox permissions that can be updated: **Send as**, **Send on behalf**, and **Read and manage (Full access)**. You want to add each of these permissions for Alex's mailbox to **Joni Sherman**. For each permission, perform the following steps to add Joni to that permission: <br/>
 
