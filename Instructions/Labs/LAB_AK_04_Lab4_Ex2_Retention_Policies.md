@@ -9,7 +9,7 @@ In this next phase of your Adatum pilot project, you will access the Microsoft P
 - Moves items that are two years or older from Holly's primary mailbox to her archive mailbox.
 - Moves items that are 14 days or older from the Recoverable Items folder in Holly's primary mailbox to the Recoverable Items folder in her archive mailbox.
 
-1. You should still be logged into LON-CL1 as the local **Admin** account and into **Microsoft 365** as Holly Dickson.
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In Microsoft Edge, in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Compliance** to open the Microsoft Purview portal.
 
