@@ -10,7 +10,7 @@ To use Microsoft's Attack simulation training feature to simulate a phishing att
 
 1. Switch to the **LON-CL1** VM, where you should still be logged in as the local **Admin** account. If necessary, log in as the **Admin** with a password of **Pa55w.rd**. 
 
-2. In your **Edge** browser, you should still be logged into Microsoft 365 as Holly Dickson. To enable MFA for Holly Dickson's user account, select the **Microsoft 365 admin center** tab in your browser, and then in the left hand-navigation pane, select **Users** and then select **Active users**.
+2. In your **Edge** browser, you should still be logged into Microsoft 365 as **Holly Dickson**. To enable MFA for Holly Dickson's user account, select the **Microsoft 365 admin center** tab in your browser, and then in the left hand-navigation pane, select **Users** and then select **Active users**.
 
 3. In the **Active users** window, on the menu bar at the top of the user list, select **Multi-factor authentication**. If this option does not appear on the menu bar, select the **ellipsis (More actions)** icon, and in the drop-down menu that appears, select  **Multi-factor authentication**.
 
@@ -131,7 +131,7 @@ In this task, you will verify whether Adatum has received the email that you con
 
 1. Switch to the **LON-CL2** VM and, if necessary, log in as the local **Admin** account with a password of **Pa55w.rd**.
 
-2. In the Edge browser, you should still be logged into Outlook as the MOD Administrator from the prior lab. To log out of Outlook as the MOD Administrator, select the **MA** initials in the upper right hand corner of the screen. In the **MOD Administrator** window that appears, select **Sign out**.
+2. In the Edge browser, you should still be logged into Outlook as the **MOD Administrator** from the prior lab. To log out of Outlook as the MOD Administrator, select the **MA** initials in the upper right hand corner of the screen. In the **MOD Administrator** window that appears, select **Sign out**.
 
 3. Close all browser tabs except for the **Sign out** tab. In the **Sign out** tab, enter the following URL in the address bar to navigate directly to Outlook on the web: **https://outlook.office365.com**.
  
