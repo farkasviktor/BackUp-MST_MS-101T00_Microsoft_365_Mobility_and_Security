@@ -123,19 +123,19 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 1. On the LON-CL1 VM, the **Microsoft 365 admin center** should still be open in your Microsoft Edge browser from the prior lab, and you should be signed into Microsoft 365 as the **MOD Administrator**. 
 
-2. You will begin by verifying which domain is listed as the default domain for Adatum. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Domains** under the **Settings** group.
+2. You will begin by verifying which domain is listed as the default domain for Adatum. In the **Microsoft 365 admin center**, under the **Settings** group in the left-hand navigation pane, select **Domains**.
 
-3. On the **Domains** page, you should see the **xxxxxZZZZZZ.onmicrosoft.com (Default)** domain created by your lab hosting provider. <br/>
+3. On the **Domains** page, you should see the **xxxxxZZZZZZ.onmicrosoft.com (Default)** domain created by your lab hosting provider. The status for this domain should be **Healthy**, which indicates that domain setup is complete. <br/>
 	
 	**Note:** If a domain titled **xxxUPNxxx.xxxCustomDomainxxx.xxx** appears, do not worry. This is a custom domain that was created by your lab hosting provider. However, it's not needed for any of the labs in this course. That being said, if this domain does exist and it displays **(Default)** next to the domain name, then you must set the **xxxxxZZZZZZ.onmicrosoft.com** domain as the default domain. To do so, select the check box to the left of the **xxxxxZZZZZZ.onmicrosoft.com** domain and then select **Set as default** on the menu bar. In the **Set this domain as default?** dialog box that appears, select **Set as default**. In the list of domains, the **xxxxxZZZZZZ.onmicrosoft.com** domain should now display **(Default)** next to the domain name. 
 
 4. You will now create a Microsoft 365 user account for Holly Dickson. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users** and then select **Active users**. 
 
-5. In the **Active users** list, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are taking on the role of the MOD Administrator, and as such, you must create a user account for Holly Dickson, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft's online services. 
+5. In the **Active users** window, you will see the list of existing user accounts that were created for you by your lab hosting provider. In this task, you are taking on the role of the MOD Administrator, and as such, you must create a user account for Holly Dickson, who is Adatum's new Enterprise Administrator. In doing so, you will assign Holly the Microsoft 365 role of Global Administrator, which gives Holly global access to most management features and data across Microsoft's online services. This is the same role the lab hosting provider assigned to the non-personalized MOD Administrator account. 
 
 	In the **Active Users** window, select the **Add a user** option that appears on the menu bar above the list of active users. This initiates the **Add a user** wizard.
 
-6. In the **Set up the basics** window, enter the following information:
+6. In the **Set up the basics** page, enter the following information:
 
 	- First name: **Holly**
 
@@ -151,15 +151,11 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 		**Holly@xxxxxZZZZZZ.onmicrosoft.com**  
 	
-	- Clear (uncheck) the **Automatically create a password** check box, which will display a new field for entering an administrator defined password.
+	- Clear (uncheck) the **Automatically create a password** check box, which will display a **Password** field. By unchecking this **Automatically create a password** check box, you must manually assign Holly a password at this point in time.
 
-	- In the new **Password** field that appears, enter **Pa55w.rd** in the **Password** field. Passwords must include at least one upper case character, lower case character, number, and special character. 
+	- In the new **Password** field that appears, enter **User.pw1**. Passwords must include at least one upper case character, one lower case character, one number, and one special character. Select the eye (**Show password**) icon at the end of the field to display the password that you just entered. Verify you correctly spelled the password (**User.pw1**).
 
 	- Clear (uncheck) the **Require this user to change their password when they first sign in** check box. <br/>
-
-	**Important:** Note what happens when you clear this check box. You receive an error message indicating **This password contains a word, phrase, or series of numbers that makes it easily guessable**. During user setup, the system looks for specific characteristics to determine acceptable and non-acceptable user-defined passwords. Various forms of the word **Password** are deemed unacceptable and generate this error. So while **Pa55w.rd** meets all the password requirements (it include at least one upper case character, lower case character, number, and special character), it is still unacceptable because it's deemed too easy to guess. Other variations of common passwords that people often use will generate the same error.  <br/>
-
-	As a result, enter **User.pw1** in the **Password** field, and ensure the **Require this user to change their password when they first sign in** check box is blank.<br/>
 
 7. Select **Next**. If a **Save password** window appears at the top of the page, select **Never**.
 
@@ -171,31 +167,35 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 9. Select **Next.** 
 
-10. In the **Optional settings** window, select **Roles (User: no admin center access)**.
+10. In the **Optional settings** window, select **Roles (User: no administration access)**.
 
-11. Under **Roles (User: no admin center access)**, the **User (no admin center access)** option is selected by default. Select the **Admin center access** option instead. By doing so, the most commonly used Microsoft 365 administrator roles are enabled below this option. 
+11. Under this section, the **User (no admin center access)** option is selected by default. Select the **Admin center access** option instead. By doing so, the most commonly used Microsoft 365 administrator roles are enabled below this option. <br/>
 
-	Select the **Global administrator** check box.
+	Select the **Global administrator** check box. <br/>
+
+	**Warning:** Note the warning message that's displayed after selecting the **Global Administrator** role for Holly. Your lab hosting provider created several test user accounts in your Microsoft 365 tenant for this training. In doing so, four of those accounts were assigned the Global Administrator role, which, as a best practice, is the maximum number of recommended accounts for this role. When you just assigned this role to Holly, Adatum now has five Global Administrators, which exceeds this best practice threshold and triggered this warning message. You will continue in this lab having Holly assigned as a Global Administrator. Just keep in mind this best practice when you work in your real-world Microsoft 365 deployment.
 
 12. Select the **Show all by category** option that appears after the list of the most commonly used roles. This displays the complete list of administrator roles sorted by category. 
 
 13. Scroll through the list of roles. In the **Global** category, the **Global Administrator** role should be selected (if you didn't select it in the prior step, then select it now). Continue scrolling down to the **Security & Compliance** category, and then select the **Attack Simulation Administrator** and **Security Administrator** roles. <br/>
 
-	**Note:** The Global Administrator role provides access to most Microsoft 365 functionality; however, it does not provide access to everything. Therefore, even Global Admins require some additional roles to provide specific permissions that are not included in the Global Admin role.
+	**Note:** The Global Administrator role provides access to most of the standard Microsoft 365 administrative functionality; however, it does not provide access to everything. Therefore, even Global Admins require some additional roles to provide specific permissions that are not included in the Global Admin role.
 
 14. Select **Next**.
 
 15. On the **Review and finish** window, review your selections. If anything needs to be changed, select the appropriate **Edit** link and make the necessary changes. Otherwise, if everything is correct, select **Finish adding**. 
 
+16. On the **Holly Dickson added to active users** page, select **Close**
+
 16. Remain logged into LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
 
 ### Task 4 - Assign RBAC to a Microsoft 365 user account in the Microsoft 365 Defender portal
 
-In the prior task, you successfully added the Global administrator role to Holly Dickson's account. This role will provide Holly with the majority of privileges needed to manage Adatum's Microsoft 365 tenant. It's important to note that not every Microsoft 365 role is available for selection when adding a user account. For example, to assign permissions for archiving, auditing, and retention policies, you must do so in the Exchange admin center. 
+In the prior task, you successfully created a user account for Holly Dickson, and you assigned her the Global administrator role. This role will provide Holly with the majority of privileges needed to manage Adatum's Microsoft 365 tenant. It's important to note that not every Microsoft 365 role is available for selection when adding a user account in the Microsoft 365 admin center. For example, to assign permissions for archiving, auditing, and retention policies, you must do so in the Exchange admin center. 
 
-Another example is the Organization Management role group, which can only be assigned in the Microsoft 365 Defender portal. This role group provides permissions to manage Exchange objects and their properties in the Exchange organization. Members of this role group can also delegate role groups and management roles in the organization. Holly will require this role to complete the remaining lab exercises in this course. You will also assign this role group to Lynne Robbins so that Lynne can view Alerts in the Microsoft 365 Defender portal.
+Another example is the Organization Management role group, which can only be assigned in the Microsoft 365 Defender portal. This role group provides permissions to manage Exchange objects and their properties in the Exchange organization. Members of this role group can also delegate role groups and management roles in the organization. Holly will require this role group to complete the remaining lab exercises in this course. In this task, you will assign Holly this role group, and you will also assign it to Lynne Robbins so that Lynne can view alerts in the Microsoft 365 Defender portal in a later lab.
 
-1. In your **Edge** browser, you should still have a tab open for the **Microsoft 365 admin center**. If so, then select this tab and proceed to the next step; otherwise, navigate to the **Office 365 home** page, log in as your tenant admin account, navigate to the **Microsoft 365 admin center**, and then in the left-hand navigation pane, select **Show all**. 
+1. In your **Edge** browser, you should still have the **Microsoft 365 admin center** open from the prior task. 
 
 2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Security**. This opens the Microsoft 365 Defender portal in a new tab.
 
@@ -205,21 +205,19 @@ Another example is the Organization Management role group, which can only be ass
     
 5. On the **Permissions > Permissions** page, select the check box to the left of the **Organization Management** role.
 
-6. On the **Organization Management** pane that appears, scroll down to the bottom of the pane, and in the **Members** section, select **Edit**.
+6. On the **Organization Management** pane that appears, note all the individual roles that are assigned to this role group. Scroll down to the bottom of the pane, and in the **Members** section, select **Edit**.
 
-7. On the **Editing Choose members** page, it displays a message indicating **The list is currently empty.** Select **Choose members** that appears below this message.
+7. On the **Editing Choose members** page, a message is displayed indicating **The list is currently empty.** Select **Choose members** that appears below this message.
 
 8. On the **Choose members** page, select the **+Add** button.
 
-9. On the **Choose members** list, select **Lynne Robbins** and **Holly Dickson** and then select the **Add** button. <br/>
-
-	**Note:** It may take several minutes for Holly and Lynne's accounts to appear in the list of active users. If their names do not immediately appear, then select the Search icon (the magnifying glass icon) to the right of the Search field to refresh the list of users. Continue to select the Search icon every few minutes until their names finally appear.
+9. On the **Choose members** list, select **Holly Dickson** and **Lynne Robbins** and then select the **Add** button. 
 
 10. On the **Choose members** page, select the **Done** button.
 
 11. On the **Editing Choose members** page, select the **Save** button.
 
-12. On the **Organization Management** pane, select **Close**.
+12. On the **Organization Management** pane, note that Holly and Lynne appear in the **Members** section. Select **Close**.
 
 13. Remain logged into LON-CL1 with the Microsoft 365 admin center open in your browser for the next task.
 
@@ -235,79 +233,79 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 1. On the LON-CL1 VM, the **Microsoft 365 admin center** should still be open in your Microsoft Edge browser from the prior task, and you should be signed into Microsoft 365 as the **MOD Administrator**. <br/>
 
-	On the **Microsoft 365 admin center** tab, select the user icon for the **MOD Administrator** (the **MA** circle) in the upper right corner of your browser, and in the **MOD Administrator** window that appears, select **Sign out.** <br/>
+	On the **Microsoft 365 admin center** tab, select the user icon for the **MOD Administrator** (the **MA** circle) in the upper right corner of your browser. In the **MOD Administrator** window that appears, select **Sign out.** <br/>
 	
 	**Important:** When signing out of one user account and signing in as another, you should close all your browser tabs except for the **Sign out** tab. This is a best practice that helps to avoid any confusion by closing the windows associated with the prior user. Once you're signed out of the MOD Administrator account, take a moment and close all other browser tabs except for the **Sign out** tab. 
 	
 2. In your Microsoft Edge browser, in the **Sign out** tab, enter the following URL in the address bar to sign back into Microsoft 365: **https://portal.office.com**. 
 
-3. In the **Pick an account** window, only the tenant admin account (the admin@xxxxxZZZZZZ.onmicrosoft.com account) that you just logged out from (the MOD Administrator's account) appears. Select **Use another account**. 
+3. In the **Pick an account** window, only the MOD Administrator's tenant admin account (the admin@xxxxxZZZZZZ.onmicrosoft.com account) that you just signed out from appears. Select **Use another account**. 
 
 4. In the **Sign in** window, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). Select **Next**.
 
-5. In the **Enter password** window, enter the tenant admin account's password and then select **Sign in**.
+5. In the **Enter password** window, enter **User.pw1** and then select **Sign in**.
 
-6. If a **Welcome to your new Office, Holly** window appears, there's no option to close it. Instead, to the right of the window, select the right arrow icon (**>**) two times and then select the check mark icon to advance through the slides in this messaging window. 
+6. If a **Welcome to your new Office, Holly** window appears, there's no option to close it. Instead, to the right of the window, select the right arrow icon (**>**) two times to advance through the slides in this messaging window, and then select the check mark icon on the final slide. 
 
 7. If a **Find more apps** window appears, select the **X** in the upper right-hand corner of the window to close it.
 
-8. On the **Microsoft Office Home** page, in the column of application icons that appears in the left-hand pane, select **Admin**; this opens the **Microsoft 365 admin center** in a new browser tab. 
+8. On the **Microsoft Office Home** page, in the column of application icons that appears on the far left-side of the screen, select **Admin**. This opens the Microsoft 365 admin center in a new browser tab. 
 
 9. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users**, and then under it, select **Active users**.
 
-10. In the **Active Users** window, when you hover your mouse over a user's **Display name** (or you select the check mark field to the left of the **Display name**), a **key icon** appears to the right of the user's name. By selecting the key icon, you can reset a user's password. You need to reset Alex, Joni, Lynne, and Patti's passwords to **User.pw1**.<br/>
+10. In the **Active Users** window, when you hover your mouse over a user's **Display name**, a **key icon** appears to the right of the user's name. By selecting the key icon, you can reset a user's password. You need to reset Alex, Joni, Lynne, and Patti's passwords to **User.pw1**.<br/>
 
-    Select the key icon for **Alex Wilber**.
+    Hover your mouse over **Alex Wilber** and select the key icon that appears.
 
-11. In the **Reset password** pane for Alex, clear (uncheck) the **Automatically create password** check box, enter **User.pw1** in the **Password** field that appears, and then select and copy this value so that you can paste it in for Joni, Lynne, and Patti's accounts. Clear (unselect) the **Require this user to change their password when they first sign in** check box.
+11. In the **Reset password** pane for Alex, clear (uncheck) the **Automatically create password** check box, and then enter **User.pw1** in the **Password** field that appears. Select the eye (**Show Password**) icon at the end of the **Password** field to display the value you entered. Verify you correctly spelled the password (**User.pw1**). <br/>
+
+	Then clear (unselect) the **Require this user to change their password when they first sign in** check box.
 
 12. Select **Reset Password** and then select **Close** on the **Password has been reset** pane.
 
-13. If the check box to the left of **Alex Wilber** is selected, select the check box to clear it.
+13. Repeat steps 10-12 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, reset each of their passwords to **User.pw1**. In step 11, don't forget to show the value you entered to verify you spelled it correctly.
 
-14. Repeat steps 10-13 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, paste in the **User.pw1** password that you copied for Alex. 
+14. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Teams & groups**, and then under it, select **Active teams & groups**.
 
-15. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Teams & groups**, and then under it, select **Active teams & groups**.
+15. In the **Active teams & groups** window, select the **Add a group** option that appears on the menu bar. This initiates the **Add a group** wizard.
 
-16. In the **Active teams & groups** window, select the **Add a group** option that appears on the menu bar. This initiates the **Add a group** wizard.
+16. In the **Choose a group type** page, select **Microsoft 365 (recommended)** and then select **Next**.
 
-17. In the **Choose a group type** page, select **Microsoft 365 (recommended)** and then select **Next**.
+17. In the **Set up the basics** page, enter **Sales Group** in the **Name** field. You must select the **Description** field to enable the **Next** button. Leave the **Description** field blank and select **Next**. 
 
-18. In the **Set up the basics** page, enter **Sales Group** in the **Name** field. You must select the **Description** field to enable the **Next** button. Leave the **Description** field blank and select **Next**. 
+18. In the **Assign owners** page, select **+Assign owners**. 
 
-19. In the **Assign owners** page, select **+Assign owners**. 
+19. In the **Assign owners** page that appears, select **Joni Sherman** in the list of active users that's displayed, and then select **Add(1)**. Select **Next**.
 
-20. In the **Assign owners** page that appears, select **Joni Sherman** in the list of active users that's displayed, and then select **Add(1)**. Select **Next**.
-
-21. In the **Add members** page, select **Next**.
+20. In the **Add members** page, select **Next**.
 
 	**Note:** You can add members to a group at the time you create the group (at this step in the process), as well as after you create a group. For the purpose of this lab, you will add members after you've created the group in a later step. This way you can see the two methods of adding group members. So for now, select **Next** to skip through this step and not add members at this time.
 
-22. In the **Edit settings** page, enter **salesgroup** in the **Group email address** field (Note: the domain should be the xxxxxZZZZZZ.onmicrosoft.com domain, which you should have verified in a prior task is the default domain for Adatum). <br/>
+21. In the **Edit settings** page, enter **salesgroup** in the **Group email address** field (Note: the domain should be the xxxxxZZZZZZ.onmicrosoft.com domain, which you should have verified in a prior task is the default domain for Adatum). <br/>
 
 	In the **Privacy** field, verify it's set to **Public** (if not, then set it now), and leave the **Create a team for this group** check box selected. Select **Next**.
 
-23. In the **Review and finish adding group** window, review your selections. If anything needs to be corrected, select the corresponding **Edit** option. When everything is correct, select **Create group**.
+22. In the **Review and finish adding group** window, review your selections. If anything needs to be corrected, select the corresponding **Edit** option. When everything is correct, select **Create group**.
 
-24. Once the group is created, select the **Close** button in the **Sales group group created** window.
+23. Once the group is created, select the **Close** button in the **Sales group group created** window.
 
-25. This will return you to the **Active teams & groups** window. You may need to select the **Refresh** option on the menu bar for the **Sales Group** to appear in the list of groups. In fact, you may have to wait a few minutes for the Sales Group to appear, so you may need to select the **Refresh** option on the menu bar once or twice.
+24. This will return you to the **Active teams & groups** window. You may need to select the **Refresh** option on the menu bar for the **Sales Group** to appear in the list of groups. In fact, you may have to wait a few minutes for the Sales Group to appear, so you may need to select the **Refresh** option on the menu bar once or twice.
 
-26. Once the **Sales Group** appears in the list of groups, select the **Sales Group** name.
+25. Once the **Sales Group** appears in the list of groups, select the **Sales Group** name.
 
-27. In the **Sales Group** pane that appears, the **General** tab is displayed by default. Select the **Members** tab.
+26. In the **Sales Group** pane that appears, the **General** tab is displayed by default. Select the **Members** tab.
 
 	**Note:** While you could have added members to this group at the time you created it, you will instead add members after the group has been created. This will give you experience in how to add members to an existing group. 
 
-28. In the **Members** tab, under the **Owners** section, Joni Sherman should appear as the only group owner. Under the **Add some members to this team** section, select **Add members**.
+27. In the **Members** tab, under the **Owners** section, Joni Sherman should appear as the only group owner. Under the **Add some members to this team** section, select **Add members**.
 
-29. In the **Add members to Sales group** pane, in the list of users that appears, select **Alex Wilber, Joni Sherman**, and **Lynne Robbins**, and then select the **ADD(3)** button.
+28. In the **Add members to Sales group** pane, in the list of users that appears, select **Alex Wilber, Joni Sherman**, and **Lynne Robbins**, and then select the **ADD(3)** button.
 
-31. Once the three new members have been saved in the group, select the **X** in the upper right-hand corner of the **Sales group** pane to close it.  <br/>
+29. Once the three new members have been saved in the group, select the **X** in the upper right-hand corner of the **Sales group** pane to close it.  <br/>
 
 	**Note:** You will not add Patti Fernandez to this group. Patti's key role in the pilot project is to test the Privileged Identity Management functionality in the next lab exercise. 
 
-32. Leave the **Microsoft 365 admin center** tab open in your browser and proceed to the next task.
+30. Leave the **Microsoft 365 admin center** tab open in your browser and proceed to the next task.
 
 
 ### ‎Task 6 - Enable IRM for SharePoint Online 
