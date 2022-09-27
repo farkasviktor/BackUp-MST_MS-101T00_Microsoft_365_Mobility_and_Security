@@ -8,7 +8,7 @@ To use Microsoft's Attack simulation training feature to simulate a phishing att
 
 **Important:** To implement MFA, you will need to use your mobile phone to receive a verification code so that you can enter it into your tenant as a second form of authentication. If you do not have a phone, you will have to skip this lab. If this is the case, notify your instructor, who can potentially partner you with another student to follow along through this lab.
 
-1. Switch to the **LON-CL1** VM, where you should still be logged in as the **Admin** account. If necessary, log in as the **Admin** with a password of **Pa55w.rd**. 
+1. Switch to the **LON-CL1** VM, where you should still be logged in as the local **Admin** account. If necessary, log in as the **Admin** with a password of **Pa55w.rd**. 
 
 2. In your **Edge** browser, you should still be logged into Microsoft 365 as Holly Dickson. To enable MFA for Holly Dickson's user account, select the **Microsoft 365 admin center** tab in your browser, and then in the left hand-navigation pane, select **Users** and then select **Active users**.
 
@@ -73,7 +73,7 @@ Microsoft 365 includes an Attack simulation training feature that enables you to
 
 In this lab exercise, you will use one of the existing payload templates. In the next lab exercise, you will create your own custom payload.
 
-1. You should still be on **LON-CL1**, and you should still be logged in as the **Admin** account. If necessary, log in as the **Admin** with a password of **Pa55w.rd**.
+1. You should still be on **LON-CL1**, and you should still be logged in as the local **Admin** account. If necessary, log in as the **Admin** with a password of **Pa55w.rd**.
 
 2. You should still have the **Microsoft 365 Defender** portal open in in your **Edge** browser from the prior task. If not, enter **https://security.microsoft.com** in the address bar, and then if you receive the dialog box asking for a second form of authentication, proceed through the verification process. If not, sign-in using Holly's user id and password.
 
@@ -129,7 +129,7 @@ In this lab exercise, you will use one of the existing payload templates. In the
 
 In this task, you will verify whether Adatum has received the email that you configured in the Attack simulation training. You will then review the diagnostic feedback associated with the Spear Phishing attack that you simulated.
 
-1. Switch to the **LON-CL2** VM and log in as the **Admin** with a password of **Pa55w.rd**.
+1. Switch to the **LON-CL2** VM and, if necessary, log in as the local **Admin** account with a password of **Pa55w.rd**.
 
 2. In the Edge browser, you should still be logged into Outlook as the MOD Administrator from the prior lab. To log out of Outlook as the MOD Administrator, select the **MA** initials in the upper right hand corner of the screen. In the **MOD Administrator** window that appears, select **Sign out**.
 
