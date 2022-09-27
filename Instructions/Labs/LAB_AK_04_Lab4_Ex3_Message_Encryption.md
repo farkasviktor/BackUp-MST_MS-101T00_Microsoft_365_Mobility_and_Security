@@ -44,7 +44,7 @@ In this task, you will create an encryption rule for messages inside your Exchan
 
 In a prior task, you configured a mail flow encryption rule using the Exchange admin center. In this task, you will create a mail flow encryption rule using Windows PowerShell. You must begin by creating a PSSession that establishes a remote connection to Exchange Online through PowerShell and then imports the Exchange Online session into the PowerShell GUI. This is required because the **New-TransportRule** cmdlet used in this task is an Exchange Online cmdlet; therefore, it does not exist in MsolService. As such, you must connect to the Exchange Online session through PowerShell to access this cmdlet.
 
-1. You should still be logged into LON-CL1 as **Admin**, and you should still be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. To open Windows PowerShell, enter **powershell** in the **Search** box on the taskbar. 
 
