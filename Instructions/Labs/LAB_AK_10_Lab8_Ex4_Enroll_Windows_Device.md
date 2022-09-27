@@ -8,7 +8,7 @@ During her pilot project, Holly plans to use certificates with Intune to authent
 
 Holly must begin by verifying that the device she wants to enroll into Intune (LON-CL1) is not already enrolled. 
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In your **Edge** browser, the **Microsoft Endpoint Manager admin center** should still be open in the **Devices - Microsoft Endpoint Manager admin center** tab. Select this tab.
 
@@ -42,7 +42,7 @@ In this task, you want to enroll LON-CL1 to Azure AD and Intune.
 
 4. On the **Let's get you signed in** page, in the **Work or school account** text box, enter **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**.
 
-5. On the **Enter password** page, enter **Pa55w.rd** in the **Password** field and then select **Sign in**.
+5. On the **Enter password** page, enter **User.pw1** in the **Password** field and then select **Sign in**.
 
 6. On the **Make sure this is your organization** dialog box, review the information and if everything looks correct, select **Join**.
 
@@ -60,7 +60,7 @@ In this task, you want to enroll LON-CL1 to Azure AD and Intune.
 
 In an earlier lab you configured integration between Azure AD and Intune. Because of that, any device that is joined to Azure AD is automatically enrolled to Intune. In this task you will join LON-CL2 to Azure AD, which will automatically enroll it into Intune.
 
-1. You should still be logged into **LON-CL1** as the **Admin** account, and you should still be logged into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In **LON-CL1**, select the **certlm – [Certificates – Local Computer]** icon on the taskbar.
 
