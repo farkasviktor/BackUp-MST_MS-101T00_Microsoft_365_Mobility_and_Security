@@ -8,7 +8,7 @@ In the previous exercise, you created a custom DLP policy that searches emails f
 
 In this task, you will send an email from Holly Dickson to Lynne Robbins that tests the first rule (single IP address). When this rule is triggered, an email policy tip is displayed in the sender's Outlook mailbox that informs the sender the email contains sensitive data. The sender will also receive an email notification, but the email will still be sent to the recipient.
 
-1. You should still be logged into LON-CL1 as the local **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. You will now send an email from Holly to Lynne Robbins, and you will include an IP address in the body of the email. <br/>
 
@@ -57,7 +57,7 @@ In the previous exercise, you created a custom DLP policy that searches emails f
 	
 In this task, you will send an email from Holly Dickson to Lynne Robbins that tests the second rule (multiple IP addresses). When this rule is triggered, an email policy tip is displayed in the sender's Outlook mailbox that informs the sender the email contains sensitive data. The email will be blocked, but the sender can override the blocked email and allow it to be sent.  
 
-1. You should still be logged into LON-CL1 as the local **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 	
 2. You will now send a second message from Holly to Lynne that contains multiple IP addresses. Repeat the process as before for creating an email to Lynne Robbins with the following information: 
 
