@@ -12,11 +12,11 @@ In this task, you will verify whether a default Microsoft 365 alert is triggered
 
 2. In your Edge browser, in the **Microsoft 365 Defender** tab, you should still be in the **Alert policy** window from the prior lab exercise (if not, then in the left-hand navigation pane, select **Policies & rules** and then select **Alert policy**).
 
-5. On the **Alert policy** page, you want to search through the default system policies for a policy named **eDiscovery search started or exported**. Since there are so many pre-existing system policies, the easiest way to locate the policy is to search for it. In the **Search** field at the top of the screen, enter **eDiscovery** and then hit Enter. 
+3. On the **Alert policy** page, you want to search through the default system policies for a policy named **eDiscovery search started or exported**. Since there are so many pre-existing system policies, the easiest way to locate the policy is to search for it. In the **Search** field at the top of the screen, enter **eDiscovery** and then hit Enter. 
 
-6. In the policy list, select the **eDiscovery search started or exported** policy that appears. 
+4. In the policy list, select the **eDiscovery search started or exported** policy that appears. 
 
-7. An **eDiscovery search started or exported** pane should appear. Scroll down through **eDiscovery search started or exported** pane and verify the default settings for this predefined policy are configured as follows:
+5. An **eDiscovery search started or exported** pane should appear. Scroll down through **eDiscovery search started or exported** pane and verify the default settings for this predefined policy are configured as follows:
 
 	- Status: **On**
 	
@@ -28,15 +28,15 @@ In this task, you will verify whether a default Microsoft 365 alert is triggered
 
 	- Email recipients: Expand the **Set your recipients** section and verify the **Recipients** value is **TenantAdmins**
 
-8. At the top of the pane, select the **Edit policy** button.
+6. At the top of the pane, select the **Edit policy** button.
 
-9. On the **eDiscovery search started or exported** window, the only setting that can be edited for this default policy is the **Email recipients** setting. This window enables you to edit the email recipients who are notified when this policy is triggered. You will not change the value here; instead, the purpose of this step is to show you how to change the recipient list in your real-world implementations for any of the default system policies. Select the **Cancel** button at the bottom of the window.
+7. On the **eDiscovery search started or exported** window, the only setting that can be edited for this default policy is the **Email recipients** setting. This window enables you to edit the email recipients who are notified when this policy is triggered. You will not change the value here; instead, the purpose of this step is to show you how to change the recipient list in your real-world implementations for any of the default system policies. Select the **Cancel** button at the bottom of the window.
 
-10. On the **eDiscovery search started or exported** pane, select the **X** in the upper-right corner to close it. <br/>
+8. On the **eDiscovery search started or exported** pane, select the **X** in the upper-right corner to close it. <br/>
 
-	**Note:** You can also edit a policy's setting by selecting the vertical ellipsis icon under the **Actions** column at the far right end of the policy's row on the **Aleert Policy** window. 
+	**Note:** You can also edit a policy's setting by selecting the vertical ellipsis icon under the **Actions** column at the far right end of the policy's row on the **Alert Policy** window. 
 
-11. Leave all the Edge browser tabs open for the next task.
+9. Leave all the Edge browser tabs open for the next task.
 
 You have now reviewed the default Microsoft 365 eDiscovery alert that notifies tenant admins when an eDiscovery search is created or exported.
 
