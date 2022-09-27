@@ -8,7 +8,7 @@ In this exercise, you will begin by creating a noncompliance notification messag
 
 In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send an email message to any end user whose Windows 10 or later device becomes noncompliant. Before you create a compliance policy in task 2, you must first create the noncompliance email message template that you will assign to the policy.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In your **Edge** browser, you should still have the **Microsoft Endpoint Manager admin center** open from the first exercise in this lab; if so, then select it now. If you closed it, then in **Microsoft 365 admin center**, under the **Admin centers** group in the left-hand navigation pane, select **Endpoint Manager**. 
 
@@ -31,11 +31,11 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send a
 
 ### Task 2: Create and apply a compliance policy
 
-In your role as Holly Dickson, Adatum's Enterprise Administrator, you will create a compliance policy that governs Windows 10 devices at Adatum Corporation. This policy will dictate what the minimum OS version that must be installed on a device in order for it to access Adatum's environment. It will also control how long a device can stay out of compliance before it's locked out from use, thereby, requiring administrator assistance to make it operational again. The policy will also control who it's assigned to, which in this case will be all devices enrolled in Microsoft Intune.
+In your role as Holly Dickson, Adatum's Enterprise Administrator, you will create a compliance policy that governs Windows 10 devices at Adatum Corporation. This policy will dictate what the minimum OS version must be installed on a device in order for it to access Adatum's environment. It will also control how long a device can stay out of compliance before it's locked out from use, thereby requiring administrator assistance to make it operational again. The policy will also control who it's assigned to, which in this case will be all devices enrolled in Microsoft Intune.
 
 Given the problems caused at Adatum by devices that are running old versions of Windows, Holly wants to mark any device as noncompliant that is running a version of the OS that is older than version 10.0.17763.1192. Marking a device as noncompliant will lock the device. In the policy that Holly wants to create, any device running a version of Windows that is older than this version will be marked as noncompliant, and an email will be sent to the end-user notifying them of the situation.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In your **Edge** browser, you should still have the **Microsoft Endpoint Manager admin center** open from the first exercise in this lab; if so, then select it now. If you closed it, then in **Microsoft 365 admin center**, under the **Admin centers** group in the left-hand navigation pane, select **Endpoint Manager**. 
 
@@ -96,7 +96,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you are now go
 
 In this task, you will create a WIP policy that protects an entire collection of recommended apps, as well as an app from the Microsoft Store, which in this case is **Microsoft Power BI**. Since this app produces reports and queries of company trends that may be confidential, Adatum wants to restrict access to it to selected individuals.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In your Edge browser, you should have a tab open in the **Microsoft Endpoint Manager admin center** that is displaying the **Compliance1** data compliance policy that you created in the earlier task. <br/>
 
@@ -165,7 +165,7 @@ You have just created a new App Protection Policy (APP), which is also referred 
 
 Packaged apps, also known as Universal Windows apps, are based on an app model that ensures that all the files within an app package share the same identity. Therefore, it is possible to control the entire app using a single AppLocker rule as opposed to the non-packaged apps where each file within the app could have a unique identity. An AppLocker rule for a packaged app controls both the installation as well as the running of the app.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In the Search field on the taskbar at the bottom of the screen, enter **SecPol** and in the menu that appears, select **Local Security Policy**.
 
@@ -219,11 +219,11 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 
 26. An **Applocker** warning window will appear asking if your are sure that you want to delete the selected rule. Select **Yes**.
 
-27. Under the **Applocker**section, select **Package app Rules**.
+27. Under the **Applocker** section, select **Package app Rules**.
 
 28. In the **Package app Rules** window, right click on the **Microsoft.OneConnect** rule, then select **Delete**.
 
-29. An **Applocker** warning window will appear asking if your are sure that you want to delete the selected rule. Select **Yes**.
+29. An **Applocker** warning window will appear asking if you are sure that you want to delete the selected rule. Select **Yes**.
 
 30. Close the Local Security Policy window.
 
@@ -234,7 +234,7 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 
 The purpose of this task is to show you how to use Intune to push an app to a device just like a Group Policy Object (GPO). In this task, you will use Notepad. In a previous task, Notepad was included as one of the recommended apps in the App protection policy that you created. In this task you will import into Intune the App protection policy (**apprule1.xml**) that you exported in the prior task.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In your **Edge** browser, you should have the **Microsoft Endpoint Manager admin center** portal open in a tab titled **Apps - Microsoft Endpoint Manager admin center**. Select this tab.
 
@@ -272,7 +272,7 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 ### Task 6: Configure enrollment restrictions
 When enrolling devices to Microsoft Intune, you have the option to Allow or Block personally owned devices from being enrolled. This is done by restricting what device type platforms you want to allow when devices are enrolled. For example, if you configured Intune to only allow iOS devices to be enrolled and a user attempts to enroll an Android device, the operation would be blocked from enrolling.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In your Edge browser, you should have a tab open for the **Microsoft Endpoint Manager admin center** that's displaying the **Intune App Protection | Properties** window. In the left-hand navigation pane, select **Devices**. <br/>
 
@@ -305,7 +305,7 @@ When enrolling devices to Microsoft Intune, you have the option to Allow or Bloc
 
 The purpose of this task is to simply review the different platforms that are available to be assigned to a device configuration profile. You will not create a profile; you will simply review the platforms that are available to assign to a profile.
 
-1. You should still be logged into LON-CL1 as the **Admin** and into Microsoft 365 as **Holly Dickson**.
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In your **Edge** browser, you should have a tab open for the **Microsoft Endpoint Manager admin center** that's displaying the **All Users | Properties** window. In the left-hand navigation pane, select **Devices**.
 
