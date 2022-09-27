@@ -5,7 +5,7 @@ In this exercise you will configure and test an alert that notifies Lynne Robbin
 
 ### Task 1 – Create a SharePoint Permissions Alert
 
-1. You should still be logged into the Client 1 VM (LON-CL1) as the **Admin,** and you should still be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into the Client 1 VM (LON-CL1) as the local **Admin,** and you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In your Edge browser, in the **Microsoft 365 Defender** tab, you should still be in the **Alert policy** window from the prior lab exercise (if not, then in the left-hand navigation pane, select **Policies & rules** and then select **Alert policy**).
 
@@ -49,7 +49,7 @@ You have now configured an additional alert policy that monitors when a site col
 
 In the prior task, you configured an alert that will notify Lynne Robbins when a site collection admin is added to a site collection. To test this alert, Holly Dickson will add Alex Wilber as a site collection admin to the global SharePoint Communication site. This activity should trigger the alert policy that you just created, which should send an alert notification email to Lynne Robbins’ mailbox. You will then switch to the LON-CL2 VM to see if Lynne received this email. 
 
-1. You should still be logged into the Client 1 VM (LON-CL1) as the **Admin**, and you should still be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into the Client 1 VM (LON-CL1) as the local **Admin** account, and you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In your **Microsoft Edge** browser, open a new tab and enter the following URL in the address bar: **https://xxxxxZZZZZZ.sharepoint.com/_layouts/15/settings.aspx** (replace xxxxxZZZZZZ with the tenant prefix provided by your lab hosting provider). This opens the **Site Settings** for the global SharePoint Communication site.
 
