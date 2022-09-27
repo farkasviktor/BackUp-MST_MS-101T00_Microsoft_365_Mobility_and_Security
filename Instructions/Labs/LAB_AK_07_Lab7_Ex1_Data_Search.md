@@ -10,7 +10,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. In her role as the company
 
 **Note:** To perform this task, Holly must be assigned to the eDiscovery Manager role group so that she has the necessary permissions. You added Holly to this role group in Lab 1 at the same time that you added Joni Sherman to the role group. The reason why you were instructed to add Holly to the eDiscovery Manager role group in Lab 1 rather than at the start of this lab is that it can sometimes take up to an hour or more for permissions to successfully propagate. If you had assigned Holly to this role group just prior to this query, you would have received error messages involving parameter fields because her permissions would not have completed propagating. By adding Holly to this role group at the start of this course, enough time will have elapsed between then and now for the propagation to complete. 
 
-1. Switch to LON-CL1, where you should still be logged in as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson** (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
+1. Switch to LON-CL1, where you should still be logged in as the local **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In your **Microsoft Edge** browser, select the **Microsoft 365 admin center** tab, and then in the left-hand navigation pane under the **Admin centers** group, select **Compliance**.
 
@@ -84,7 +84,7 @@ When someone opens a case to search for content, you typically export the result
 
 11. In the **eDiscovery Export Tool** window, select **Start** to begin the export process.
 
-12. As soon as the **eDiscovery Export Tool** shows three green checkmarks next to the **Status** field alog with a **The export completed successfully** message below them, the export is done. Select the link that appears next to **Export Location**.
+12. As soon as the **eDiscovery Export Tool** shows three green checkmarks next to the **Status** field and a **The export completed successfully** message below them, the export is done. Select the link that appears next to **Export Location**.
 
 13. This opens a **File Explorer** window showing the **Downloads** folder. Double-click the **Results.csv** file to open Excel and view the report data for all case items found. If a **How do you want to open this file?** dialog box appears, select **Excel** if it's available. If Excel is not available, uncheck the **Always use this app to open .csv files** and then select Microsoft Edge. <br/>
 
