@@ -160,7 +160,7 @@ Now that the **PIM-Global-Administrators** group has been made eligible for the 
 
 10. In the **More information required** window that appears, select **Next**. 
 
-11. In the **Enter password** window, enter **User.pw1** in the Password field and then select **Sign in**.
+11. In the **Enter password** window, enter **User.pw1** in the **Password** field and then select **Sign in**.
 
 12. On the **Microsoft Authenticator** page, you can download this mobile app or use a different method for MFA verification. For the purposes of this lab, we recommend you use your mobile phone so that you do not have to take time installing the Microsoft Authenticator app that you may not use again after this training class. Select the **I want to set up a different method** option at the bottom of the page. 
 
