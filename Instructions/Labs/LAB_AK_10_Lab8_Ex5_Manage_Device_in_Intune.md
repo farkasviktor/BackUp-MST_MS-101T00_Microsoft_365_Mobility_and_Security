@@ -8,7 +8,7 @@ As part of managing devices in Intune, Holly will create dynamic groups in the M
 
 In this task, you're going to create two device categories, one for mobile devices and the other for desktop systems. These categories will then be assigned to devices in the next task.
 
-1. In the LON-CL1 VM, you should still be logged in as the **Admin** account, and you should still be logged into Microsoft 365 as **Holly Dickson**.
+1. In the LON-CL1 VM, you should still be logged in as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In your Edge browser, the **Microsoft Endpoint Manager admin center** should still be open. In the left-hand navigation pane, select **Devices**. 
 
@@ -30,7 +30,7 @@ In this task, you're going to create two device categories, one for mobile devic
 
 In this task, you're going to manage the Category property of the two devices that are joined to Azure AD and enrolled in Microsoft Intune. You will also review the properties and discovered apps on each device.
 
-1. In the LON-CL1 VM, you should still be logged in as the **Admin** account, and you should still be logged into Microsoft 365 as **Holly Dickson**.
+1. In the LON-CL1 VM, you should still be logged in as the **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
 2. In your Edge browser, the **Microsoft Endpoint Manager admin center** should still be open and it should be displaying the **Devices | Device categories** window after having completed the prior task.
 
