@@ -21,7 +21,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
 
 1. When you open your lab hosting provider's Virtual Machine environment, you need to begin with the Client 1 VM (LON-CL1). If your VM environment opens with one of the other machines, then switch to the LON-CL1 VM now.
 
-2. On **LON-CL1**, you must select **Ctrl+Alt+Delete** to log in (your instructor will guide you on how to find this option in your VM environment). Log into LON-CL1 as the **Admin** (or Administrator) account with the password **Pa55w.rd**. 
+2. On **LON-CL1**, you must select **Ctrl+Alt+Delete** to log in (your instructor will guide you on how to find this option in your VM environment). Log into LON-CL1 as the local **Admin** (or Administrator) account with the password **Pa55w.rd**. 
 
 3. If you receive a **Networks** warning message asking if you want this PC to be discoverable by other PCs and devices on this network, select **Yes**.
 
@@ -316,7 +316,7 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 **Note:** While you will validate IRM for Exchange and SharePoint in Lab 4, you must enable IRM for SharePoint Online now because it can take up to 60 minutes or more for IRM to show up in SharePoint Online. By the time you get to the validation exercise in Lab 4, IRM should have finished its internal configuration and you won’t have to wait for it to be present in SharePoint Online.
 
-1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into LON-CL1 as the local **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **SharePoint**. This will open the SharePoint admin center in a new tab.
 
@@ -341,7 +341,7 @@ In Lab 3, you will create Alert Policies using the Microsoft 365 Defender portal
 
 **Important:** If you see an error message that says "Fail to opt in, please refresh", Audit Logging is being enabled in the background and the message can safely be ignored.
 
-1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. <br/>
+1. You should still be logged into LON-CL1 as the local **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. <br/>
 
 	Select the **Microsoft 365 admin center** tab in your Edge browser. 
 
@@ -362,7 +362,7 @@ In Lab 3, you will create Alert Policies using the Microsoft 365 Defender portal
 
 In Module 8, you will perform a Content Search lab that requires that Joni Sherman and Holly Dickson be members of the eDiscovery Manager role. In this exercise, you will add Joni and Holly to this role. The reason you are doing this now is that it can sometimes take up to an hour or more for newly assigned permissions to successfully propagate through the system. If you waited and assigned Holly and Joni to this role group at the time you performed the Content Search lab in Module 8, you would receive error messages involving parameter fields because their permissions would not have finished propagating. By adding them to this role group now, enough time will elapse for the propagation to complete by the time you get to the Module 8 lab. 
 
-1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into LON-CL1 as the local **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In your **Microsoft Edge** browser, you should still have **Microsoft 365 Defender** open in a tab from the prior task. If you closed that tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Security**.
 
