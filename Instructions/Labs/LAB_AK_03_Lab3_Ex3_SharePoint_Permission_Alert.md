@@ -5,7 +5,7 @@ In this exercise you will configure and test an alert that notifies Lynne Robbin
 
 ### Task 1 – Create a SharePoint Permissions Alert
 
-1. You should still be logged into the Client 1 VM (LON-CL1) as the local **Admin,** and you should still be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into the Client 1 VM (LON-CL1) as the local **Admin**, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In your Edge browser, in the **Microsoft 365 Defender** tab, you should still be in the **Alert policy** window from the prior lab exercise (if not, then in the left-hand navigation pane, select **Policies & rules** and then select **Alert policy**).
 
