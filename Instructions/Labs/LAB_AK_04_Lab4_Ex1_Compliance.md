@@ -6,7 +6,7 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Mic
 
 To test archiving and retention in your Adatum pilot project, you will create a new mail-enabled security group and assign two users to the group – Joni Sherman and Lynne Robbins. This group will then be used in the next task when you configure MDM auto-enrollment for new devices in your tenant. 
 
-1. You should still be logged into LON-CL1 as the local **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In **Microsoft Edge**, select the **Microsoft 365 admin center** tab; if you closed this tab earlier, then open a new tab and go to **https://admin.microsoft.com.** <br/>
 
@@ -53,7 +53,7 @@ To test archiving and retention in your Adatum pilot project, you will create a 
 
 In this task you will activate MDM auto-enrollment for new devices in your Adatum Corporation tenant. The devices will belong to members of the Compliance Test Users group that you created in Azure AD in the prior task. You will also verify that Intune is set by default as your mobile device management (MDM) authority. 
 
-1. You should still be in LON-CL1 and logged into Microsoft 365 as Holly Dickson. 
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In the **Microsoft 365 admin center** tab in your browser, in the left-hand navigation pane, select **Show all** (if necessary), and then in the **Admin centers** section, select **Azure Active Directory**.
 
