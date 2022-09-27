@@ -6,7 +6,7 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Mic
 
 To test archiving and retention in your Adatum pilot project, you will create a new mail-enabled security group and assign two users to the group – Joni Sherman and Lynne Robbins. This group will then be used in the next task when you configure MDM auto-enrollment for new devices in your tenant. 
 
-1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into LON-CL1 as the local **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In **Microsoft Edge**, select the **Microsoft 365 admin center** tab; if you closed this tab earlier, then open a new tab and go to **https://admin.microsoft.com.** <br/>
 
