@@ -7,11 +7,11 @@ Holly Dickson is concerned that some users at Adatum may require education about
 
 ### Task 1: Configure and launch a Drive-by URL attack 
 
-In a Drive-by URL attack, the website attempting to lure the target will typically be a well-known website that has been compromised in some fashion, or a clone of a well-known website itself. The hacker hopes that familiarity with the website builds trust in the target, to the point where the target feels that it's safe to select the URL link. Holly wants to create a Drive-by URL attack using a rip-off of the Tailspin Toys website. Tailspin Toys is a nationally known toy store that is constantly offering promotions on TV and throuhout social media. Holly wants to use this familiarity with the Tailspin Toys namebrand to offer an enticing promotion for free toys as part of her attack simulation training. This will enable her to see how many Adatum employees are susceptible to this type of attack. 
+In a Drive-by URL attack, the website attempting to lure the target will typically be a well-known website that has been compromised in some fashion, or a clone of a well-known website itself. The hacker hopes that familiarity with the website builds trust in the target, to the point where the target feels that it's safe to select the URL link. Holly wants to create a Drive-by URL attack using a rip-off of the Tailspin Toys website. Tailspin Toys is a nationally known toy store that is constantly offering promotions on TV and throughout social media. Holly wants to use this familiarity with the Tailspin Toys name brand to offer an enticing promotion for free toys as part of her attack simulation training. This will enable her to see how many Adatum employees are susceptible to this type of attack. 
 
 In the prior lab, you created a simulation that was sent to all Adatum users. You also used an existing payload template for the simulation. In this lab exercise, you will only roll out the simulation to Lynne Robbins, and you will create your own custom payload.  
 
-1. You should still be in LON-CL1 and signed in as the **Admin** with a password of **Pa55w.rd**; if not, then sign in now.  
+1. You should still be in LON-CL1 and signed in as the local **Admin** account with a password of **Pa55w.rd**; if not, then sign in now.  
 
 2. After the previous lab exercise, you should still be in the **Microsoft 365 Defender** portal, and you should still be logged in as Holly Dickson; if not, then do so now.
 
@@ -66,7 +66,7 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 17. In the **Select the required text** pane that appears on the right, drag your cursor from the start of the code block to the end, so that the entire code block is highlighted. This will enable the **Select** button. Select this button. 
 
-18. In the **Indicator Description** field, replace the default description with the following text: **Free gifts or other one-time only promotional give-aways**
+18. In the **Indicator Description** field, replace the default description with the following text: **Free gifts or other one-time only promotional giveaways**.
 
 19. Select inside the **Indicator Preview** to see a preview of the indicator message. Then select outside the **Indicator Preview** field to exit the preview. 
 
@@ -114,7 +114,7 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 You will now review the results of the Drive-by URL simulation attack that you just launched. In this task, you will verify whether your organization has received the email that you configured in the Attack simulation training. You will then review the results associated with the Drive-by URL attack that you simulated.
 
-1. Switch to the **LON-CL2** VM and log in as the **Admin** with a password of **Pa55w.rd**.
+1. Switch to the **LON-CL2** VM and, if necessary, log in as the local **Admin** account with a password of **Pa55w.rd**.
 
 2. In the Edge browser, you should have two tabs open - one with Lynne Robbins' Outlook mailbox, and one with the landing page from the attack simulation that you conducted in the prior lab exercise. Select the tab containing Lynne Robbins' Outlook mailbox.
 
@@ -143,7 +143,7 @@ You will now review the results of the Drive-by URL simulation attack that you j
 
 To use Microsoft's Attack simulation training to simulate phishing attacks, Holly enabled Multi-Factor Authentication (MFA) for her user account. Now that she has completed the Attack simulation training tests, she wants to disable MFA for her account so that she doesn't have to deal with MFA for the remainder of the pilot project.
 
-1. You should still be logged into **LON-CL1** as the **Admin** account and into Microsoft 365 as Holly Dickson.
+1. You should still be logged into **LON-CL1** as the local **Admin** account and into Microsoft 365 as Holly Dickson.
 
 2. To disable MFA for Holly Dickson's user account, you must first access the **Active users** list in the Microsoft 365 admin center. If you have the **Microsoft 365 admin center** open in a browser tab, then select that now; otherwise, open a new browser tab, enter **https://portal.office.com** in the address bar, and then on the **Office 365 home** page, select the **Admin** icon that appears in the column of app icons on the left-side of the screen. This opens the **Microsoft 365 admin center** in a new browser tab. 
 
@@ -163,7 +163,7 @@ To use Microsoft's Attack simulation training to simulate phishing attacks, Holl
 	- Close your browser session and all browser tabs (to clear your cache).
 	- Open a new Edge browser session.
 	- Enter the **https://portal.office.com** URL.
-	- In the **Pick an account** window, select Holly's account and enter **Pa55w.rd** as the password.
+	- In the **Pick an account** window, select Holly's account and enter **User.pw1** as the **Password**.
 	- From the **Microsoft Office Home** page, select the **Admin** icon to navigate to the **Microsoft 365 admin center**.
 	
 	You are now ready to proceed to the next lab exercise.
