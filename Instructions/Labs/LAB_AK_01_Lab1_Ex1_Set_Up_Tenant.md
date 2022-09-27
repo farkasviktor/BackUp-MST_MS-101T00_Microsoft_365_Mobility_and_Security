@@ -157,7 +157,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	- Clear (uncheck) the **Require this user to change their password when they first sign in** check box. <br/>
 
-	**Important:** Note what happens when you clear this check box. You receive an error message indicating **This password contains a word, phrase, or series of numbers that makes it easily guessable**. During user setup, the system looks for specific characteristics to determine acceptable and non-acceptable user-defined passwords. Various forms of the word **Password** are deemed unacceptable and generate this error. So while **Pa55w.rd** meets all the password requirements (it include at least one upper case character, lower case character, number, and special character), it is still unacceptable because it's deemed too easy to guess. Other variataions of common passwords that people often use will generate the same error.  <br/>
+	**Important:** Note what happens when you clear this check box. You receive an error message indicating **This password contains a word, phrase, or series of numbers that makes it easily guessable**. During user setup, the system looks for specific characteristics to determine acceptable and non-acceptable user-defined passwords. Various forms of the word **Password** are deemed unacceptable and generate this error. So while **Pa55w.rd** meets all the password requirements (it include at least one upper case character, lower case character, number, and special character), it is still unacceptable because it's deemed too easy to guess. Other variations of common passwords that people often use will generate the same error.  <br/>
 
 	As a result, enter **User.pw1** in the **Password** field, and ensure the **Require this user to change their password when they first sign in** check box is blank.<br/>
 
@@ -177,7 +177,7 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	Select the **Global administrator** check box.
 
-12. Select the **Show all by category** option that appears after the list of the most commonly used roles. This display the complete list of administrator roles sorted by category. 
+12. Select the **Show all by category** option that appears after the list of the most commonly used roles. This displays the complete list of administrator roles sorted by category. 
 
 13. Scroll through the list of roles. In the **Global** category, the **Global Administrator** role should be selected (if you didn't select it in the prior step, then select it now). Continue scrolling down to the **Security & Compliance** category, and then select the **Attack Simulation Administrator** and **Security Administrator** roles. <br/>
 
