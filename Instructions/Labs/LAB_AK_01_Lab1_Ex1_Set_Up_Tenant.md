@@ -21,7 +21,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
 
 1. When you open your lab hosting provider's Virtual Machine environment, you need to begin with the Client 1 VM (LON-CL1). If your VM environment opens with one of the other machines, then switch to the LON-CL1 VM now.
 
-2. On **LON-CL1**, you must select **Ctrl+Alt+Delete** to log in (your instructor will guide you on how to find this option in your VM environment). Log into LON-CL1 as the **Admin** (or Administrator) account with the password **Pa55w.rd**. 
+2. On **LON-CL1**, you must select **Ctrl+Alt+Delete** to log in (your instructor will guide you on how to find this option in your VM environment). Log into LON-CL1 as the **Admin** (or Administrator) account with the password **User.pw1**. 
 
 3. If you receive a **Networks** warning message asking if you want this PC to be discoverable by other PCs and devices on this network, select **Yes**.
 
@@ -155,11 +155,11 @@ Holly Dickson is Adatum’s Enterprise Administrator. Since a Microsoft 365 user
 
 	- In the new **Password** field that appears, enter **Pa55w.rd** in the **Password** field. Passwords must include at least one upper case character, lower case character, number, and special character. 
 
-	- Clear (uncheck) the **Require this user to change their password when they first sign in** check box. Note what happens when you clear this check box - you receive an error message indicating **This password contains a word, phrase, or series of numbers that makes it easily guessable**. During user setup, the system looks for specific characteristics to determine acceptable and non-acceptable user-defined passwords. Various forms of the word **Password** are deemed unacceptable and generate this error. So while **Pa55w.rd** meets all the password requirements (it include at least one upper case character, lower case character, number, and special character), it is still unacceptable because it's deemed too easy to guess (as a form of the word **password**). <br/>
+	- Clear (uncheck) the **Require this user to change their password when they first sign in** check box. <br/>
 
-	As a result, enter **MS101.pw** in the **Password** field, and ensure the **Require this user to change their password when they first sign in** check box is blank.<br/>
+	**Important:** Note what happens when you clear this check box. You receive an error message indicating **This password contains a word, phrase, or series of numbers that makes it easily guessable**. During user setup, the system looks for specific characteristics to determine acceptable and non-acceptable user-defined passwords. Various forms of the word **Password** are deemed unacceptable and generate this error. So while **Pa55w.rd** meets all the password requirements (it include at least one upper case character, lower case character, number, and special character), it is still unacceptable because it's deemed too easy to guess. Other variataions of common passwords that people often use will generate the same error.  <br/>
 
-	Once Holly's account is saved, you will then change her password to **Password**. You'll do so by changing it at her first log-in. That process will accept **Pa55w.rd**. Therefore, select the **Require this user to change their password when they first sign in** check box, which will force Holly to change her password the first time she logs in.
+	As a result, enter **User.pw1** in the **Password** field, and ensure the **Require this user to change their password when they first sign in** check box is blank.<br/>
 
 7. Select **Next**. If a **Save password** window appears at the top of the page, select **Never**.
 
@@ -229,7 +229,9 @@ After completing the previous task, you should still be signed into the **Micros
 
 In the prior task, you noticed that your Microsoft 365 trial tenant came equipped with a list of active users. As Holly Dickson, Adatum's Enterprise Admin, you have selected the following users to help with your pilot project: Alex Wilber, Joni Sherman, Lynne Robbins, and Patti Fernandez. 
 
-Each user is a key member of your pilot project team. While their user accounts are already present in Microsoft 365, you need to configure their passwords so that they can more easily sign into Microsoft 365 when needed in the upcoming lab exercises. You will assign **Pa55w.rd** as their user password, just as you will do with Holly when you sign in. You also need to add a Microsoft 365 group that will be used in a later lab exercise.
+Each user is a key member of your pilot project team. While their user accounts are already present in Microsoft 365, you need to configure their passwords so that they can more easily sign into Microsoft 365 when needed in the upcoming lab exercises. You will assign **User.pw1** as their user password, just as you did when you created Holly's account. You also need to add a Microsoft 365 group that will be used in a later lab exercise. 
+
+**Note:** Using the same password for multiple users should obviously never be done in the real-world. However, we're doing it here in our training environment to simply make things easier for students as they progress through the labs.
 
 1. On the LON-CL1 VM, the **Microsoft 365 admin center** should still be open in your Microsoft Edge browser from the prior task, and you should be signed into Microsoft 365 as the **MOD Administrator**. <br/>
 
@@ -253,17 +255,17 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 9. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Users**, and then under it, select **Active users**.
 
-10. In the **Active Users** window, when you hover your mouse over a user's **Display name** (or you select the check mark field to the left of the **Display name**), a **key icon** appears to the right of the user's name. By selecting the key icon, you can reset a user's password. You need to reset Alex, Joni, Lynne, and Patti's passwords to **Pa55w.rd**.<br/>
+10. In the **Active Users** window, when you hover your mouse over a user's **Display name** (or you select the check mark field to the left of the **Display name**), a **key icon** appears to the right of the user's name. By selecting the key icon, you can reset a user's password. You need to reset Alex, Joni, Lynne, and Patti's passwords to **User.pw1**.<br/>
 
     Select the key icon for **Alex Wilber**.
 
-11. In the **Reset password** pane for Alex, clear (uncheck) the **Automatically create password** check box, enter **Pa55w.rd** in the **Password** field that appears, and then select and copy this value so that you can paste it in for Joni, Lynne, and Patti's accounts. Clear (unselect) the **Require this user to change their password when they first sign in** check box.
+11. In the **Reset password** pane for Alex, clear (uncheck) the **Automatically create password** check box, enter **User.pw1** in the **Password** field that appears, and then select and copy this value so that you can paste it in for Joni, Lynne, and Patti's accounts. Clear (unselect) the **Require this user to change their password when they first sign in** check box.
 
 12. Select **Reset Password** and then select **Close** on the **Password has been reset** pane.
 
 13. If the check box to the left of **Alex Wilber** is selected, select the check box to clear it.
 
-14. Repeat steps 10-13 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, paste in the **Pa55w.rd** password that you copied for Alex. 
+14. Repeat steps 10-13 for **Joni Sherman**, **Lynne Robbins**, and **Patti Fernandez**. For these three accounts, paste in the **User.pw1** password that you copied for Alex. 
 
 15. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Teams & groups**, and then under it, select **Active teams & groups**.
 
