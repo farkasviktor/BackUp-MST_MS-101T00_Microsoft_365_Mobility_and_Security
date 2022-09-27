@@ -8,7 +8,7 @@ In the previous exercise, you created a custom DLP policy that searches emails f
 
 In this task, you will send an email from Holly Dickson to Lynne Robbins that tests the first rule (single IP address). When this rule is triggered, an email policy tip is displayed in the sender's Outlook mailbox that informs the sender the email contains sensitive data. The sender will also receive an email notification, but the email will still be sent to the recipient.
 
-1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into LON-CL1 as the local **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. You will now send an email from Holly to Lynne Robbins, and you will include an IP address in the body of the email. <br/>
 
@@ -30,25 +30,25 @@ In this task, you will send an email from Holly Dickson to Lynne Robbins that te
 
 5. Once the policy tip is displayed, select **Send.**
 
-4. Select Holly's **Sent Items** folder to verify the email was sent.
+6. Select Holly's **Sent Items** folder to verify the email was sent.
 
-6. Select Holly's **Inbox** folder. Holly should receive an email from **Microsoft Outlook** with the subject: **Notification: DLP Policy Test 1**. Select this email and review its content. 
+7. Select Holly's **Inbox** folder. Holly should receive an email from **Microsoft Outlook** with the subject: **Notification: DLP Policy Test 1**. Select this email and review its content. 
 
-7. Switch to **LON-CL2**. 
+8. Switch to **LON-CL2**. 
 
-8. If you need to sign into the VM, the **Admin** account should appear by default, so enter **Pa55w.rd** in the **Password** field to log in. 
+9. If you need to sign into the VM, the local **Admin** account should appear by default, so enter **Pa55w.rd** in the **Password** field to log in. 
 
-9. On the taskbar, select the icon for the **Edge** browser.
+10. On the taskbar, select the icon for the **Edge** browser.
 
-10. In the Edge browser, enter the following URL: **https://outlook.office365.com**
+11. In the Edge browser, enter the following URL: **https://outlook.office365.com**
 
-11. In the **Pick an account** window, select Lynne Robbins' account (**LynneR@xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter **Pa55w.rd** and then select **Sign in**. On the **Stay signed in** window, select the **Don't show this again** check box and select **Yes**.
+12. In the **Pick an account** window, select Lynne Robbins' account (**LynneR@xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter **User.pw1** and then select **Sign in**. On the **Stay signed in** window, select the **Don't show this again** check box and select **Yes**.
 
-12. In Lynne's Inbox, verify that she received the email from Holly Dickson that has the subject line: **DLP Policy Test 1**. Select the message to verify the content containing the IP address was not removed. 
+13. In Lynne's Inbox, verify that she received the email from Holly Dickson that has the subject line: **DLP Policy Test 1**. Select the message to verify the content containing the IP address was not removed. 
 
-13. Leave the Outlook tab open in the Edge browser for the next task.
+14. Leave the Outlook tab open in the Edge browser for the next task.
 
-14. Switch back to **LON-CL1**.
+15. Switch back to **LON-CL1**.
 
 	
 ### Task 2 – Test the second DLP Policy rule
@@ -57,7 +57,7 @@ In the previous exercise, you created a custom DLP policy that searches emails f
 	
 In this task, you will send an email from Holly Dickson to Lynne Robbins that tests the second rule (multiple IP addresses). When this rule is triggered, an email policy tip is displayed in the sender's Outlook mailbox that informs the sender the email contains sensitive data. The email will be blocked, but the sender can override the blocked email and allow it to be sent.  
 
-1. You should still be logged into LON-CL1 as the **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into LON-CL1 as the local **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
 	
 2. You will now send a second message from Holly to Lynne that contains multiple IP addresses. Repeat the process as before for creating an email to Lynne Robbins with the following information: 
 
