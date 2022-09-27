@@ -289,32 +289,36 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 23. Once the group is created, select the **Close** button in the **Sales group group created** window.
 
-24. This will return you to the **Active teams & groups** window. You may need to select the **Refresh** option on the menu bar for the **Sales Group** to appear in the list of groups. In fact, you may have to wait a few minutes for the Sales Group to appear, so you may need to select the **Refresh** option on the menu bar once or twice.
+24. This will return you to the **Active teams & groups** window. It may take a few minutes for the Sales Group to appear, so you may need to select the **Refresh** option on the menu bar once or twice. Note that there are four tabs on this page, one for each group type (Microsoft 365, Distribution list, Mail-enabled security, and Security). The **Microsoft 365** tab is displayed by default, which is the group type assigned to the Sales Group. So the Sales Group should be displayed in this tab.
 
-25. Once the **Sales Group** appears in the list of groups, select the **Sales Group** name.
+25. Once the **Sales Group** appears in the list of **Microsoft 365** groups, select the **Sales Group** name.
 
 26. In the **Sales Group** pane that appears, the **General** tab is displayed by default. Select the **Members** tab.
 
 	**Note:** While you could have added members to this group at the time you created it, you will instead add members after the group has been created. This will give you experience in how to add members to an existing group. 
 
-27. In the **Members** tab, under the **Owners** section, Joni Sherman should appear as the only group owner. Under the **Add some members to this team** section, select **Add members**.
+27. In the **Members** tab, three sub-tabs (Owners, Members, and Site visitors) are displayed in the left-hand column. The **Owners** sub-tab is displayed by default. In the **Owners** sub-tab, Joni Sherman should appear as the only group owner. Select the **Members** sub-tab.
 
-28. In the **Add members to Sales group** pane, in the list of users that appears, select **Alex Wilber, Joni Sherman**, and **Lynne Robbins**, and then select the **ADD(3)** button.
+28. In the **Members** sub-tab, select the **Add members** button. 
 
-29. Once the three new members have been saved in the group, select the **X** in the upper right-hand corner of the **Sales group** pane to close it.  <br/>
+29. In the **Add members to Sales group** pane, select in the **Search by name or email address** field. This displays the list of active users. <br/>
+
+	In the list of users, select **Alex Wilber**. Note that you have to select back into the field to display the list of users. Select **Joni Sherman**, select back in the field, and then select **Lynne Robbins**. Once all three users are selected, select the **ADD(3)** button at the bottom of the pane.
+
+30. Once the three new members have been saved in the group, select the **X** in the upper right-hand corner of the **Sales group** pane to close it.  <br/>
 
 	**Note:** You will not add Patti Fernandez to this group. Patti's key role in the pilot project is to test the Privileged Identity Management functionality in the next lab exercise. 
 
-30. Leave the **Microsoft 365 admin center** tab open in your browser and proceed to the next task.
+31. Leave the **Microsoft 365 admin center** tab open in your browser and proceed to the next task.
 
 
 ### ‎Task 6 - Enable IRM for SharePoint Online 
 
 In this task, you will turn on Information Rights Management (IRM) for SharePoint Online. 
 
-**Note:** While you will validate IRM for Exchange and SharePoint in Lab 4, you must enable IRM for SharePoint Online now because it can take up to 60 minutes or more for IRM to show up in SharePoint Online. By the time you get to the validation exercise in Lab 4, IRM should have finished its internal configuration and you won’t have to wait for it to be present in SharePoint Online.
+**Important:** While you will validate IRM for Exchange and SharePoint in Lab 4, you must enable IRM for SharePoint Online now because it can take up to 60 minutes or more for IRM to show up in SharePoint Online. By the time you get to the validation exercise in Lab 4, IRM should have finished its internal configuration and you won’t have to wait for it to be present in SharePoint Online. Keep this time issue in mind if you plan to enable IRM in your real-world deployment.
 
-1. You should still be logged into LON-CL1 as the local **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. 
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **SharePoint**. This will open the SharePoint admin center in a new tab.
 
@@ -324,11 +328,11 @@ In this task, you will turn on Information Rights Management (IRM) for SharePoin
 
 5. At the bottom of the **Settings** page is a sentence that says **Can’t find the setting you’re looking for? Go to the classic settings page.** In this sentence, select the hyperlinked text: **classic settings page**.
 
-6. On the classic **Settings** page, scroll down to the **Information Rights Management (IRM)** section, select the **Use the IRM service specified in your configuration** option that appears to the right of it, and then select the **Refresh IRM Settings** button.
+6. On the classic **Settings** page, scroll down to the **Information Rights Management (IRM)** section. In the options to the right of this section, select the **Use the IRM service specified in your configuration** option, and then select the **Refresh IRM Settings** button.
 
 7. This will return you to the top of the **Settings** page. Scroll down to the **Information Rights Management (IRM)** section and verify the **Use the IRM service specified in your configuration** option is selected and a **We successfully refreshed your settings** message appears below the **Refresh IRM Settings** button. Continue scrolling to the bottom of the page and select the **OK** button. 
 
-8. This will return you to the top of the **Settings** page. In your browser, close the current tab (the **https://xxxxxZZZZZZ-admin.sharepoint.com** tab).
+8. This will return you to the top of the **Settings** page. In your browser, close the current tab that you're on (the **https://xxxxxZZZZZZ-admin.sharepoint.com** tab). This will return you to the **Settings** page in the **SharePoint admin center**.
 
 9. Do **NOT** close the **SharePoint admin center** tab in your Edge browser. Leave this tab and your browser open for the next task.
 
@@ -339,51 +343,51 @@ In Lab 3, you will create Alert Policies using the Microsoft 365 Defender portal
 
 **Important:** If you see an error message that says "Fail to opt in, please refresh", Audit Logging is being enabled in the background and the message can safely be ignored.
 
-1. You should still be logged into LON-CL1 as the local **Admin** account, and you should be logged into Microsoft 365 as **Holly Dickson**. <br/>
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-	Select the **Microsoft 365 admin center** tab in your Edge browser. 
+2. Select the **Microsoft 365 admin center** tab in your Edge browser. 
 
-2. In the **Microsoft 365 admin center**, select **Show all** (if necessary) in the left-hand navigation pane to see all the navigation options. Under **Admin centers,** select **Security**. This will open the **Microsoft 365 Defender** portal.
+3. In the **Microsoft 365 admin center**, under the **Admin centers** section, select **Security**. This will open the **Microsoft 365 Defender** portal.
 
-3. In **Microsoft 365 Defender**, in the left-hand navigation pane, scroll down and select **Audit**.
+4. In the **Microsoft 365 Defender** portal, scroll down towards the bottom of the left-hand navigation pane and select **Audit**.
 
-4. In the **Audit** window, a banner is displayed that says: **Start recording user and admin activity** if auditing is not turned on for your organization. This banner is your prompt to turn on audit logging. <br/>
+5. In the **Audit** window, wait a minute or so to see if a banner appears towards the top of the page that says: **Start recording user and admin activity**. If this banner appears, then auditing is not turned on for your organization. This banner is your prompt to turn on audit logging. <br/>
 
 	Select this banner now to turn on audit logging. 
 
-5. The system will display the **Audit** window, which enables you to search through audited activities. You are not at a point yet of having any audited activities to search through. Now that you've turned on audit logging, any time you return to this **Audit** page in the **Microsoft 365 Defender** portal, this **Audit** page will appear. 
+6. In the **Audit** window, the banner will disappear once audit logging is turned on. In a later lab, you will return to this page to view audited activities that you completed during your lab work.  
  
-6. Leave the Client 1 VM and all the tabs in your Edge browser open and proceed to the next lab. 
+7. Leave the Client 1 VM and all the tabs in your Edge browser open and proceed to the next lab. 
 
 
 ### Task 8 – Prepare Users for Content Searches
 
-In Module 8, you will perform a Content Search lab that requires that Joni Sherman and Holly Dickson be members of the eDiscovery Manager role. In this exercise, you will add Joni and Holly to this role. The reason you are doing this now is that it can sometimes take up to an hour or more for newly assigned permissions to successfully propagate through the system. If you waited and assigned Holly and Joni to this role group at the time you performed the Content Search lab in Module 8, you would receive error messages involving parameter fields because their permissions would not have finished propagating. By adding them to this role group now, enough time will elapse for the propagation to complete by the time you get to the Module 8 lab. 
+In Module 8, you will perform a Content Search lab that requires that Joni Sherman and Holly Dickson be members of the eDiscovery Manager role. In this exercise, you will add Joni and Holly to this role. The reason you are doing this now is that it can sometimes take up to an hour or more for newly assigned permissions to successfully propagate through the system. If you waited and assigned Holly and Joni to this role group at the time you performed the Content Search lab in Module 8, you would receive error messages involving parameter fields because their permissions would not have finished propagating. By adding them to this role group now, enough time will elapse for the propagation to complete by the time you get to the Module 8 lab. Keep this time issue in mind when you assign roles for content search in your real-world deployment.
 
 1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In your **Microsoft Edge** browser, you should still have **Microsoft 365 Defender** open in a tab from the prior task. If you closed that tab, then in the **Microsoft 365 admin center**, under the **Admin centers** group, select **Security**.
+2. In your **Microsoft Edge** browser, you should still have the **Microsoft 365 Defender** portal open from the prior task. Scroll towards the bottom of the left-hand navigation pane and select **Permissions**.
 
-3. In **Microsoft 365 Defender**, scroll towards the bottom of the left-hand navigation pane and select **Permissions**.
+3. In the **Permissions** page, under the **Email & collaboration roles (1)** section, select **Roles**.
 
-4. In the **Permissions** page, under the **Email & collaboration roles (1)** section, select **Roles**.
+4. On the **Permissions > Permissions** page, you want to select the **eDiscovery Manager** role group. <br/>
 
-5. On the **Permissions > Permissions** page, you want to select the **eDiscovery Manager** role. <br/>
+	**HINT:** To quickly locate a specific role, you can enter the first few characters of the role name in the **Search** field on the menu bar and then select the **Search** icon. For example, let's assume you were looking for the **Mailflow administrator** role. You could enter **mail** in the **Search** field on the menu bar and then select the **Search** icon. This would display the roles starting with **mail**. While the eDiscovery Manager role appears at the top of the list, this technique is good to know if you want a quick way to locate a specific role without having to scroll through the entire list. <br/>
 
-	**HINT:** To quickly locate a specific role, you can enter the first few characters of the role name in the **Search** field on the menu bar and then select the **Search** icon. For example, let's assume you were looking for the **Mailflow administrator** role. You could enter **mail** in the **Search** field on the menu bar and then select the **Search** icon. This would display the roles starting with **mail**. While the eDiscovery Manager role appears at the top of the list, this technique is good to know if you want a quick way to locate a specific role without having to scroll through the entire list.
+	Select the **eDiscovery Manager** role group.
 
-6. In the **eDiscovery Manager** pane that appears, scroll down to the **eDiscovery Manager** section and select **Edit**.
+5. In the **eDiscovery Manager** pane that appears, note the list of roles assigned to this role group. Scroll down to the **eDiscovery Manager** section and select **Edit**.
 
-7. The **Editing Choose eDiscovery Manager** wizard opens. The list of users who are assigned this role should be empty. Select **Choose eDiscovery Manager**.
+6. The **Editing Choose eDiscovery Manager** wizard opens. The list of users who are assigned this role should be empty. Select **Choose eDiscovery Manager**.
 
-8. In the **Choose eDiscovery Manager** pane, select the **+Add** button.
+7. In the **Choose eDiscovery Manager** pane, select the **+Add** button.
 
-9. In the list of users that’s displayed, select **Joni Sherman** and **Holly Dickson**, select **Add**, and then select **Done**. 
+8. In the list of users that’s displayed, select **Holly Dickson** and **Joni Sherman**, select **Add**, and then select **Done**. 
 
-10. In the **Editing Choose eDiscovery Manager** pane, select **Save**.
+9. In the **Editing Choose eDiscovery Manager** pane, select **Save**.
 
-11. In the **eDiscovery Manager** pane, select **Close**.
+10. In the **eDiscovery Manager** pane, select **Close**.
 
-12. Leave your browser open and do not close any of the tabs.
+11. Leave your browser open and do not close any of the tabs.
 
 # Proceed to Lab 1 - Exercise 2.
