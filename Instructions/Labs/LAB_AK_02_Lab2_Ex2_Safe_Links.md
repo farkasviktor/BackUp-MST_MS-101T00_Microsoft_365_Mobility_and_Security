@@ -84,7 +84,7 @@ In this task, you will test the Safe Links Policy that you just created that blo
 
     To do this, you must first switch the Client 2 VM (**LON-CL2**). 
 
-13. Log into the LON-CL2 VM as the **Admin** account by entering **Pa55w.rd** in the **Password** field.
+13. Log into the LON-CL2 VM as the **Admin** account by entering **User.pw1** in the **Password** field.
 
 14. Select the **Microsoft Edge** icon in the taskbar, maximize the window and then enter the following URL in the address bar: **https://outlook.office365.com**
 
