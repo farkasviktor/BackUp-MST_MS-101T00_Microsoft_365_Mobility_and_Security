@@ -290,31 +290,38 @@ When enrolling devices to Microsoft Intune, you have the option to Allow or Bloc
 
 1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In your Edge browser, you should have a tab open for the **Microsoft Endpoint Manager admin center** that's displaying the **Intune App Protection | Properties** window. In the left-hand navigation pane, select **Devices**. <br/>
+2. In your Edge browser, you should have a tab open for the **Microsoft Endpoint Manager admin center** that's displaying the **Intune App Protection | Properties** window. <br/>
+
+    In the left-hand navigation pane, select **Devices**.
 
 3. In the **Devices| Overview** window, the **Device enrollment** section appears in the middle of the page's navigation pane. Under this section, select **Enroll devices.**
 
-4. In the **Enroll devices | Windows enrollment** window, in the navigation pane for this page, select **Enrollment device platform restrictions**.
+4. On the **Enroll devices | Windows enrollment** window, in the middle pane, select **Enrollment device platform restrictions**.
 
-5. In the **Enroll devices | Enrollment restrictions** window, in the **Device type restrictions** section, on the **Default** restriction type, select **All users**.
+5. In the **Enroll devices | Enrollment restrictions** window, in the **Device type restrictions** section, on the **Default** restriction, select **All users**.
 
-6. In the **All Users** window, the **Manage** section appears towards the top of the page's navigation pane. Under this section,  select **Properties.**
+6. In the **All Users** window, in the middle pane under the **Manage** section, select **Properties.**
 
 7. In the **All Users | Properties** window, select **Edit** that appears next to **Platform settings**.
 
 8. In the **Edit restriction** window, under the **Platform** column, select **Block** for the **iOS/iPadOS** and **macOS** types, select the **Review + save** button at the bottom of the screen, and then review your changes. Both platform settings should display **Block (edited)** under the **Platform** column. All other device types should be allowed. Select **Save.**
 
-9. In the navigation thread at the top of the page (**Home > Devices > Enroll devices > All users**), select **Enroll devices**. 
+9. In the **Microsoft Endpoint Manager admin center** navigation pane on the left, select **Devices**.
 
-10. In the **Enroll devices | Enrollment device limit restrictions** window, in the **Device limit restrictions** section, on the **Default** row, select **All users**.
+10. On the **Devices | Overview** window, the **Device enrollment** section appears in the middle of the page's navigation pane. Under this section, select **Enroll devices.**
 
-11. In the **All Users** window, in the middle pane under the **Manage** section, select **Properties.**
+11. On the **Enroll devices | Windows enrollment** window, in the middle pane, select **Enrollment device platform restrictions**.
 
-12. In the **All Users | Properties** window, select **Edit** that appears next to **Device limit**.
+12. In the **Enroll devices | Enrollment device limit restrictions** window, in the **Enrollment device limit restrictions** section, on the **Default** row, select **All users**.
 
-13. In the **Edit restriction** window, select the **Device limit** field, in the drop-down menu select **3**, and then select **Review + save.** Review your change and then select **Save.**
+13. In the **All Users** window, in the middle pane under the **Manage** section, select **Properties.**
 
-14. Leave all browser tabs open for the next task.
+14. In the **All Users | Properties** window, check the value of the device limit. You had previously updated the device limit in an earlier lab. It was originally set to 5 by default, and the prior lab suggested changing it to 3. <br/>
+
+    - If the device limit is set to 3, then proceed to the next step.
+    - If the device limit is not set to 3, then select **Edit** that appears next to **Device limit**. In the **Edit restriction** window, select the **Device limit** field, in the drop-down menu select **3**, select **Review + save**, and then select **Save.**
+
+15. Leave all browser tabs open for the next task.
 
 
 ### Task 7: Review device configuration profiles
@@ -325,11 +332,11 @@ The purpose of this task is to simply review the different platforms that are av
 
 2. In your **Edge** browser, you should have a tab open for the **Microsoft Endpoint Manager admin center** that's displaying the **All Users | Properties** window. In the left-hand navigation pane, select **Devices**.
 
-4. On the **Devices | Overview** window, the **Policy** section appears in the middle of the page's navigation pane. Under this section, select **Configuration profiles**.
+4. On the **Devices | Overview** window, in the middle pane under the **Policy** section, select **Configuration profiles**.
 
 5. On the **Devices |Configuration profiles** page, select **+Create profile** that appears on the menu bar above the list of profiles.
 
-6. On the **Create a profile** pane, select the **Platform** field to see the different platforms that are available. **Do not select any option.** The purpose of this task is to simply see what platforms are available that can be assigned to a new device profile, should you want to ever create one.
+6. On the **Create a profile** pane, select the **Platform** field to see the different platforms that are available in the drop-down menu. **Do not select any option.** The purpose of this task is to simply see what platforms are available that can be assigned to a new device profile, should you want to ever create one.
 
 7. Close the **Create a profile** pane.
 
