@@ -28,7 +28,7 @@ To test archiving and retention in your Adatum pilot project, you will create a 
 
 10. On the **Assign members** page, select **+Add members**. 
 
-11. In the **Add members** pane that appears, select **Joni Sherman** and **Lynne Robbins**, and then select **Add(2)**.
+11. In the **Add members** pane that appears, select the check boxes for **Joni Sherman** and **Lynne Robbins**, and then select **Add(2)**.
 
 12. On the **Add members** page, select **Next**.
 
@@ -42,7 +42,7 @@ To test archiving and retention in your Adatum pilot project, you will create a 
 
 15. Once the group is created, the **Compliance Test Users group created** window appears. Note the message at the top of the page that indicates it can take up to an hour for the group to appear in the Active teams & groups list. Lab testing has shown that the group normally appears within a few minutes. Select **Close**.
 
-16. This will return you to the **Active teams & groups** list in the **Microsoft 365 admin center**. By default, the **Microsoft 365** tab is displayed. Since you created a mail-enabled security group, select the **Mail-enabled security** tab to display this type of group. If the **Compliance Test Users** groupdoes not appear in the list of mail-anabled security groups, select the **Refresh** icon on the menu bar to refresh the list of groups. <br/>
+16. This will return you to the **Active teams & groups** page. Remember, the tabs on this page reflect the four types of groups. By default, the **Microsoft 365** tab is displayed, which displays Microsoft 365 groups. Since you created a mail-enabled security group, select the **Mail-enabled security** tab to display this type of group. If the **Compliance Test Users** group does not appear in the list of mail-anabled security groups, select the **Refresh** icon on the menu bar to refresh the list of groups. <br/>
 
 	**Important:** You cannot proceed until the Compliance Test Users group appears in the list; therefore, keep refreshing the list every few minutes until it appears.
 
@@ -51,11 +51,11 @@ To test archiving and retention in your Adatum pilot project, you will create a 
 
 ### Task 2 – Configure Mobile Device Management for compliance testing
 
-In this task you will activate MDM auto-enrollment for new devices in your Adatum Corporation tenant. The devices will belong to members of the Compliance Test Users group that you created in Azure AD in the prior task. You will also verify that Intune is set by default as your mobile device management (MDM) authority. 
+In this task you will activate MDM auto-enrollment for new devices in your Adatum Corporation tenant. The devices will belong to members of the Compliance Test Users group that you created in the prior task. You will also verify that Intune is set by default as your mobile device management (MDM) authority. 
 
 1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
-2. In the **Microsoft 365 admin center** tab in your browser, in the left-hand navigation pane, select **Show all** (if necessary), and then in the **Admin centers** section, select **Azure Active Directory**.
+2. In the **Microsoft 365 admin center**, in the left-hand navigation pane, select **Show all** (if necessary), and then in the **Admin centers** section, select **Azure Active Directory**.
 
 3. In the **Azure Active Directory admin center**, select **Azure Active Directory** in the left-hand navigation pane.
 
@@ -63,7 +63,7 @@ In this task you will activate MDM auto-enrollment for new devices in your Adatu
 
 5. In the right-hand pane, select **Microsoft Intune**.
 
-6. This returns the **Configure** window, from which you can configure MDM and MAM settings for Microsoft Intune. For the **MDM User scope** option, select **Some.** This will display a **Groups** option below the **MDM user scope** option. 
+6. This returns the **Configure** window, from which you can configure MDM and MAM settings for Microsoft Intune. For the **MDM User scope** option, select **Some.** This will display a **Groups** option below the **MDM user scope** option. This feature enables you to automatically enroll into Intune the devices that belong to users who are members of groups selected here.
 
 7. To the right of the **Groups** option, select **No groups selected**. 
 
@@ -73,7 +73,7 @@ In this task you will activate MDM auto-enrollment for new devices in your Adatu
 	
 9. This returns the **Configure** window. In the middle pane, select **Restore default MDM URLs** to ensure the correct URLs are set. 
 
-10. Select **Save** on the menu bar at the top of the page.
+10. Select **Save** on the menu bar at the top of the page. Wait for the settings to be saved before proceeding to the next step.
 
 11. Select the **Microsoft 365 admin center** tab in your Edge browser. In the left-hand navigation pane, under the **Admin centers** section, select **Endpoint Manager**.
 
