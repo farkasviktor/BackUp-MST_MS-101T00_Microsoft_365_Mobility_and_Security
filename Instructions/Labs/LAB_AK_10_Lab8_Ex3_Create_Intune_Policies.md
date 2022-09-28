@@ -148,13 +148,13 @@ In this task, you will create an app protection policy that protects an entire c
 
 12. Select **OK** to close the **Add apps** pane, and then select **Next**.
 
-13. On the step **3 - Required settings** page, in the **Windows Information Protection mode** setting, select **Block**, and then select **Next**. <br/>
+13. On the **3 - Required settings** tab, in the **Windows Information Protection mode** setting, select **Block**, and then select **Next**. <br/>
 
-    **Note:** By choosing the **Block** setting, WIP will look for inappropriate data sharing practices and stop the user from completing the action. Blocked actions can include sharing information across non-corporate-protected apps and sharing corporate data between other people and devices outside the organization. Holly has decided to select this option given her concern over the Microsoft Power BI app, which can produce reports and queries of company trends that may be confidential.
+    **Note:** By choosing the **Block** setting, the policy will look for inappropriate data sharing practices and stop the user from completing the action. Blocked actions can include sharing information across non-corporate-protected apps and sharing corporate data between other people and devices outside the organization. Holly has decided to select this option given her concern over the Microsoft Power BI app, which can produce reports and queries of company trends that may be confidential.
 
-14. On the step **4 - Advanced settings** page, scroll down to the **Data protection** section. You will upload the DRA certificate that you created in the prior task, which will allow recovery of encrypted data. <br/>
+14. On the **4 - Advanced settings** tab, scroll down to the **Data protection** section. You will upload the DRA certificate that you created in the prior task, which will allow recovery of encrypted data. <br/>
 
-    To the right of the **Select a file** field, select the **file** icon. In the **File Explorer** window that appears, expand **Local Disk (C:)**, expand **Users**, and then select the **Admin** folder. Scroll down through the files in the **Admin** folder, select **DRAcert.CER**, and then select **Open**.<br/>
+    To the right of the **Select a file** field, select the **file** icon. In the **File Explorer** window that appears, expand **This PC**, expand **Local Disk (C:)**, expand **Users**, and then select the **Admin** folder. Scroll down through the files in the **Admin** folder, select **DRAcert.CER**, and then select **Open**.<br/>
 
     **Note:** DRAcert.CER should now appear in the certificate field in the **Data protection** section. The DRAcert certificate has now been uploaded to the App Protection policy titled **Win10Policy**. This certificate is now available for use in unencrypting protected files. <br/>
 
