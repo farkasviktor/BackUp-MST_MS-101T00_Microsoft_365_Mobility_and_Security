@@ -68,7 +68,7 @@ Given the problems caused at Adatum by devices that are running old versions of 
 
 9. Select **Next**.
 
-11. On the **3 - Actions for noncompliance** tab, you can create a list of actions that you want taken when a device becomes noncompliant. One default action is already defined (**Mark device noncompliant**); this action cannot be changed or deleted. This action is scheduled to be performed **Immediately** (which means, on the day the device becomes noncompliant, which is 0 days after noncompliance). <br/>
+10. On the **3 - Actions for noncompliance** tab, you can create a list of actions that you want taken when a device becomes noncompliant. One default action is already defined (**Mark device noncompliant**); this action cannot be changed or deleted. This action is scheduled to be performed **Immediately** (which means, on the day the device becomes noncompliant, which is 0 days after noncompliance). <br/>
 
     In addition to marking the device as noncompliant, Holly also wants to notify the end user with an email. Perform the following steps to create this action: <br/>
 
@@ -81,27 +81,27 @@ Given the problems caused at Adatum by devices that are running old versions of 
     
     **Note:** To the right of the **None selected** option is an ellipsis icon. If you select this icon, you can select the option to Delete this action if you decide you no longer want to include it in this policy. You want to send the email notification, so do not select this Delete option.
     
-12. Select **Next**.
+11. Select **Next**.
 
-13. On the **4 - Assignments** tab, you want to assign this policy to all the devices in the **Enrolled devices** group, which you created in the prior exercise. <br/>
+12. On the **4 - Assignments** tab, you want to assign this policy to all the devices in the **Enrolled devices** group, which you created in the prior exercise. <br/>
 
     Under the **Included groups** section, select **Add groups** on the menu bar. In the **Select groups to include** pane that appears, select **Enrolled devices** and then select the **Select** button at the bottom of the pane. Select **Next**.
 
-14. On the **5 - Review + create** tab, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
+13. On the **5 - Review + create** tab, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
 
-15. In your **Edge** browser, select the **Azure Active Directory admin center** tab. If you closed this tab at the end of the prior exercise, then in the **Microsoft 365 admin center**, in the left-hand pane under **Admin centers**, select **Azure Active Directory**.
+14. In your **Edge** browser, select the **Azure Active Directory admin center** tab. If you closed this tab at the end of the prior exercise, then in the **Microsoft 365 admin center**, in the left-hand pane under **Admin centers**, select **Azure Active Directory**.
 
-16. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory**.
+15. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory**.
 
-17. In the **Adatum Corporation | Overview** window, the **Manage** section appears in the middle of the page's navigation pane. Under this section, select **Mobility (MDM and MAM).**
+16. In the **Adatum Corporation | Overview** window, the **Manage** section appears in the middle of the page's navigation pane. Under this section, select **Mobility (MDM and MAM).**
 
-18. In the **Adatum Corporation | Mobility (MDM and MAM)** window, select **Microsoft Intune.**
+17. In the **Adatum Corporation | Mobility (MDM and MAM)** window, select **Microsoft Intune.**
 
-19. In the **Configure** window, there are two user scope settings. The **MDM user scope** setting should be set to **All** (from a previous lab task), but the **MAM user scope** setting should be set to **None** by default. <br/>
+18. In the **Configure** window, there are two user scope settings. The **MDM user scope** setting should be set to **All** (from a previous lab task), but the **MAM user scope** setting should be set to **None** by default. <br/>
 
-    Set the **MAM User scope** setting to **All**, then select **Save** in the menu bar at the top of the window. Once the setting is saved, select the **X** in the upper right corner to close the **Configure** window.
+    Set the **MAM User scope** setting to **All**, select the **Restore default MAM URLs** option, and then select **Save** in the menu bar at the top of the window. Once the setting is saved, select the **X** in the upper right corner to close the **Configure** window.
 
-20. Leave all browser tabs open for the next task.
+19. Leave all browser tabs open for the next task.
 
 
 ### Task 3: Create an App Protection Policy
@@ -116,29 +116,31 @@ In this task, you will create an app protection policy that protects an entire c
 
     In the left-hand navigation pane, select **Apps**.
     
-3. In the **Apps | Overview** window, in the left-hand pane under the **Policy** group, select **App Protection policies**.
+3. In the **Apps | Overview** window, in the left-hand pane under the **Policy** group, select **App protection policies**.
 
-4. In the **Apps | App protection policies** window, in the menu bar that appears above the list of policies, select **+Create policy.** In the drop-down menu that appears, select **Windows 10**.
+4. In the **Apps | App protection policies** window, in the menu bar that appears above the list of policies, select **+Create policy.** In the drop-down menu that appears, select **Windows Information Protection**.
 
-5. On the **Create policy** window, note the six steps that appear at the top of the page. You are currently in the step **1 - Basics** page. Enter the following information:
+5. On the **Create policy** window, note the six tabs that appear at the top of the page. You are currently in the **1 - Basics** tab. Enter the following information:
 
-    - Name: **Win10Policy**
-    - Description: **Windows Information Protection policy for Windows 10 computers**
-    - Enrollment state. **Without Enrollment**
+    - Name: **WindowsPolicy**
+    - Description: **Windows Information Protection policy for Windows 10 and 11 computers**
+    - Enrollment state. **Without Enrollment** <br/>
+
+    Note the warning message that appears at the bottom of the page indicating before Windows 10 and later policies can take effect, you must define the user scope and restore the MAM URLs in Azure Active Directory. You already did this at the end of the prior task. 
 
 6. Select **Next**.
 
-7. On the step **2 - Targeted apps** page, under the **Protected apps** group, select **+Add**. 
+7. On the **2 - Targeted apps** tab, under the **Protected apps** group, select **+Add**. 
 
 8. In the **Add apps** pane that appears on the right, select the drop-down arrow in the field that currently displays **Recommended apps**. The drop-down menu that appears displays the available app options that you can add to this policy - **Recommended apps, Store apps**, and **Desktop apps**. Since you're first going to add all the recommended apps, select **Recommended apps**. <br/>
 
     The quickest way to add all the recommended apps is to select the check box to the left of the **Name** column heading; this will select the check boxes for all the apps in the list. Select the **OK** button at the bottom of the window.
 
-9. This returns you to the step **2 - Targeted apps** page. Scroll down past all the recommended apps that you just added and then select **+Add** again.
+9. This returns you to the **2 - Targeted apps** tab. Scroll down past all the recommended apps that you just added in the **Protected apps** group and then select **+Add** again.
 
 10. In the **Add apps** pane, you're going to add **Microsoft Power BI**, which is an app from the Microsoft Store. Select the drop-down arrow in the field that currently displays **Recommended apps**, and in the menu that appears, select **Store apps**.
 
-11. In the **Add apps** window, enter the following information and then select **OK**:
+11. In the **Add apps** window, enter the following information in the first app row:
 
     - Name: **Microsoft Power BI**
     - Publisher: **CN=Microsoft Corporation, o=Microsoft Corporation, L=Redmond, S=Washington, C=US**
