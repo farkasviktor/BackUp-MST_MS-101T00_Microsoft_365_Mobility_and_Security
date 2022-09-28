@@ -20,13 +20,22 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send a
 
 6. On the **Compliance policies | Notifications** page, select **+Create notification** on the menu bar. 
 
-7. On the **Create notification** page, note the three steps that appear at the top of the page. You are currently on the step **1 - Basics** page. In the **Name** field, enter **Noncompliant OS version**. Leave all the other options set to their default settings and select **Next**.
+7. On the **Create notification** page, note the three tabs that appear at the top of the page. <br/>
 
-8. On the step **2 - Notification message templates** page, select your appropriate **locale**, and then enter **WARNING: Noncompliant device** in the **Subject** field. Then enter the message **Your Windows 10 or later device is not running a compliant version of the OS. The device has been marked as noncompliant and is now locked.**, select the check box for **IsDefault**. Select **Next**.
+    You are currently on the **1 - Basics** tab. In the **Name** field, enter **Noncompliant OS version**. Leave all the other options set to their default settings and select **Next**.
 
-9. On the step **3 - Review + create** page, review your template settings. If any need to be corrected, select **Previous** to return to the appropriate page and make the necessary edits. If everything looks correct, select **Create**.
+8. On the **2 - Notification message templates** tab, enter the following information: <br/>
 
-10. In your browser session, leave all the tabs open for the next task.
+    - Select the first **Select Locale** field and in the drop-down menu select your appropriate locale. 
+    - Enter **WARNING: Noncompliant device** in the **Subject** field. 
+    - Enter the following text in the **Message** field: **Your Windows 10 or later device is not running a compliant version of the OS. The device has been marked as noncompliant and is now locked.** 
+    - Select the check box for **IsDefault**. 
+
+9. Select **Next**.
+
+10. On the **3 - Review + create** tab, review your template settings. If any need to be corrected, select **Previous** to return to the appropriate tab and make the necessary edits. If everything looks correct, select **Create**.
+
+11. In your browser session, leave all the tabs open for the next task.
 
 
 ### Task 2: Create and apply a compliance policy
@@ -47,33 +56,38 @@ Given the problems caused at Adatum by devices that are running old versions of 
 
 6. On the **Create a policy** pane that appears, select the **Platform** field, and in the drop-down menu that appears, select **Windows 10 and later**. Select **Create**.
 
-7. On the **Windows 10 compliance policy** window, note the five steps that appear at the top of the page. You are currently on the step **1 - Basics** page. Enter **Compliance1** in the **Name** field and then select **Next**.
+7. On the **Windows 10 compliance policy** window, note the five tabs that appear at the top of the page. <br/>
 
-8. On the step **2 - Compliance settings** page, select **Device Health** to expand it. Review the available settings and then select **Device Health** again to collapse it. 
+    You are currently on the **1 - Basics** tab. Enter **Compliance1** in the **Name** field and then select **Next**.
 
-9. On the step **2 - Compliance settings** page, select **Device Properties** to expand it. In the **Minimum OS version** field, enter **10.0.17763.1192** and then note the check mark that appears on the right side of the field. Select **Device Properties** again to collapse the section. 
+8. On the **2 - Compliance settings** tab, enter the following information: <br/>
 
-10. On the step **2 - Compliance settings** page, expand the remaining sections and review them, and then when you are done, select **Next**.
+    - Select **Device Health** to expand it. Review the available settings and then select **Device Health** again to collapse it. 
+    - Select **Device Properties** to expand it. In the **Minimum OS version** field, enter **10.0.17763.1192** and then note the check mark that appears on the right side of the field. Select **Device Properties** again to collapse the section. 
+    - Expand each remaining section, review it, and then collapse the section.
 
-11. On the step **3 - Actions for noncompliance** page, you can create a list of actions that you want taken when a device becomes noncompliant. One default action is already defined (**Mark device noncompliant**); this action cannot be changed or deleted. This action is scheduled to be performed **Immediately** (which means, on the day the device becomes noncompliant, which is 0 days after noncompliance). <br/>
+9. Select **Next**.
 
-    In addition to marking the device as noncompliant, Holly also wants to notify the end user with an email. In the **Action** column, under the **Mark device compliant** action, select the action field. In the drop-down arrow that appears, select **Send email to end user**. <br/>
+11. On the **3 - Actions for noncompliance** tab, you can create a list of actions that you want taken when a device becomes noncompliant. One default action is already defined (**Mark device noncompliant**); this action cannot be changed or deleted. This action is scheduled to be performed **Immediately** (which means, on the day the device becomes noncompliant, which is 0 days after noncompliance). <br/>
 
-    Leave the **Schedule (days after noncompliance)** field set to 0. <br/>
+    In addition to marking the device as noncompliant, Holly also wants to notify the end user with an email. Perform the following steps to create this action: <br/>
+
+    - In the **Action** column, under the **Mark device compliant** action, select the action field. In the drop-down menu that appears, select **Send email to end user**. 
+    - Leave the **Schedule (days after noncompliance)** field set to 0. 
+    - Under the **Message template** column, select **None selected**. 
+    - In the **Notification message templates** pane that appears, note how the pane is split into two columns. In the column on the left, select **Noncompliant OS version** and then select the **Select** button. <br/>
     
-    Under the **Message template** column, select **None selected**. In the **Notification message templates** pane that appears, select **Noncompliant OS version** and then select the **Select** button. 
+    **Note:** You will not send the email to any additional recipients. If you select **None selected** under the **Additional recipients** column, you will have to select an Azure AD group to send the email to (you cannot select an individual user). Other than the end user who owns the device, Holly does not want to notify any other group, so you will not define any additional recipients. <br/>
     
-    **Note:** You will not send the email to any additional recipients. If you select **None selected** under the **Additional recipients** column, you will have to select an Azure AD group to send the email to (you cannot select an individual user). Other than the end user who owns the device, Holly does not want to notify any other group, so you will not define any additional recipients.
-    
-    **Note:** To the far right of the **Send email to end user** row is an ellipsis icon. If you select this icon, you can select the option to Delete this action if you decide you no longer want to include it in this policy. You want to send the email notification, so do not select this Delete option.
+    **Note:** To the right of the **None selected** option is an ellipsis icon. If you select this icon, you can select the option to Delete this action if you decide you no longer want to include it in this policy. You want to send the email notification, so do not select this Delete option.
     
 12. Select **Next**.
 
-13. On the step **4 - Assignments** page, you want to assign this policy to all the devices in the **Enrolled devices** group, which you created in the prior exercise. <br/>
+13. On the **4 - Assignments** tab, you want to assign this policy to all the devices in the **Enrolled devices** group, which you created in the prior exercise. <br/>
 
-    In the **Assignments** tab under the **Included groups** section, select **Add groups**. In the **Select groups to include** pane that appears, select **Enrolled devices** and then select the **Select** button at the bottom of the pane. Select **Next**.
+    Under the **Included groups** section, select **Add groups** on the menu bar. In the **Select groups to include** pane that appears, select **Enrolled devices** and then select the **Select** button at the bottom of the pane. Select **Next**.
 
-14. On the step **5 - Review + create** page, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
+14. On the **5 - Review + create** tab, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
 
 15. In your **Edge** browser, select the **Azure Active Directory admin center** tab. If you closed this tab at the end of the prior exercise, then in the **Microsoft 365 admin center**, in the left-hand pane under **Admin centers**, select **Azure Active Directory**.
 
@@ -83,18 +97,18 @@ Given the problems caused at Adatum by devices that are running old versions of 
 
 18. In the **Adatum Corporation | Mobility (MDM and MAM)** window, select **Microsoft Intune.**
 
-19. In the **Configure** window, in the **MAM User scope** setting, select **All**.
+19. In the **Configure** window, there are two user scope settings. The **MDM user scope** setting should be set to **All** (from a previous lab task), but the **MAM user scope** setting should be set to **None** by default. <br/>
 
-20. Select **Save** in the menu bar at the top of the window, and then select the **X** in the upper right corner to close the **Configure** window.
+    Set the **MAM User scope** setting to **All**, then select **Save** in the menu bar at the top of the window. Once the setting is saved, select the **X** in the upper right corner to close the **Configure** window.
 
-21. Leave all browser tabs open for the next task.
+20. Leave all browser tabs open for the next task.
 
 
 ### Task 3: Create an App Protection Policy
 
-In your role as Holly Dickson, Adatum's Enterprise Administrator, you are now going to create an app protection policy that will protect selected applications from intrusion. In other words, the apps will be protected so that they can only be accessed by individuals who are authorized to do so, such as Adatum employees and other users from your Microsoft 365 tenant. This enables you to use Windows Information Protection (WIP) policies with Windows 10 apps to protect apps without device enrollment.
+In your role as Holly Dickson, Adatum's Enterprise Administrator, you are now going to create an app protection policy that will protect selected applications from intrusion. In other words, the apps will be protected so they can only be accessed by individuals who are authorized to do so, such as Adatum employees and other users from your Microsoft 365 tenant. This enables you to use app protection policies with Windows 10 and later apps to protect the apps without device enrollment.
 
-In this task, you will create a WIP policy that protects an entire collection of recommended apps, as well as an app from the Microsoft Store, which in this case is **Microsoft Power BI**. Since this app produces reports and queries of company trends that may be confidential, Adatum wants to restrict access to it to selected individuals.
+In this task, you will create an app protection policy that protects an entire collection of recommended apps, as well as an app from the Microsoft Store, which in this case is **Microsoft Power BI**. Since this app produces reports and queries of company trends that may be confidential, Adatum wants to restrict access to it to selected individuals.
 
 1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
