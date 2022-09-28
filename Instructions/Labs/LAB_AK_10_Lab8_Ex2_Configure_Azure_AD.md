@@ -41,7 +41,7 @@ In this task, you will change the default settings for users to join their devic
 
 4. In the **Devices | All devices** window, in the details pane on the right, verify that **LON-CL2** is displayed in the list of devices. <br/>
 
-   **Note:** Back in Lab 4, you performed a task that configured Mobile Device Management (MDM) auto-enrollment; this was a prerequisite to performing a later Windows Information Protection lab. When you performed this MDM configuration lab, it automatically enrolled the devices belonging to members of the Compliance Test Users group. At the time, Joni Sherman was logged into Microsoft 365 on LON-CL2, and since she was a member of the Compliance Test Users group, LON-CL2 was automatically enrolled into Intune as its MDM authority. <br/>
+   **Note:** Back in Lab 4, you performed a task that configured Mobile Device Management (MDM) auto-enrollment. When you performed this MDM configuration lab, it automatically enrolled the devices belonging to members of the Compliance Test Users group. At the time, Joni Sherman was logged into Microsoft 365 on LON-CL2, and since she was a member of the Compliance Test Users group, LON-CL2 was automatically enrolled into Intune as its MDM authority. <br/>
 
 5. In the **Devices | All devices** window, in the middle pane, select **Device settings**.
 
@@ -99,7 +99,7 @@ In this task, Holly wants to create a new Security group for enrolled devices wi
 
 9. In the **New Group** window, select the **Create** button at the bottom of the window.
 
-10. In the **Groups | All groups** window, the **Enrolled Devices** group should now appear in the list of groups.
+10. In the **Groups | All groups** window, the **Enrolled Devices** group should now appear in the list of groups. If the group does not appear, select the **Refresh** option on the menu bar. 
 
 11. Leave all browser tabs open for the next task.
 
