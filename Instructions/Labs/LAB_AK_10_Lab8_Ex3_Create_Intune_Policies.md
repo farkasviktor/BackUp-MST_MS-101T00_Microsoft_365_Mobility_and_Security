@@ -122,9 +122,9 @@ In this task, you will create an app protection policy that protects an entire c
 
 5. On the **Create policy** window, note the six tabs that appear at the top of the page. You are currently in the **1 - Basics** tab. Enter the following information:
 
-    - Name: **WindowsPolicy**
+    - Name: **Windows10/11Policy**
     - Description: **Windows Information Protection policy for Windows 10 and 11 computers**
-    - Enrollment state. **Without Enrollment** <br/>
+    - Enrollment state: **Without Enrollment** <br/>
 
     Note the warning message that appears at the bottom of the page indicating before Windows 10 and later policies can take effect, you must define the user scope and restore the MAM URLs in Azure Active Directory. You already did this at the end of the prior task. 
 
@@ -152,29 +152,21 @@ In this task, you will create an app protection policy that protects an entire c
 
     **Note:** By choosing the **Block** setting, the policy will look for inappropriate data sharing practices and stop the user from completing the action. Blocked actions can include sharing information across non-corporate-protected apps and sharing corporate data between other people and devices outside the organization. Holly has decided to select this option given her concern over the Microsoft Power BI app, which can produce reports and queries of company trends that may be confidential.
 
-14. On the **4 - Advanced settings** tab, scroll down to the **Data protection** section. You will upload the DRA certificate that you created in the prior task, which will allow recovery of encrypted data. <br/>
+14. On the **4 - Advanced settings** tab, select **Next**.
 
-    To the right of the **Select a file** field, select the **file** icon. In the **File Explorer** window that appears, expand **This PC**, expand **Local Disk (C:)**, expand **Users**, and then select the **Admin** folder. Scroll down through the files in the **Admin** folder, select **DRAcert.CER**, and then select **Open**.<br/>
+15. On the **5 - Assignments** tab, under **Included groups**, select **Add groups**. Holly wants to limit this policy to the members of the **Compliance Test Users** group, which is the group of users selected to participate in compliance testing for Adatum's pilot project. <br/>
 
-    **Note:** DRAcert.CER should now appear in the certificate field in the **Data protection** section. The DRAcert certificate has now been uploaded to the App Protection policy titled **Win10Policy**. This certificate is now available for use in unencrypting protected files. <br/>
+    In the **Select groups to include** pane, select **Compliance Test Users**, and then select the **Select** button at the bottom of the pane.
 
-    **Important:** At this point in a real-world scenario, to maintain device integrity, you should copy your data recovery certificate to an offline location on a thumb drive or stored in a program for keys and passwords. You should also create a backup of this file and store it at another location. The certification is how you recover files using Intune. If the certificate is not saved, then you cannot recover the file using Windows Information Protection if the device ever becomes compromised. For this lab, you will not store the certificate to an offline device.
+16. Select **Next**.
 
-15. Select **Next**.
+17. On the **6 - Review + create** tab, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
 
-16. On the step **5 - Assignments** page, under **Included groups**, select **Add groups**. Holly wants to limit this policy to the members of the **WIP Users** group, which is the group of users selected to participate in compliance testing for Adatum's pilot project. <br/>
+18. On the **Apps | App protection policies** window, **Windows10/11Policy** should appear in the list of policies. However, note that its **Deployed** status is **No**. It only takes a few seconds for the policy to be deployed, so select **Refresh** on the menu bar and the **Deployed** status should change to **Yes**.
 
-    In the **Select groups to include** pane, select **WIP users**, and then select the **Select** button at the bottom of the pane.
+19. Leave all browser tabs open for the next task.
 
-17. Select **Next**.
-
-18. On the step **6 - Review + create** page, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
-
-19. On the **Apps | App protection policies** window, **Win10Policy** should appear in the list of policies. However, note that its **Deployed** status is **No**. It only takes a few seconds for the policy to be deployed, so select **Refresh** on the menu bar and the **Deployed** status should change to **Yes**.
-
-20. Leave all browser tabs open for the next task.
-
-You have just created a new App Protection Policy (APP), which is also referred to as a Windows Information Protection (WIP) policy.
+You have just created a new App Protection Policy.
 
 
 ### Task 4: Create a packaged App rule for the store apps
@@ -185,7 +177,7 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 
 2. In the Search field on the taskbar at the bottom of the screen, enter **SecPol** and in the menu that appears, select **Local Security Policy**.
 
-3. In the **Local Security Policy** window, in the left-hand pane, expand **Application Control Policies**, expand **Applocker**, and then select **Packaged app Rules**. In the menu bar at the top of the window, select **Action** and then in the drop-down menu that appears, select **Create New Rule.**
+3. Maximize the **Local Security Policy** window. In the left-hand pane, expand **Application Control Policies**, expand **Applocker**, and then select **Packaged app Rules**. In the menu bar at the top of the window, select **Action** and then in the drop-down menu that appears, select **Create New Rule.**
 
 4. This starts the **Create Packaged app Rules** wizard. On the **Before You Begin** page, select **Next.**
 
@@ -199,7 +191,7 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 
 8. On the **Publisher** page, select the **Create** button at the bottom of the page.
 
-9. If a dialog box appears asking whether you want to create default rules, select **No**. You must not create default rules for your WIP policy.
+9. If a dialog box appears asking whether you want to create default rules, select **No**. You must not create default rules for your packaged app rule.
 
 10. In the **Local Security Policy** window, in the left-hand pane, right-click on **AppLocker** and select **Export policy.**
 
@@ -217,7 +209,7 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 
 17. On the **Path** page, select the **Browse Folders....** button (do not confuse this with the **Browse Files** button).
 
-18. In the **Browse For Folder** window, select **Local Disk (C:)**, select **Program Files**, and then select **OK**. Select **Next**.
+18. In the **Browse For Folder** window, expand **Local Disk (C:)** (if necessary), select **Program Files**, and then select **OK**. Select **Next**.
 
 19. On the **Exceptions** page, you are not adding any exceptions, so select **Next**.
 
@@ -231,19 +223,21 @@ Packaged apps, also known as Universal Windows apps, are based on an app model t
 
 24. An **AppLocker** dialog box appears displaying a message that **2 rules were exported from the policy**. Select **OK.**
 
-25. In the **Executable Rules** folder right click on **exerule1**, then select **Delete**.
+25. In the **Local Security Policy** window, under **AppLocker**, expand the **Executable Rules** folder. 
 
-26. An **Applocker** warning window will appear asking if your are sure that you want to delete the selected rule. Select **Yes**.
+26. In the detail pane, right click on **exerule1**, then select **Delete** in the drop-down menu that appears.
 
-27. Under the **Applocker** section, select **Package app Rules**.
+27. An **Applocker** warning window will appear asking if your are sure that you want to delete the selected rule. Select **Yes**.
 
-28. In the **Package app Rules** window, right click on the **Microsoft.OneConnect** rule, then select **Delete**.
+28. Under the **Applocker** section, select **Package app Rules**.
 
-29. An **Applocker** warning window will appear asking if you are sure that you want to delete the selected rule. Select **Yes**.
+29. In the detail pane, right click on the **Microsoft.Office.OneNote** rule, then select **Delete**.
 
-30. Close the Local Security Policy window.
+30. An **Applocker** warning window will appear asking if you are sure that you want to delete the selected rule. Select **Yes**.
 
-31. After you've created your XML files, you will import one of them by using **Microsoft Intune**, which you will do in the next task. 
+31. Close the Local Security Policy window.
+
+32. After you've created your XML files, you will import one of them by using **Microsoft Intune**, which you will do in the next task. 
 
 
 ### Task 5: Import a list of protected apps using Endpoint Manager
@@ -254,13 +248,15 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 
 2. In your **Edge** browser, you should have the **Microsoft Endpoint Manager admin center** portal open in a tab titled **Apps - Microsoft Endpoint Manager admin center**. Select this tab.
 
-3. In the **Apps – App protection policies** window, it displays the list of app protection policies. In this list, select **Win10Policy**.
+3. In the **Apps | App protection policies** window, it displays the list of app protection policies. In this list, select **Win10/11Policy**.
 
 4. In the **Intune App Protection** window, in the middle pane under **Manage**, select **Properties**.
 
 5. In the **Intune App Protection | Properties** window, the detail pane displays the Intune App Protection properties by group (for example, Basics, Targeted apps, Required settings, and so on). Select **Edit** that appears next to the **Targeted apps** group.
 
-6. In the **Edit policy** window, scroll down past the list of Protected apps and then select **+Import**.
+6. In the **Edit policy** window, scroll down past the list of Protected apps and then select **+Import**. <br/>
+
+    **Caution:** Make sure you select the correct **+Import** option. Do not select the **+Import** option below the **Exempt apps** section.
 
 7. In the **Import apps** pane that appears, select the folder icon that appears to the right of the **Select a file** field.
 
@@ -270,7 +266,7 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 
 9. On the **Edit policy** window, select the **Review + save** button that appears at the bottom of the window, and then select **Save**.   
 
-10. You now want to create a file that you're going to encrypt using Windows Information Protection. In the search field on your taskbar, enter **Notepad**, and then in the menu, select **Notepad**.
+10. You now want to create a file that you're going to encrypt. In the search field on your taskbar, enter **Notepad**, and then in the menu, select **Notepad**.
 
 11. In the **Notepad** window, enter **This is a WIP encryption test** and then select **File**, select **Save as,** select the **Documents** folder, enter **apptest1** as the **File name**, and then select **Save.**
 
@@ -278,9 +274,13 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 
 13. In the search field on your taskbar, enter **cmd**, and then in the menu, right-click on **Command Prompt** and select **Run as administrator**.
 
-14. In the **Command Prompt** window, at the prompt, enter the following command to encrypt the apptest1.txt file (the /e parameter directs the cipher command to encrypt the file):<br/>
+14. If a **Do you want to allow this app to make changes to your device?** dialog box appears, select **Yes**.
 
-    **cipher /e   C:\Users\Admin\Documents\apptest1.txt**
+14. In the **Command Prompt** window, at the prompt, type the following command to encrypt the apptest1.txt file (the /e parameter directs the cipher command to encrypt the file) and then hit Enter:    <br/>
+
+    **cipher /e   C:\Users\Admin\Documents\apptest1.txt**  <br/>
+
+    Note the message displayed in the command prompt indicating the file was encrypted.
 
 15. Leave the Command Prompt window open for the next task, but minimize it for now.
 
