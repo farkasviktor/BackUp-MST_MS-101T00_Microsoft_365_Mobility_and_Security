@@ -2,7 +2,11 @@
 
 Since taking on her role as Enterprise Administrator, Holly Dickson has been inundated with user support requests. Because Holly does not have the bandwidth to respond to the requests in a timely manner, she wants Alex Wilber and Joni Sherman to begin responding to user requests. This will require that Alex and Joni have Helpdesk Administrator role permissions.  However, Holly does not want to permanently assign this role to Alex and Joni, since this is not their regular role, and she doesn't want this role to impact other services. Holly also doesn't want Alex and Joni to submit approval requests each time they need to be assigned the Helpdesk Admin role
 
-Instead, Holly wants to take advantage of PIM's ability to self-activate an Azure AD role on an as-needed basis. Holly wants to make Alex and Joni eligible for the Helpdesk Admin role. When Alex or Joni must respond to a user request, they will activate, or self-approve the role assignment. Alex and Joni can request to activate the role when they need its privileges, at which time they will have administrator control for a predetermined time period. Holly, on the other hand, simply wants to be notified whenever Alex or Joni self-approve the role. 
+Instead, Holly wants to take advantage of the Privileged Identity Management (PIM) feature that enables users to self-activate an Azure AD role on an as-needed basis. Instead of requiring a Global admin (such as Holly) or a Privileged Role Administrator to assign a role to multiple people individually, PIM enables an organization to create a security group and then enable the group to be eligible for that specific role. When people are assigned as members of the group, they indirectly become eligible to be assigned the role. Holly wants to employ this feature at Adatum by creating a security group of eligible users (Alex and Joni) for the Helpdesk admin role. 
+
+Once Alex and Joni are made eligible for the Helpdesk admin role, whenever they must respond to a user request, they will activate, or self-approve the role assignment. Alex and Joni can request to activate the role when they need its privileges, at which time they will have administrator control for a predetermined time period. 
+
+Holly, on the other hand, simply wants to be notified whenever Alex or Joni self-approve the role. PIM lets you know when important events occur in your Azure Active Directory organization, such as when a role is assigned or activated. PIM keeps you informed by sending you and other participants email notifications. These emails might also include links to relevant tasks, such activating or renewing a role.
 
 
 ### Task 1 - Configure the Global Administrator role to require approval
@@ -54,13 +58,13 @@ Holly also wants to update the notification settings for the Global admin role. 
 14. Leave all browser tabs open for the next task.
 
 
-### Task 2 - Assign an eligible group to the Global Admin role
+### Task 1 - Create an eligible group for the Helpdesk Admin role
 
-For Adatum's PIM pilot project, Holly has selected Patti Fernandez as the sole user who will be eligible to be assigned the Global admin role. However, to simplify future role assignments, Holly wants to create a security group, assign Patti to the group, and then assign the group to the Global admin role. 
+For Adatum's PIM pilot project, Holly has selected Alex Wilber and Joni Sherman to be eligible to be assigned the Helpdesk admin role. However, to simplify future role assignments, Holly wants to create a security group, assign Alex and Joni to the group, and then assign the group to the Helpdesk admin role. 
 
-Assigning roles to groups can simplify the management of role assignments in Azure AD. Instead of requiring a Global admin (such as Holly) or a Privileged Role Administrator to assign a role to multiple people individually, they can create a security group and then enable the group to be eligible for that specific role. When people are assigned as members of the group, they indirectly become eligible to be assigned the role. The company's existing governance workflow can then take care of the approval process and auditing of the group's membership to ensure that only legitimate users are members of the group and are thus assigned the particular role. 
+In this task, Holly will create a new, role-assignable security group for users (Alex and Joni) who are eligible for the Helpdesk admin role. Holly will then enable the group to be eligible for the Helpdesk admin role.
 
-In this task, Holly will create a new, role assignable security group for users who are eligible for the Global admin role, and then she will assign Patti to the group. Next, Holly will enable the group to be eligible for the Global admin role.
+Holly also wants to update the notification settings for the Helpdesk admin role. She wants to be notified whenever Alex or Joni self-approve the role. This will enable her to ensure that approvals are tracked in real-time in a proactive manner.
 
 1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson.
 
