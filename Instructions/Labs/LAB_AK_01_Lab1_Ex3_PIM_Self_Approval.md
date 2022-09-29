@@ -1,61 +1,12 @@
 # Learning Path 1 - Lab 1 - Exercise 3 - PIM Self-Approval
 
-Since taking on her role as Enterprise Administrator, Holly Dickson has been inundated with user support requests. Because Holly does not have the bandwidth to respond to the requests in a timely manner, she wants Alex Wilber and Joni Sherman to begin responding to these requests. This will require that Alex and Joni have Helpdesk Administrator role permissions.  However, Holly does not want to permanently assign this role to Alex and Joni, since this is not their regular role, and she doesn't want this role to impact other services. Holly also doesn't want Alex and Joni to submit approval requests each time they need to be assigned the Helpdesk Admin role.
+Since taking on her role as Enterprise Administrator, Holly Dickson has been interrupted on several occassions with user support requests that have taken her attention away from the company's Microsoft 365 pilot project. Because Holly does not have the bandwidth to respond to the requests in a timely manner, she wants Alex Wilber and Joni Sherman to begin responding to these requests. This will require that Alex and Joni have Helpdesk Administrator role permissions.  However, Holly does not want to permanently assign this role to Alex and Joni, since this is not their regular role, and she doesn't want this role to impact other services. Holly also doesn't want Alex and Joni to submit approval requests each time they need to be assigned the Helpdesk Admin role.
 
-Instead, Holly wants to take advantage of the Privileged Identity Management (PIM) feature that enables users to self-activate an Azure AD role on an as-needed basis. Instead of requiring a Global admin (such as Holly) or a Privileged Role Administrator to assign a role to multiple people individually, PIM enables an organization to create a security group and then enable the group to be eligible for that specific role. When people are assigned as members of the group, they indirectly become eligible to be assigned the role. Holly wants to employ this feature at Adatum by creating a security group of eligible users (Alex and Joni) for the Helpdesk admin role. 
+Instead, Holly wants to take advantage of the Privileged Identity Management (PIM) feature that enables users to self-activate an Azure AD role on an as-needed basis. Instead of requiring a Global admin (such as Holly) or a Privileged Role Administrator to assign a role to multiple people individually, PIM enables an organization to create a security group and then enable the group to be eligible for that specific role. When people are assigned as members of the group, they indirectly become eligible to be assigned the role. Holly wants to employ this feature at Adatum by creating a security group of eligible users (Alex and Joni) for the Helpdesk admin role. This opportunity will be a good test of this feature in Holly's pilot project.
 
-Once Alex and Joni are made eligible for this role, whenever they must respond to a user request, they will activate, or self-approve the role assignment. Alex and Joni can request to activate the role when they need its privileges, at which time they will have administrator control for a predetermined time period. 
+Once Alex and Joni are made eligible for this role, whenever they must respond to a user request, they will activate, or self-approve the role assignment. Alex and Joni can request to activate the role when they need its privileges, at which time they will have administrator control for a predetermined time period. In this case, Holly wants them to remain assigned to the role for 15 days. 
 
-Holly, on the other hand, simply wants to be notified whenever Alex or Joni self-approve the role. PIM lets you know when important events occur in your Azure Active Directory organization, such as when a role is assigned or activated. PIM keeps you informed by sending you and other participants email notifications. These emails may also include links to relevant tasks, such activating or renewing a role.
-
-
-### Task 1 - Configure the Global Administrator role to require approval
-
-Since the Microsoft 365 Global Administrator role provides a user with basically unlimited access to all Microsoft 365 resources, the number of users assigned to this role should obviously be kept to a minimum for security purposes. 
-
-For the purpose of this lab, the lab hosting provider assigned the Global admin role to the MOD Administrator and three of the other predefined user accounts. After you added Holly as a Global admin, five of 12 user accounts in your tenant are now global admins, which is not something you would see in a real-world deployment. That being said, keep this guideline in mind for your real-world Microsoft 365 deployments. The best practice guideline that you should follow is to have from two to four Global admins.
-
-Holly Dickson, Adatum's Enterprise Administrator, wants to limit access to Global admin role using Privileged Identity Management. To do so, she must first configure the role to require approval before it can be assigned as an eligible role for a user, and then she wants to assign herself as the approver whenever an eligible user requests activating the role.
-
-Holly also wants to update the notification settings for the Global admin role. Privileged Identity Management (PIM) lets you know when important events occur in your Azure Active Directory (Azure AD) organization, such as when a role is assigned or activated. PIM keeps you informed by sending you and other participants email notifications. These emails might also include links to relevant tasks, such activating or renewing a role. In this task, Holly wants to update the notifications to ensure that approvals are tracked in real-time in a proactive manner.
-
-1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson from the previous lab exercise.
-
-2. In your browser, select the **Microsoft 365 admin center** tab. In the left-hand navigation pane under the **Admin centers** section, select **Azure Active Directory**
-
-3. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **All services**.
-
-4. In the **All services** window, the services are separated into three sections - General, Identity, and Services. Under the **Security** section, select **Azure AD Privileged Identity Management**.
-
-5. In the **Privileged Identity Management | Quick start** window, note how the window is divided into three parts - the navigation pane on the left, the middle pane (which provides navigation options for this page), and the detail pane on the right. <br/>
-
-    In the middle pane under the **Manage** section, select **Azure AD roles**.
-
-6. In the **Adatum Corporation | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
-
-7. In the **Adatum Corporation | Settings** window, select the **Global Administrator** role.
-
-8. In the **Role setting details -  Global Administrator** window, select **Edit** on the menu bar at the top of the page.
-
-9. In the **Edit role setting - Global Administrator** window, the **Activation** tab is displayed by default. In this tab, select the **Require Approval to activate** check box. 
-
-10. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select this section. In the **Select a member** pane that opens on the right, scroll down through the list of users and select **Holly Dickson**, and then select the **Select** button.
-
-11. In the **Edit role setting - Global Administrator** window, select the **Notification** tab.
-
-12. On the **Notification** tab, note the three activities that can trigger sending of notifications: **Send notifications when...**    <br/>
-
-    - members are assigned as eligible to this role
-    - members are assigned as active to this role
-    - eligible members activate this role
-
-    For each activity, a **Role assignment alert** can be sent. Beside sending this alert notification email to the default admin, Holly wants the **Role assignment alert** sent to the MOD administrator account. <br/>
-
-    In the **Additional recipients** field for each of the three instances of the **Role assignment alert**, enter the MOD administrator's email ID of **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
-
-13. At the bottom of the **Edit role setting - Global Administrator** window, select **Update**.
-
-14. Leave all browser tabs open for the next task.
+In addition, Holly doesn't want to be forced to approve the role assignment whenever Alex and Joni require this role assignment. Instead, Holly simply wants to be notified whenever Alex or Joni self-approve the role. PIM lets you know when important events occur in your Azure Active Directory organization, such as when a role is assigned or activated. PIM keeps you informed by sending you and other participants email notifications. These emails may also include links to relevant tasks, such activating or renewing a role.
 
 
 ### Task 1 - Create an eligible group for the Helpdesk Admin role
@@ -63,8 +14,6 @@ Holly also wants to update the notification settings for the Global admin role. 
 In the prior lab exercise, Holly Dickson limited access to Global admin role using Privileged Identity Management. To do so, she first configured the role to require approval before it could be assigned as an eligible role for a user, and then she assigned herself as the approver whenever an eligible user requested activating the role. 
 
 For this next test of PIM in Adatum's pilot project, Holly has selected Alex Wilber and Joni Sherman to be eligible for the Helpdesk admin role. However, to simplify future role assignments, Holly wants to create a security group, assign Alex and Joni to the group, and then assign the group to the Helpdesk admin role. Holly will then enable the group to be eligible for the Helpdesk admin role.
-
-Holly also wants to update the notification settings for the Helpdesk admin role. She wants to be notified whenever Alex or Joni self-approve the role. This will enable her to ensure that self-approvals are tracked in real-time in a proactive manner.
 
 1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson.
 
@@ -123,6 +72,57 @@ Holly also wants to update the notification settings for the Helpdesk admin role
     **Note:** Lab testing has shown that it can sometimes take up to 30 minutes for new assignments to appear under the **Eligible assignments** tab. If **PIM-Helpdesk-Administrators** doesn't appear immediately, wait a few minutes and then select the **Refresh** option on the menu bar. Continue to select the **Refresh** option every few minutes until **PIM-Helpdesk-Administrators** appears in the list of **Eligible assignments**.
 
 21. Leave all browser tabs open for the next task.
+
+
+### Task 2 - Configure the Helpdesk Administrator role for self-approval
+
+Next, Holly wants to configure the Helpdesk admin role settings and notification settings in Azure AD. Privileged Identity Management (PIM) lets you know when important events occur in your Azure Active Directory (Azure AD) organization, such as when a role is assigned or activated. PIM keeps you informed by sending you and other participants email notifications. These emails might also include links to relevant tasks, such activating or renewing a role. In this task, Holly wants to update the notifications to ensure that self-approvals are tracked in real-time in a proactive manner.
+
+In the prior PIM exercise involving the Global admin role, Holly updated the role so that she had to approve any activation requests for the role. However, for the Helpdesk admin role, Holly is less concerned about eligible users abusing the role permissions given the more limited scope of the role as compared to the Global Admin role. Holly is trusting that Alex and Joni won't activate the role unless they're required to do so to respond to support requests. Therefore, Holly will only require that Alex and Joni provide a justification whenever they must activate the role. Holly wants the role to be active for Alex and Joni for 15 days. This way, they won't be waiting for Holly to appprove their activation requests, and they can simply provide justification and get started whenever they must take on this role.
+
+1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson from the previous lab exercise.
+
+2. In your browser, you should still have the **Azure Active Directory admin center** open from the prior task. In the left-hand navigation pane, select **All services**.
+
+4. In the **All services** window, under the **Security** section, select **Azure AD Privileged Identity Management**.
+
+5. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Azure AD roles**.
+
+6. In the **Adatum Corporation | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
+
+7. In the **Adatum Corporation | Settings** window, select the **Helpdesk Administrator** role.
+
+8. In the **Role setting details -  Helpdesk Administrator** window, select **Edit** on the menu bar at the top of the page.
+
+9. In the **Edit role setting - Helpdesk Administrator** window, the **Activation** tab is displayed by default. In this tab, the slider for the **Activation maximum duration (hours)** setting is set to **8**. Holly wants to increase this to the maximum allowable time, which is **24** hours. You can either move the slider to the end of the line, or you can type **24** in the field next to the slider. <br/>
+
+    **Note:** If you try to enter any value greater than 24, it will reset automatically to 24.
+
+10. Below the activiation slider, un-check (clear) the **Require justification on activation** check box. 
+
+11. In the **Edit role setting - Helpdesk Administrator** window, select the **Assignment** tab. Holly wants the assignment of this role to Alex and Joni to expire after 3 months. This will provide ample time for Holly to complete the pilot project and give Adatum time to hire a full-time Helpdesk Administrator. As such, configure the following settings on this tab: <br/>
+
+    -  Uncheck (clear) the **Allow permanent eligible assignment** check box. Then select the **Expire eligible assignments after** field, and in the drop-down menu that appears, select **15 days**.  <br/>
+
+    - Uncheck (clear) the **Allow permanent active assignment** check box. Then select the **Expire active assignments after** field, and in the drop-down menu that appears, select **15 days**.
+
+    - Verify the **Require justification on active assignment** check box is selected (if not, select it now).
+
+11. In the **Edit role setting - Helpdesk Administrator** window, select the **Notification** tab.
+
+12. On the **Notification** tab, note the three activities that can trigger sending of notifications: **Send notifications when...**    <br/>
+
+    - members are assigned as eligible to this role
+    - members are assigned as active to this role
+    - eligible members activate this role
+
+    For each activity, a **Role assignment alert** can be sent. Beside sending this alert notification email to the default admin, Holly wants the **Role assignment alert** sent to the MOD administrator account. <br/>
+
+    In the **Additional recipients** field for each of the three instances of the **Role assignment alert**, enter the MOD administrator's email ID of **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
+
+13. At the bottom of the **Edit role setting - Helpdesk Administrator** window, select **Update**.
+
+14. Leave all browser tabs open for the next task.
 
 
 ### Task 3 - Submit a request for the Global Admin role
