@@ -100,9 +100,7 @@ In the prior PIM exercise involving the Global admin role, Holly updated the rol
 
 10. Below the activiation slider, un-check (clear) the **Require justification on activation** check box. 
 
-11. In the **Edit role setting - Helpdesk Administrator** window, select the **Assignment** tab. Holly wants the assignment of this role to Alex and Joni to expire after 3 months. This will provide ample time for Holly to complete the pilot project and give Adatum time to hire a full-time Helpdesk Administrator. As such, configure the following settings on this tab: <br/>
-
-    -  Uncheck (clear) the **Allow permanent eligible assignment** check box. Then select the **Expire eligible assignments after** field, and in the drop-down menu that appears, select **15 days**.  <br/>
+11. In the **Edit role setting - Helpdesk Administrator** window, select the **Assignment** tab. Holly wants the active assignment of this role to Alex and Joni to expire after 15 days. As such, configure the following settings on this tab: <br/>
 
     - Uncheck (clear) the **Allow permanent active assignment** check box. Then select the **Expire active assignments after** field, and in the drop-down menu that appears, select **15 days**.
 
@@ -116,9 +114,11 @@ In the prior PIM exercise involving the Global admin role, Holly updated the rol
     - members are assigned as active to this role
     - eligible members activate this role
 
-    For each activity, a **Role assignment alert** can be sent. Beside sending this alert notification email to the default admin, Holly wants the **Role assignment alert** sent to the MOD administrator account. <br/>
+    Under the **Send notifications when eligible members activate this role** section, Holly wants to be notified when Alex or Joni self-approve this role. Therefore:
 
-    In the **Additional recipients** field for each of the three instances of the **Role assignment alert**, enter the MOD administrator's email ID of **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
+    - Verify the **Role activation alert** check box is selected.
+    - The default recipient for the **Role activation alert** is **Admin**. This refers to the Global Administrators (Holly) and any Privileged Role Administrators. 
+    - Un-check (clear) the **Notification to activated user (requestor)**. Since Alex and Joni will be self-approving, they don't need to receive a notification when they do so.
 
 13. At the bottom of the **Edit role setting - Helpdesk Administrator** window, select **Update**.
 
