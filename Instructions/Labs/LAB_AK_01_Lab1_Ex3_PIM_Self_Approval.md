@@ -1,21 +1,8 @@
 # Learning Path 1 - Lab 1 - Exercise 3 - PIM Self-Approval
 
-As part of her Microsoft 365 pilot project, Holly Dickson, Adatum's Enterprise Administrator, wants to implement Privileged Identity Management within Azure Active Directory. One of Adatum's pain points in their existing system is they have far too many users who have been assigned administrator roles. This has caused concern among management, who sees this as a threat to Adatum's data security. They feel that too many people were originally assigned admin roles that shouldn't have been, and as such, they have access to secure information and resources that could potentially compromise the organization. 
+Since taking on her role as Enterprise Administrator, Holly Dickson has been inundated with user support requests. Because Holly does not have the bandwidth to respond to the requests in a timely manner, she wants Alex Wilber and Joni Sherman to begin responding to user requests. This will require that Alex and Joni have Helpdesk Administrator role permissions.  However, Holly does not want to permanently assign this role to Alex and Joni, since this is not their regular role, and she doesn't want this role to impact other services. Holly also doesn't want Alex and Joni to submit approval requests each time they need to be assigned the Helpdesk Admin role
 
-Because there's a need to reduce the number of users with permanent administrator roles and yet still provide admin privileges to selected users when business justification warrants it, Holly has been tasked with implementing Azure Active Directory's Privileged Identity Management service. By implementing PIM, Adatum can reduce the number of users with admin roles and yet still be able to assign users with admin rights on an as-needed basis whenever necessary.
-
-In this lab, you will perform the basic steps involved in implementing PIM for a given admin role:
-
-- Configure the role to require approval and assign an approver
-- Assign an eligible user to the role
-- Submit a request from the eligible user to be assigned the role
-- Approve the request for the role
-
-In this exercise, you will perform these tasks for the Global administrator role. Holly will take on the role of the approver, and Patti Fernandez will be the user requesting access to the role.
-
-**IMPORTANT:** In Task 3, Patti Fernandez will submit a request to be assigned the Global administrator role. The activation request process is set up to require Multi-Factor Authentication (MFA). If you do not have a phone to complete this process, notify your instructor. You can still complete Tasks 1 and 2, and you may be able to partner up with another student to watch them complete the remaining tasks.
-
-**Reminder:** As a best practice in your real-world deployment, you should always write down the first Global admin account’s credentials (in this lab, it's the MOD Administrator account, whose username is admin@xxxxxZZZZZZ.onmicrosoft.com, where xxxxxZZZZZZ is the tenant prefix assigned by your lab hosting provider). You should store away this account for security reasons. This account should be a non-personalized identity that owns the highest privileges possible in a tenant. It should not be MFA activated because it is not personalized. Because the username and password for this first Global admin account are typically shared among several users, this account is a perfect target for attacks; therefore, it's always recommended that organizations create personalized service admin accounts (for example, an Exchange admin, SharePoint admin, and so on) and keep as few personal Global admins as possible. For those personal Global admins that you do create in your real-world deployment, they should each be mapped to a single identity (such as Holly Dickson), and they should each have Azure Active Directory Multi-Factor Authentication (MFA) enforced. That being said, you will not turn on MFA for Holly's account because time is limited in this training course and we don't want to take up lab time by forcing you to log in using a second authentication method every time Holly logs in.
+Instead, Holly wants to take advantage of PIM's ability to self-activate an Azure AD role on an as-needed basis. Holly wants to make Alex and Joni eligible for the Helpdesk Admin role. When Alex or Joni must respond to a user request, they will activate, or self-approve the role assignment. Alex and Joni can request to activate the role when they need its privileges, at which time they will have administrator control for a predetermined time period. Holly, on the other hand, simply wants to be notified whenever Alex or Joni self-approve the role. 
 
 
 ### Task 1 - Configure the Global Administrator role to require approval
