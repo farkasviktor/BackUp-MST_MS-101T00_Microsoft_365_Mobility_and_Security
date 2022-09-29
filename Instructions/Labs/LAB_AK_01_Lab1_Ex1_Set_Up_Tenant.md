@@ -390,4 +390,4 @@ In Module 8, you will perform a Content Search lab that requires that Joni Sherm
 
 11. Leave your browser open and do not close any of the tabs.
 
-# Proceed to Lab 1 - Exercise 2.
+# Proceed to Lab 1 - Exercise 2
