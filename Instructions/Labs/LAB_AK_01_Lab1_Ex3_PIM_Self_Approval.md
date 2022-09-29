@@ -4,7 +4,7 @@ Since taking on her role as Enterprise Administrator, Holly Dickson has been int
 
 Instead, Holly wants to take advantage of the Privileged Identity Management (PIM) feature that enables users to self-activate an Azure AD role on an as-needed basis. Instead of requiring a Global admin (such as Holly) or a Privileged Role Administrator to assign a role to multiple people individually, PIM enables an organization to create a security group and then enable the group to be eligible for that specific role. When people are assigned as members of the group, they indirectly become eligible to be assigned the role. Holly wants to employ this feature at Adatum by creating a security group of eligible users (Alex and Joni) for the Helpdesk admin role. This opportunity will be a good test of this feature in Holly's pilot project.
 
-Once Alex and Joni are made eligible for this role, whenever they must respond to a user request, they will activate, or self-approve the role assignment. Alex and Joni can request to activate the role when they need its privileges, at which time they will have administrator control for a predetermined time period. In this case, Holly wants them to remain assigned to the role for 15 days. 
+Once Alex and Joni are made eligible for this role, whenever they must respond to a user request, they will self-activate, or self-approve the role assignment. Alex and Joni can request to activate the role when they need its privileges, at which time they will have administrator control for a predetermined time period. In this case, Holly wants them to remain assigned to the role for 15 days. 
 
 In addition, Holly doesn't want to be forced to approve the role assignment whenever Alex and Joni require this role assignment. Instead, Holly simply wants to be notified whenever Alex or Joni self-approve the role. PIM lets you know when important events occur in your Azure Active Directory organization, such as when a role is assigned or activated. PIM keeps you informed by sending you and other participants email notifications. These emails may also include links to relevant tasks, such activating or renewing a role.
 
@@ -74,7 +74,7 @@ For this next test of PIM in Adatum's pilot project, Holly has selected Alex Wil
 21. Leave all browser tabs open for the next task.
 
 
-### Task 2 - Configure the Helpdesk Administrator role for self-approval
+### Task 2 - Configure the Helpdesk Administrator role for self-activation
 
 Next, Holly wants to configure the Helpdesk admin role settings and notification settings in Azure AD. Privileged Identity Management (PIM) lets you know when important events occur in your Azure Active Directory (Azure AD) organization, such as when a role is assigned or activated. PIM keeps you informed by sending you and other participants email notifications. These emails might also include links to relevant tasks, such activating or renewing a role. In this task, Holly wants to update the notifications to ensure that self-approvals are tracked in real-time in a proactive manner.
 
@@ -84,23 +84,23 @@ In the prior PIM exercise involving the Global admin role, Holly updated the rol
 
 2. In your browser, you should still have the **Azure Active Directory admin center** open from the prior task. In the left-hand navigation pane, select **All services**.
 
-4. In the **All services** window, under the **Security** section, select **Azure AD Privileged Identity Management**.
+3. In the **All services** window, under the **Security** section, select **Azure AD Privileged Identity Management**.
 
-5. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Azure AD roles**.
+4. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Azure AD roles**.
 
-6. In the **Adatum Corporation | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
+5. In the **Adatum Corporation | Quick start** window, in the middle pane under the **Manage** section, select **Settings**. 
 
-7. In the **Adatum Corporation | Settings** window, select the **Helpdesk Administrator** role.
+6. In the **Adatum Corporation | Settings** window, select the **Helpdesk Administrator** role.
 
-8. In the **Role setting details -  Helpdesk Administrator** window, select **Edit** on the menu bar at the top of the page.
+7. In the **Role setting details -  Helpdesk Administrator** window, select **Edit** on the menu bar at the top of the page.
 
-9. In the **Edit role setting - Helpdesk Administrator** window, the **Activation** tab is displayed by default. In this tab, the slider for the **Activation maximum duration (hours)** setting is set to **8**. Holly wants to increase this to the maximum allowable time, which is **24** hours. You can either move the slider to the end of the line, or you can type **24** in the field next to the slider. <br/>
+8. In the **Edit role setting - Helpdesk Administrator** window, the **Activation** tab is displayed by default. In this tab, the slider for the **Activation maximum duration (hours)** setting is set to **8**. Holly wants to increase this to the maximum allowable time, which is **24** hours. You can either move the slider to the end of the line, or you can type **24** in the field next to the slider. <br/>
 
     **Note:** If you try to enter any value greater than 24, it will reset automatically to 24.
 
-10. Below the activiation slider, un-check (clear) the **Require justification on activation** check box. 
+9. Below the activiation slider, un-check (clear) the **Require justification on activation** check box. 
 
-11. In the **Edit role setting - Helpdesk Administrator** window, select the **Assignment** tab. Holly wants the active assignment of this role to Alex and Joni to expire after 15 days. As such, configure the following settings on this tab: <br/>
+10. In the **Edit role setting - Helpdesk Administrator** window, select the **Assignment** tab. Holly wants the active assignment of this role to Alex and Joni to expire after 15 days. As such, configure the following settings on this tab: <br/>
 
     - Uncheck (clear) the **Allow permanent active assignment** check box. Then select the **Expire active assignments after** field, and in the drop-down menu that appears, select **15 days**.
 
@@ -125,9 +125,9 @@ In the prior PIM exercise involving the Global admin role, Holly updated the rol
 14. Leave all browser tabs open for the next task.
 
 
-### Task 3 - Submit a request for the Global Admin role
+### Task 3 - Self-activate the Helpdesk Admin role
 
-Now that the **PIM-Global-Administrators** group has been made eligible for the Global administrator role, the members of the group (in this case, Patti Fernandez) can be assigned the Global Admimistrator role using the Azure AD Privileged Identity Management solution. Holly wants to test out the PIM process in her pilot project. In this task, you will take on the role of Patti, who will submit a request to be assigned Global administrator role privileges. In the next task, Holly will review her request and approve it.
+At this point in Holly's pilot project, the **PIM-Helpdesk-Administrators** group has been made eligible for the Helpdesk administrator role. The members of the group (in this case, Alex Wilber and Joni Sherman) can now be assigned the Helpdesk Admimistrator role using the Azure AD Privileged Identity Management solution. Holly wants to test out the PIM process in her pilot project. In this task, you will take on the role of Alex Wilber, who will submit a request to self-approve assigning the Helpdesk Administrator role to her account. 
 
 **Note:** The activation request process is set up to require Multi-Factor Authentication (MFA). If you do not have a phone to complete this process, notify your instructor. You may be able to partner up with another student to watch them complete the remaining two tasks.
 
@@ -135,76 +135,46 @@ Now that the **PIM-Global-Administrators** group has been made eligible for the 
 
 2. In your InPrivate browser session, enter the following URL in the address bar: **https://portal.azure.com**
 
-3. You're now going to log into Azure as Patti Fernandez. In the **Sign in** window, enter **PattiF@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**. In the **Enter password** window, enter **User.pw1** and then select **Sign in**. In the **Stay signed in?** dialog box, select the **Don't show this again** check box and then select **Yes**.
+3. You're now going to log into Azure as Alex Wilber. In the **Sign in** window, enter **AlexW@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**. In the **Enter password** window, enter **User.pw1** and then select **Sign in**. In the **Stay signed in?** dialog box, select the **Don't show this again** check box and then select **Yes**.
 
 4. In the **Welcome to Microsoft Azure** dialog box that appears, select **Maybe later** to skip the tour.
 
-5. In the **Microsoft Azure** portal, in the **Azure services** section, and then on the right side of the section, select **More services**. This opens the **All services** window.
+5. In the **Microsoft Azure** portal, on the right-side of the **Azure services** section, select **More services**. This opens the **All services** window.
 
 6. In the **All services** window, enter **priv** in the **Search** box at the top of the page. In the list of search results, select **Azure AD Privileged Identity Management**.
 
 7. In the **Privileged Identity Management | Quick start** window, in the **Tasks** section in the left-hand navigation pane, select **My Roles**.
 
-8. In the **My roles | Azure AD roles** window, the **Eligible assignments** tab is displayed by default. Remember, in the prior task Holly assigned Patti as a member of the **PIM-Global-Admiistrators** group, which Holly later assigned as an eligible group for the Global Administrator role. As such, this role appears in the list of **Eligible assignments**. Under the **Action** column for the Global Administrator role, select **Activate**.
+8. In the **My roles | Azure AD roles** window, the **Eligible assignments** tab is displayed by default. Remember, in the prior task Holly assigned Alex as a member of the **PIM-Helpdesk-Admiistrators** group, which Holly later assigned as an eligible group for the Helpdesk Administrator role. As such, this role appears in the list of **Eligible assignments** for Alex. <br/>
 
-9. In the **Activate - Global Administrator** pane, a warning message is displayed at the top of the pane indicating additional verification is required. Select this message, which is hyperlinked.
+    Select the **Active assignments** tab. Note that no Azure AD roles have yet to be assigned to Alex's account. 
 
-10. In the **More information required** window that appears, select **Next**. 
+9. Select the **Eligible assignments** tab. Under the **Action** column for the **Helpdesk Administrator** role, select **Activate**.
 
-11. In the **Enter password** window, enter **User.pw1** in the **Password** field and then select **Sign in**.
+10. In the **Activate - Helpdesk Administrator** pane, enter **Support requests from Sales team members that require resolution** in the **Reason** field. This is the reason why Alex wants to self-activate this role. Then select the **Activate** button at the bottom of the pane. <br/>
 
-12. On the **Microsoft Authenticator** page, you can download this mobile app or use a different method for MFA verification. For the purposes of this lab, we recommend you use your mobile phone so that you do not have to take time installing the Microsoft Authenticator app that you may not use again after this training class. Select the **I want to set up a different method** option at the bottom of the page. 
+    Note the three stages of activation that appear in the **Activate - Helpdesk Administrator** pane, and the progress made on each stage. After the final stage is completed, the **Activate - Helpdesk Administrator** pane will automatically close.
 
-13. On the **Choose a different method** dialog box that appears, select the drop-down arrow in the **Which method would you like to use?** field, select **Phone**, and then select **Confirm**. 
+11. On the **My roles | Azure AD roles** window, note that you're still in the **Eligible assignments** tab. Also note the message at the top of the window indicating **Your active roles have changed. Click here to view your active roles**. Select this message. This simply displays the **Active assignments** tab, which you could have selected yourself in liue of selecting the message. 
 
-14. In the **Phone** window that appears, under **What phone number would you like to use?** field, select your country or region, and then in the field next to it, enter your phone number (in the format **nnn-nnn-nnnn**). Verify the **Text me a code** option is selected and then select **Next**.
+12. In the **Active assignments** tab, note the **Helpdesk Administrator** role now appears. Prior to activating this role, remember that you checked this tab earlier and no Azure AD roles appeared. Now that Alex has self-approved that the role, it's now been assigned to his account. 
 
-15. Retrieve the verification code from the text message that is sent to your phone.
+13. Close the InPrivate browser session. You should now return to the **Azure Active Directory admin center**, which should be displaying the **Adatum Corporation | Setting** page.
 
-16. In the **Phone** window, enter the 6 digit verification code in the **Enter code** field and then select **Next**.
+14. Leave your browser and all tabs open for the next task.
 
-17. Once verification is complete and you receive a message indicating your phone was registered successfully, select **Next**.
-
-18. On the **Success!** page, select **Done**.
-
-19. If you receive a dialog box indicating your sign in has timed out, you will have to enter Patti's password of **User.pw1** and then you will be sent another verification code to your phone. On the **Enter code** window, enter this new code and then select **Verify**. 
-
-20. If you take too long to complete this process, the **Enter password** window will appear with a message indicating you took too long to complete the sign in process, so you will be timed-out. If this occurs, you must sign in again with Holly's password of **User.pw1**. Another verification code will be texted to your phone, so enter it in the **Enter code** screen that appears and select **Verify**.
-
-21. In the **Activate - Global Administrator** pane that appears on the right-side of the screen, enter **Testing PIM** in the **Reason** field, and then select the **Activate** button at the bottom of the pane.
-
-22. On the **My roles | Azure AD roles** window, the **Eligible assignments** tab is displayed on the menu bar. Select the **Active assignments** tab that appears next to it. Note that no roles appear. <br/>
-
-     **Note:** If you recall, back in Task 1 Holly set up the Global Administrator role so that activation to a user account will require approval. What Patti just did was request that the Global Admin role be activated for her user account. This will send a request to Holly, who can then either approve or deny Patti's request for role activation. Holly will review this request in the next task.
-
-23. Leave the InPrivate browser session open. You will return to it in the next task once Holly approves Patti's request.
+As Alex Wilber, you have now self-approved the Helpdesk Administrator role. This has automatically assigned the role to Alex's account.
 
 
-### Task 4 -  Approve the request for the Global Admin role
+### Task 4 -  Verify a PIM notification was issued
 
-Back in Task 1, Holly set herself up as the approver for the Global Administrator role. Since Patti has submitted a request to be assigned this role, Holly must review the request and determine whether to accept or deny it. 
+When you earlier configured the Helpdesk Administrator role, you set up the notification feature so that Holly would be notified any time an eligible user activated the role. Since Alex Wilber just self-activated the role, Holly should receive a notification of this activity. This task will verify that Holly received this notification. 
 
-1.  In LON-CL1, select the Edge icon on your taskbar to see windows for the two Edge sessions that you have open - the window on the left is the original Edge browser session in which you are signed into **Microsoft 365** as **Holly Dickson**, and the window on the right is the InPrivate Browser session in which you are signed into **Azure AD** as **Patti Fernandez**. <br/>
+1.  You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson.
 
-    Select the window on the left to go back to the original Edge browser session in which you are signed in as **Holly Dickson**. 
+2. In your Edge browser, select a new tab and enter the following URL: **https://outlook.office365.com** 
 
-2.  In your browser, select the **Global Administrator | Assignments** tab. This should display the **Global Administrator | Assignments** window in the **Azure Active Directory admin center**. <br/>
-
-    In the navigation thread at the top of the page (**All services > Privileged Identity Management > Adatum Corporation**, select **Privileged Identity Management**.
-
-3. In the **Privileged Identity Management | Quick start** window, in the middle pane under **Tasks**, select **Approve requests**.
-
-4. In the **Approve requests | Azure AD roles** window, in the **Requests for role activations** section, select the check box to the left of the Global Administrator request from Patti Fernandez, and then select the **Approve** button.
-
-5. In the **Approve Request** pane that appears on the right-side of the screen, enter **PIM testing** in the **Justification** field and then select **Confirm**.
-
-6.  Select the **Edge** icon on the taskbar and switch back to the InPrivate browser session where Patti is signed in. In the **My roles | Azure AD roles** window that should still be displayed, the **Active assignments** tab is currently selected from the prior task, prior to approving Patti's request. Select **Refresh** on the menu bar. Note how the Global Administrator role is now activated for Patti. </br/>
-
-    You have just verified that Patti has been assigned the Global Administrator role using the Azure AD Privileged Identity Management solution.
-
-7. Close the InPrivate browser session.
-
-8. In your Edge browser session, close all the tabs except for the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab. Leave these two tabs open for the next lab.
+3. **Outlook** will open. In the **Pick an account** window that appears, select **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter **User.pw1** and then select **Sign in**.
 
 
 # Proceed to Lab 1 - Exercise 4
