@@ -216,4 +216,4 @@ Back in Task 1, Holly set herself up as the approver for the Global Administrato
 8. In your Edge browser session, close all the tabs except for the **Microsoft Office Home** tab and the **Microsoft 365 admin center** tab. Leave these two tabs open for the next lab.
 
 
-# End of Lab 1 - Exercise 2
+# Proceed to Lab 1 - Exercise 3
