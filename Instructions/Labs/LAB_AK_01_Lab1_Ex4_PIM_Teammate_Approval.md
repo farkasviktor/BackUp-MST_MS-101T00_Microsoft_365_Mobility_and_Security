@@ -2,8 +2,8 @@
 
 Up to this point, you have conducted two forms of PIM approval:
 
-    - one by an administrator (Holly), who approved the activation and assignment of the Global Administrator role to Patti Fernandez.
-    - another by Alex Wilber, who self-approved the assignment of the Helpdesk administrator role to his user account. 
+- one by an administrator (Holly), who approved the activation and assignment of the Global Administrator role to Patti Fernandez.
+- another by Alex Wilber, who self-approved the assignment of the Helpdesk administrator role to his user account. 
 
 In this exercise, you will conduct a third form a PIM approval, which is having a user (non-admin) approve the assignment of a role to another user. 
 
