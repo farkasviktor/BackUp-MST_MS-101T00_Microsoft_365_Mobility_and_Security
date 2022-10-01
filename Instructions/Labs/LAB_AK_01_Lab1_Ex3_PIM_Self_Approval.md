@@ -2,26 +2,26 @@
 
 Since taking on her role as Enterprise Administrator, Holly Dickson has been interrupted on several occassions with user support requests that have taken her attention away from the company's Microsoft 365 pilot project. Because Holly does not have the bandwidth to respond to the requests in a timely manner, she wants Alex Wilber and Joni Sherman to begin responding to these requests. This will require that Alex and Joni have Helpdesk Administrator role permissions.  However, Holly does not want to permanently assign this role to Alex and Joni, since this is not their regular role, and she doesn't want this role to impact other services. Holly also doesn't want Alex and Joni to submit approval requests each time they need to be assigned the Helpdesk Admin role.
 
-Instead, Holly wants to take advantage of the Privileged Identity Management (PIM) feature that enables users to self-activate an Azure AD role on an as-needed basis. Instead of requiring a Global admin (such as Holly) or a Privileged Role Administrator to assign a role to multiple people individually, PIM enables an organization to create a security group and then enable the group to be eligible for that specific role. When people are assigned as members of the group, they indirectly become eligible to be assigned the role. Holly wants to employ this feature at Adatum by creating a security group of eligible users (Alex and Joni) for the Helpdesk admin role. This opportunity will be a good test of this feature in Holly's pilot project.
+Given these requirements, Holly wants to take advantage of the Privileged Identity Management (PIM) feature that enables users to self-activate an Azure AD role on an as-needed basis. Instead of requiring a Global admin (such as Holly) or a Privileged Role Administrator to assign a role to multiple people individually, PIM enables an organization to create a security group and then enable the group to be eligible for that specific role. When people are assigned as members of the group, they indirectly become eligible to be assigned the role. Holly wants to employ this feature at Adatum by creating a security group of eligible users (Alex and Joni) for the Helpdesk administrator role. This opportunity will be a good test of this feature in Holly's pilot project.
 
-Once Alex and Joni are made eligible for this role, whenever they must respond to a user request, they will self-activate, or self-approve the role assignment. Alex and Joni can request to activate the role when they need its privileges, at which time they will have administrator control for a predetermined time period. In this case, Holly wants them to remain assigned to the role for 15 days. 
+Once Alex and Joni are made eligible for this role, whenever they must respond to their first user request, they will self-activate, or self-approve the role assignment. By doing so, they will have Helpdesk administrator control for a predetermined time period. In this case, Holly wants them to remain assigned to the role for 15 days. 
 
-In addition, Holly doesn't want to be forced to approve the role assignment whenever Alex and Joni require this role assignment. Instead, Holly simply wants to be notified whenever Alex or Joni self-approve the role. PIM lets you know when important events occur in your Azure Active Directory organization, such as when a role is assigned or activated. PIM keeps you informed by sending you and other participants email notifications. These emails may also include links to relevant tasks, such activating or renewing a role.
+In addition, Holly doesn't want to be forced to approve the role assignment whenever Alex and Joni require this role assignment. Instead, Holly simply wants to be notified whenever Alex or Joni self-approve the role. PIM lets you know when important events occur in your Azure Active Directory organization, such as when a role is assigned or activated. PIM keeps you informed by sending you and other participants email notifications. 
 
 
 ### Task 1 - Create an eligible group for the Helpdesk Admin role
 
-In the prior lab exercise, Holly Dickson limited access to Global admin role using Privileged Identity Management. To do so, she first configured the role to require approval before it could be assigned as an eligible role for a user, and then she assigned herself as the approver whenever an eligible user requested activating the role. 
+In the prior lab exercise, Holly Dickson limited access to the Global admin role using Privileged Identity Management. To do so, she first configured the role to require approval before it could be assigned as an eligible role for a user, and then she assigned herself as the approver whenever an eligible user requested activating the role. 
 
 For this next test of PIM in Adatum's pilot project, Holly has selected Alex Wilber and Joni Sherman to be eligible for the Helpdesk admin role. However, to simplify future role assignments, Holly wants to create a security group, assign Alex and Joni to the group, and then assign the group to the Helpdesk admin role. Holly will then enable the group to be eligible for the Helpdesk admin role.
 
 1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson.
 
-2. In your browser, select the **Microsoft 365 admin center** tab. In the left-hand navigation pane under the **Admin centers** section, select **Azure Active Directory**
+2. In your Edge browser, select the tab containing the **Azure Active Directory admin center**, which should still be open from the prior lab exercise. 
 
 3. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **All services**.
 
-4. In the **All services** window, the services are separated into the following sections - General, Identity, Services, and Hybrid + multicloud. Under the **Identity** section, select **Groups**.
+4. In the **All services** window, under the **Identity** section, select **Groups**.
 
 5. In the **Groups | All groups** window, select **New group** in the menu bar.
 
@@ -37,9 +37,9 @@ For this next test of PIM in Adatum's pilot project, Holly has selected Alex Wil
 
     - Membership type - **Assigned**
 
-    - Owners - Select **No owners selected**. In the **Add owners** pane, select **Holly Dickson** and then select the **Select** button.
+    - Owners - Select **No owners selected**. In the **Add owners** pane, select **Holly Dickson**.
 
-    - Members - Select **No members selected**. In the **Add members** pane, select **Alex Wilber** and **Joni Sherman** and then select the **Select** button.
+    - Members - Select **No members selected**. In the **Add members** pane, select **Alex Wilber**. Enter **Joni** in the Search field, and then select **Joni Sherman**.
 
 7. In the **New group** window, select **Create**.
 
@@ -49,11 +49,11 @@ For this next test of PIM in Adatum's pilot project, Holly has selected Alex Wil
 
 10 You must now make the **PIM-Helpdesk-Administrators** group eligible for role assignment. In the **Azure Active Directory admin center** navigation pane, select **All services**.
 
-11. In the **All services** window, in the **Security** section, select **Azure AD Privileged Identity Management** (this feature also appears in the Identity section, so you can actually select either instance).
+11. In the **All services** window, in either the **Identity** or **Security** sections, select **Azure AD Privileged Identity Management**.
 
 12. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Azure AD roles**.
 
-13. In the **Adatum Corporation | Quick start** window, the detail pane on the right displays the **Privileged Identity Management** window. This window displays the following sections - Assign, Activate, Approve, and Audit. Under the **Assign** section, select **Assign Eligibility**.
+13. In the **Adatum Corporation | Quick start** window, under the **Assign** section, select **Assign Eligibility**.
 
 14. In the **Adatum Corporation | Roles** window, scroll down through the list of roles and select **Helpdesk Administrator**.
 
@@ -67,7 +67,7 @@ For this next test of PIM in Adatum's pilot project, Holly has selected Alex Wil
 
 19. In the **Add assignments** window, under the **Settings** tab, verify the **Assignment type** option is set to **Eligible**. Also verify the **Permanently eligible** check box is selected (if not, then do so now), and then select **Assign**. 
 
-20. In the **Global Administrator | Assignments** window, note that the **PIM-Helpdesk-Administrators** group is an eligible assignment to the Helpdesk Administrator role. Because **PIM-Helpdesk-Administrators** is a group, it means that all members of this group (which consists of Alex Wilber and Joni Sherman) are now eligible to be assigned the Helpdesk Administrator role.
+20. In the **Helpdesk Administrator | Assignments** window, note that the **PIM-Helpdesk-Administrators** group is an eligible assignment to the Helpdesk Administrator role. Because **PIM-Helpdesk-Administrators** is a group, it means that all members of this group (which consists of Alex Wilber and Joni Sherman) are now eligible to be assigned the Helpdesk Administrator role.
 
     **Note:** Lab testing has shown that it can sometimes take up to 30 minutes for new assignments to appear under the **Eligible assignments** tab. If **PIM-Helpdesk-Administrators** doesn't appear immediately, wait a few minutes and then select the **Refresh** option on the menu bar. Continue to select the **Refresh** option every few minutes until **PIM-Helpdesk-Administrators** appears in the list of **Eligible assignments**.
 
@@ -96,11 +96,11 @@ In the prior PIM exercise involving the Global admin role, Holly updated the rol
 
 8. In the **Edit role setting - Helpdesk Administrator** window, the **Activation** tab is displayed by default. In this tab, the slider for the **Activation maximum duration (hours)** setting is set to **8**. Holly wants to increase this to the maximum allowable time, which is **24** hours. You can either move the slider to the end of the line, or you can type **24** in the field next to the slider. <br/>
 
-    **Note:** If you try to enter any value greater than 24, it will reset automatically to 24.
+    **Note:** If you try to enter any value greater than 24, it will automatically reset to 24.
 
-9. Below the activiation slider, un-check (clear) the **Require justification on activation** check box. 
+9. Below the activiation slider, un-check (clear) the **Require justification on activation** check box. Holly knows that Alex and Joni will only activate the role when needed, so she doesn't require a justification from them to activate the role assignment (however, in the next step, Holly will require justification when they assign the role to themselves).
 
-10. In the **Edit role setting - Helpdesk Administrator** window, select the **Assignment** tab. Holly wants the active assignment of this role to Alex and Joni to expire after 15 days. As such, configure the following settings on this tab: <br/>
+10. You're currently in the **Activation** tab. Select the **Assignment** tab that appears next to it. Holly wants the active assignment of this role to Alex and Joni to expire after 15 days. As such, configure the following settings on this tab: <br/>
 
     - Uncheck (clear) the **Allow permanent active assignment** check box. Then select the **Expire active assignments after** field, and in the drop-down menu that appears, select **15 days**.
 
@@ -139,7 +139,7 @@ At this point in Holly's pilot project, the **PIM-Helpdesk-Administrators** grou
 
 4. In the **Welcome to Microsoft Azure** dialog box that appears, select **Maybe later** to skip the tour.
 
-5. In the **Microsoft Azure** portal, on the right-side of the **Azure services** section, select **More services**. This opens the **All services** window.
+5. In the **Microsoft Azure** portal, in the middle of the screen is the section of **Azure services**. This section displays a row of Azure services and their associated icons. At the end of the row, select **More services** (with the arrow icon). This opens the **All services** window.
 
 6. In the **All services** window, enter **priv** in the **Search** box at the top of the page. In the list of search results, select **Azure AD Privileged Identity Management**.
 
@@ -149,7 +149,7 @@ At this point in Holly's pilot project, the **PIM-Helpdesk-Administrators** grou
 
     Select the **Active assignments** tab. Note that no Azure AD roles have yet to be assigned to Alex's account. 
 
-9. Select the **Eligible assignments** tab. Under the **Action** column for the **Helpdesk Administrator** role, select **Activate**.
+9. Alex is now ready to self-approve, or self-activate the Helpdesk administrator role. Select the **Eligible assignments** tab. Under the **Action** column for the **Helpdesk Administrator** role, select **Activate**.
 
 10. In the **Activate - Helpdesk Administrator** pane, enter **Support requests from Sales team members that require resolution** in the **Reason** field. This is the reason why Alex wants to self-activate this role. Then select the **Activate** button at the bottom of the pane. <br/>
 
@@ -157,7 +157,7 @@ At this point in Holly's pilot project, the **PIM-Helpdesk-Administrators** grou
 
 11. On the **My roles | Azure AD roles** window, note that you're still in the **Eligible assignments** tab. Also note the message at the top of the window indicating **Your active roles have changed. Click here to view your active roles**. Select this message. This simply displays the **Active assignments** tab, which you could have selected yourself in liue of selecting the message. 
 
-12. In the **Active assignments** tab, note the **Helpdesk Administrator** role now appears. Prior to activating this role, remember that you checked this tab earlier and no Azure AD roles appeared. Now that Alex has self-approved that the role, it's now been assigned to his account. 
+12. In the **Active assignments** tab, note the **Helpdesk Administrator** role now appears. Prior to activating this role, remember that you checked this tab earlier and no Azure AD roles appeared. Now that Alex has self-approved that the role, it's now been assigned to his user account. 
 
 13. Close the InPrivate browser session. You should now return to the **Azure Active Directory admin center**, which should be displaying the **Adatum Corporation | Setting** page.
 
@@ -172,9 +172,17 @@ When you earlier configured the Helpdesk Administrator role, you set up the noti
 
 1.  You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson.
 
-2. In your Edge browser, select a new tab and enter the following URL: **https://outlook.office365.com** 
+2. In your Edge browser, select the **Microsoft Office Home** tab.
 
-3. **Outlook** will open. In the **Pick an account** window that appears, select **Holly@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider). In the **Enter password** window, enter **User.pw1** and then select **Sign in**.
+3. On the **Microsoft Office Home** page, in the column of application icons on the left-side of the screen, select **Outlook**. This will open Outlook for Holly Dickson's mailbox.
+
+4. In Holly's **Inbox**, verify that Holly received a PIM generated email indicating that **Alex Wilber activated the Helpdesk Administrator role assignment**. 
+
+5. Select the email to open it. Review the information in the email. Select the **View History** button.
+
+6. In the **Adatum Corporation | Resource audit** window, review the audited list of activities related to Alex's self-approval of the Helpdesk Administrator role. 
+
+7. Leave your browser and all tabs open for the next task.
 
 
 # Proceed to Lab 1 - Exercise 4
