@@ -34,9 +34,9 @@ Holly also wants to update the notification settings for the Global admin role. 
 
 3. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **All services**.
 
-4. In the **All services** window, the services are separated into three sections - General, Identity, and Services. Under the **Security** section, select **Azure AD Privileged Identity Management**.
+4. In the **All services** window, the services are separated into the following sections - General, Identity, Security, and Hybrid+multicloud. Under the **Security** section, select **Azure AD Privileged Identity Management**.
 
-5. In the **Privileged Identity Management | Quick start** window, note how the window is divided into three parts - the navigation pane on the left, the middle pane (which provides navigation options for this page), and the detail pane on the right. <br/>
+5. In the **Privileged Identity Management | Quick start** window, note how the window is divided into three parts - the navigation pane on the left, the middle pane (which provides navigation options for this page), and the detail pane on the right. This design format is used on many of the Azure AD screens. <br/>
 
     In the middle pane under the **Manage** section, select **Azure AD roles**.
 
