@@ -34,7 +34,7 @@ Holly also wants to update the notification settings for the Global admin role. 
 
 3. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **All services**.
 
-4. In the **All services** window, the services are separated into the following sections - General, Identity, Security, and Hybrid+multicloud. Under the **Security** section, select **Azure AD Privileged Identity Management**.
+4. In the **All services** window, the services are separated into the following sections - General, Identity, Security, and Hybrid+multicloud. Under either the **Identity** or **Security** sections, select **Azure AD Privileged Identity Management** (it appears in both sections).
 
 5. In the **Privileged Identity Management | Quick start** window, note how the window is divided into three parts - the navigation pane on the left, the middle pane (which provides navigation options for this page), and the detail pane on the right. This design format is used on many of the Azure AD screens. <br/>
 
@@ -46,9 +46,9 @@ Holly also wants to update the notification settings for the Global admin role. 
 
 8. In the **Role setting details -  Global Administrator** window, select **Edit** on the menu bar at the top of the page.
 
-9. In the **Edit role setting - Global Administrator** window, the **Activation** tab is displayed by default. In this tab, select the **Require Approval to activate** check box. 
+9. In the **Edit role setting - Global Administrator** window, the **Activation** tab is displayed by default. In this tab, select the **Require Approval to activate** check box. Do not change the settings of the other check boxes.
 
-10. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select this section. In the **Select a member** pane that opens on the right, scroll down through the list of users and select **Holly Dickson**, and then select the **Select** button.
+10. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select this section. In the **Select a member** pane that opens on the right, scroll through the list of users and select **Holly Dickson**, and then select the **Select** button.
 
 11. In the **Edit role setting - Global Administrator** window, select the **Notification** tab.
 
@@ -58,7 +58,7 @@ Holly also wants to update the notification settings for the Global admin role. 
     - members are assigned as active to this role
     - eligible members activate this role
 
-    For each activity, a **Role assignment alert** can be sent. Beside sending this alert notification email to the default admin, Holly wants the **Role assignment alert** sent to the MOD administrator account. <br/>
+    For each activity, a **Role assignment alert** can be sent. Besides sending this alert notification email to the default admin, Holly wants the **Role assignment alert** sent to the MOD administrator account. <br/>
 
     In the **Additional recipients** field for each of the three instances of the **Role assignment alert**, enter the MOD administrator's email ID of **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
 
@@ -79,7 +79,7 @@ In this task, Holly will create a new, role assignable security group for users 
 
 2. You will begin by creating a new, role assignable security group called **PIM-Global-Administrators** in Azure AD, and you will assign Patti as a member of the group. <br/>
 
-    In your **Edge** browser, you should still have the **Azure Active Directory admin center** open in a tab that's displaying the **Adatum Corporation | Settings** window from the prior task. In the navigation thread at the top of the page (**All services > Privileged Identity Management | Azure AD roles > Adatum Corporation**), select **All services** (or select **All services** in the navigation pane).
+    In your **Edge** browser, you should still have the **Azure Active Directory admin center** open in a tab that's displaying the **Adatum Corporation | Settings** window from the prior task. Select **All services** in the left-hand navigation pane.
 
 3. In the **All services** window, under the **Identity** section, select **Groups**.
 
@@ -99,9 +99,9 @@ In this task, Holly will create a new, role assignable security group for users 
 
     - Owners - Select **No owners selected**. In the **Add owners** pane, select **Holly Dickson**.
 
-    - Members - Select **No members selected**. In the **Add members** pane, enter **Patti** in the **Search** field. Select **Patti Fernandez**.
+    - Members - Select **No members selected**. In the **Add members** pane, enter **Patti** in the **Search** field. This will display the list of users whose name starts with **Patti**. Select **Patti Fernandez** and then select the **Select** button at the bottom of the pane.
 
-6. Select **Create**.
+6. On the **New Group** window, select **Create**.
 
 7. A dialog box appears that says: **Creating a group to which Azure AD roles can be assigned is a setting that cannot be changed later. Are you sure that you want to add this capability?**. Select **Yes**.
 
@@ -109,7 +109,7 @@ In this task, Holly will create a new, role assignable security group for users 
 
 9. In the **Azure Active Directory admin center** navigation pane select **All services**.
 
-10. In the **All services** window, in the **Security** section, select **Azure AD Privileged Identity Management**.
+10. In the **All services** window, in either the **Identity** or **Security** sections, select **Azure AD Privileged Identity Management**.
 
 11. In the **Privileged Identity Management | Quick start** window, in the middle pane under the **Manage** section, select **Azure AD roles**.
 
