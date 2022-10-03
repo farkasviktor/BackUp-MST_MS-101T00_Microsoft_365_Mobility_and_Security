@@ -46,7 +46,7 @@ Holly also wants to update the notification settings for the Global admin role. 
 
 8. In the **Role setting details -  Global Administrator** window, select **Edit** on the menu bar at the top of the page.
 
-9. In the **Edit role setting - Global Administrator** window, the **Activation** tab is displayed by default. In this tab, below the activation slider, verify the **On activation, require** option is set to **Azure MFA** (if it's unchecked, then select it now). This will require that the person requesting activation of the role will have to sign in using multi-factor authentication to provide additional verification that they are who they say they are.
+9. In the **Edit role setting - Global Administrator** window, the **Activation** tab is displayed by default. In this tab, below the activation slider, verify the **On activation, require** setting is set to **Azure MFA** (if it's unchecked, then select it now). This will require that the person requesting activation of the role will have to sign in using multi-factor authentication to provide additional verification that they are who they say they are.
 
 10. The screen then displays a group of three settings, each with a check box. Select the **Require Approval to activate** check box. Do not change the default settings of the other two check boxes.
 
