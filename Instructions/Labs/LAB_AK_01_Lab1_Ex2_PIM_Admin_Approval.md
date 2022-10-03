@@ -48,7 +48,7 @@ Holly also wants to update the notification settings for the Global admin role. 
 
 9. In the **Edit role setting - Global Administrator** window, the **Activation** tab is displayed by default. In this tab, below the activation slider, verify the **On activation, require** setting is set to **Azure MFA** (if it's unchecked, then select it now). This will require that the person requesting activation of the role will have to sign in using multi-factor authentication to provide additional verification that they are who they say they are.
 
-10. The screen then displays a group of three settings, each with a check box. Select the **Require Approval to activate** check box. Do not change the default settings of the other two check boxes.
+10. The screen then displays a group of three settings, each with a check box. Select the **Require Approval to activate** check box. By doing so, the **Select approver(s)** section becomes enabled. Do not change the default settings of the other two check boxes.
 
 11. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select this section. In the **Select a member** pane that opens on the right, scroll through the list of users and select **Holly Dickson**, and then select the **Select** button.
 
