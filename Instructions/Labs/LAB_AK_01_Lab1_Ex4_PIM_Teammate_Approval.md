@@ -156,13 +156,15 @@ As a member of the PIM-Intune-Administrators group, Joni can approve requests fo
 
 2. You want to begin by verifying that Joni can't self approve her own request for the Intune Admin role. 
 
-3. You're currently in the **My roles | Azure AD roles** window, where you left off from the prior task. In the navigation thread at the top of the window (**All services > Privileged Identity Management | My roles**, select **All services**.
+3. You're currently in the **My roles | Azure AD roles** window, where you left off from the prior task. In the navigation thread at the top of the window (**All services > Privileged Identity Management | My roles**), select **All services**.
 
 4. In the **All services** window, enter **priv** in the **Search** box at the top of the page. In the list of search results, select **Azure AD Privileged Identity Management**.
 
 5. In the **Privileged Identity Management | Quick start** window, in the **Tasks** section in the left-hand navigation pane, select **Approve requests**.
 
-6. In the **Approve requests | Azure AD roles** window, note that Joni has no requests pending approval. This verifies that Joni can't self-approve her own request for the Intune Administrator role. 
+6. In the **Approve requests | Azure AD roles** window, note that Joni has no requests pending approval. <br/>
+
+    **Important:** You have just verified that Joni can't self-approve her own request for the Intune Administrator role, even though she's a member of the PIM-Intune-Administrators group. One of the other members of the group must approve Joni's request. You'll do this in the remaining steps of this task, where Alex will approve her request. 
 
 7. Close the InPrivate browser session. 
 
