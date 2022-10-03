@@ -98,7 +98,7 @@ In the prior PIM exercise involving the Global admin role, Holly updated the rol
 
     **Note:** If you try to enter any value greater than 24, it will automatically reset to 24.
 
-9. Below the activiation slider, set the **On activation, require** setting to **None**. In the prior lab exercise, Holly required that Patti Fernandez sign in using Azure MFA when she requested activation of the Global admin role. In doing so, Holly verified that the Azure MFA sign-in worked. However, for the purpose of the pilot project, Holly will not require verification using multi-factor authentication when activating the Helpdesk administrator role.
+9. Below the activiation slider, set the **On activation, require** setting to **None**. In the prior lab exercise, Holly required that Patti Fernandez sign in using Azure MFA when she requested activation of the Global admin role. In doing so, Holly verified that the Azure MFA sign-in worked. However, for the purpose of the pilot project, Holly will not require verification using multi-factor authentication when activating the Helpdesk administrator role (and since you already tested this MFA feature in the prior lab exercise, there's no reason to take time in class to do it again). 
 
 10. The screen then displays a group of three settings, each with a check box. Verify that all three check boxes are blank. If any check box is selected by default, then un-check (clear) it now. <br/>
 
