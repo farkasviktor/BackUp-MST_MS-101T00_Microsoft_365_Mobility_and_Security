@@ -98,17 +98,23 @@ In the prior PIM exercise involving the Global admin role, Holly updated the rol
 
     **Note:** If you try to enter any value greater than 24, it will automatically reset to 24.
 
-9. Below the activiation slider, un-check (clear) the **Require justification on activation** check box. Holly knows that Alex and Joni will only activate the role when needed, so she doesn't require a justification from them to activate the role assignment (however, in the next step, Holly will require justification when they assign the role to themselves).
+9. Below the activiation slider, set the **On activation, require** setting to **None**. In the prior lab exercise, Holly required that Patti Fernandez sign in using Azure MFA when she requested activation of the Global admin role. In doing so, Holly verified that the Azure MFA sign-in worked. However, for the purpose of the pilot project, Holly will not require verification using multi-factor authentication when activating the Helpdesk administrator role.
 
-10. You're currently in the **Activation** tab. Select the **Assignment** tab that appears next to it. Holly wants the active assignment of this role to Alex and Joni to expire after 15 days. As such, configure the following settings on this tab: <br/>
+10. The screen then displays a group of three settings, each with a check box. Verify that all three check boxes are blank. If any check box is selected by default, then un-check (clear) it now. <br/>
+
+    For the pilot project, Holly does not want the **Require justification on activation** check box selected. Holly knows that Alex and Joni will only activate the role when needed, so she doesn't require a justification from them to activate the role assignment (however, in the next step, Holly will require justification when they assign the role to themselves). <br/>
+
+    **Note:** Leaving the **Require approval to activate** setting unchecked will enable an eligible user to self-approve, or self-activate without requiring another user's approval.
+
+11. You're currently in the **Activation** tab. Select the **Assignment** tab that appears next to it. Holly wants the active assignment of this role to Alex and Joni to expire after 15 days. As such, configure the following settings on this tab: <br/>
 
     - Uncheck (clear) the **Allow permanent active assignment** check box. Then select the **Expire active assignments after** field, and in the drop-down menu that appears, select **15 days**.
 
     - Verify the **Require justification on active assignment** check box is selected (if not, select it now).
 
-11. In the **Edit role setting - Helpdesk Administrator** window, select the **Notification** tab.
+12. In the **Edit role setting - Helpdesk Administrator** window, select the **Notification** tab.
 
-12. On the **Notification** tab, note the three activities that can trigger sending of notifications: **Send notifications when...**    <br/>
+13. On the **Notification** tab, note the three activities that can trigger sending of notifications: **Send notifications when...**    <br/>
 
     - members are assigned as eligible to this role
     - members are assigned as active to this role
@@ -120,9 +126,9 @@ In the prior PIM exercise involving the Global admin role, Holly updated the rol
     - The default recipient for the **Role activation alert** is **Admin**. This refers to the Global Administrators (Holly) and any Privileged Role Administrators. 
     - Un-check (clear) the **Notification to activated user (requestor)**. Since Alex and Joni will be self-approving, they don't need to receive a notification when they do so.
 
-13. At the bottom of the **Edit role setting - Helpdesk Administrator** window, select **Update**.
+14. At the bottom of the **Edit role setting - Helpdesk Administrator** window, select **Update**.
 
-14. Leave all browser tabs open for the next task.
+15. Leave all browser tabs open for the next task.
 
 
 ### Task 3 - Self-activate the Helpdesk Admin role
