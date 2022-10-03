@@ -101,7 +101,7 @@ As in the prior PIM exercise involving the Helpdesk admin role, Holly is trustin
 
     In the **Select a member** pane that opens on the right, enter **PIM** in the Search box. In the list of users and groups whose name starts with **PIM**, select **PIM-Intune-Administrators** and then select the **Select** button. By selecting this group, the members of the group will receive notification to approve the request made by any eligible user for this role.
 
-11. You're currently in the **Activation** tab. Select the **Assignment** tab that appears next to it. Verify the **Require justification on active assignment** check box is selected (if not, select it now).
+11. In the **Edit role setting - Intune Administrator** window, you're currently in the **Activation** tab. Select the **Assignment** tab that appears next to it. Verify the **Require justification on active assignment** check box is selected (if not, select it now).
 
 12. In the **Edit role setting - Intune Administrator** window, select the **Notification** tab.
 
@@ -143,48 +143,62 @@ At this point in Holly's pilot project, the **PIM-Intune-Administrators** group 
 
      **Note:** If the prior task, Holly set up the Intune Administrator role so that activation to a user account will require approval by a member of the PIM-Intune-Administrators group. What Joni just did was request that the Intune Admin role be activated for her user account. This will send a notification request to the members of the PIM-Intune-Administrators group to approve Joni's request. Since Alex Wilber is a member of the group, he can then either approve or deny Joni's request for role activation. Alex will review this request in the next task.
 
-11. Close the InPrivate browser session. Leave your Edge browser session open for the next task.
+11. Leave the InPrivate browser session open for the next task.
 
 
 ### Task 4 -  Approve the request for the Intune Admin role
 
 Back in Task 2, Holly assigned the PIM-Intune-Administrators group as approver for the Intune Administrator role. This means that both Joni and Alex, as members of the group, can approve requests for role assignment. Since Joni submitted a role assignment request in the prior task, Alex must review the request and determine whether to accept or deny it. 
 
-1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as Holly Dickson.
+As a member of the PIM-Intune-Administrators group, Joni can approve requests for the Intune Admin role. But since Joni also requested assignment of this role, she should not be able to self-approve her own request. Only another member of the group (in this case, Alex) should be able to approve her request. In this task, you first want to verify that Joni can't self-approve her own request. 
 
-2. In LON-CL1, right-click on the **Edge** icon on the taskbar and in the menu that appears, select **New InPrivate window**. 
+1. You should still be logged into the InPrivate browser session as Joni Sherman. If you closed the session at the end of the prior task, then repeat the steps from the prior task to open the InPrivate browsing session, sign in as Joni, and navigate to the **My roles** window. 
 
-3. In your InPrivate browser session, enter the following URL in the address bar: **https://portal.azure.com**
+2. You want to begin by verifying that Joni can't self approve her own request for the Intune Admin role. 
 
-4. You're now going to log into Azure as Alex Wilber. In the **Sign in** window, enter **AlexW@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**. In the **Enter password** window, enter **User.pw1** and then select **Sign in**. In the **Stay signed in?** dialog box, select the **Don't show this again** check box and then select **Yes**.
+3. You're currently in the **My roles | Azure AD roles** window, where you left off from the prior task. In the navigation thread at the top of the window (**All services > Privileged Identity Management | My roles**, select **All services**.
 
-5. If a **Welcome to Microsoft Azure** dialog box appears, select **Maybe later** to skip the tour.
+4. In the **All services** window, enter **priv** in the **Search** box at the top of the page. In the list of search results, select **Azure AD Privileged Identity Management**.
 
-6. In the **Microsoft Azure** portal, in the middle of the screen is the section of **Azure services**. This section displays a row of Azure services and their associated icons. At the end of the row, select **More services** (with the arrow icon). This opens the **All services** window.
+5. In the **Privileged Identity Management | Quick start** window, in the **Tasks** section in the left-hand navigation pane, select **Approve requests**.
 
-7. In the **All services** window, enter **priv** in the **Search** box at the top of the page. In the list of search results, select **Azure AD Privileged Identity Management**.
+6. In the **Approve requests | Azure AD roles** window, note that Joni has no requests pending approval. This verifies that Joni can't self-approve her own request for the Intune Administrator role. 
 
-8. In the **Privileged Identity Management | Quick start** window, in the **Tasks** section in the left-hand navigation pane, select **Approve requests**.
+7. Close the InPrivate browser session. 
 
-9. In the **Approve requests | Azure AD roles** window, in the **Requests for role activations** section, select the check box to the left of the **Intune Administrator** request from Joni Sherman, and then select the **Approve** button.
+8. You will now open a new InPrivate browsing session for Alex Wilber to approve Joni's activation request for the Intune Administrator role. In LON-CL1, right-click on the **Edge** icon on the taskbar and in the menu that appears, select **New InPrivate window**. 
 
-10. In the **Approve Request** pane that appears on the right-side of the screen, enter **PIM testing** in the **Justification** field and then select **Confirm**.
+9. In your InPrivate browser session, enter the following URL in the address bar: **https://portal.azure.com**
 
-11. Close the InPrivate browser session for Alex.
+10. You're now going to log into Azure as Alex Wilber. In the **Sign in** window, enter **AlexW@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**. In the **Enter password** window, enter **User.pw1** and then select **Sign in**. In the **Stay signed in?** dialog box, select the **Don't show this again** check box and then select **Yes**.
 
-12. You will now open a new InPrivate browser session for Joni to verify she was assigned the Intune Administrator role. After signing in, enter the following URL in the address bar: **https://portal.azure.com**
+11. If a **Welcome to Microsoft Azure** dialog box appears, select **Maybe later** to skip the tour.
 
-13. In the **Microsoft Azure** portal, in the middle of the screen is the section of **Azure services**. This section displays a row of Azure services and their associated icons. At the end of the row, select **More services** (with the arrow icon). This opens the **All services** window.
+12. In the **Microsoft Azure** portal, in the middle of the screen is the section of **Azure services**. This section displays a row of Azure services and their associated icons. At the end of the row, select **More services** (with the arrow icon). This opens the **All services** window.
 
-14. In the **All services** window, enter **priv** in the **Search** box at the top of the page. In the list of search results, select **Azure AD Privileged Identity Management**.
+13. In the **All services** window, enter **priv** in the **Search** box at the top of the page. In the list of search results, select **Azure AD Privileged Identity Management**.
 
-15. In the **Privileged Identity Management | Quick start** window, in the **Tasks** section in the left-hand navigation pane, select **My roles**.
+14. In the **Privileged Identity Management | Quick start** window, in the **Tasks** section in the left-hand navigation pane, select **Approve requests**.
 
-16.  In the **My roles | Azure AD roles** window, the **Eligible assignments** tab is displayed by default. Select the **Active assignments** tab. Note the Intune Administrator role is now activated for Joni. 
+15. In the **Approve requests | Azure AD roles** window, in the **Requests for role activations** section, select the check box to the left of the **Intune Administrator** request from Joni Sherman, and then select the **Approve** button.
 
-17. Close the InPrivate browser session.
+16. In the **Approve Request** pane that appears on the right-side of the screen, enter **PIM testing** in the **Justification** field and then select **Confirm**.
 
-18. Leave your Edge browser and all tabs open. 
+17. Close the InPrivate browser session for Alex.
+
+18. You will now open a new InPrivate browser session for Joni to verify she was assigned the Intune Administrator role. After signing in, enter the following URL in the address bar: **https://portal.azure.com**
+
+19. In the **Microsoft Azure** portal, in the middle of the screen is the section of **Azure services**. This section displays a row of Azure services and their associated icons. At the end of the row, select **More services** (with the arrow icon). This opens the **All services** window.
+
+20. In the **All services** window, enter **priv** in the **Search** box at the top of the page. In the list of search results, select **Azure AD Privileged Identity Management**.
+
+21. In the **Privileged Identity Management | Quick start** window, in the **Tasks** section in the left-hand navigation pane, select **My roles**.
+
+22.  In the **My roles | Azure AD roles** window, the **Eligible assignments** tab is displayed by default. Select the **Active assignments** tab. Note the Intune Administrator role is now activated for Joni. 
+
+23. Close the InPrivate browser session.
+
+24. Leave your Edge browser and all tabs open. 
 
 
 ### Task 5 -  Verify a PIM notification was issued
