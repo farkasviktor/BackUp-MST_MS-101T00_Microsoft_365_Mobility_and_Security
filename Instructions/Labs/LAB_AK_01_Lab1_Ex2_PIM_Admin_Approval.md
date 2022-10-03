@@ -46,13 +46,15 @@ Holly also wants to update the notification settings for the Global admin role. 
 
 8. In the **Role setting details -  Global Administrator** window, select **Edit** on the menu bar at the top of the page.
 
-9. In the **Edit role setting - Global Administrator** window, the **Activation** tab is displayed by default. In this tab, select the **Require Approval to activate** check box. Do not change the settings of the other check boxes.
+9. In the **Edit role setting - Global Administrator** window, the **Activation** tab is displayed by default. In this tab, below the activation slider, verify the **On activation, require** option is set to **Azure MFA** (if it's unchecked, then select it now). This will require that the person requesting activation of the role will have to sign in using multi-factor authentication to provide additional verification that they are who they say they are.
 
-10. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select this section. In the **Select a member** pane that opens on the right, scroll through the list of users and select **Holly Dickson**, and then select the **Select** button.
+10. The screen then displays a group of three settings, each with a check box. Select the **Require Approval to activate** check box. Do not change the default settings of the other two check boxes.
 
-11. In the **Edit role setting - Global Administrator** window, select the **Notification** tab.
+11. In the **Select approver(s)** section, no specific approver has been selected. Holly wants to assign herself as the approver for this role, so select this section. In the **Select a member** pane that opens on the right, scroll through the list of users and select **Holly Dickson**, and then select the **Select** button.
 
-12. On the **Notification** tab, note the three activities that can trigger sending of notifications: **Send notifications when...**    <br/>
+12. In the **Edit role setting - Global Administrator** window, select the **Notification** tab.
+
+13. On the **Notification** tab, note the three activities that can trigger sending of notifications: **Send notifications when...**    <br/>
 
     - members are assigned as eligible to this role
     - members are assigned as active to this role
@@ -62,9 +64,9 @@ Holly also wants to update the notification settings for the Global admin role. 
 
     In the **Additional recipients** field for each of the three instances of the **Role assignment alert**, enter the MOD administrator's email ID of **admin@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider).
 
-13. At the bottom of the **Edit role setting - Global Administrator** window, select **Update**.
+14. At the bottom of the **Edit role setting - Global Administrator** window, select **Update**.
 
-14. Leave all browser tabs open for the next task.
+15. Leave all browser tabs open for the next task.
 
 
 ### Task 2 - Assign an eligible group to the Global Admin role
