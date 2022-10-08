@@ -1,4 +1,4 @@
-# Module 3 - Lab 3 - Exercise 3 - Prepare for Alert Policies
+# Learning Path 3 - Lab 3 - Exercise 1 - Prepare for Alert Policies
 
 Alerts are policies designed to automatically notify administrators when key actions have occurred in their Microsoft 365 tenant. Alerts can be an easy way to ensure that change logs are up-to-date and that business policies are being followed inside your Microsoft 365 tenant.
 
@@ -25,27 +25,29 @@ The three alerts that you will create in this lab are assigned to two Alert cate
 
 Perform the following steps to assign Lynne Robbins the Compliance Data Administrator role group, which includes the Compliance Administrator role.
 
-1. You should still be logged into your Client 1 VM (LON-CL1) as the **Admin** account and into Microsoft 365 as Holly Dickson (**holly@xxxxxZZZZZZ.onmicrosoft.com)** with a password of **Pa55w.rd**. 
+1. You should still be logged into your Client 1 VM (LON-CL1) as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**. 
 
 2. After finishing the previous lab, you should still be in the **Microsoft 365 admin center** in your browser. In the left-hand navigation pane, select **Show all**, and then under the **Admin centers** group, select **Security**.
 
-3. In **Microsoft 365 Defender**, in the left-hand navigation pane, select **Permissions **.
+3. In **Microsoft 365 Defender**, scroll down towards the bottom of the left-hand navigation pane and select **Permissions**.
 
-4. On the **Permissions** page, under the **Email & collaboration** section, select **Roles**. In the list of roles that appear, select the **Compliance Data Administrator** role group. 
+4. On the **Permissions** page, under the **Email & collaboration roles** section, select **Roles**. 
 
-5. In the **Compliance Data Administrator** pane, scroll to the bottom and in the **Members** section, select **Edit**. 
+5. In the list of roles that appears, select the **Compliance Data Administrator** role group. 
 
-6. In the **Editing Choose members** window, select **Choose members**. 
+6. In the **Compliance Data Administrator** pane, note the list of roles that have been assigned to this role group. Scroll to the bottom of the pane, and in the **Members** section, select **Edit**. 
 
-7. In the **Choose members** window, select **+Add**, and then in the list of users that appears, select **Lynne Robbins,** and then select **Add.**
+7. In the **Editing Choose members** window, note the message indicating the list of members is currently empty. Below this message, select **Choose members**. 
 
-8. In the **Choose members** window, select **Done.**
+8. In the **Choose members** window, select **+Add**, and then in the list of users that appears, select **Lynne Robbins,** and then select **Add.**
 
-9. In the **Editing Choose members** window, select **Save.**
+9. In the **Choose members** window, select **Done.**
 
-10. In the **Compliance Data Administrator** window, select **Close.**
+10. In the **Editing Choose members** window, select **Save.**
 
-11. Leave the Client 1 VM and the Permissions tab in your Edge browser open for the next task.
+11. In the **Compliance Data Administrator** pane, select **Close.**
+
+12. Leave all tabs in your Edge browser open for the next task.
 
 You have now added Lynne Robbins to the Compliance Data Administrator role group.
 
