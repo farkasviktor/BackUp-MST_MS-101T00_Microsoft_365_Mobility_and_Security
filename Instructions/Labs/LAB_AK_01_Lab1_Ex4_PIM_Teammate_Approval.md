@@ -56,7 +56,7 @@ For this final test of PIM in Adatum's pilot project, Holly has selected Alex Wi
 
 14. In the **Adatum Corporation | Roles** window, scroll down through the list of roles and select **Intune Administrator**.
 
-15. In the **Helpdesk Administrator | Assignments** window, select **+Add assignments** on the menu bar. 
+15. In the **Intune Administrator | Assignments** window, select **+Add assignments** on the menu bar. 
 
 16. In the **Add assignments** window, the **Membership** tab is displayed by default. Under **Select member(s)**, select **No member selected**.
 
