@@ -21,7 +21,7 @@ In this task, you will create an encryption rule for messages inside your Exchan
 
 6. Select the drop-down arrow in the **Apply this rule if**… condition box. In the drop-down menu, select **the recipient is**. 
 
-7. For this condition, you must either select an existing name from the user list or type a new email address in the **check names** box. In this case, enter **guest@adatum.com** in the **Check names** box and then select **OK**.
+7. For this condition, you must either select an existing name from the user list or type a new email address in the **check names** box. In this case, enter **guest@adatum.com** in the **Check names** box and then select **Save**.
 
 8. You need to add more conditions, so scroll down (if necessary) and select **More options**.
 
@@ -29,7 +29,7 @@ In this task, you will create an encryption rule for messages inside your Exchan
 
 10. Note how a second condition box appears below **The recipient is…** condition box. In this second condition box, select the drop-down arrow and select **The recipient**. Then in the drop-down menu select **is external/internal.**
 
-11. In the **select recipient location** dialog box, select the drop-down arrow. In the drop-down menu, select **Outside the organization** and then select **OK.** 
+11. In the **select recipient location** dialog box, select the drop-down arrow. In the drop-down menu, select **Outside the organization** and then select **Save.** 
 
 12. You now need to define an action to perform when this rule is applied. In the **Do the following…** box, select the drop-down arrow. In the drop-down menu, hover your mouse over **Modify the message security…** and in the menu that appears, select **Apply Office 365 Message Encryption and rights protection.**
 
