@@ -15,29 +15,35 @@ In this task, you will create an encryption rule for messages inside your Exchan
 
 3. In the **Exchange admin center**, in the left-hand navigation pane select **Mail flow** to expand this group, and then select **Rules**.
 
-4. On the **Rules** page, select the **plus sign** (**+**) icon on the menu bar to create a new rule. This displays a drop-down menu of actions. Select **Create a new rule.**
+4. On the **Rules** page, select **+Add a rule** on the menu bar to create a new rule. This displays a drop-down menu of actions. Select **Create a new rule.** This initiates the **New transport rule** wizard.
 
-5. In the **new rule** window, in the **Name** box, enter **Encrypt mail for guest@adatum.com** as the name of this rule.
+5. In the **New transport rule** wizard, on the **Set rule conditions** page, enter **Encrypt mail for guest@adatum.com** in the **Name** field.
 
-6. Select the drop-down arrow in the **Apply this rule if**… condition box. In the drop-down menu, select **the recipient is**. 
+6. Two fields appear below the **Apply this rule if** condition. Select the first field. In the drop-down menu that appears, select **the recipient is**. <br/>
 
-7. For this condition, you must either select an existing name from the user list or type a new email address in the **check names** box. In this case, enter **guest@adatum.com** in the **Check names** box and then select **Save**.
+	Select the second field. In the drop-down menu that appears, select **is this person**. For this condition, you must either select an existing name from the user list or type a new email address in the **Select members** field. In this case, enter **guest@adatum.com** in the **Select members** field. Select the **guest@adatum** field that appears, and then select **Save**.
 
-8. You need to add more conditions, so scroll down (if necessary) and select **More options**.
+7. You must now add an additional condition, so select the **plus sign (+)** that appears to the right of the **is this person** field.
 
-9. Select **add condition**. 
+8. Note how a second condition appears under the **And** heading. In this second condition, select the first field, and then select **The recipient** from the drop-down menu. Select the second field. In the drop-down menu that appears, select **is external/internal.**
 
-10. Note how a second condition box appears below **The recipient is…** condition box. In this second condition box, select the drop-down arrow and select **The recipient**. Then in the drop-down menu select **is external/internal.**
+9. In the **select recipient location** dialog box, select the drop-down arrow. In the drop-down menu, select **Outside the organization** and then select **Save.** 
 
-11. In the **select recipient location** dialog box, select the drop-down arrow. In the drop-down menu, select **Outside the organization** and then select **Save.** 
+10. You now need to define an action to perform when this rule is applied. In the **Do the following** section, select the first field. In the drop-down menu that appears, select **Modify the message security**. Select the second field. In the menu that appears, select **Apply Office 365 Message Encryption and rights protection.**
 
-12. You now need to define an action to perform when this rule is applied. In the **Do the following…** box, select the drop-down arrow. In the drop-down menu, hover your mouse over **Modify the message security…** and in the menu that appears, select **Apply Office 365 Message Encryption and rights protection.**
+11. In the **select RMS template** dialog box, select the drop-down arrow, select **Encrypt**, and then select **Save**.
 
-13. In the **select RMS template** dialog box, select the drop-down arrow, select **Encrypt**, and then select **OK.**
+12. You will be returned to the **Set rule conditions** page. Since you will not be defining any exceptions to this rule, you will not update the **Except if** section of the rule. Select **Next**.
 
-14. Select **Save.** Once the rule is saved, it should appear in the list of rules in the Exchange admin center.
+13. On the **Set rule settings** page, verify the **Rule mode** is set to **Enforce** (select this option if it isn't already selected). Select the **Severity** field and select **Medium** from the drop-down menu. Select **Next**.
 
-15. Leave your browser tabs open and proceed to the next task. 
+14. On the **Review and finish** page, review the conditions and rule settings. If any value needs to be changed, select either **Edit rule conditions** or **Edit rule settings** to correct the corresponding field. When all conditions and settings are correct, select **Finish**.
+
+15. Once the transport rule is created successfully, select **Done**.
+
+16. This should return you to the **Rules** page. If the new rule does not appear in the list of rules, select the **Refresh** option on the menu bar. 
+
+17. Leave your browser tabs open and proceed to the next task. 
  
 
 ### Task 2 – Create a Mail Flow Encryption Rule using Windows PowerShell
