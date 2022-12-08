@@ -240,7 +240,7 @@ In this exercise you will use the Sensitivity label that you created in the prev
 
 20. On the right-side of the menu bar, select the **Share** button.
 
-21. In the **Send link** window that appears, select **Anyone with the link can edit**. In the window that appears, check **Specific people** then click on **Can edit** ans select **can View** before you click **Apply**.
+21. In the **Send link** window that appears, select **Anyone with the link can edit**. In the window that appears, select **Specific people**, select **Can edit** and **Can View**, and then select **Apply**.
 
 22. In the **Send link** window, enter **Joni** in the **Enter a name or Email address** field. In the list of users that appears, select **Joni Sherman** and then select **Send**.
 
