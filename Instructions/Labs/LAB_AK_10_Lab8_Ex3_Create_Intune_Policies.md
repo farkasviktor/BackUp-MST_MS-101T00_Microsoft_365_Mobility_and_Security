@@ -106,7 +106,7 @@ Given the problems caused at Adatum by devices that are running old versions of 
 
 ### Task 3: Create an App Protection Policy
 
-In your role as Holly Dickson, Adatum's Enterprise Administrator, you are now going to create an app protection policy that will protect selected applications from intrusion. In other words, the apps will be protected so they can only be accessed by individuals who are authorized to do so, such as Adatum employees and other users from your Microsoft 365 tenant. This enables you to use app protection policies with Windows 10 and later apps to protect the apps without device enrollment.
+In your role as Holly Dickson, Adatum's Enterprise Administrator, you are now going to create an app protection policy that will protect selected applications from intrusion. In other words, the apps will be protected so they can only be accessed by individuals who are authorized to do so, such as Adatum employees and other users from your Microsoft 365 tenant. This enables you to use app protection policies with Windows 10 and later apps to protect the apps.
 
 In this task, you will create an app protection policy that protects an entire collection of recommended apps, as well as an app from the Microsoft Store, which in this case is **Microsoft Power BI**. Since this app produces reports and queries of company trends that may be confidential, Adatum wants to restrict access to it to selected individuals.
 
@@ -124,7 +124,7 @@ In this task, you will create an app protection policy that protects an entire c
 
     - Name: **Windows10/11Policy**
     - Description: **Windows Information Protection policy for Windows 10 and 11 computers**
-    - Enrollment state: **Without Enrollment** <br/>
+    - Enrollment state: **With Enrollment** <br/>
 
     Note the warning message that appears at the bottom of the page indicating before Windows 10 and later policies can take effect, you must define the user scope and restore the MAM URLs in Azure Active Directory. You already did this at the end of the prior task. 
 
