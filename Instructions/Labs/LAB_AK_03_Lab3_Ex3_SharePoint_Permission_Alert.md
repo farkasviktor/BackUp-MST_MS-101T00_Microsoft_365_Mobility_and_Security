@@ -78,4 +78,4 @@ In the prior task, you configured an alert that will notify Lynne Robbins when a
 You have now successfully tested the SharePoint alert to monitor site collection admin permissions on SharePoint sites. 
 
 
-# Proceed to Lab 3 - Exercise 6
+# Proceed to Lab 3 - Exercise 4
