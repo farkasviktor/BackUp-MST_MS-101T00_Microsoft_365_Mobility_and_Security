@@ -42,7 +42,7 @@ To test archiving and retention in your Adatum pilot project, you will create a 
 
 15. Once the group is created, the **Compliance Test Users group created** window appears. Note the message at the top of the page that indicates it can take up to an hour for the group to appear in the Active teams & groups list. Lab testing has shown that the group normally appears within a few minutes. Select **Close**.
 
-16. This will return you to the **Active teams & groups** page. Remember, the tabs on this page reflect the four types of groups. By default, the **Microsoft 365** tab is displayed, which displays Microsoft 365 groups. Since you created a mail-enabled security group, select the **Mail-enabled security** tab to display this type of group. If the **Compliance Test Users** group does not appear in the list of mail-anabled security groups, select the **Refresh** icon on the menu bar to refresh the list of groups. <br/>
+16. This will return you to the **Active teams & groups** page. Remember, the tabs on this page reflect the four types of groups. By default, the **Microsoft 365** tab is displayed, which displays Microsoft 365 groups. Since you created a mail-enabled security group, select the **Mail-enabled security** tab to display this type of group. If the **Compliance Test Users** group does not appear in the list of mail-enabled security groups, select the **Refresh** icon on the menu bar to refresh the list of groups. <br/>
 
 	**Important:** You cannot proceed until the Compliance Test Users group appears in the list; therefore, keep refreshing the list every few minutes until it appears.
 
