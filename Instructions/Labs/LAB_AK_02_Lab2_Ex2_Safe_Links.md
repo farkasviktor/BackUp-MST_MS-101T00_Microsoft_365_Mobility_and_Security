@@ -66,7 +66,7 @@ In this task, you will test the Safe Links Policy that you just created that blo
 
     - Add a subject: **Free stuff for Adatum users**
 
-    - body of the message: **Please click on me for free toys from TailSpin Toys.**
+    - body of the message: **Please click on me for free toys from Tailspin Toys.**
 
 6. Select the entire text string that you just added in the body of the message.
 
