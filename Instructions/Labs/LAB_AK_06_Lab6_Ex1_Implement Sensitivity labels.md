@@ -37,7 +37,7 @@ In this exercise you will create a Sensitivity Label and add it to the default p
 
 1. On LON-CL1, you should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In your Edge browser, you should still have a tab open for the **Microsoft 365 admin center**. If not, open an new tab and enter the following URL: **https://admin.microsoft.com**.
+2. In your Edge browser, you should still have a tab open for the **Microsoft 365 admin center**. If not, open a new tab and enter the following URL: **https://admin.microsoft.com**.
 
 3.  On the **Microsoft 365 admin center**, if necessary, select **... Show all**. Select **Compliance** under the **Admin centers** group.
 
@@ -113,7 +113,7 @@ In this exercise you will create a Sensitivity Label and add it to the default p
 
 20. On the **Define protection settings for groups and sites** page, leave both check boxes blank and select **Next**.
 
-21. On the **Auto-labeling for schematized data assets (preview)** page, do not enable Auto-labeling for for schematized data assets (preview). Select **Next**. 
+21. On the **Auto-labeling for schematized data assets (preview)** page, do not enable Auto-labeling for schematized data assets (preview). Select **Next**. 
 
 22. On the **Review your settings and finish** page, review the information you entered. If any settings need to be corrected, select the corresponding **Edit** option and make any necessary changes. When all information appears correct, select **Create label**.
 
@@ -198,7 +198,7 @@ In this exercise you will use the Sensitivity label that you created in the prev
 
 5. In the **Pick an account** window, select **Use another account**.
 
-6. In the **Sign in** window, enter **AlexW@xxxxxZZZZZZ.onmicrosoft** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**.
+6. In the **Sign in** window, enter **AlexW@xxxxxZZZZZZ.onmicrosoft.com** (where xxxxxZZZZZZ is the tenant prefix provided by your lab hosting provider) and then select **Next**.
 
 7. On the **Enter password** window, enter **User.pw1** and then select **Sign in**.
 
@@ -323,7 +323,7 @@ In the prior task, you created a Word document and protected it with a Sensitivi
 
 29. You will now test what happens when you attempt to open the document that was sent to your personal email address. Use your phone or classroom PC to access your personal email address. Open the email that you (in the role of Holly) just sent to your personal email address, and then attempt to open the attached file. 
 
-30. You should receive a messaging indicating that you are not signed into Office with an account that has permission to access the document. You can optionally sign in with an account that has permission to access the file, or request access from the **AlexW@xxxxxZZZZZZ.onmicrosoft.com** account, or Cancel out of the operation. Select **Cancel**.  <br/>
+30. You should receive a message indicating that you are not signed into Office with an account that has permission to access the document. You can optionally sign in with an account that has permission to access the file, or request access from the **AlexW@xxxxxZZZZZZ.onmicrosoft.com** account, or Cancel out of the operation. Select **Cancel**.  <br/>
 
 	‎Since only Joni was assigned permission to read the document, you just verified that Azure Information Protection protected the document based on the PII policy parameters that you configured.
 
