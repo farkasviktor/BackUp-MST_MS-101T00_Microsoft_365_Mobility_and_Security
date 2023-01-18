@@ -46,7 +46,7 @@ The policy will contain two rules, or actions, each of which is dependent on the
     
         - In the **Content contains** field, select the **Add** drop-down menu and then select **Sensitive info types**.
         
-        - In the **Sensitive info types** pane, type **IP** inside the **Search** field and then hit Enter.
+        - In the **Sensitive info types** pane, type **IP** inside the **Search** field and then hit **Enter**.
         
         - In the search results, select the **IP Address** check box and then select **Add**.
         
@@ -72,7 +72,7 @@ The policy will contain two rules, or actions, each of which is dependent on the
     
         - In the **Content contains** field, select the **Add** drop-down menu and then select **Sensitive info types**.
         
-        - In the **Sensitive info types** pane, type **IP** inside the **Search** field and then hit Enter.
+        - In the **Sensitive info types** pane, type **IP** inside the **Search** field and then hit **Enter**.
         
         - Select the **IP Address** check box and then select **Add**.
 
