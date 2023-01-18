@@ -6,7 +6,7 @@ In your role as Holly Dickson, Adatum’s Enterprise Administrator, you have Mic
 
 In this exercise, you will log into Microsoft 365 on LON-CL2 as Joni Sherman, and you will perform a content search that looks for emails with the keyword **IP address**. Joni is able to access the Content Search feature in the Microsoft Purview portal because you assigned her the eDiscovery Manager role back in Lab 1. This role provides access to the Content Search feature for non-admins.
 
-1. Switch to LON-CL2, where you should still be logged in as the local **Admin** account, and in your Edge browser, you should be logged into **Outlook on the web** as **Joni Sherman** from the prior lab dealing with sensitivity labels. 
+1. Switch to **LON-CL2**, where you should still be logged in as the local **Admin** account, and in your Edge browser, you should be logged into **Outlook on the web** as **Joni Sherman** from the prior lab dealing with sensitivity labels. 
 
 2. Joni needs to access the **Microsoft Purview** portal. However, while she can access the Microsoft Office Home page, she does not have admin permissions; therefore, she can't access the Microsoft 365 admin center from the Microsoft Office Home page. This means that she can't access the Microsoft Purview portal from the Microsoft 365 admin center. Therefore, she will have to access the Microsoft Purview portal directly. <br/>
 
