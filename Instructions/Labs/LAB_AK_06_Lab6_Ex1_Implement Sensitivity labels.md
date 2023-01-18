@@ -277,7 +277,7 @@ In the prior task, you created a Word document and protected it with a Sensitivi
 
 8. Select **Send**.
 
-9. Switch to LON-CL2. 
+9. Switch to **LON-CL2**. 
 
 10. In LON-CL2, you should be logged into **Outlook on the Web** as **Lynne Robbins** from a previous lab exercise. Sign out as Lynne.
 
