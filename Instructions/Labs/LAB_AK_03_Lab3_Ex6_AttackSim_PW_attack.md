@@ -46,7 +46,7 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 	- Industry: **Retail**
 	- Current Event: **Yes**
 	- Select the language for payload : **English** 
-	- Email message: Enter the following text that will be displayed in the body of the email message: **Tailspin Toys is offering you a FREE, one-time only giveaway of a toy of your choice as part of our 25th anniversary celebration! Please click on the following link to select the toy of your choice: ** 
+	- Email message: Enter the following text that will be displayed in the body of the email message: **Tailspin Toys is offering you a FREE, one-time only giveaway of a toy of your choice as part of our 25th anniversary celebration! Please click on the following link to select the toy of your choice:** 
 	- After entering the prior message, select the **Phishing link** option at the top of the text form (to the right of **Dynamic tag**). In the **Name Phishing Url** dialog box that appears, enter **Free25thAnniversaryGift@tailspintoys.com** in the **Name** field and then select **Confirm**.
 
 	The message should now appear as: 
