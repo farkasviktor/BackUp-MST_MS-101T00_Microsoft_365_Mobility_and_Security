@@ -293,7 +293,7 @@ Each user is a key member of your pilot project team. While their user accounts 
 
 25. Once the **Sales Group** appears in the list of **Microsoft 365** groups, select the **Sales Group** name.
 
-26. In the **Sales Group** pane that appears, the **General** tab is displayed by default. Select the **Members** tab.
+26. In the **Sales Group** pane that appears, the **General** tab is displayed by default. Select the **Membership** tab.
 
 	**Note:** While you could have added members to this group at the time you created it, you will instead add members after the group has been created. This will give you experience in how to add members to an existing group. 
 
