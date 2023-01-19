@@ -276,7 +276,7 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 
 14. If a **Do you want to allow this app to make changes to your device?** dialog box appears, select **Yes**.
 
-14. In the **Command Prompt** window, at the prompt, type the following command to encrypt the apptest1.txt file (the /e parameter directs the cipher command to encrypt the file) and then hit Enter:    <br/>
+14. In the **Command Prompt** window, at the prompt, type the following command to encrypt the apptest1.txt file (the /e parameter directs the cipher command to encrypt the file) and then hit **Enter**:    <br/>
 
     **cipher /e   C:\Users\Admin\Documents\apptest1.txt**  <br/>
 
