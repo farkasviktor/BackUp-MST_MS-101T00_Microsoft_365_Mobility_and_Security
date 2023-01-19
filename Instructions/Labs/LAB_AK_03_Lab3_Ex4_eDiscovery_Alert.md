@@ -12,7 +12,7 @@ In this task, you will verify whether a default Microsoft 365 alert is triggered
 
 2. In your Edge browser, in the **Microsoft 365 Defender** tab, you should still be in the **Alert policy** window from the prior lab exercise (if not, then in the left-hand navigation pane, select **Policies & rules** and then select **Alert policy**).
 
-3. On the **Alert policy** page, you want to search through the default system policies for a policy named **eDiscovery search started or exported**. Since there are so many pre-existing system policies, the easiest way to locate the policy is to search for it. In the **Search** field at the top of the screen, enter **eDiscovery** and then hit Enter. 
+3. On the **Alert policy** page, you want to search through the default system policies for a policy named **eDiscovery search started or exported**. Since there are so many pre-existing system policies, the easiest way to locate the policy is to search for it. In the **Search** field at the top of the screen, enter **eDiscovery** and then hit **Enter**. 
 
 4. In the policy list, select the **eDiscovery search started or exported** policy that appears. 
 
