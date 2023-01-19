@@ -83,7 +83,7 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 8. Since **Holly Dickson** has changed the mailbox permissions for Alex Wilber by giving Joni Sherman full access permissions to his mailbox, an alert email should automatically be sent to Lynne Robbins’ Inbox that notifies her of this event.
 
-	‎Switch to LON-CL2. 
+	‎Switch to **LON-CL2**. 
 
 9. In your Edge browser, select the **Mail - Lynne Robbins - Outlook** tab that has Outlook on the web open for Lynne Robbins' mailbox. In Lynne Robbins’ **Inbox**, an email should be received from the Alerts notification system (**Office365Alerts@microsoft.com**) to let her know that Holly Dickson has made a Mailbox permission change. <br/>
 
@@ -93,7 +93,7 @@ In the prior task, you configured an alert that will notify Lynne Robbins when F
 
 	Scroll down through the **Mailbox permission change** pane and review all the information for this activity. When you are done, select **Close** to close the pane.
 
-11. Switch back to the LON-CL1.
+11. Switch back to the **LON-CL1**.
 
 12. In your browser, close the Exchange admin center tab, but leave the other browser tabs open.
 
