@@ -46,7 +46,7 @@ For this final test of PIM in Adatum's pilot project, Holly has selected Alex Wi
 
 9. On the **Groups | All groups** window, if the **PIM-Intune-Administrators** group does not appear, select **Refresh** on the menu bar. It may take a few minutes for the group to appear.
 
-10 You must now make the **PIM-Intune-Administrators** group eligible for role assignment. In the **Azure Active Directory admin center** navigation pane, select **All services**.
+10. You must now make the **PIM-Intune-Administrators** group eligible for role assignment. In the **Azure Active Directory admin center** navigation pane, select **All services**.
 
 11. In the **All services** window, in either the **Identity** or **Security** sections, select **Azure AD Privileged Identity Management**.
 
