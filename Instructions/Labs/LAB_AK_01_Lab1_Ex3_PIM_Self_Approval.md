@@ -47,7 +47,7 @@ For this next test of PIM in Adatum's pilot project, Holly has selected Alex Wil
 
 9. On the **Groups | All groups** window, if the **PIM-Helpdesk-Administrators** group does not appear, select **Refresh** on the menu bar.
 
-10 You must now make the **PIM-Helpdesk-Administrators** group eligible for role assignment. In the **Azure Active Directory admin center** navigation pane, select **All services**.
+10. You must now make the **PIM-Helpdesk-Administrators** group eligible for role assignment. In the **Azure Active Directory admin center** navigation pane, select **All services**.
 
 11. In the **All services** window, in either the **Identity** or **Security** sections, select **Azure AD Privileged Identity Management**.
 
@@ -161,7 +161,7 @@ At this point in Holly's pilot project, the **PIM-Helpdesk-Administrators** grou
 
 11. On the **My roles | Azure AD roles** window, note that you're still in the **Eligible assignments** tab. Also note the message at the top of the window indicating **Your active roles have changed. Click here to view your active roles**. Select this message. This simply displays the **Active assignments** tab, which you could have selected yourself instead of selecting the message. 
 
-12. In the **Active assignments** tab, note the **Helpdesk Administrator** role now appears. Prior to activating this role, remember that you checked this tab earlier and no Azure AD roles appeared. Now that Alex has self-approved that the role, it's now been assigned to his user account. 
+12. In the **Active assignments** tab, note the **Helpdesk Administrator** role now appears. Prior to activating this role, remember that you checked this tab earlier and no Azure AD roles appeared. Now that Alex has self-approved the **Helpdesk Administrator** role, it's now been assigned to his user account. 
 
 13. Close the InPrivate browser session. You should now return to the **Azure Active Directory admin center**, which should be displaying the **Adatum Corporation | Setting** page.
 
