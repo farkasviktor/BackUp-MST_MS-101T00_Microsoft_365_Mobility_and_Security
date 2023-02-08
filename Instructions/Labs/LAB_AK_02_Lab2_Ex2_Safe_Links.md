@@ -36,7 +36,7 @@ In this task, you will create a Safe Links policy that applies to all users in y
 
 11. On the **New Safe Links policy created** page, select **Done**. Once the **LinkPolicy1** policy is created, it will appear in the Safe links list. 
 
-12. In the navigation thread at the top of the page (**Policies & rules > Threat policies > Safe attachments**), select **Threat policies**.
+12. In the navigation thread at the top of the page (**Policies & rules > Threat policies > Safe links**), select **Threat policies**.
 
 13. In the **Threat policies** page, under the **Rules** section, select **Tenant Allow/Block Lists**.
 
