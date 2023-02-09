@@ -47,9 +47,9 @@ In this exercise you will configure and test an alert that will notify Lynne Rob
 
 	When everything is correct, under the **Do you want to turn the policy on right away?** setting, select **Yes, turn it on right away**. Select **Submit**.
 
-12. Verify your new alert policy appears in the list on the **Alert policy** page and its **Status** in **On**.
+12. On the **New Alert Policy** window, select **Done**.
 
-13. On the **New Alert Policy** window, select **Done**.
+13. Verify your new alert policy appears in the list on the **Alert policy** page and its **Status** in **On**.
 
 14. Leave the Client 1 VM and the Alert policy tab in your Edge browser open for the next task.
 
