@@ -109,7 +109,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, you have been 
 
 28. Select **Save** when you are done and then close the **Custom themes** pane.
 
-29. Remain logged into LON-DC1 with Microsoft Edge open to the **Microsoft 365 admin center** for the next task.
+29. Remain logged into **LON-CL1** with Microsoft Edge open to the **Microsoft 365 admin center** for the next task.
 
 
 
