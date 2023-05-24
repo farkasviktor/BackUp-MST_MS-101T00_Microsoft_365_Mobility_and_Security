@@ -104,17 +104,15 @@ In this task, you will create a conditional access policy that Holly plans to im
 
 2. In the **Endpoint security | Overview** window, in the middle pane under the **Manage** section, select **Conditional access**.
 
-3. In the **Conditional Access | Policies** window, select **+New policy** on the menu bar.
+3. In the **Conditional Access | Policies** window, select **+Create new policy** on the menu bar.
 
 4. On the **New** pane, enter the following information:  <br/>
 
    - In the **Name** field, enter **Conditional1**.
-   - Under the **Assignments** section, select **0 users or workload identities selected**. Enter the following information in the settings that appear:
-      - Under the **What does this policy apply to?**, select **Users and groups**. 
-      - Under the **Include** tab, select the **All users** option.
+   - Under the **Users** section, select **0 users and groups selected**. Under the **Include** tab, select the **All users** option.
    - Under the **Cloud apps or actions** section, select **No cloud apps, actions, or authentication contexts selected**. Enter the following information in the settings that appear:
       - Under the **Select what this policy applies to**, select **Cloud apps**. 
-      - Under the **Include** tab, select **Select apps**.
+      - Under the **Include** tab, select **Select apps**. Under the **Select** group that appears, select **None**.
       - In the **Select** pane that appears, enter **Exchange** in the Search field. In the list of search results, select the check box for **Office 365 Exchange Online**, and then select the **Select** button at the bottom of the pane.
    - Under the **Conditions** section, select **0 conditions selected**. Enter the following information in the settings that appear:
       - Under the **Device platforms** section, select **Not configured**.
@@ -125,7 +123,7 @@ In this task, you will create a conditional access policy that Holly plans to im
 
 5. On the **New** pane, select the **Create** button at the bottom of the pane. The **Conditional1** policy now appears in the policy list.
 
-6. You created a conditional access policy to become familiar with the available options. However, the policy is not effective because you didn't enable it. To enable the policy, select the **Conditional1** policy in the policy list.  
+6. You created a conditional access policy to become familiar with the available options. However, the policy is not effective because you didn't enable it. To enable the policy, select the **Overview** tab, and then under the **Policy Snapshot** group, select **View all policies**. On the **Policies** page, select the **Conditional1** policy in the policy list.  
 
 7. In the **Conditional1** pane, the **Enable policy** setting appears at the bottom of the pane. By default, it's set to **Report-only**. Select **On** and then select **Save**. <br/>
 
