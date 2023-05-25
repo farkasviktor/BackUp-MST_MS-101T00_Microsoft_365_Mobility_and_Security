@@ -1,6 +1,6 @@
 # Learning Path 10 - Lab 8 - Exercise 2 - Configure Azure AD for Intune 
 
-In this exercise you will activate automatic client enrollment to Intune for Mobile Device Management (MDM). This will enable you to manage mobile device access and set policies for restricting access to devices unless certain actions are adopted, such as strong passwords and screen timeouts.
+In this exercise you will activate automatic client enrollment to Intune for Mobile Device Management (MDM) for all Windows 10 and later devices. This will enable you to manage mobile device access and set policies for restricting access to Windows 10 and later devices unless certain actions are adopted, such as strong passwords and screen timeouts.
 
 ### Task 1: Integrate Azure AD with Intune
 
@@ -8,25 +8,25 @@ In this exercise you will activate automatic client enrollment to Intune for Mob
 
 2. In your browser, select the **Microsoft 365 admin center** tab, which should still be open; if not, navigate to **https://admin.microsoft.com.** 
 
-3. In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Azure Active Directory**.
+3. In the **Microsoft 365 admin center**, in the left-hand navigation pane under **Admin centers**, select **Endpoint Manager**. This returns the **Microsoft Intune admin center**.
 
-4. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory**.
+4. In the **Microsoft Intune admin center**, in the left-hand navigation pane, select **Devices**.
 
-5. On the **Adatum Corporation | Overview** window, in the middle pane under **Manage,** select **Mobility (MDM and MAM),** and then in the details pane on the right, select **Microsoft Intune**.<br/>
+5. In the **Devices | Overview** page, in the middle pane under the **Device enrollment** section select **Enroll devices**.
 
-    **Note:** If you see a notification that automatic enrollment is available only for Azure AD Premium, press F5 to refresh the page in your web browser and then select **Microsoft Intune**.
+6. In the **Enroll devices | Windows enrollment** page, under the **General** section, select **Automatic Enrollment**.
 
-6. On the **Configure** window, in the **MDM user scope** row, select **All**.<br/>
+7. In the **Configure** window, there are two user scope settings - **MDM user scope** and **MAM user scope**. In the **MDM user scope** row, select **All**.<br/>
 
     **Note:** By setting this parameter to **All**, you are allowing all users who join their devices to Azure AD to automatically enroll them to Intune as well.
 
-7. Below the list of MDM-related fields, select **Restore default MDM URLs** to ensure the correct URLs for client enrollment are configured.
+8. Below the list of MDM-related fields, select **Restore default MDM URLs** to ensure the correct URLs for client enrollment are configured.
 
-8. In the menu bar at the top of the **Configure** window, select **Save**.
+9. In the menu bar at the top of the **Configure** window, select **Save**.
 
-9. Leave all browser tabs open for the next task.
+10. Leave all browser tabs open for the next task.
 
-You have now configured your tenant so that all users can enroll their Windows 10 clients into Intune as soon they log into their devices with their Azure AD account credentials.
+You have now configured your tenant so that all users can enroll their Windows 10 and 11 clients into Intune as soon they log into their devices with their Azure AD account credentials.
 
 
 ### Task 2: Configure Azure AD join
