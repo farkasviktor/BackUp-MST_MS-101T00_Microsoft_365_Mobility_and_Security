@@ -37,19 +37,19 @@ You have now verified the available Enterprise Mobility + Security E5 licenses i
 
 ### Task 2: Review MDM features in Microsoft Endpoint Manager
 
-Devices must be managed before you can give users access to company resources or manage settings on those devices. This begins with enabling device management with Intune. With Adatum's tenant, Holly will discover that Intune has been set by default as Adatum's MDM authority. This task has you navigate through various device management features in Microsoft Endpoint Manager in order to introduce you to some of the MDM functionality that's available.
+Devices must be managed before you can give users access to company resources or manage settings on those devices. This begins with enabling device management with Intune. With Adatum's tenant, Holly will discover that Intune has been set by default as Adatum's MDM authority. This task has you navigate through various device management features in Microsoft Intune in order to introduce you to some of the MDM functionality that's available.
 
 1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin centers** group, select **Endpoint Manager**.
+2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin centers** group, select **Endpoint Manager**. This returns the **Microsoft Intune admin center**.
 
-3. In the **Microsoft Endpoint Manager admin center**, select **Tenant administration** in the left-hand navigation pane.
+3. In the **Microsoft Intune admin center**, select **Tenant administration** in the left-hand navigation pane.
 
-4. On the **Tenant admin | Tenant status** page, note the **MDM authority** is set to **Microsoft Intune**.
+4. On the **Tenant admin | Tenant status** page, the **Tenant details** tab is displayed by default. Note the **MDM authority** is set to **Microsoft Intune**.
 
-5. In the **Microsoft Endpoint Manager admin center**, select **Devices** in the left-hand navigation pane.
+5. In the **Microsoft Intune admin center**, select **Devices** in the left-hand navigation pane.
 
-6. In the **Devices | Overview** page, the **Enrollment status** tab is displayed by default. By default, Intune has been set as the MDM authority in Adatum's tenant. Note the number of **Intune enrolled devices** for each device platform. Since you haven't conducted any device management tasks yet, there is no data to show on this page. However, it's still important that you become aware of the type of data that's captured. 
+6. In the **Devices | Overview** page, the **Enrollment status** tab is displayed by default. By default, Intune has been set as the MDM authority in Adatum's tenant. Note the number of **Intune enrolled devices** for each device platform. Since you haven't conducted any device management tasks yet, no platform has any enrolled devices. However, it's still important that you become aware of the type of data that's captured. 
 
 7. In the middle pane under the **Policy** section, select **Compliance policies**. Even though no data is currently available, review the information on the **Compliance policies | Policies** page regarding device management. After reviewing this information, perform the following steps to examine the additional compliance policy features that can be configured: <br/>
 
@@ -58,43 +58,37 @@ Devices must be managed before you can give users access to company resources or
    - On the **Create notification** window, under the **Basics** tab, review the settings that can be configured for a notification. Select the **X** in the upper right-hand corner of the window to close it.
    - On the **Compliance policies | Notifications** page, in the middle pane, select **Compliance policy settings**. 
    - On the **Compliance policies | Compliance policy settings** page, review the settings that control the way the compliance service treats devices.
-   - Once you're done reviewing the settings, select **Devices** in the **Microsoft Endpoint Manager admin center** navigation pane.
+   - Once you're done reviewing the settings, select **Devices** in the **Microsoft Intune admin center** navigation pane.
 
-8. On the **Devices | Overview** page, in the middle pane under the **Policy** section, select **Conditional Access**. Review the information on the **Conditional Access | Policies** page. Read the information on this page regarding conditional access. Then perform the following steps to examine additional conditional access settings:  <br/>
+8. On the **Devices | Overview** page, in the middle pane under the **Policy** section, select **Conditional Access**. 
 
-   - On the **Conditional Access | Policies** page, in the middle pane, select **Diagnose and solve problems**. 
-   - On the **Conditional Access | Diagnose and solve problems** page, under the **Common problems** section, select the **View guidance** button under **Problems configuring location-based policies**. Review the troubleshooting guidance for this problem. Note the **Recommended steps** to resolve the problem. When you're done, select the **Previous** button.
-   - Repeat the prior step for each of the remaining problems on the **Conditional Access | Diagnose and solve problems** page. When you're done, in the middle pane under the **Monitoring** section, select **Sign-in logs**.
-   - On the **Conditional Access | Sign-in Logs** page, under the **User sign-ins (Interactive)** tab, note the various sign-in logs that were generated thus far. 
-   - Select one of the logs. In the **Activity Details: Sign-ins** pane that appears, review the data that's tracked for that particular sign-in activity under the **Basic info** tab. 
-   - In the **Activity Details: Sign-ins** pane, select the other tabs to see the data captured there. When you've finished reviewing the information tracked for this sign-in activity, close the **Activity Details: Sign-ins** pane.
-   - In the middle pane under the **Monitoring** section, select **Audit logs**. Note the filters provided at the top of the page - Date, Show date as, Service, and so on.
-   - Select the **Date** filter. By default, this filter option is set to **Last 24 hours**. In the **Date** filter window that appears, select **Last 7 days** and then select **Apply**. This should display all the audit logs that have been created thus far in your lab. Review the information provided in the list of audit logs. 
-   - In the middle pane under the **Troubleshooting + Support** section, select **New support request**. This initiates a **New support request** wizard, which may take a minute or two to initialize and display the first page in the wizard (note the **Getting things ready** message that's displayed). This feature is used to create a support request ticket that's sent to the Microsoft Support team.
-   - On the first step in the wizard (**1. Problem description**), select into each of the drop-down fields to review the various options that are available. <br/>
+9. On the **Conditional Access | Overview (Preview)** page, the **Overview** tab is displayed by defeault. Under the **Policy Summary** section, select each of the various group headings (**Policy Snapshot**, **Users**, **Devices**, and **Applications**) and review the information for each group. Select the other tabs on the screen and review that information as well. 
+
+10. On the **Conditional Access | Overview (Preview)** page, in the middle pane under the **Troubleshooting + Support** section, select **New support request**. This initiates the **New support request** wizard, which may take a minute or two to initialize and display the first page in the wizard (note the **Getting things ready** message that's displayed). This feature is used to create a support request ticket that's sent to the Microsoft Support team.
+   - On the first step in the wizard (**1. Problem description**), select into the **Issue type** field to review the various options that are available. <br/>
 
       **IMPORTANT:** Do NOT fill out this information or submit a support request. You may be in a classroom training environment, but you're dealing with an actual Microsoft 365 tenant. As such, submitting a support request will still send the request from your training tenant to Microsoft for processing by the Support team, which we don't want to do.
 
-9. Once you've finished reviewing the **Conditional access | New support request** page, select **Devices** in the **Microsoft Endpoint Manager admin center** navigation pane.
+11. Once you've finished reviewing the **Conditional access | New support request** page, select **Devices** in the **Microsoft Intune admin center** navigation pane.
 
-10. On the **Devices | Overview** page, in the middle pane under the **Policy** section, scroll down and select **Enrollment device limit restrictions**. Review the information on the **Devices | Enrollment device limit restrictions** page. Note the fact that each user has a default limit of 5 devices they can enroll into Intune. You can change this value by performing the following steps: <br/>
+12. On the **Devices | Overview** page, in the middle pane under the **Policy** section, scroll down and select **Enrollment device limit restrictions**. Review the information on the **Devices | Enrollment device limit restrictions** page. Note the fact that each user has a default limit of 5 devices they can enroll into Intune. You can change this value by performing the following steps: <br/>
 
-   - For the **Default** priority, select **All users** under the **Name** column.
+   - For the **Default** priority, select **All users and all devices** under the **Name** column.
    - On the **All users** page, in the middle pane under **Manage**, select **Properties**.
    - On the **All users | Properties** page, select **Edit** that appears next to **Device limit**.
-   - On the **Edit restriction** page, select the **Device limit** field and select the new limit value in the drop-down menu. For example, set the value to **3**. Then select the **Review + Save** button.
+   - On the **Edit restriction** page, select the **Device limit** field and select the new limit value in the drop-down menu. For example, set the value to **3**. Then select the **Review + save** button.
    - On the **Edit restriction** page, under the **Reivew + save** tab, note the change to the device limit. Select **Save**.
 
-11. In the **Microsoft Endpoint Manager admin center**, select **Devices** in the left-hand navigation pane. 
+13. In the **Microsoft Intune admin center**, select **Devices** in the left-hand navigation pane. 
 
-12. On the **Devices | Overview** page. In the middle pane under the **Policy** section, scroll down and select **Enrollment device platform restrictions**. Review the information on the **Devices | Enrollment device platform restrictions** page. Note the tabs at the top of the page. Administrators can define version and management type restrictions for each platform type (see the tabs at the top of the page). While you won't add any restrictions at this time, perform the following steps to examine the types of restrictions that can be applied - in this case, for the **Default** restriction: <br/>
+14. On the **Devices | Overview** page, in the middle pane under the **Policy** section, scroll down and select **Enrollment device platform restrictions**. Review the information on the **Devices | Enrollment device platform restrictions** page. Note the tabs at the top of the page. Administrators can define version and management type restrictions for each platform type. While you won't add any restrictions at this time, perform the following steps to examine the types of restrictions that can be applied - in this case, for the **Default** restriction: <br/>
 
-   - Select each tab - Androd restrictions, Windows restrictions, MacOS restrictions, and iOS restrictions. Note the **Default** restriction appears in each tab. Regardless of the tab you're on, select **All users** for the **Default** restriction.
+   - Select each tab - **Androd restrictions**, then **Windows restrictions**, then **MacOS restrictions**, and finally **iOS restrictions**. Note the **Default** restriction appears in each tab. Regardless of the tab you're on, select **All users** for the **Default** restriction.
    - On the **All users** page, in the middle pane under the **Manage** section, select **Properties**.
    - On the **All users | Properties** page, under the **Platform settings** section, review the current settings for each platform that applies to this **Default** restriction. Then select **Edit** that appears next to **Platform settings**.
-   - On the **Edit restriction** page, note the various platform settings that you can configure. Do not modify any of the settings at this time. Once you're done reviewing the settings, select **Devices** in the **Microsoft Endpoint Manager admin center** navigation pane.
+   - On the **Edit restriction** page, note the various platform settings that you can configure. Do not modify any of the settings at this time. Once you're done reviewing the settings, select **Devices** in the **Microsoft Intune admin center** navigation pane.
 
-13. On the **Devices | Overview** page, in the middle pane under the **Policy** section, select **Configuration profiles**. Review the information on the **Devices | Configuration profiles** page. When configuring profiles for each platform type, Microsoft Endpoint Manager provides a variety of templates that can be used as the basis for a new template. Using preconfigured templates is the quickest and most efficient way to create a configuration profile. Perform the following steps to examine the list of templates available:  <br/>
+15. On the **Devices | Overview** page, in the middle pane under the **Policy** section, select **Configuration profiles**. Review the information on the **Devices | Configuration profiles** page. When configuring profiles for each platform type, Microsoft Intune provides a variety of templates that can be used as the basis for a new template. Using preconfigured templates is the quickest and most efficient way to create a configuration profile. Perform the following steps to examine the list of templates available:  <br/>
 
    - On the **Devices | Configuration profiles** page, select the **+Create profile** option that appears in the menu bar at the top of the page.
    - On the **Create a profile** pane that appears, select in the **Platform** field, and then select **Windows 10 and later**. 
@@ -103,9 +97,9 @@ Devices must be managed before you can give users access to company resources or
    - Do not select a template. When you've finished reviewing the available templates, close the **Create a profile** pane.   
    - If a dialog box appears at the top of the page indicating your unsaved edits will be discarded, select **OK**.  
 
-14. Select **Devices** in the **Microsoft Endpoint Manager admin center** navigation pane.
+16. Select **Devices** in the **Microsoft Intune admin center** navigation pane.
 
-15. In your Edge browser, leave all the tabs open for the next lab exercise. 
+17. In your Edge browser, leave all the tabs open for the next lab exercise. 
 
 You have now verified that Intune is the default MDM solution for your tenant, and you have reviewed a number of the device settings that can be configured.
 
