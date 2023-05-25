@@ -33,11 +33,11 @@ You have now configured your tenant so that all users can enroll their Windows 1
 
 In this task, you will change the default settings for users to join their devices to Adatum's Azure AD tenant.
 
-1. In your browser, in the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory.**
+1. In your browser, select the **Microsoft 365 admin center** tab, which should still be open; if not, navigate to **https://admin.microsoft.com.** 
 
-2. In the **Adatum Corporation | Overview** window, in the middle section under **Manage**, select **Devices**.
+2. In the **Microsoft 365 admin center**, in the left-hand navigation pane under the **Admin centers** group, select **Azure Active Directory.** This returns the **Microsoft Entra admin center**.
 
-3. In the **Devices | Overview** window, in the middle section, select **All devices**.
+3. In the **Microsoft Entra admin center**, in the left-hand navigation pane, select **Devices**, and then select **All devices**.
 
 4. In the **Devices | All devices** window, in the details pane on the right, verify that **LON-CL2** is displayed in the list of devices. <br/>
 
@@ -45,17 +45,19 @@ In this task, you will change the default settings for users to join their devic
 
 5. In the **Devices | All devices** window, in the middle pane, select **Device settings**.
 
-6. In the **Devices | Device settings** window, in the details pane on the right, in the **Users may join devices to Azure AD** option, verify that **All** is selected. This means that all Azure AD users can join their devices to Azure Active Directory.
+6. In the **Devices | Device settings** window, in the **Users may join devices to Azure AD** option, verify that **All** is selected. This means that all Azure AD users can join their devices to Azure Active Directory.
 
-7. Scroll down to the bottom of the window. Under **Additional local administrators on all Azure AD joined devices**, no local administrators are displayed. Select the **Manage Additional local administrators on all Azure AD joined devices**. <br/>
+7. Scroll down to the bottom of the window. Under **Local administrator settings**, no local administrators are displayed. Select the **Manage Additional local administrators on all Azure AD joined devices**. <br/>
 
-   On the **Device Administrators | Assignments** window, note that there are no additional assignments. In the next several steps, you will add a role assignment.
+   On the **Device Administrators | Assignments** window, note that no role assignments were found. In the next several steps, you will add a role assignment.
 
 8. In the **Device Administrators | Assignments** window, select **+Add assignments** on the menu bar.
 
 9. In the **Add assignments** pane on the right, select **Alex Wilber** in the list of users and then select the **Add** button at the bottom of the screen.
 
-10. Select the **Back arrow** on the address bar to return to the **Devices | Device settings** page. Verify the **Require Multi-Factor Auth to join devices** toggle switch is set to **No**. The **Maximum number of devices per user** is currently set to **50**; select this field and in the drop-down menu that appears, select **10**.
+10. In the navigation thread that appears at the top of the screen (Home > Devices | Device settings > Device Administrators), select **Devices | Device settings**.
+
+11. On the **Devices | Device settings** page, verify the **Require Multi-Factor Authentication to register or join devices with Azure AD** toggle switch is set to **No**. The **Maximum number of devices per user** is currently set to **50**; select this field and in the drop-down menu that appears, and then select **10**.
 
 11. On the menu bar at the top of the page, select **Save**.
 
@@ -70,38 +72,36 @@ In Azure Active Directory, you can use rules to determine group membership based
 
 In this task, Holly wants to create a new Security group for enrolled devices within Adatum. This group will support dynamic membership when a device's management type is set to MDM.
 
-1. In your browser, in the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory.**
+1. In your browser, in the **Microsoft Entra admin center**, in the left-hand navigation pane, select **Groups** and then select **All groups**.
 
-2. In the **Adatum Corporation | Overview** window, in the middle pane under **Manage,** select **Groups**.
+2. In the **Groups | All groups** window, in the details pane on the right, select **New group** on the menu bar.
 
-3. In the **Groups | All groups** window, in the details pane on the right, select **+New group** on the menu bar.
-
-4. In the **New Group** window, enter the following information:
+3. In the **New Group** window, enter the following information:
 
     - Group type: **Security**
     - Group name: **Enrolled Devices**
     - Membership type: **Dynamic Device**
-    - Owner: select **no owners selected**, then in the **Add Owners** window, select **Alex Wilber** and then select the **Select** button
+    - Owner: select **No owners selected**, then in the **Add Owners** window, select **Alex Wilber** and then select the **Select** button
     
-5. At the bottom of the **New Group** window, under **Dynamic device members**, select **Add dynamic query**.
+4. At the bottom of the **New Group** window, under **Dynamic device members**, select **Add dynamic query**.
 
-6. In the **Dynamic membership rules** window, configure the following fields for this expression:
+5. In the **Dynamic membership rules** window, configure the following fields for this expression:
 
     - Property: select the drop-down arrow and select **managementType**
     - Operator: select the drop-down arrow and select **Equals**  
     - Value: enter **MDM**
 
-7. Select **+Add expression**. It should display the following in the **Rule syntax** field:<br/>
+6. Select **+Add expression**. It should display the following in the **Rule syntax** field:<br/>
 
     **(device.managementType -eq  &quot;MDM&quot;)**
 
-8. Select **Save** in the menu bar at the top of the window.
+7. Select **Save** in the menu bar at the top of the window.
 
-9. In the **New Group** window, select the **Create** button at the bottom of the window.
+8. In the **New Group** window, select the **Create** button at the bottom of the window.
 
-10. In the **Groups | All groups** window, the **Enrolled Devices** group should now appear in the list of groups. If the group does not appear, select the **Refresh** option on the menu bar. 
+9. In the **Groups | All groups** window, the **Enrolled Devices** group should now appear in the list of groups. If the group does not appear, select the **Refresh** option on the menu bar. 
 
-11. Leave all browser tabs open for the next task.
+10. Leave all browser tabs open for the next task.
 
 
 # Proceed to Lab 8 - Exercise 3
