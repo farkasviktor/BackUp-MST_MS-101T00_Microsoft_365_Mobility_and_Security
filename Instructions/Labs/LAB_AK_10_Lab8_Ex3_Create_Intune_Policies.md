@@ -10,13 +10,13 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send a
 
 1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In your **Edge** browser, you should still have the **Microsoft Endpoint Manager admin center** open from the first exercise in this lab; if so, then select it now. If you closed it, then in **Microsoft 365 admin center**, under the **Admin centers** group in the left-hand navigation pane, select **Endpoint Manager**. 
+2. In your **Edge** browser, you should still have the **Microsoft Intune admin center** open from the first exercise in this lab; if so, then select it now. If you closed it, then in **Microsoft 365 admin center**, under the **Admin centers** group in the left-hand navigation pane, select **Endpoint Manager**. This returns the **Microsoft Intune admin center**.
 
-3. In the **Microsoft Endpoint Manager admin center**, in the left-hand navigation pane select **Endpoint security**.
+3. In the **Microsoft Intune admin center**, in the left-hand navigation pane select **Endpoint security**.
 
-4. On the **Endpoint security | Overview** page, the **Manage** section appears in the middle of the page's navigation pane. Under this section, select **Device compliance**.
+4. On the **Endpoint security | Overview** page, in the middle navigation pane under the **Manage** section, select **Device compliance**.
 
-5. On the **Compliance policies | Policies** page, in the navigation pane for this page, select **Notifications**. 
+5. On the **Compliance policies | Policies** page, in the middle navigation pane for this page, select **Notifications**. 
 
 6. On the **Compliance policies | Notifications** page, select **+Create notification** on the menu bar. 
 
@@ -26,7 +26,7 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send a
 
 8. On the **2 - Notification message templates** tab, enter the following information: <br/>
 
-    - Select the first **Select Locale** field and in the drop-down menu select your appropriate locale. 
+    - Select the **Select Locale** field and in the drop-down menu that appears select your appropriate locale. 
     - Enter **WARNING: Noncompliant device** in the **Subject** field. 
     - Enter the following text in the **Message** field: **Your Windows 10 or later device is not running a compliant version of the OS. The device has been marked as noncompliant and is now locked.** 
     - Select the check box for **IsDefault**. 
@@ -40,23 +40,23 @@ In your role as Holly Dickson, Adatum's Enterprise Administrator, want to send a
 
 ### Task 2: Create and apply a compliance policy
 
-In your role as Holly Dickson, Adatum's Enterprise Administrator, you will create a compliance policy that governs Windows 10 devices at Adatum Corporation. This policy will dictate what the minimum OS version must be installed on a device in order for it to access Adatum's environment. It will also control how long a device can stay out of compliance before it's locked out from use, thereby requiring administrator assistance to make it operational again. The policy will also control who it's assigned to, which in this case will be all devices enrolled in Microsoft Intune.
+In your role as Holly Dickson, Adatum's Enterprise Administrator, you will create a compliance policy that governs Windows 10 and later devices at Adatum Corporation. This policy will dictate the minimum OS version that must be installed on a device in order for it to access Adatum's environment. It will also control how long a device can stay out of compliance before it's locked out from use, thereby requiring administrator assistance to make it operational again. The policy will also control who it's assigned to, which in this case will be all devices enrolled in Microsoft Intune.
 
 Given the problems caused at Adatum by devices that are running old versions of Windows, Holly wants to mark any device as noncompliant that is running a version of the OS that is older than version 10.0.17763.1192. Marking a device as noncompliant will lock the device. In the policy that Holly wants to create, any device running a version of Windows that is older than this version will be marked as noncompliant, and an email will be sent to the end-user notifying them of the situation.
 
 1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In your **Edge** browser, you should still have the **Microsoft Endpoint Manager admin center** open from the first exercise in this lab; if so, then select it now. If you closed it, then in **Microsoft 365 admin center**, under the **Admin centers** group in the left-hand navigation pane, select **Endpoint Manager**. 
+2. In your **Edge** browser, you should still have the **Microsoft Intune admin center** open from the prior task; if so, then select it now. If you closed it, then in **Microsoft 365 admin center**, under the **Admin centers** group in the left-hand navigation pane, select **Endpoint Manager**. 
 
-3. In the **Microsoft Endpoint Manager admin center**, in the left-hand navigation pane select **Devices**. 
+3. In the **Microsoft Intune admin center**, in the left-hand navigation pane select **Devices**. 
 
-4. In the **Devices | Overview** page, the **Policy** section appears in the middle of the page's navigation pane. Under this section, select **Compliance policies**.
+4. In the **Devices | Overview** page, under the **Policy** section that appears in the middle navigation pane, select **Compliance policies**.
 
 5. On the **Compliance policies | Policies** page, select **+Create Policy** on the menu bar.
 
 6. On the **Create a policy** pane that appears, select the **Platform** field, and in the drop-down menu that appears, select **Windows 10 and later**. Select **Create**.
 
-7. On the **Windows 10 compliance policy** window, note the five tabs that appear at the top of the page. <br/>
+7. On the **Windows 10/11 compliance policy** window, note the five tabs that appear at the top of the page. <br/>
 
     You are currently on the **1 - Basics** tab. Enter **Compliance1** in the **Name** field and then select **Next**.
 
@@ -89,19 +89,17 @@ Given the problems caused at Adatum by devices that are running old versions of 
 
 13. On the **5 - Review + create** tab, review the policy settings. If anything needs to be fixed, select **Previous** and make the necessary corrections. However, if everything looks correct, select **Create**.
 
-14. In your **Edge** browser, select the **Azure Active Directory admin center** tab. If you closed this tab at the end of the prior exercise, then in the **Microsoft 365 admin center**, in the left-hand pane under **Admin centers**, select **Azure Active Directory**.
+14. In the **Microsoft Intune admin center**, in the left-hand navigation pane, select **Devices**.
 
-15. In the **Azure Active Directory admin center**, in the left-hand navigation pane, select **Azure Active Directory**.
+15. In the **Devices | Overview** page, in the middle navigation pane under the **Device enrollment** section, select **Enroll devices**.
 
-16. In the **Adatum Corporation | Overview** window, the **Manage** section appears in the middle of the page's navigation pane. Under this section, select **Mobility (MDM and MAM).**
+16. In the **Enroll devices | Windows enrollment** page, under the **General** section, select **Automatic Enrollment**.
 
-17. In the **Adatum Corporation | Mobility (MDM and MAM)** window, select **Microsoft Intune.**
-
-18. In the **Configure** window, there are two user scope settings. The **MDM user scope** setting should be set to **All** (from a previous lab task), but the **MAM user scope** setting should be set to **None** by default. <br/>
+17. In the **Configure** window, there are two user scope settings. The **MDM user scope** setting should be set to **All** (from a previous lab task), but the **MAM user scope** setting should be set to **None** by default. <br/>
 
     Set the **MAM User scope** setting to **All**, select the **Restore default MAM URLs** option, and then select **Save** in the menu bar at the top of the window. Once the setting is saved, select the **X** in the upper right corner to close the **Configure** window.
 
-19. Leave all browser tabs open for the next task.
+18. Leave all browser tabs open for the next task.
 
 
 ### Task 3: Create an App Protection Policy
@@ -112,11 +110,9 @@ In this task, you will create an app protection policy that protects an entire c
 
 1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In your Edge browser, you should have a tab open in the **Microsoft Endpoint Manager admin center** that is displaying the **Compliance1** data compliance policy that you created in the earlier task. <br/>
-
-    In the left-hand navigation pane, select **Apps**.
+2. In your Edge browser, you should still be in the **Microsoft Intune admin center** after completing the prior task. In the left-hand navigation pane, select **Apps**.
     
-3. In the **Apps | Overview** window, in the left-hand pane under the **Policy** group, select **App protection policies**.
+3. In the **Apps | Overview** window, in the middle navigation pane under the **Policy** section, select **App protection policies**.
 
 4. In the **Apps | App protection policies** window, in the menu bar that appears above the list of policies, select **+Create policy.** In the drop-down menu that appears, select **Windows Information Protection**.
 
@@ -126,7 +122,7 @@ In this task, you will create an app protection policy that protects an entire c
     - Description: **Windows Information Protection policy for Windows 10 and 11 computers**
     - Enrollment state: **With Enrollment** <br/>
 
-    Note the warning message that appears at the bottom of the page indicating before Windows 10 and later policies can take effect, you must define the user scope and restore the MAM URLs in Azure Active Directory. You already did this at the end of the prior task. 
+    You may receive a warning message at the bottom of the page indicating before Windows 10 and later policies can take effect, you must define the user scope and restore the MAM URLs in Azure Active Directory. You can ignore this message if it appears, since you already did this at the end of the prior task. 
 
 6. Select **Next**.
 
@@ -246,17 +242,17 @@ The purpose of this task is to show you how to use Intune to push an app to a de
 
 1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In your **Edge** browser, you should have the **Microsoft Endpoint Manager admin center** portal open in a tab titled **Apps - Microsoft Endpoint Manager admin center**. Select this tab.
+2. In your **Edge** browser, you should have a tab open with the **Microsoft Intune admin center** portal. Select this tab.
 
 3. In the **Apps | App protection policies** window, it displays the list of app protection policies. In this list, select **Win10/11Policy**.
 
-4. In the **Intune App Protection** window, in the middle pane under **Manage**, select **Properties**.
+4. In the **Intune App Protection** window, in the middle navigation pane under the **Manage** section, select **Properties**.
 
 5. In the **Intune App Protection | Properties** window, the detail pane displays the Intune App Protection properties by group (for example, Basics, Targeted apps, Required settings, and so on). Select **Edit** that appears next to the **Targeted apps** group.
 
 6. In the **Edit policy** window, scroll down past the list of Protected apps and then select **+Import**. <br/>
 
-    **Caution:** Make sure you select the correct **+Import** option. Do not select the **+Import** option below the **Exempt apps** section.
+    **WARNING:** Make sure you select the correct **+Import** option. Select the **+Import** option below the list of Protected apps. Do not select the **+Import** option below the **Exempt apps** section. 
 
 7. In the **Import apps** pane that appears, select the folder icon that appears to the right of the **Select a file** field.
 
@@ -290,31 +286,29 @@ When enrolling devices to Microsoft Intune, you have the option to Allow or Bloc
 
 1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In your Edge browser, you should have a tab open for the **Microsoft Endpoint Manager admin center** that's displaying the **Intune App Protection | Properties** window. <br/>
+2. In your Edge browser, you should still have a tab open for the **Microsoft Intune admin center** that's displaying the **Intune App Protection | Properties** window. In the left-hand navigation pane, select **Devices**.
 
-    In the left-hand navigation pane, select **Devices**.
+3. In the **Devices| Overview** window, under the **Device enrollment** section that appears in the middle navigation pane, select **Enroll devices.**
 
-3. In the **Devices| Overview** window, the **Device enrollment** section appears in the middle of the page's navigation pane. Under this section, select **Enroll devices.**
+4. On the **Enroll devices | Windows enrollment** window, in the middle navigation pane, select **Enrollment device platform restrictions**.
 
-4. On the **Enroll devices | Windows enrollment** window, in the middle pane, select **Enrollment device platform restrictions**.
+5. In the **Enroll devices | Enrollment device platform restrictions** window, in the **Device type restrictions** section, select **All users** for the **Default** restriction.
 
-5. In the **Enroll devices | Enrollment restrictions** window, in the **Device type restrictions** section, on the **Default** restriction, select **All users**.
-
-6. In the **All Users** window, in the middle pane under the **Manage** section, select **Properties.**
+6. In the **All Users** window, in the middle navigation pane under the **Manage** section, select **Properties.**
 
 7. In the **All Users | Properties** window, select **Edit** that appears next to **Platform settings**.
 
 8. In the **Edit restriction** window, under the **Platform** column, select **Block** for the **iOS/iPadOS** and **macOS** types, select the **Review + save** button at the bottom of the screen, and then review your changes. Both platform settings should display **Block (edited)** under the **Platform** column. All other device types should be allowed. Select **Save.**
 
-9. In the **Microsoft Endpoint Manager admin center** navigation pane on the left, select **Devices**.
+9. In the **Microsoft Intune admin center** navigation pane on the left, select **Devices**.
 
-10. On the **Devices | Overview** window, the **Device enrollment** section appears in the middle of the page's navigation pane. Under this section, select **Enroll devices.**
+10. On the **Devices | Overview** window, under the **Device enrollment** section in the middle navigation pane, select **Enroll devices.**
 
-11. On the **Enroll devices | Windows enrollment** window, in the middle pane, select **Enrollment device platform restrictions**.
+11. On the **Enroll devices | Windows enrollment** window, in the middle navigation pane, select **Enrollment device limit restrictions**.
 
-12. In the **Enroll devices | Enrollment device limit restrictions** window, in the **Enrollment device limit restrictions** section, on the **Default** row, select **All users**.
+12. In the **Enroll devices | Enrollment device limit restrictions** window, in the **Device limit restrictions** section, select **All users and all devices** for the **Default** device type.
 
-13. In the **All Users** window, in the middle pane under the **Manage** section, select **Properties.**
+13. In the **All Users** window, in the middle navigation pane under the **Manage** section, select **Properties.**
 
 14. In the **All Users | Properties** window, check the value of the device limit. You had previously updated the device limit in an earlier lab. It was originally set to 5 by default, and the prior lab suggested changing it to 3. <br/>
 
@@ -330,11 +324,11 @@ The purpose of this task is to simply review the different platforms that are av
 
 1. You should still be logged into LON-CL1 as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In your **Edge** browser, you should have a tab open for the **Microsoft Endpoint Manager admin center** that's displaying the **All Users | Properties** window. In the left-hand navigation pane, select **Devices**.
+2. In your **Edge** browser, you should have a tab open for the **Microsoft Intune admin center** that's displaying the **All Users | Properties** window. In the left-hand navigation pane, select **Devices**.
 
-4. On the **Devices | Overview** window, in the middle pane under the **Policy** section, select **Configuration profiles**.
+4. On the **Devices | Overview** window, in the middle navigation pane under the **Policy** section, select **Configuration profiles**.
 
-5. On the **Devices |Configuration profiles** page, select **+Create profile** that appears on the menu bar above the list of profiles.
+5. On the **Devices | Configuration profiles** page, select **+Create profile** that appears on the menu bar above the list of profiles.
 
 6. On the **Create a profile** pane, select the **Platform** field to see the different platforms that are available in the drop-down menu. **Do not select any option.** The purpose of this task is to simply see what platforms are available that can be assigned to a new device profile, should you want to ever create one.
 

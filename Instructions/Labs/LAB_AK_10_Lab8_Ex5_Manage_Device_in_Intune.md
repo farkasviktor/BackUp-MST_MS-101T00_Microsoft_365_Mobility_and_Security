@@ -2,7 +2,7 @@
 
 Holly Dickson wants to make managing devices easier, so she has decided to implement Microsoft Intune device categories in her pilot project. Implementing device categories will enable her to automatically add devices to groups based on categories that she defines.
 
-As part of managing devices in Intune, Holly will create dynamic groups in the Microsoft Endpoint Manager admin center, based on the device category and device category name. After you configure device groups, users who enroll their device will be presented with a list of the categories you configured. After they choose a category and finish enrollment, their device is added to the Active Directory security group that corresponds with the category they chose.
+As part of managing devices in Intune, Holly will create dynamic groups in the Microsoft Intune admin center based on the device category and device category name. After you configure device groups, users who enroll their device will be presented with a list of the categories you configured. After they choose a category and finish enrollment, their device is added to the Active Directory security group that corresponds with the category they chose.
 
 ### Task 1: Create device categories
 
@@ -10,9 +10,9 @@ In this task, you're going to create two device categories, one for mobile devic
 
 1. In the LON-CL1 VM, you should still be logged in as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In your Edge browser, the **Microsoft Endpoint Manager admin center** should still be open. In the left-hand navigation pane, select **Devices**. 
+2. In your Edge browser, the **Microsoft Intune admin center** should still be open. In the left-hand navigation pane, select **Devices**. 
 
-3. In the **Devices | Overview** window, scroll down towards the bottom of the middle pane and under the **Other** section, select **Device categories.**
+3. In the **Devices | Overview** window, scroll down towards the bottom of the middle navigation pane and under the **Other** section, select **Device categories.**
 
 4. In the **Devices | Device categories** window, select **+Create device category**.
 
@@ -32,25 +32,25 @@ In this task, you're going to manage the Category property of the two devices th
 
 1. In the LON-CL1 VM, you should still be logged in as the local **Admin** account, and in your Edge browser, you should still be logged into Microsoft 365 as **Holly Dickson**.
 
-2. In your Edge browser, the **Microsoft Endpoint Manager admin center** should still be open and it should be displaying the **Devices | Device categories** window after having completed the prior task.
+2. In your Edge browser, the **Microsoft Intune admin center** should still be open and it should be displaying the **Devices | Device categories** window after having completed the prior task.
 
-3. In the **Devices | Device categories** window, scroll to the top of the middle pane and select **All devices**.
+3. In the **Devices | Device categories** window, scroll to the top of the middle navigation pane and select **All devices**.
 
 4. On the **Devices | All devices** window, select **LON-CL1**, which is the device that Holly joined to Azure AD, and which was automatically enrolled to Intune.
 
 5. On the **LON-CL1** window, review the device details. Also review the actions available on the menu bar at the top of the page; these are the actions that you can perform against the device.
 
-6. On the **LON-CL1** window, in the middle pane under the **Manage** section, select **Properties**. 
+6. On the **LON-CL1** window, in the middle navigation pane under the **Manage** section, select **Properties**. 
 
 7. In the **LON-CL1 | Properties** window, note the current value of the **Device category** field is **Unassigned**. Select the drop-down arrow for this field and in the menu, note the appearance of the two device categories (Mobile Device and Desktop) that you created in the prior task. Select **Desktop**, and then on the menu bar at the top of the page, select **Save**.<br/>
 
     **Note:** For Android or iOS devices, you must select the **Device category** during enrollment.
 
-8. In the **LON-CL1 | Properties** window, in the middle pane under the **Monitor** section, select **Hardware.**
+8. In the **LON-CL1 | Properties** window, in the middle navigation pane under the **Monitor** section, select **Hardware.**
 
 9. In the **LON-CL1 | Hardware** window, review the hardware information that synced from the device. Then scroll down and review the **Conditional access** section at the bottom of the page.
 
-10. In the middle pane under the **Monitor** section, select **Discovered apps** and review the list of apps that were discovered on the device.
+10. In the middle navigation pane under the **Monitor** section, select **Discovered apps** and review the list of apps that were discovered on the device.
 
 11. In the **LON-CL1 | Discovered apps** window, note the navigation thread at the top of the windows (**Dashboard > Devices | All devices > LON-CL1**). Select **Devices | All devices** in this thread. This returns you to the **Devices | All devices** window.
 
@@ -61,7 +61,7 @@ In this task, you're going to manage the Category property of the two devices th
 
 ### Task 3: Create dynamic groups for the device categories
 
-1. In your Edge browser, the **Microsoft Endpoint Manager admin center** should still be open. In the left-hand navigation pane, select **Groups**. 
+1. In your Edge browser, the **Microsoft Intune admin center** should still be open. In the left-hand navigation pane, select **Groups**. 
 
 2. In the **Groups** window, select **New group** on the menu bar.
 
@@ -73,7 +73,7 @@ In this task, you're going to manage the Category property of the two devices th
 
 4. Under the **Dynamic device members** section, select **Add dynamic query**.
 
-5. On the **Dynamic membership rules** window, the **Configure Rules** tab is displayed by default. As you can see, no rules have bee defined. Hover your mouse over the **<Choose a Property>** field to display the rule fields, and then enter the following values:
+5. On the **Dynamic membership rules** window, the **Configure Rules** tab is displayed by default. As you can see, no rules have bee defined. Enter the following values to create a dynamic membership rule:
 
     - Property:   **deviceCategory**
     - Operator: **Equals**
@@ -83,7 +83,7 @@ In this task, you're going to manage the Category property of the two devices th
 
 7. Select **Save** on the menu bar at the top of the page.
 
-8. On the **New Group** window, select the **Create** button at the bottom of the page. The **Mobile Devices** group should now appear in the list of groups. If it doesn't appear, select **Refresh** on the menu bar at the top of the page. 
+8. On the **New Group** window, select the **Create** button at the bottom of the page. The **Mobile Devices** group should now appear in the list of groups. If it doesn't appear, select **Refresh** on the menu bar at the top of the page. This may take a minute or so to appear.
 
 9. Repeat steps 2-8 to create a group for desktop devices. The **Group Name** should be set to **Desktop Devices**, and in the **Dynamic membership rules** window, enter **Desktop** in the **Value** field.
 
@@ -100,11 +100,11 @@ Conditional Access is the tool used by Azure Active Directory to bring signals t
 
 In this task, you will create a conditional access policy that Holly plans to implement in her pilot project. 
 
-1. In your Edge browser, the **Microsoft Endpoint Manager admin center** should still be open. In the left-hand navigation pane, select **Endpoint Security**. 
+1. In your Edge browser, the **Microsoft Intune admin center** should still be open. In the left-hand navigation pane, select **Endpoint Security**. 
 
-2. In the **Endpoint security | Overview** window, in the middle pane under the **Manage** section, select **Conditional access**.
+2. In the **Endpoint security | Overview** window, in the middle navigation pane under the **Manage** section, select **Conditional access**.
 
-3. In the **Conditional Access | Policies** window, select **+Create new policy** on the menu bar.
+3. In the **Conditional Access | Overview** window, select **+Create new policy** on the menu bar.
 
 4. On the **New** pane, enter the following information:  <br/>
 
