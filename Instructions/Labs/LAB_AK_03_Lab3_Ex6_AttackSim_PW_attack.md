@@ -17,7 +17,7 @@ In the prior lab, you created a simulation that was sent to all Adatum users. Yo
 
 3. In the **Microsoft 365 Defender** portal, you should still be in the **Attack simulation training** page; if not, then in the left-hand navigation pane, under **Email & collaboration**, select **Attack simulation training**.
 
-4. You will begin be creating a custom payload for a Drive-by URL attack. On the **Attack Simulation training** page, select the **Content library** tab. Within this tab, the **Global payloads** tab is displayed by default. Select the **Tenant payloads**.
+4. You will begin be creating a custom payload for a Drive-by URL attack. On the **Attack Simulation training** page, select the **Content library** tab. Within this tab, the **Global payloads** tab is displayed by default. Select the **Tenant payloads** tab.
 
 5. Under the **Tenant payloads** tab, select **+Create a payload**. This initiates the **Create Payload** wizard.
 
