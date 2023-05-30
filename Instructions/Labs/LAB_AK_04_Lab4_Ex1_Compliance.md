@@ -79,7 +79,7 @@ In this task you will activate MDM auto-enrollment for new devices in your Adatu
 
 12. In the **Tenant admin | Tenant status** page, verify the **MDM authority** is set to **Microsoft Intune**.
 
-13. In your Microsoft Edge browser, you can close all tabs except for the Microsoft Office Home tab and the Microsoft 365 admin center tab open.
+13. In your Microsoft Edge browser, you can close all tabs except for the **Microsoft Office Home** tab and the **Microsoft 365 admin center tab**. Leave these two tabs open for the next exercise.
 
 You have configured automatic enrollment in Intune for Windows 10 and 11 devices of users in the Compliance Test Users group, and you have verified the MDM authority for Adatum's tenant is set to Microsoft Intune.
 
