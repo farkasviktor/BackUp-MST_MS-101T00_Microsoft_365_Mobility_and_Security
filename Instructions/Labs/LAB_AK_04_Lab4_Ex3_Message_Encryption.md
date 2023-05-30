@@ -74,7 +74,7 @@ In a prior task, you configured a mail flow encryption rule using the Exchange a
 
 	**New-TransportRule -Name "Encrypt rule for Guest Services" -SentTo "Gservices@adatum.com" -SentToScope "NotinOrganization" -ApplyRightsProtectionTemplate Encrypt**  <br/>
 	
-	**Note:** This command will take several seconds to complete.
+	**Note:** This command will take several seconds to complete. Do not proceed to the next step until PowerShell displays the properties of the new rule that you created.
 
 9. To verify the rule exists, minimize your PowerShell window. In your Microsoft Edge browser, you should still be in the **mail flow** window of the **Exchange admin center**, and the **rules** tab should be displayed. The list of rules should only display the **Encrypt mail for guest@adatum.com** rule that you created in the prior task.<br/>
 
