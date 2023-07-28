@@ -1,4 +1,4 @@
-**This course will be retiring on  **2023/7/31**.  Once course is retired, all GitHub repos will be removed. Thank you.**
+**This course will be retiring on  **2023/9/29**.  Once course is retired, all GitHub repos will be removed. Thank you.**
 
 # MS-101T00: Microsoft 365 Mobility and Security
 
